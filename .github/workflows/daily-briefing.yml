@@ -1,0 +1,38 @@
+name: SCO 입시 일일 브리핑 자동 생성
+
+on:
+  schedule:
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate-briefing:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Python 설정
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 의존성 설치
+        run: pip install anthropic feedparser requests
+
+      - name: 브리핑 생성
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python briefing.py
+
+      - name: 변경사항 커밋
+        run: |
+          git config user.name "SCO Briefing Bot"
+          git config user.email "bot@scolabs.kr"
+          git add site/
+          git diff --staged --quiet || git commit -m "Auto: 일일 브리핑 $(TZ='Asia/Seoul' date +%Y-%m-%d)"
+          git push
