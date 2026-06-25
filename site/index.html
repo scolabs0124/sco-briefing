@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SCO 입시 브리핑 — 매일 11시 자동</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,'Pretendard','Apple SD Gothic Neo',sans-serif;background:linear-gradient(135deg,#0b1e3f 0%,#1a3a6b 100%);color:white;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
+.wrap{max-width:640px;width:100%;text-align:center}
+.logo{font-size:13px;opacity:.7;letter-spacing:3px;font-weight:700;margin-bottom:10px}
+h1{font-size:36px;font-weight:900;margin-bottom:8px;letter-spacing:-.5px}
+.subtitle{font-size:14px;opacity:.7;margin-bottom:30px}
+.latest-card{background:linear-gradient(135deg,#ea580c 0%,#fbbf24 100%);padding:24px 28px;border-radius:16px;margin-bottom:24px;box-shadow:0 8px 24px rgba(234,88,12,.3);text-align:left}
+.latest-card .label{font-size:12px;color:#0b1e3f;font-weight:800;letter-spacing:1px;margin-bottom:6px}
+.latest-card .date{font-size:22px;color:#0b1e3f;font-weight:900;margin-bottom:14px}
+.latest-card a{display:block;background:white;color:#0b1e3f;text-decoration:none;padding:14px 20px;border-radius:10px;font-weight:800;font-size:16px;text-align:center;transition:transform .15s}
+.latest-card a:hover{transform:translateY(-2px)}
+.status{background:rgba(0,0,0,.2);padding:14px 18px;border-radius:10px;font-size:13px;opacity:.85;margin-bottom:20px;line-height:1.6}
+.status strong{color:#fbbf24}
+.recent{background:rgba(255,255,255,.08);padding:18px 22px;border-radius:12px;text-align:left}
+.recent-title{font-size:12px;font-weight:700;opacity:.7;margin-bottom:12px;letter-spacing:1px}
+.recent a{display:flex;justify-content:space-between;align-items:center;color:white;text-decoration:none;padding:10px 14px;border-radius:8px;font-size:14px;font-weight:600;transition:background .15s;margin-bottom:4px}
+.recent a:hover{background:rgba(255,255,255,.12)}
+.recent a .day{opacity:.65;font-size:12px;font-weight:500}
+.recent a.missing{opacity:.35;cursor:not-allowed;pointer-events:none}
+.recent a.missing::after{content:'(없음)';opacity:.7;font-size:11px;margin-left:8px}
+.footer{margin-top:24px;font-size:12px;opacity:.5}
+.loading{display:inline-block;width:14px;height:14px;border:2px solid rgba(255,255,255,.3);border-top-color:white;border-radius:50%;animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+</style></head><body>
+<div class="wrap">
+<div class="logo">SCO LABS</div>
+<h1>📅 SCO 입시 브리핑</h1>
+<div class="subtitle">매일 오전 11시 자동 생성 · 학이 아닌 습</div>
+<div id="latest-area"><div class="status"><span class="loading"></span> 가장 최근 브리핑 찾는 중...</div></div>
+<div class="recent"><div class="recent-title">📌 최근 14일</div><div id="recent-list"></div></div>
+<div class="footer">SCO LABS · 매일 오전 11시 자동 업데이트 (서버)</div>
+</div>
+<script>
+var PREFIX='briefing-',EXT='.html';
+function kstDate(o){o=o||0;var K=9*3600000,n=new Date(),k=new Date(n.getTime()+K+o*86400000);return k.toISOString().slice(0,10)}
+function dayName(s){var d=new Date(s);return ['일','월','화','수','목','금','토'][d.getUTCDay()]}
+function checkFile(u){return fetch(u,{method:'HEAD'}).then(function(r){return r.ok}).catch(function(){return false})}
+function findLatest(){var a=[];for(var i=0;i<30;i++)a.push(kstDate(-i));function t(i){if(i>=a.length)return Promise.resolve(null);var d=a[i],u=PREFIX+d+EXT;return checkFile(u).then(function(e){return e?d:t(i+1)})}return t(0)}
+findLatest().then(function(L){var ar=document.getElementById('latest-area');if(!L){ar.innerHTML='<div class="status">⚠️ 최근 30일 내 브리핑 파일이 없습니다.<br><strong>매일 오전 11시에 자동 생성됩니다.</strong></div>';return}var T=kstDate(0),u=PREFIX+L+EXT,lt,dt;if(L===T){lt='⭐ 오늘의 브리핑';dt=L+' ('+dayName(L)+')'}else{var dd=Math.round((new Date(T)-new Date(L))/86400000);lt='🗓 가장 최근 브리핑 ('+dd+'일 전)';dt=L+' ('+dayName(L)+')'}ar.innerHTML='<div class="latest-card"><div class="label">'+lt+'</div><div class="date">'+dt+'</div><a href="'+u+'">📂 열기 →</a></div>'});
+var rec=document.getElementById('recent-list');for(var i=0;i<14;i++){(function(o){var d=kstDate(-o),u=PREFIX+d+EXT,a=document.createElement('a');a.href=u;var l=d+' '+(o===0?'⭐':(o===1?'· 어제':''));a.innerHTML='<span>'+l+'</span><span class="day">'+dayName(d)+'</span>';rec.appendChild(a);checkFile(u).then(function(e){if(!e)a.classList.add('missing')})})(i)}
+</script></body></html>
