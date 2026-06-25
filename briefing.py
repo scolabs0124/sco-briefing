@@ -1,12 +1,10 @@
-"""SCO 입시 일일 브리핑 자동 생성 스크립트"""
-import os, json, datetime, urllib.parse, feedparser, anthropic, re
+"""SCO 입시 일일 브리핑 자동 생성 스크립트 v2 (JSON 파싱 강화)"""
+import os, json, datetime, urllib.parse, feedparser, anthropic, re, sys
 
-# === 한국 시간 ===
 KST = datetime.timezone(datetime.timedelta(hours=9))
 TODAY = datetime.datetime.now(KST).strftime("%Y-%m-%d")
 DAY_NAME = ['월','화','수','목','금','토','일'][datetime.datetime.now(KST).weekday()]
 
-# === 구글 뉴스 RSS로 한국어 입시 뉴스 수집 ===
 KEYWORDS = ['2028 대입', '수능 개편', '고교학점제', '의대 정원', '학생부종합전형', '교육부 입시']
 
 def fetch_news():
@@ -22,7 +20,6 @@ def fetch_news():
                 'summary': re.sub(r'<[^>]+>', '', getattr(entry, 'summary', ''))[:300],
                 'source': getattr(entry, 'source', {}).get('title', '') if hasattr(entry, 'source') else ''
             })
-    # 중복 제거 (제목 기반)
     seen, unique = set(), []
     for it in items:
         key = it['title'][:30]
@@ -31,7 +28,27 @@ def fetch_news():
             unique.append(it)
     return unique[:25]
 
-# === Claude API로 분석 + HTML 생성 ===
+def extract_json(text):
+    """Claude 응답에서 JSON 안전 추출"""
+    text = text.strip()
+    # 마크다운 코드블록 제거
+    text = re.sub(r'^```(?:json)?\s*\n?', '', text)
+    text = re.sub(r'\n?```\s*$', '', text)
+    # 첫 { 와 마지막 } 사이만 추출
+    start = text.find('{')
+    end = text.rfind('}')
+    if start != -1 and end != -1:
+        text = text[start:end+1]
+    return text
+
+def call_claude(client, prompt, max_tokens=16000):
+    msg = client.messages.create(
+        model="claude-sonnet-4-5-20250929",
+        max_tokens=max_tokens,
+        messages=[{"role": "user", "content": prompt}]
+    )
+    return msg.content[0].text
+
 def analyze(news_items):
     client = anthropic.Anthropic(api_key=os.environ['ANTHROPIC_API_KEY'])
     news_text = '\n\n'.join([f"[{i+1}] {it['title']}\n출처: {it['source']}\n발행: {it['published']}\n요약: {it['summary']}\n링크: {it['link']}" for i, it in enumerate(news_items)])
@@ -43,71 +60,79 @@ def analyze(news_items):
 【수집된 입시 뉴스 {len(news_items)}건】
 {news_text}
 
-위 뉴스 중 상위 5건을 선정해 다음 JSON 형식으로만 응답하세요. 다른 텍스트 금지.
+위 뉴스 중 상위 5건을 선정해 다음 JSON 형식으로만 응답하세요. 마크다운 코드블록(```) 사용 금지. 순수 JSON만.
+
+JSON 내 모든 큰따옴표는 반드시 백슬래시로 escape (예: \\"기회\\"). 모든 줄바꿈은 \\n으로.
 
 {{
-  "key_summary": "오늘의 핵심 1줄 (60자 이내)",
-  "best_pick": "학부모 즉시 발송 추천 1건의 제목",
-  "stats": {{"urgent": 숫자, "important": 숫자, "info": 숫자}},
+  "key_summary": "오늘의 핵심 1줄 (60자 이내, 큰따옴표 없이)",
+  "best_pick": "학부모 즉시 발송 추천 1건의 제목 (큰따옴표 없이)",
+  "stats": {{"urgent": 1, "important": 2, "info": 2}},
   "articles": [
     {{
       "id": 1,
-      "priority": "긴급/중요/참고",
-      "title": "기사 제목",
+      "priority": "긴급",
+      "title": "기사 제목 (큰따옴표 없이)",
       "source": "출처",
       "date": "{TODAY}",
-      "year": "적용 학년도 (예: 2028학년도)",
-      "target": "대상 (예: 중3/고1/학부모)",
-      "areas": ["영역 배열"],
+      "year": "2028학년도",
+      "target": "중3/고1/학부모",
+      "areas": ["수능", "내신"],
       "url": "원문 URL",
-      "summary1": "한 줄 요약 (사실 기반)",
+      "summary1": "한 줄 요약",
       "changes": ["바뀐 점 1", "점 2", "점 3"],
       "mythQ": "학부모가 자주 하는 오해 질문",
-      "mythA": "팩트 답변 (강한 톤)",
-      "katok": "학부모 카톡 안내문 (200~300자, 스코 상담 CTA 포함, \\n으로 줄바꿈)",
+      "mythA": "팩트 답변",
+      "katok": "학부모 카톡 안내문 200~300자, 줄바꿈은 \\n으로",
       "card_titles": ["카드뉴스 제목 1", "제목 2", "제목 3"],
       "sco_view": "스코 학습관리 관점 해석"
     }}
   ]
 }}
 
-원칙: 사실 왜곡 금지, 마케팅 톤 강하게, 스코 철학 자연스럽게 반영."""
+원칙: 사실 왜곡 금지, 마케팅 톤 강하게, 스코 철학 자연스럽게 반영. 텍스트 안에 큰따옴표 쓸 때 반드시 \\" 로 escape."""
 
-    msg = client.messages.create(
-        model="claude-sonnet-4-5-20250929",
-        max_tokens=8000,
-        messages=[{"role": "user", "content": prompt}]
-    )
-    text = msg.content[0].text.strip()
-    text = re.sub(r'^```json\s*', '', text).rstrip('` \n')
-    return json.loads(text)
+    text = call_claude(client, prompt)
+    json_text = extract_json(text)
+    try:
+        return json.loads(json_text)
+    except json.JSONDecodeError as e:
+        print(f"\n=== JSON 파싱 실패 (1차) ===")
+        print(f"에러: {e}")
+        print(f"위치: line {e.lineno}, col {e.colno}")
+        print(f"\n=== 응답 앞 500자 ===\n{json_text[:500]}")
+        print(f"\n=== 응답 뒤 500자 ===\n{json_text[-500:]}")
+        # 한 번 더 시도 - 더 단순한 형식 요청
+        print(f"\n=== 재시도 (단순 형식) ===")
+        simple_prompt = prompt + "\n\n⚠️ 이전 응답이 JSON 파싱에 실패했습니다. 모든 큰따옴표를 \\\" 로 정확히 escape하고, 순수 JSON만 출력하세요. 코드블록 사용 절대 금지."
+        text2 = call_claude(client, simple_prompt)
+        json_text2 = extract_json(text2)
+        return json.loads(json_text2)
 
-# === HTML 생성 (단순 버전) ===
 def generate_html(data):
     articles_html = ''
     for a in data['articles']:
-        badge_cls = {'긴급':'b-urgent','중요':'b-important','참고':'b-note'}.get(a['priority'], 'b-note')
+        badge_cls = {'긴급':'b-urgent','중요':'b-important','참고':'b-note'}.get(a.get('priority',''), 'b-note')
         areas = ' '.join([f'<span class="badge b-cat">{x}</span>' for x in a.get('areas', [])])
         changes = ''.join([f'<li>{c}</li>' for c in a.get('changes', [])])
         titles = ''.join([f'<li>{t}</li>' for t in a.get('card_titles', [])])
         articles_html += f"""
 <div class="card">
   <div class="badges">
-    <span class="badge {badge_cls}">{a['priority']}</span>
-    <span class="badge b-year">{a['year']}</span>
-    <span class="badge b-tgt">{a['target']}</span>
+    <span class="badge {badge_cls}">{a.get('priority','')}</span>
+    <span class="badge b-year">{a.get('year','')}</span>
+    <span class="badge b-tgt">{a.get('target','')}</span>
     {areas}
   </div>
-  <h2>{a['id']}. {a['title']}</h2>
-  <div class="source">{a['source']} · {a['date']} · <a href="{a['url']}" target="_blank">원문</a></div>
-  <p class="sum1">{a['summary1']}</p>
+  <h2>{a.get('id','')}. {a.get('title','')}</h2>
+  <div class="source">{a.get('source','')} · {a.get('date','')} · <a href="{a.get('url','#')}" target="_blank">원문</a></div>
+  <p class="sum1">{a.get('summary1','')}</p>
   <div class="block"><b>📌 무엇이 바뀌었나</b><ul>{changes}</ul></div>
-  <div class="myth"><div class="q">❓ {a['mythQ']}</div><div class="a">→ {a['mythA']}</div></div>
-  <div class="katok"><div class="l">📱 학부모 카톡문</div><p>{a['katok']}</p></div>
+  <div class="myth"><div class="q">❓ {a.get('mythQ','')}</div><div class="a">→ {a.get('mythA','')}</div></div>
+  <div class="katok"><div class="l">📱 학부모 카톡문</div><p>{a.get('katok','')}</p></div>
   <div class="titles"><div class="l">📰 카드뉴스 제목</div><ul>{titles}</ul></div>
-  <div class="sco"><div class="l">💡 SCO 관점</div><p>{a['sco_view']}</p></div>
+  <div class="sco"><div class="l">💡 SCO 관점</div><p>{a.get('sco_view','')}</p></div>
 </div>"""
-
     return f"""<!DOCTYPE html>
 <html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>SCO 입시 브리핑 — {TODAY}</title>
@@ -155,32 +180,32 @@ body{{font-family:-apple-system,'Pretendard','Apple SD Gothic Neo',sans-serif;ba
 </style></head><body>
 <div class="wrap">
 <div class="header"><h1>📅 SCO 입시 브리핑</h1><div class="sub">{TODAY} ({DAY_NAME}) · 스코랩스(SCO Labs) 입시정보팀</div></div>
-<div class="hero"><h2>🔥 {data['key_summary']}</h2></div>
-<div class="pick"><h3>💡 학부모 즉시 발송 추천</h3><p>"{data['best_pick']}"</p></div>
+<div class="hero"><h2>🔥 {data.get('key_summary','')}</h2></div>
+<div class="pick"><h3>💡 학부모 즉시 발송 추천</h3><p>{data.get('best_pick','')}</p></div>
 {articles_html}
 <div class="ft">SCO LABS · 학이 아닌 습 · 매일 오전 11시 자동 생성</div>
 </div></body></html>"""
 
-# === 메인 ===
 def main():
     print(f"[{TODAY}] 뉴스 수집 시작...")
     news = fetch_news()
     print(f"  → {len(news)}건 수집")
+    if len(news) == 0:
+        print("뉴스 수집 실패 - 종료")
+        sys.exit(1)
 
     print(f"[{TODAY}] AI 분석 시작...")
     data = analyze(news)
-    print(f"  → 상위 {len(data['articles'])}건 분석 완료")
+    print(f"  → 상위 {len(data.get('articles', []))}건 분석 완료")
 
     print(f"[{TODAY}] HTML 생성...")
     html = generate_html(data)
 
     os.makedirs('site', exist_ok=True)
-    filepath = f'site/briefing-{TODAY}.html'
-    with open(filepath, 'w', encoding='utf-8') as f:
+    with open(f'site/briefing-{TODAY}.html', 'w', encoding='utf-8') as f:
         f.write(html)
-    print(f"  → {filepath} 저장 완료")
+    print(f"  → site/briefing-{TODAY}.html 저장 완료")
 
-    # JSON 데이터도 저장 (디버깅용)
     with open(f'site/briefing-{TODAY}.json', 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
