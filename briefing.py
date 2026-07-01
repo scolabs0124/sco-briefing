@@ -1,4 +1,4 @@
-"""SCO 입시 일일 브리핑 v3 - v9 수준 5개 버튼 + Canvas PNG 통합"""
+"""SCO 입시 일일 브리핑 v4 - 5개 버튼 + 학부모 링크 통합"""
 import os, json, datetime, urllib.parse, feedparser, anthropic, re, sys
 
 KST = datetime.timezone(datetime.timedelta(hours=9))
@@ -107,12 +107,11 @@ def analyze(news_items):
     except json.JSONDecodeError as e:
         print(f"\n=== JSON 파싱 1차 실패 ===\n{e}")
         print(f"응답 끝 300자: {json_text[-300:]}")
-        # 재시도 - 더 단순한 형식 요청
         retry_prompt = prompt + "\n\n⚠️ 이전 응답이 JSON 파싱 실패. 모든 큰따옴표를 정확히 escape하고, 응답이 잘리지 않게 articles는 상위 3건만 응답하세요. 순수 JSON만."
         text2 = call_claude(client, retry_prompt)
         return json.loads(extract_json(text2))
 
-# ===== HTML 템플릿 (v9 수준) =====
+# ===== HTML 템플릿 (v9 수준 5개 버튼 + 학부모 링크 통합) =====
 HTML_TEMPLATE = '''<!DOCTYPE html>
 <html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>SCO 입시 브리핑 — __TODAY__</title>
@@ -135,6 +134,12 @@ body{font-family:-apple-system,'Pretendard','Apple SD Gothic Neo',sans-serif;bac
 .b-cat{background:#eff6ff;color:#1d4ed8}.b-year{background:#f0fdf4;color:#15803d}.b-tgt{background:#fdf4ff;color:#a21caf}
 .card h2{font-size:20px;font-weight:800;color:#111827}
 .source{font-size:12px;color:#6b7280;margin-top:4px}.source a{color:#3b82f6;text-decoration:none}
+.parent-link{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;padding:10px 12px;background:#f0fdf4;border:1px dashed #86efac;border-radius:8px;align-items:center}
+.pl-lbl{font-size:11px;color:#065f46;font-weight:800;letter-spacing:.5px;margin-right:4px}
+.pl-btn{background:#059669;color:#fff;border:none;padding:8px 14px;border-radius:6px;font-size:12px;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block;font-family:inherit}
+.pl-btn:hover{background:#047857}
+.pl-copy{background:#0284c7}.pl-copy:hover{background:#0369a1}
+.pl-copyfull{background:#d97706}.pl-copyfull:hover{background:#b45309}
 .sum1{margin-top:14px;font-size:15px;color:#1f2937}
 .block{margin-top:14px;font-size:14px}.block ul{margin-top:6px;padding-left:22px}.block li{margin:3px 0}
 .myth{margin-top:14px;background:#fff7ed;border-left:4px solid #f59e0b;padding:14px 16px;border-radius:8px}
@@ -163,6 +168,7 @@ __ARTICLES_HTML__
 </div>
 <script>
 const ARTICLES = __ARTICLES_JSON__;
+const TODAY_STR = "__TODAY__";
 
 function downloadFile(filename, content, mime){
   mime = mime || 'text/plain;charset=utf-8';
@@ -174,6 +180,21 @@ function downloadFile(filename, content, mime){
 function openInNewTab(html){
   const blob = new Blob([html],{type:'text/html;charset=utf-8'});
   window.open(URL.createObjectURL(blob),'_blank');
+}
+
+function copyParentUrl(btn){
+  const url = btn.dataset.url;
+  navigator.clipboard.writeText(url).then(()=>{
+    const o=btn.textContent; btn.textContent='✅ 복사됨!'; setTimeout(()=>btn.textContent=o,1500);
+  });
+}
+function copyParentFullMsg(btn){
+  const url = btn.dataset.url;
+  const title = btn.dataset.title;
+  const txt = '[SCO 긴급 입시속보 - '+TODAY_STR+']\\n\\n'+title+'\\n\\n전체 내용 ▶ '+url+'\\n\\n- SCO 학습관리';
+  navigator.clipboard.writeText(txt).then(()=>{
+    const o=btn.textContent; btn.textContent='✅ 복사됨!'; setTimeout(()=>btn.textContent=o,1500);
+  });
 }
 
 function genCardsHTML(id){
@@ -303,6 +324,8 @@ def generate_html(data):
         if a.get('changeA'): changes_html += f'<li>{a["changeA"].get("title","").replace("<br>"," ")}: {a["changeA"].get("desc","")}</li>'
         if a.get('changeB'): changes_html += f'<li>{a["changeB"].get("title","").replace("<br>"," ")}: {a["changeB"].get("desc","")}</li>'
         titles = ''.join([f'<li>{t}</li>' for t in a.get('card_titles', [])])
+        parent_url = f"https://sco-daily.netlify.app/p/{TODAY}-{a['id']}.html"
+        title_esc = a.get('title','').replace('"','&quot;')
         articles_html += f'''
 <div class="card {card_cls}" id="card-{a['id']}">
   <div class="badges">
@@ -313,6 +336,12 @@ def generate_html(data):
   </div>
   <h2>{a.get('id','')}. {a.get('title','')}</h2>
   <div class="source">{a.get('source','')} · {a.get('date','')} · <a href="{a.get('url','#')}" target="_blank">원문</a></div>
+  <div class="parent-link">
+    <span class="pl-lbl">🎯 학부모 링크</span>
+    <a href="/p/{TODAY}-{a['id']}.html" target="_blank" class="pl-btn">👀 미리보기</a>
+    <button class="pl-btn pl-copy" data-url="{parent_url}" onclick="copyParentUrl(this)">🔗 링크 복사</button>
+    <button class="pl-btn pl-copyfull" data-url="{parent_url}" data-title="{title_esc}" onclick="copyParentFullMsg(this)">📱 카톡 발송문</button>
+  </div>
   <p class="sum1">{a.get('summary1','')}</p>
   <div class="block"><b>📌 무엇이 바뀌었나</b><ul>{changes_html}</ul></div>
   <div class="myth"><div class="q">❓ {a.get('mythQ','')}</div><div class="a">→ {a.get('mythA','')}</div></div>
@@ -330,13 +359,106 @@ def generate_html(data):
   </div>
 </div>'''
 
-    # ARTICLES JS 객체로 변환 (id를 key로)
     articles_dict = {a['id']: a for a in data['articles']}
     articles_json = json.dumps(articles_dict, ensure_ascii=False)
 
     return HTML_TEMPLATE.replace('__TODAY__', TODAY).replace('__DAY__', DAY_NAME).replace('__KEY_SUMMARY__', data.get('key_summary','')).replace('__BEST_PICK__', data.get('best_pick','')).replace('__ARTICLES_HTML__', articles_html).replace('__ARTICLES_JSON__', articles_json)
 
+
+def generate_parent_html(a, data):
+    """학부모용 클린 뷰 (버튼 X, 광고 X, 카톡문 + 팩트 + SCO 관점 + 카톡 채널 연결)"""
+    changes_html = ''
+    if a.get('changeA'): changes_html += f'<li>{a["changeA"].get("title","").replace("<br>"," ")}: {a["changeA"].get("desc","")}</li>'
+    if a.get('changeB'): changes_html += f'<li>{a["changeB"].get("title","").replace("<br>"," ")}: {a["changeB"].get("desc","")}</li>'
+    katok_html = a.get('katok','').replace('\n', '<br>')
+
+    return f"""<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>{a.get('title','')} — SCO 입시속보</title>
+<meta property="og:title" content="{a.get('title','')}">
+<meta property="og:description" content="{a.get('summary1','')}">
+<meta property="og:type" content="article">
+<style>
+*{{box-sizing:border-box;margin:0;padding:0}}
+body{{font-family:-apple-system,'Pretendard','Apple SD Gothic Neo',sans-serif;background:#fafafa;color:#1a1a1a;line-height:1.7}}
+.wrap{{max-width:640px;margin:0 auto;background:#fff;min-height:100vh}}
+.top{{background:linear-gradient(135deg,#0b1e3f 0%,#1e3a8a 100%);color:#fff;padding:24px 22px;text-align:center}}
+.top .brand{{font-size:11px;letter-spacing:3px;opacity:.8;font-weight:700}}
+.top .date{{margin-top:4px;font-size:13px;opacity:.9}}
+.top .tag{{display:inline-block;margin-top:10px;background:#ef4444;color:#fff;font-size:12px;padding:4px 12px;border-radius:99px;font-weight:700}}
+.body{{padding:28px 22px}}
+h1{{font-size:24px;font-weight:900;line-height:1.35;color:#0b1e3f;margin-bottom:10px}}
+.summary{{font-size:15px;color:#374151;padding:14px 16px;background:#f9fafb;border-left:4px solid #3b82f6;border-radius:6px;margin-bottom:22px}}
+h2{{font-size:16px;font-weight:800;color:#0b1e3f;margin-top:26px;margin-bottom:10px;padding-bottom:6px;border-bottom:2px solid #e5e7eb}}
+ul{{padding-left:20px;font-size:14.5px;color:#1f2937}}
+li{{margin:6px 0}}
+.myth{{background:#fff7ed;border:1px solid #fdba74;border-radius:10px;padding:16px 18px;margin-top:22px}}
+.myth .q{{font-weight:800;color:#9a3412;font-size:15px}}
+.myth .a{{margin-top:8px;color:#7c2d12;font-size:14.5px;line-height:1.65}}
+.katok{{background:#fef3c7;border-radius:10px;padding:18px 20px;margin-top:22px;font-size:14.5px;color:#3f2a00;line-height:1.75}}
+.sco{{background:#0b1e3f;color:#f9fafb;padding:20px 22px;border-radius:10px;margin-top:26px}}
+.sco .l{{font-size:11px;color:#fbbf24;font-weight:800;letter-spacing:2px;margin-bottom:8px}}
+.sco p{{font-size:14.5px;line-height:1.7}}
+.cta{{margin-top:28px;padding:22px 20px;background:linear-gradient(135deg,#ea580c 0%,#f59e0b 100%);border-radius:12px;text-align:center;color:#fff}}
+.cta .t{{font-size:14px;font-weight:700;margin-bottom:12px}}
+.cta a{{display:inline-block;background:#fff;color:#ea580c;padding:12px 24px;border-radius:8px;font-weight:800;font-size:14px;text-decoration:none;margin:4px}}
+.cta .sub{{margin-top:10px;font-size:11px;opacity:.9}}
+.src{{margin-top:20px;padding:14px;font-size:12px;color:#6b7280;text-align:center;background:#f3f4f6;border-radius:8px}}
+.src a{{color:#3b82f6;text-decoration:none}}
+.foot{{padding:22px;text-align:center;font-size:11px;color:#9ca3af;border-top:1px solid #e5e7eb;margin-top:14px}}
+.foot b{{color:#0b1e3f}}
+</style></head><body>
+<div class="wrap">
+<div class="top">
+  <div class="brand">SCO LABS · 입시속보</div>
+  <div class="date">{TODAY} ({DAY_NAME})</div>
+  <div class="tag">{a.get('priority','')} · {a.get('target','')}</div>
+</div>
+<div class="body">
+  <h1>{a.get('title','')}</h1>
+  <div class="summary">{a.get('summary1','')}</div>
+
+  <h2>📌 무엇이 바뀌었나</h2>
+  <ul>{changes_html}</ul>
+
+  <div class="myth">
+    <div class="q">❓ {a.get('mythQ','')}</div>
+    <div class="a">→ {a.get('mythA','')}</div>
+  </div>
+
+  <h2>📱 학부모님께 드리는 안내</h2>
+  <div class="katok">{katok_html}</div>
+
+  <div class="sco">
+    <div class="l">SCO 학습관리 관점</div>
+    <p>{a.get('sco_view','')}</p>
+  </div>
+
+  <div class="cta">
+    <div class="t">우리 아이 학습 관리, 지금 제대로 되고 있을까요?</div>
+    <a href="https://pf.kakao.com/_GctjX/chat" target="_blank">📱 무료 학습점검 상담 신청</a>
+    <div class="sub">스코랩스 카톡 채널로 바로 연결됩니다</div>
+  </div>
+
+  <div class="src">
+    원문 출처: {a.get('source','')} · <a href="{a.get('url','#')}" target="_blank">기사 원문 보기 →</a>
+  </div>
+</div>
+<div class="foot">
+  <b>SCO LABS</b> · 학이 아닌 습, 성적이 아닌 완성도<br>
+  이 소식은 스코랩스 학부모 커뮤니티에서 발송됩니다.
+</div>
+</div>
+</body></html>"""
+
+
 def main():
+    # 중복 방지: 오늘 파일 이미 있으면 skip (cron 4중 안전망 대응)
+    existing = f'site/briefing-{TODAY}.html'
+    if os.path.exists(existing) and os.path.getsize(existing) > 10000:
+        print(f"[{TODAY}] 이미 생성됨 ({existing}) - skip")
+        return
+
     print(f"[{TODAY}] 뉴스 수집...")
     news = fetch_news()
     print(f"  → {len(news)}건")
@@ -347,10 +469,20 @@ def main():
     print(f"[{TODAY}] HTML 생성...")
     html = generate_html(data)
     os.makedirs('site', exist_ok=True)
+    os.makedirs('site/p', exist_ok=True)
     with open(f'site/briefing-{TODAY}.html', 'w', encoding='utf-8') as f:
         f.write(html)
     with open(f'site/briefing-{TODAY}.json', 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
+
+    # 학부모용 개별 링크 생성 (site/p/{TODAY}-{id}.html)
+    print(f"[{TODAY}] 학부모용 개별 링크 생성...")
+    for a in data['articles']:
+        parent_html = generate_parent_html(a, data)
+        pfilepath = f"site/p/{TODAY}-{a['id']}.html"
+        with open(pfilepath, 'w', encoding='utf-8') as f:
+            f.write(parent_html)
+        print(f"  → {pfilepath}")
     print(f"  → 완료")
 
 if __name__ == '__main__':
