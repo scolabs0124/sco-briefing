@@ -2,8 +2,12 @@ name: SCO 입시 일일 브리핑 자동 생성
 
 on:
   schedule:
-    - cron: '0 2 * * *'
-  workflow_dispatch:
+    # GitHub cron은 지연/skip 잦음 → 3중 안전망
+    - cron: '0 1 * * *'    # KST 10:00 (1차)
+    - cron: '0 2 * * *'    # KST 11:00 (2차)
+    - cron: '30 3 * * *'   # KST 12:30 (3차 백업)
+    - cron: '0 10 * * *'   # KST 19:00 (저녁 catch-up)
+  workflow_dispatch:  # 수동 실행 버튼
 
 permissions:
   contents: write
@@ -34,5 +38,8 @@ jobs:
           git config user.name "SCO Briefing Bot"
           git config user.email "bot@scolabs.kr"
           git add site/
-          git diff --staged --quiet || git commit -m "Auto: 일일 브리핑 $(TZ='Asia/Seoul' date +%Y-%m-%d)"
+          git diff --staged --quiet && echo "변경 없음 - skip" && exit 0
+          git commit -m "Auto: 일일 브리핑 $(TZ='Asia/Seoul' date +%Y-%m-%d)"
+          # push 충돌 방지: pull --rebase 후 push
+          git pull --rebase origin main || true
           git push
