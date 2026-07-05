@@ -5,27 +5,58 @@ KST = datetime.timezone(datetime.timedelta(hours=9))
 TODAY = datetime.datetime.now(KST).strftime("%Y-%m-%d")
 DAY_NAME = ['월','화','수','목','금','토','일'][datetime.datetime.now(KST).weekday()]
 
-KEYWORDS = ['2028 대입', '수능 개편', '고교학점제', '의대 정원', '학생부종합전형', '교육부 입시']
+# 정책·제도·현장·전략까지 다양하게 (매일 새 기사 확보)
+KEYWORDS = [
+    '2028 대입', '수능 개편', '고교학점제', '의대 정원', '학생부종합전형', '교육부 입시',
+    '수시 정시', '논술 전형', '내신 등급', '특목자사고', 'N수생', '입시 학원',
+    '대학별 전형', '자율전공', '무전공 선발', '학원가 이슈'
+]
 
 def fetch_news():
+    """Google News RSS로 최근 3일 이내 기사만 수집 (when:3d)"""
+    from datetime import datetime, timezone, timedelta
+    import time as _time
+
     items = []
     for kw in KEYWORDS:
-        url = f"https://news.google.com/rss/search?q={urllib.parse.quote(kw)}&hl=ko&gl=KR&ceid=KR:ko"
-        feed = feedparser.parse(url)
-        for entry in feed.entries[:5]:
-            items.append({
-                'title': entry.title,
-                'link': entry.link,
-                'published': getattr(entry, 'published', ''),
-                'summary': re.sub(r'<[^>]+>', '', getattr(entry, 'summary', ''))[:300],
-                'source': getattr(entry, 'source', {}).get('title', '') if hasattr(entry, 'source') else ''
-            })
+        # when:3d = 최근 3일 이내 기사만 (매일 다른 최신 기사 확보)
+        query = f"{kw} when:3d"
+        url = f"https://news.google.com/rss/search?q={urllib.parse.quote(query)}&hl=ko&gl=KR&ceid=KR:ko"
+        try:
+            feed = feedparser.parse(url)
+            for entry in feed.entries[:4]:
+                items.append({
+                    'title': entry.title,
+                    'link': entry.link,
+                    'published': getattr(entry, 'published', ''),
+                    'published_parsed': getattr(entry, 'published_parsed', None),
+                    'summary': re.sub(r'<[^>]+>', '', getattr(entry, 'summary', ''))[:300],
+                    'source': getattr(entry, 'source', {}).get('title', '') if hasattr(entry, 'source') else ''
+                })
+        except Exception as e:
+            print(f"  ⚠ {kw} 수집 실패: {e}")
+
+    # 중복 제거 (제목 첫 30자 기반)
     seen, unique = set(), []
     for it in items:
         key = it['title'][:30]
         if key not in seen:
             seen.add(key); unique.append(it)
-    return unique[:25]
+
+    # 발행일 기준 최신순 정렬 (파싱 가능한 것만)
+    def _sort_key(it):
+        p = it.get('published_parsed')
+        if p:
+            try: return _time.mktime(p)
+            except: return 0
+        return 0
+    unique.sort(key=_sort_key, reverse=True)
+
+    # published_parsed 필드는 JSON 직렬화 불가 → 제거
+    for it in unique:
+        it.pop('published_parsed', None)
+
+    return unique[:30]
 
 def extract_json(text):
     text = text.strip()
@@ -49,8 +80,14 @@ def analyze(news_items):
 
 오늘: {TODAY} ({DAY_NAME})
 
-【수집된 뉴스 {len(news_items)}건】
+【수집된 뉴스 {len(news_items)}건】 (발행일 최신순 정렬됨)
 {news_text}
+
+⭐ 선정 원칙 (엄수):
+1. **최신 우선**: 발행일이 최근 3일 이내인 기사를 우선 선택. 오래된 기사는 신선한 관점이 있을 때만.
+2. **주제 다양성**: 3건 모두 서로 다른 주제/각도로 선택 (예: 정책 1건 + 현장 1건 + 전략 1건)
+3. **동일 주제 반복 금지**: 같은 이슈(예: 5등급제, 의대 정원)만 반복해서 뽑지 말 것
+4. **오늘의 새로운 관점**: 학부모에게 '오늘 처음 듣는 이야기'로 느껴져야 함
 
 상위 3건을 다음 JSON으로만 응답. 마크다운 코드블록 사용 금지. 큰따옴표 escape는 \\".
 
