@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>SCO 입시 브리핑 — 2026-07-08</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,'Pretendard','Apple SD Gothic Neo',sans-serif;background:#f4f6fa;color:#1a1a1a;line-height:1.6;padding:20px}
+.wrap{max-width:980px;margin:0 auto}
+.header{background:linear-gradient(135deg,#0b1e3f 0%,#1a3a6b 100%);color:#fff;padding:36px 28px;border-radius:14px}
+.header h1{font-size:28px;font-weight:800}
+.header .sub{margin-top:6px;font-size:14px;opacity:.92}
+.hero{background:#fff7ed;border-left:6px solid #f97316;padding:20px 22px;border-radius:10px;margin-top:18px}
+.hero h2{font-size:18px;color:#9a3412}
+.pick{background:#ecfdf5;border:1px solid #6ee7b7;border-radius:12px;padding:18px 22px;margin-top:18px}
+.pick h3{color:#065f46;font-size:15px}
+.card{background:#fff;border-radius:14px;box-shadow:0 4px 14px rgba(0,0,0,.06);padding:26px;margin-top:22px;border-top:5px solid #3b82f6}
+.card.urgent{border-top-color:#dc2626}.card.important{border-top-color:#f59e0b}.card.note{border-top-color:#6b7280}
+.badges{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+.badge{font-size:11px;padding:4px 10px;border-radius:999px;font-weight:700}
+.b-urgent{background:#fef2f2;color:#b91c1c}.b-important{background:#fffbeb;color:#b45309}.b-note{background:#f3f4f6;color:#374151}
+.b-cat{background:#eff6ff;color:#1d4ed8}.b-year{background:#f0fdf4;color:#15803d}.b-tgt{background:#fdf4ff;color:#a21caf}
+.card h2{font-size:20px;font-weight:800;color:#111827}
+.source{font-size:12px;color:#6b7280;margin-top:4px}.source a{color:#3b82f6;text-decoration:none}
+.parent-link{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;padding:10px 12px;background:#f0fdf4;border:1px dashed #86efac;border-radius:8px;align-items:center}
+.pl-lbl{font-size:11px;color:#065f46;font-weight:800;letter-spacing:.5px;margin-right:4px}
+.pl-btn{background:#059669;color:#fff;border:none;padding:8px 14px;border-radius:6px;font-size:12px;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block;font-family:inherit}
+.pl-btn:hover{background:#047857}
+.pl-copy{background:#0284c7}.pl-copy:hover{background:#0369a1}
+.pl-copyfull{background:#d97706}.pl-copyfull:hover{background:#b45309}
+.sum1{margin-top:14px;font-size:15px;color:#1f2937}
+.block{margin-top:14px;font-size:14px}.block ul{margin-top:6px;padding-left:22px}.block li{margin:3px 0}
+.myth{margin-top:14px;background:#fff7ed;border-left:4px solid #f59e0b;padding:14px 16px;border-radius:8px}
+.myth .q{font-weight:700;color:#9a3412}.myth .a{margin-top:6px;color:#7c2d12}
+.katok{margin-top:14px;background:#fef9c3;border-left:4px solid #eab308;padding:16px;border-radius:8px}
+.katok .l{font-size:11px;color:#854d0e;font-weight:700;letter-spacing:1px}
+.katok p{margin-top:6px;font-size:14px;color:#3f3f00;white-space:pre-wrap}
+.titles{margin-top:14px;background:#eff6ff;border-left:4px solid #3b82f6;padding:14px 16px;border-radius:8px}
+.titles .l{font-size:11px;color:#1d4ed8;font-weight:700;letter-spacing:1px}
+.titles ul{margin-top:6px;padding-left:18px}.titles li{color:#1e3a8a;margin:2px 0}
+.sco{margin-top:14px;background:#111827;color:#f9fafb;padding:14px 16px;border-radius:8px}
+.sco .l{font-size:11px;color:#9ca3af;font-weight:700;letter-spacing:1px}.sco p{margin-top:6px;color:#e5e7eb}
+.make-bar{background:linear-gradient(135deg,#7c2d12 0%,#b91c1c 100%);border-radius:10px;padding:14px 18px;margin-top:18px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.make-bar .lbl{color:white;font-size:12px;font-weight:800;letter-spacing:.5px;margin-right:6px}
+.make-btn{background:white;color:#7c2d12;border:none;padding:9px 14px;border-radius:7px;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit}
+.make-btn:hover{background:#fef2f2}.make-btn.full{background:#fbbf24;color:#78350f}.make-btn.parent{background:#16a34a;color:white}
+.ft{text-align:center;color:#9ca3af;font-size:12px;margin-top:30px;padding:20px}
+</style></head><body>
+<canvas id="sco-export-canvas" width="1080" height="1350" style="display:none"></canvas>
+<div class="wrap">
+<div class="header"><h1>📅 SCO 입시 브리핑</h1><div class="sub">2026-07-08 (수) · 스코랩스(SCO Labs) 입시정보팀</div></div>
+<div class="hero"><h2>🔥 2027 수시 주요대 학종 면접·수능최저 대폭 변화, 무전공 선발 확대 지속</h2></div>
+<div class="pick"><h3>💡 학부모 즉시 발송 추천</h3><p>[단독] 세종대 2027 수시/정시 전형안내 영상.. 학종 '면접 영향력' 주목 '면접서 합불 뒤집힌 67%'</p></div>
+
+<div class="card urgent" id="card-22">
+  <div class="badges">
+    <span class="badge b-urgent">긴급</span>
+    <span class="badge b-year">2027학년도</span>
+    <span class="badge b-tgt">고2/고3/학부모</span>
+    <span class="badge b-cat">학생부종합</span> <span class="badge b-cat">면접</span>
+  </div>
+  <h2>22. [단독] 세종대 2027 수시/정시 전형안내 영상.. 학종 '면접 영향력' 주목 '면접서 합불 뒤집힌 67%'</h2>
+  <div class="source">베리타스알파 · 2026-07-08 · <a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE9SazA0NVNXM3o1WTBvYWgwTjRHMU9GNGsyamRTSU5wekF6VGNmN1dtVTJBdHVzbVFoLUdyMmdYY180UkU3T3VUbXpRWG5Kb2EyN3ZrSXBSM1hOcWhVVERxdXpkV1A4bWowbjl5ZQ?oc=5" target="_blank">원문</a></div>
+  <div class="parent-link">
+    <span class="pl-lbl">🎯 학부모 링크</span>
+    <a href="/p/2026-07-08-22.html" target="_blank" class="pl-btn">👀 미리보기</a>
+    <button class="pl-btn pl-copy" data-url="https://sco-daily.netlify.app/p/2026-07-08-22.html" onclick="copyParentUrl(this)">🔗 링크 복사</button>
+    <button class="pl-btn pl-copyfull" data-url="https://sco-daily.netlify.app/p/2026-07-08-22.html" data-title="[단독] 세종대 2027 수시/정시 전형안내 영상.. 학종 '면접 영향력' 주목 '면접서 합불 뒤집힌 67%'" onclick="copyParentFullMsg(this)">📱 카톡 발송문</button>
+  </div>
+  <p class="sum1">세종대 학종 면접에서 서류평가 순위의 67%가 역전, 면접 영향력이 합격의 결정적 변수로 작용</p>
+  <div class="block"><b>📌 무엇이 바뀌었나</b><ul><li>면접에서 67% 합불 뒤집힘: 세종대 학종 면접 영향력 최초 공개. 서류 합격권이어도 면접 실패시 불합격, 반대로 서류 하위권도 면접으로 역전 가능</li><li>2027 세종대 학종 면접 30분 심화: 제출서류 기반 개인별 맞춤 질문 강화. 단순 확인이 아닌 전공적합성·논리력·태도까지 종합 평가</li></ul></div>
+  <div class="myth"><div class="q">❓ 학종은 서류가 좋으면 면접은 형식적이지 않나요?</div><div class="a">→ 절대 아닙니다. 세종대 데이터 기준 67%가 면접에서 순위가 바뀌었습니다. 서류는 '면접 기회'일 뿐, 합격은 면접에서 결정됩니다.</div></div>
+  <div class="katok"><div class="l">📱 학부모 카톡문</div><p>[세종대 학종 면접 충격 발표]
+
+세종대가 면접 영향력을 최초 공개했습니다.
+면접에서 합불이 뒤집힌 비율 67%.
+
+서류 1등도 면접 실패시 탈락합니다.
+반대로 서류 하위권도 면접으로 역전 가능합니다.
+
+학종은 서류가 아니라 '면접'에서 결정됩니다.
+지금부터 면접 준비 시작해야 합니다.
+
+스코에서 1:1 면접 시뮬레이션 지원합니다.
+문의주세요!</p></div>
+  <div class="titles"><div class="l">📰 카드뉴스 제목</div><ul><li>세종대 학종, 면접서 67% 합불 역전</li><li>서류 1등도 면접 실패하면 탈락</li><li>면접 준비 지금 시작해야 하는 이유</li></ul></div>
+  <div class="sco"><div class="l">💡 SCO 관점</div><p>학종은 '완성도'입니다. 서류는 시작일 뿐, 면접에서 본인 활동의 진정성과 깊이를 증명해야 합니다. 스코는 학생이 스스로 설명할 수 있는 '진짜 학습 과정'을 만듭니다. 면접은 그 과정의 최종 점검입니다.</p></div>
+  <div class="make-bar">
+    <span class="lbl">⚡ 자동 콘텐츠 제작</span>
+    <button class="make-btn full" onclick="makeContent(22,'full')">🚀 풀패키지</button>
+    <button class="make-btn" onclick="makeContent(22,'cards')">📸 카드뉴스</button>
+    <button class="make-btn" onclick="makeContent(22,'blog')">✍️ 블로그</button>
+    <button class="make-btn" onclick="makeContent(22,'captions')">💬 캡션</button>
+    <button class="make-btn" onclick="makeContent(22,'grades')">👨‍👩‍👧 학년별</button>
+    <button class="make-btn parent" onclick="makeContent(22,'parent')">📲 학부모 발송용</button>
+  </div>
+</div>
+<div class="card important" id="card-13">
+  <div class="badges">
+    <span class="badge b-important">중요</span>
+    <span class="badge b-year">2027학년도</span>
+    <span class="badge b-tgt">고2/고3/학부모</span>
+    <span class="badge b-cat">학생부종합</span> <span class="badge b-cat">수능최저</span>
+  </div>
+  <h2>13. 서강대 학종 '일반Ⅱ' 신설·성균관대 수능최저 변화…2027 수시 지원 전략 변수</h2>
+  <div class="source">네이트 · 2026-07-08 · <a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTFBVUHBTMFlNejdfODlxUk5wTDlwUUExbW1LSlp4SktnWUNMeFpzT0g5cTZ5U3FCb3QyUWFjWGlmRFdjMHVkU0Zqemo0R3RtZ2M5Vjk4?oc=5" target="_blank">원문</a></div>
+  <div class="parent-link">
+    <span class="pl-lbl">🎯 학부모 링크</span>
+    <a href="/p/2026-07-08-13.html" target="_blank" class="pl-btn">👀 미리보기</a>
+    <button class="pl-btn pl-copy" data-url="https://sco-daily.netlify.app/p/2026-07-08-13.html" onclick="copyParentUrl(this)">🔗 링크 복사</button>
+    <button class="pl-btn pl-copyfull" data-url="https://sco-daily.netlify.app/p/2026-07-08-13.html" data-title="서강대 학종 '일반Ⅱ' 신설·성균관대 수능최저 변화…2027 수시 지원 전략 변수" onclick="copyParentFullMsg(this)">📱 카톡 발송문</button>
+  </div>
+  <p class="sum1">서강대 학종 일반Ⅱ 신설, 성균관대 수능최저 완화 등 주요대 수시 전형 변화로 지원 전략 전면 재검토 필요</p>
+  <div class="block"><b>📌 무엇이 바뀌었나</b><ul><li>서강대 학종 '일반Ⅱ' 신설: 기존 일반전형 외 일반Ⅱ 신설로 학종 선발 확대. 전형 간 차별화 전략 필요, 중복 지원 불가로 선택 전략 중요</li><li>성균관대 수능최저 완화: 학종 수능최저 기준 일부 완화. 내신 우수자에게 기회 확대되나, 경쟁률 상승 예상으로 실질 합격선은 상승 가능</li></ul></div>
+  <div class="myth"><div class="q">❓ 전형이 늘어나면 합격 기회가 늘어나는 거 아닌가요?</div><div class="a">→ 아닙니다. 전형 신설은 '선발 인원 분산'이지 '기회 확대'가 아닙니다. 오히려 전형별 특성 파악 못 하면 전략 실패 위험 큽니다.</div></div>
+  <div class="katok"><div class="l">📱 학부모 카톡문</div><p>[2027 수시 긴급 변수 발생]
+
+서강대 학종 '일반Ⅱ' 신설
+성균관대 수능최저 완화
+
+주요대 수시 전형이 대폭 바뀌었습니다.
+전형 선택 전략 틀리면 합격 가능한 대학도 떨어집니다.
+
+전형별 유불리 정밀 분석 필수입니다.
+스코에서 1:1 맞춤 수시 전략 컨설팅 지원합니다.
+
+지금 바로 상담 신청하세요!</p></div>
+  <div class="titles"><div class="l">📰 카드뉴스 제목</div><ul><li>서강대·성대 수시 전형 변화 총정리</li><li>전형 신설이 기회일까 위험일까</li><li>2027 수시 지원 전략 재설계 필수</li></ul></div>
+  <div class="sco"><div class="l">💡 SCO 관점</div><p>전형 변화는 '불확실성'입니다. 스코는 학생의 강점을 정확히 파악하고, 전형별 평가 요소와 매칭해 '합격 확률 최고점'을 찾습니다. 전형 선택은 도박이 아니라 데이터 기반 전략입니다.</p></div>
+  <div class="make-bar">
+    <span class="lbl">⚡ 자동 콘텐츠 제작</span>
+    <button class="make-btn full" onclick="makeContent(13,'full')">🚀 풀패키지</button>
+    <button class="make-btn" onclick="makeContent(13,'cards')">📸 카드뉴스</button>
+    <button class="make-btn" onclick="makeContent(13,'blog')">✍️ 블로그</button>
+    <button class="make-btn" onclick="makeContent(13,'captions')">💬 캡션</button>
+    <button class="make-btn" onclick="makeContent(13,'grades')">👨‍👩‍👧 학년별</button>
+    <button class="make-btn parent" onclick="makeContent(13,'parent')">📲 학부모 발송용</button>
+  </div>
+</div>
+<div class="card important" id="card-4">
+  <div class="badges">
+    <span class="badge b-important">중요</span>
+    <span class="badge b-year">2028학년도</span>
+    <span class="badge b-tgt">고2/고3/학부모</span>
+    <span class="badge b-cat">수능</span> <span class="badge b-cat">정시</span>
+  </div>
+  <h2>4. 전남광주통합특별시교육청, '6월 모평 실채점' 분석... 서울대 391점 내외</h2>
+  <div class="source">뉴스워커 · 2026-07-08 · <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTFBRQnJ0RDY3MFl4eXRpSkF0ZUJQdEhtWHMwQjVmY09XWTBTWVBDR2t1TkJHNDB2c1hNS3BPZUdXd3F4dVhGeERmZnpkY3l1MXVDQXJVN0dHTVMzd01OQ0UtMWdHZkJtOUxzYlFPc3hVNmZKa1HSAXNBVV95cUxQUUJydEQ2NzBZeHl0aUpBdGVCUHRIbVhzMEI1ZmNPV1kwU1lQQ0drdU5CRzQwdnNYTUtwT2VHV3dxeHVYRnhEZmZ6ZGN5dTF1Q0FyVTdHR01TM3dNTkNFLTFnR2ZCbTlMc2JRT3N4VTZmSmtR?oc=5" target="_blank">원문</a></div>
+  <div class="parent-link">
+    <span class="pl-lbl">🎯 학부모 링크</span>
+    <a href="/p/2026-07-08-4.html" target="_blank" class="pl-btn">👀 미리보기</a>
+    <button class="pl-btn pl-copy" data-url="https://sco-daily.netlify.app/p/2026-07-08-4.html" onclick="copyParentUrl(this)">🔗 링크 복사</button>
+    <button class="pl-btn pl-copyfull" data-url="https://sco-daily.netlify.app/p/2026-07-08-4.html" data-title="전남광주통합특별시교육청, '6월 모평 실채점' 분석... 서울대 391점 내외" onclick="copyParentFullMsg(this)">📱 카톡 발송문</button>
+  </div>
+  <p class="sum1">전남광주교육청 6월 모평 실채점 분석 결과, 서울대 합격선 391점 내외로 예측, 주요 대학 정시 합격선 데이터 공개</p>
+  <div class="block"><b>📌 무엇이 바뀌었나</b><ul><li>서울대 정시 391점 예측: 6월 모평 실채점 기준 서울대 합격 가능 점수 391점 내외. 9월 모평·수능 난이도 따라 변동 가능하나 목표 점수 설정 기준 마련</li><li>주요대 합격선 데이터 공개: 서울대 외 주요 대학 정시 합격선 실채점 데이터 제공. 현재 성적 기준 지원 가능 대학 시뮬레이션 가능</li></ul></div>
+  <div class="myth"><div class="q">❓ 6월 모평 점수로 정시 지원 대학 확정할 수 있나요?</div><div class="a">→ 아닙니다. 6월은 '방향 설정'용입니다. 9월 모평·수능 난이도에 따라 합격선은 10~20점 변동 가능합니다. 6월은 '목표'이고, 9월은 '전략'입니다.</div></div>
+  <div class="katok"><div class="l">📱 학부모 카톡문</div><p>[6월 모평 실채점 분석 발표]
+
+전남광주교육청이 주요 대학 정시 합격선을 공개했습니다.
+서울대 391점 내외.
+
+지금 점수와 목표 대학 합격선 차이,
+정확히 확인하셨나요?
+
+9월 모평까지 3개월.
+지금부터 전략 수정하면 충분히 올릴 수 있습니다.
+
+스코에서 과목별 맞춤 학습 전략 설계해드립니다.
+상담 신청하세요!</p></div>
+  <div class="titles"><div class="l">📰 카드뉴스 제목</div><ul><li>6월 모평 기준 주요 대학 합격선 공개</li><li>서울대 391점, 내 점수와 비교하기</li><li>9월까지 점수 올리는 여름방학 전략</li></ul></div>
+  <div class="sco"><div class="l">💡 SCO 관점</div><p>수능은 '절대 점수'가 아니라 '상대 위치'입니다. 6월 모평은 현재 위치 확인, 9월은 전략 수정, 수능은 최종 실행입니다. 스코는 학생이 목표 점수에 도달하기 위한 '습'의 과정을 설계합니다.</p></div>
+  <div class="make-bar">
+    <span class="lbl">⚡ 자동 콘텐츠 제작</span>
+    <button class="make-btn full" onclick="makeContent(4,'full')">🚀 풀패키지</button>
+    <button class="make-btn" onclick="makeContent(4,'cards')">📸 카드뉴스</button>
+    <button class="make-btn" onclick="makeContent(4,'blog')">✍️ 블로그</button>
+    <button class="make-btn" onclick="makeContent(4,'captions')">💬 캡션</button>
+    <button class="make-btn" onclick="makeContent(4,'grades')">👨‍👩‍👧 학년별</button>
+    <button class="make-btn parent" onclick="makeContent(4,'parent')">📲 학부모 발송용</button>
+  </div>
+</div>
+<div class="ft">SCO LABS · 학이 아닌 습 · 매일 오전 11시 자동 생성 (서버)</div>
+</div>
+<script>
+const ARTICLES = {"22": {"id": 22, "priority": "긴급", "title": "[단독] 세종대 2027 수시/정시 전형안내 영상.. 학종 '면접 영향력' 주목 '면접서 합불 뒤집힌 67%'", "shortTitle": "세종대면접67프로합불역전", "source": "베리타스알파", "date": "2026-07-08", "year": "2027학년도", "target": "고2/고3/학부모", "areas": ["학생부종합", "면접"], "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9SazA0NVNXM3o1WTBvYWgwTjRHMU9GNGsyamRTSU5wekF6VGNmN1dtVTJBdHVzbVFoLUdyMmdYY180UkU3T3VUbXpRWG5Kb2EyN3ZrSXBSM1hOcWhVVERxdXpkV1A4bWowbjl5ZQ?oc=5", "hookBig": "서류 1등도 면접에서 탈락한다!<br>세종대 학종, 면접에서 67%가 합불 뒤집혔다<br>단 30분 면접이 당락을 가른다", "hookLabel": "🚨 면접 준비 필수", "summary1": "세종대 학종 면접에서 서류평가 순위의 67%가 역전, 면접 영향력이 합격의 결정적 변수로 작용", "changeA": {"label": "CHANGE 1", "title": "면접에서 67%<br>합불 뒤집힘", "desc": "세종대 학종 면접 영향력 최초 공개. 서류 합격권이어도 면접 실패시 불합격, 반대로 서류 하위권도 면접으로 역전 가능"}, "changeB": {"label": "CHANGE 2", "title": "2027 세종대 학종<br>면접 30분 심화", "desc": "제출서류 기반 개인별 맞춤 질문 강화. 단순 확인이 아닌 전공적합성·논리력·태도까지 종합 평가"}, "mythQ": "학종은 서류가 좋으면 면접은 형식적이지 않나요?", "mythA": "절대 아닙니다. 세종대 데이터 기준 67%가 면접에서 순위가 바뀌었습니다. 서류는 '면접 기회'일 뿐, 합격은 면접에서 결정됩니다.", "impacts": ["서류 1등급도 면접 준비 안 하면 탈락 가능", "면접 질문은 본인 제출 서류 기반 개인별 맞춤형", "전공 연계 독서·활동 깊이가 면접 답변 차별화 핵심", "태도·표정·논리 전개력까지 평가 대상"], "actions": ["자기소개서·세특 내용 A4 1장으로 요약 정리", "활동별 '왜 했는지·배운 점·전공 연결고리' 3문장 준비", "스코 면접 시뮬레이션으로 실전 연습 주 2회 이상", "면접 답변 30초 안에 핵심 먼저 말하는 연습"], "ctaHook": "면접 준비, 지금 시작하지 않으면<br>서류 합격도 의미 없습니다", "katok": "[세종대 학종 면접 충격 발표]\n\n세종대가 면접 영향력을 최초 공개했습니다.\n면접에서 합불이 뒤집힌 비율 67%.\n\n서류 1등도 면접 실패시 탈락합니다.\n반대로 서류 하위권도 면접으로 역전 가능합니다.\n\n학종은 서류가 아니라 '면접'에서 결정됩니다.\n지금부터 면접 준비 시작해야 합니다.\n\n스코에서 1:1 면접 시뮬레이션 지원합니다.\n문의주세요!", "sms": "[SCO] 세종대 학종 면접서 67% 합불 역전. 서류 1등도 면접 실패시 탈락. 지금 면접 준비 필수", "hashtags": ["세종대", "학생부종합", "면접", "2027수시", "합불역전", "면접준비", "학종면접", "면접시뮬레이션", "서류평가", "전공적합성", "고2", "고3", "입시전략", "수시지원", "면접영향력", "스코랩스", "학종전략", "면접컨설팅", "입시컨설팅", "대입준비"], "counseling": ["세종대 학종은 면접이 67% 합불을 바꿨습니다. 서류만 믿으면 안 됩니다.", "면접 질문은 본인 서류 기반이에요. 세특·자소서 내용 완벽히 숙지하고 있어야 합니다.", "면접은 '얼마나 아는가'보다 '왜 그렇게 생각하는가'를 묻습니다. 논리 훈련 필수입니다.", "스코에서 실전 면접 시뮬레이션 지원합니다. 최소 10회 이상 연습 권장합니다.", "면접 태도, 표정, 목소리 톤까지 평가 대상입니다. 비언어 연습도 중요합니다."], "card_titles": ["세종대 학종, 면접서 67% 합불 역전", "서류 1등도 면접 실패하면 탈락", "면접 준비 지금 시작해야 하는 이유"], "sco_view": "학종은 '완성도'입니다. 서류는 시작일 뿐, 면접에서 본인 활동의 진정성과 깊이를 증명해야 합니다. 스코는 학생이 스스로 설명할 수 있는 '진짜 학습 과정'을 만듭니다. 면접은 그 과정의 최종 점검입니다.", "blogTitle": "2027 세종대 학종 면접 67% 합불 역전, 서류 1등도 탈락하는 이유", "blogSummary": "세종대가 학종 면접 영향력을 최초 공개. 면접에서 67%가 합불 역전. 서류만으로는 합격 불가능, 면접 준비 전략 총정리.", "grades": {"중3": {"katok": "[중3 학부모님께]\n\n고교 진학 전, 학종이 뭔지 정확히 알아야 합니다.\n\n학종은 '서류 전형'이 아니라 '면접 전형'입니다.\n세종대 기준 면접에서 67%가 합불 뒤집혔습니다.\n\n고1부터 '말로 설명할 수 있는 활동'을 해야 합니다.\nスコで면접까지 대비한 학습 설계 시작하세요.", "actions": ["고교 진학 전 학종 구조 정확히 이해하기", "중3 겨울방학, 관심 분야 독서 3권 + 한 줄 소감 정리", "스코 학종 로드맵 상담 받기"]}, "고1": {"katok": "[고1 학부모님께]\n\n지금 하는 모든 활동, 2년 뒤 면접에서 설명해야 합니다.\n\n세종대 학종 면접에서 67%가 합불 역전.\n서류는 면접 기회일 뿐입니다.\n\n'왜 이 활동을 했는지' 지금부터 정리하세요.\n스코에서 활동 기록 + 면접 대비 함께 관리합니다.", "actions": ["매 활동마다 '왜·배운 점·전공 연결' 3문장 기록", "학기별 세특 내용 A4 1장 요약 정리", "스코 학종 포트폴리오 관리 시작"]}, "고2": {"katok": "[고2 학부모님께]\n\n1년 뒤 수시 면접, 지금부터 준비해야 합니다.\n\n세종대 학종 면접에서 67%가 합불 역전.\n서류 좋아도 면접 실패하면 탈락입니다.\n\n지금까지의 활동, 30초 안에 설명할 수 있나요?\n스코 면접 시뮬레이션으로 실전 대비하세요.", "actions": ["고1~고2 세특 전체 정리 + 핵심 키워드 추출", "스코 모의 면접 월 2회 이상 참여", "면접 답변 스크립트 작성 + 피드백 받기"]}, "고3": {"katok": "[고3 학부모님께]\n\n세종대 학종 지원 예정이시라면 필독입니다.\n\n면접에서 67%가 합불 역전됩니다.\n서류 합격이 최종 합격이 아닙니다.\n\n면접까지 완벽 준비해야 진짜 합격입니다.\n스코 면접 특강 + 1:1 시뮬레이션 지원합니다.\n지금 바로 문의하세요.", "actions": ["제출 서류(자소서·세특) 전체 암기 수준으로 숙지", "예상 질문 50개 작성 + 답변 준비", "스코 실전 면접 최소 10회 연습", "면접 D-7일 최종 점검 컨설팅"]}}}, "13": {"id": 13, "priority": "중요", "title": "서강대 학종 '일반Ⅱ' 신설·성균관대 수능최저 변화…2027 수시 지원 전략 변수", "shortTitle": "서강대성대수시변수", "source": "네이트", "date": "2026-07-08", "year": "2027학년도", "target": "고2/고3/학부모", "areas": ["학생부종합", "수능최저"], "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBVUHBTMFlNejdfODlxUk5wTDlwUUExbW1LSlp4SktnWUNMeFpzT0g5cTZ5U3FCb3QyUWFjWGlmRFdjMHVkU0Zqemo0R3RtZ2M5Vjk4?oc=5", "hookBig": "서강대·성대 수시 전략 급변!<br>학종 전형 신설·수능최저 완화로<br>합격선 대혼란 예고", "hookLabel": "📌 전략 수정 필수", "summary1": "서강대 학종 일반Ⅱ 신설, 성균관대 수능최저 완화 등 주요대 수시 전형 변화로 지원 전략 전면 재검토 필요", "changeA": {"label": "CHANGE 1", "title": "서강대 학종 '일반Ⅱ'<br>신설", "desc": "기존 일반전형 외 일반Ⅱ 신설로 학종 선발 확대. 전형 간 차별화 전략 필요, 중복 지원 불가로 선택 전략 중요"}, "changeB": {"label": "CHANGE 2", "title": "성균관대 수능최저<br>완화", "desc": "학종 수능최저 기준 일부 완화. 내신 우수자에게 기회 확대되나, 경쟁률 상승 예상으로 실질 합격선은 상승 가능"}, "mythQ": "전형이 늘어나면 합격 기회가 늘어나는 거 아닌가요?", "mythA": "아닙니다. 전형 신설은 '선발 인원 분산'이지 '기회 확대'가 아닙니다. 오히려 전형별 특성 파악 못 하면 전략 실패 위험 큽니다.", "impacts": ["서강대 일반Ⅰ·Ⅱ 중 본인에게 유리한 전형 선택 필수", "성대 수능최저 완화로 내신 상위권 지원 증가, 실질 경쟁 심화", "주요대 학종 전형 다양화로 전형별 평가 요소 정밀 분석 필요", "수능최저 완화 대학 증가 추세, 수능 최저 대비 전략 필수"], "actions": ["서강대 일반Ⅰ·Ⅱ 평가 기준 차이 확인 후 유리한 전형 선택", "성대 수능최저 충족 가능 여부 6월 모평 기준 시뮬레이션", "주요 지원 대학 전형별 합격자 평균 내신·비교과 분석", "스코 수시 지원 전략 컨설팅으로 최적 조합 설계"], "ctaHook": "전형 하나 잘못 선택하면<br>합격 가능한 대학도 불합격입니다", "katok": "[2027 수시 긴급 변수 발생]\n\n서강대 학종 '일반Ⅱ' 신설\n성균관대 수능최저 완화\n\n주요대 수시 전형이 대폭 바뀌었습니다.\n전형 선택 전략 틀리면 합격 가능한 대학도 떨어집니다.\n\n전형별 유불리 정밀 분석 필수입니다.\n스코에서 1:1 맞춤 수시 전략 컨설팅 지원합니다.\n\n지금 바로 상담 신청하세요!", "sms": "[SCO] 서강대 학종 신설·성대 수능최저 완화. 2027 수시 전략 재설계 필수. 상담 신청", "hashtags": ["서강대", "성균관대", "2027수시", "학생부종합", "수능최저", "입시전략", "전형신설", "수시지원", "합격전략", "고2", "고3", "수시컨설팅", "입시변수", "대입준비", "전형분석", "스코랩스", "수시전략", "학종분석", "입시컨설팅", "대학입시"], "counseling": ["서강대 일반Ⅰ·Ⅱ는 평가 요소가 다릅니다. 본인 강점에 맞는 전형 선택이 핵심입니다.", "성대 수능최저 완화는 '기회'가 아니라 '경쟁 심화'입니다. 내신 더 중요해집니다.", "주요대 학종 전형 다양화는 '전략 난이도 상승'입니다. 전문가 분석 필수입니다.", "수능최저 있는 전형은 6월·9월 모평 기준 충족 가능성 시뮬레이션 해야 합니다.", "스코에서 학생별 최적 수시 6장 조합 설계해드립니다. 전략 상담 필수입니다."], "card_titles": ["서강대·성대 수시 전형 변화 총정리", "전형 신설이 기회일까 위험일까", "2027 수시 지원 전략 재설계 필수"], "sco_view": "전형 변화는 '불확실성'입니다. 스코는 학생의 강점을 정확히 파악하고, 전형별 평가 요소와 매칭해 '합격 확률 최고점'을 찾습니다. 전형 선택은 도박이 아니라 데이터 기반 전략입니다.", "blogTitle": "2027 수시 서강대·성대 전형 변화, 합격 전략은 어떻게 바뀌나", "blogSummary": "서강대 학종 일반Ⅱ 신설, 성대 수능최저 완화 등 주요대 수시 변화 총정리. 전형별 지원 전략 재설계 필수 포인트 분석.", "grades": {"중3": {"katok": "[중3 학부모님께]\n\n대학 전형은 매년 바뀝니다.\n지금부터 '변화에 대응하는 힘'을 키워야 합니다.\n\n스코는 입시 변화를 실시간 분석하고,\n학생 강점에 맞는 최적 전략을 설계합니다.\n\n고교 입학 전, 입시 로드맵 상담 받으세요.", "actions": ["주요 대학 학종 평가 요소 이해하기", "고1부터 내신·비교과 균형 관리 전략 세우기", "스코 입시 로드맵 상담"]}, "고1": {"katok": "[고1 학부모님께]\n\n2년 뒤 수시 전형, 또 바뀝니다.\n하지만 '본질'은 안 바뀝니다.\n\n내신·세특·독서의 완성도.\n이것만 탄탄하면 어떤 전형 변화도 대응 가능합니다.\n\n스코에서 본질 중심 학습 관리 시작하세요.", "actions": ["내신 1등급대 안정화 목표 설정", "세특 활동 매 학기 체계적 기록", "스코 학종 포트폴리오 관리"]}, "고2": {"katok": "[고2 학부모님께]\n\n1년 뒤 수시 지원, 전형 선택이 당락 좌우합니다.\n\n서강대·성대처럼 전형이 신설·변화하면\n어떤 전형이 유리한지 정밀 분석 필요합니다.\n\n스코 수시 전략 컨설팅으로\n합격 확률 최고점 찾으세요.", "actions": ["지원 가능 대학 전형별 평가 요소 분석", "본인 강점(내신·비교과·수능) 객관적 평가", "스코 수시 6장 조합 설계 상담"]}, "고3": {"katok": "[고3 학부모님께]\n\n수시 원서 접수 D-60일.\n전형 하나 잘못 선택하면 6장 모두 날립니다.\n\n서강대 일반Ⅰ·Ⅱ 중 어디가 유리한가요?\n성대 수능최저 충족 가능한가요?\n\n스코 긴급 전략 컨설팅 받으세요.\n지금 바로 신청하세요!", "actions": ["지원 대학 전형별 합격선·경쟁률 최종 분석", "수능최저 충족 가능성 시뮬레이션", "스코 수시 최종 전략 컨설팅", "원서 접수 전 모의 지원 2회 이상"]}}}, "4": {"id": 4, "priority": "중요", "title": "전남광주통합특별시교육청, '6월 모평 실채점' 분석... 서울대 391점 내외", "shortTitle": "광주교육청6월모평분석", "source": "뉴스워커", "date": "2026-07-08", "year": "2028학년도", "target": "고2/고3/학부모", "areas": ["수능", "정시"], "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBRQnJ0RDY3MFl4eXRpSkF0ZUJQdEhtWHMwQjVmY09XWTBTWVBDR2t1TkJHNDB2c1hNS3BPZUdXd3F4dVhGeERmZnpkY3l1MXVDQXJVN0dHTVMzd01OQ0UtMWdHZkJtOUxzYlFPc3hVNmZKa1HSAXNBVV95cUxQUUJydEQ2NzBZeHl0aUpBdGVCUHRIbVhzMEI1ZmNPV1kwU1lQQ0drdU5CRzQwdnNYTUtwT2VHV3dxeHVYRnhEZmZ6ZGN5dTF1Q0FyVTdHR01TM3dNTkNFLTFnR2ZCbTlMc2JRT3N4VTZmSmtR?oc=5", "hookBig": "서울대 정시 합격선 391점!<br>6월 모평 실채점 데이터로 본<br>2028 수능 합격 가능 점수", "hookLabel": "🎯 목표 점수 확정", "summary1": "전남광주교육청 6월 모평 실채점 분석 결과, 서울대 합격선 391점 내외로 예측, 주요 대학 정시 합격선 데이터 공개", "changeA": {"label": "CHANGE 1", "title": "서울대 정시<br>391점 예측", "desc": "6월 모평 실채점 기준 서울대 합격 가능 점수 391점 내외. 9월 모평·수능 난이도 따라 변동 가능하나 목표 점수 설정 기준 마련"}, "changeB": {"label": "CHANGE 2", "title": "주요대 합격선<br>데이터 공개", "desc": "서울대 외 주요 대학 정시 합격선 실채점 데이터 제공. 현재 성적 기준 지원 가능 대학 시뮬레이션 가능"}, "mythQ": "6월 모평 점수로 정시 지원 대학 확정할 수 있나요?", "mythA": "아닙니다. 6월은 '방향 설정'용입니다. 9월 모평·수능 난이도에 따라 합격선은 10~20점 변동 가능합니다. 6월은 '목표'이고, 9월은 '전략'입니다.", "impacts": ["현재 성적 기준 정시 지원 가능 대학 예측 가능", "목표 대학 합격선과 현재 점수 차이 확인으로 학습 전략 수정", "9월 모평까지 올려야 할 점수 구체화 가능", "과목별 목표 등급·표준점수 세분화 필요"], "actions": ["6월 모평 실채점 점수와 목표 대학 합격선 비교", "부족한 과목 우선순위 설정 후 여름방학 집중 학습 계획", "9월 모평 목표 점수 과목별 설정 (국·수·영·탐)", "스코 수능 과목별 학습 전략 컨설팅 받기"], "ctaHook": "6월 모평 점수,<br>9월까지 올릴 수 있습니다", "katok": "[6월 모평 실채점 분석 발표]\n\n전남광주교육청이 주요 대학 정시 합격선을 공개했습니다.\n서울대 391점 내외.\n\n지금 점수와 목표 대학 합격선 차이,\n정확히 확인하셨나요?\n\n9월 모평까지 3개월.\n지금부터 전략 수정하면 충분히 올릴 수 있습니다.\n\n스코에서 과목별 맞춤 학습 전략 설계해드립니다.\n상담 신청하세요!", "sms": "[SCO] 6월 모평 기준 서울대 391점. 9월까지 목표 점수 달성 전략 필요. 상담 신청", "hashtags": ["6월모평", "실채점분석", "서울대", "정시합격선", "2028수능", "목표점수", "수능전략", "고2", "고3", "입시분석", "정시지원", "합격가능점수", "수능공부", "스코랩스", "학습전략", "입시컨설팅", "모의평가", "수능대비", "대입준비", "광주교육청"], "counseling": ["6월 모평은 '현재 위치 확인'입니다. 9월까지 얼마나 올릴지 전략 세우세요.", "서울대 391점은 '최소 합격선'입니다. 안정 지원은 +10점 이상 필요합니다.", "과목별 점수 편차 확인하세요. 약점 과목 집중 공략이 총점 상승 지름길입니다.", "9월 모평이 진짜 '전략 수립' 타이밍입니다. 6월은 준비 기간입니다.", "스코에서 과목별 학습 전략 + 9월 목표 점수 설정 컨설팅 지원합니다."], "card_titles": ["6월 모평 기준 주요 대학 합격선 공개", "서울대 391점, 내 점수와 비교하기", "9월까지 점수 올리는 여름방학 전략"], "sco_view": "수능은 '절대 점수'가 아니라 '상대 위치'입니다. 6월 모평은 현재 위치 확인, 9월은 전략 수정, 수능은 최종 실행입니다. 스코는 학생이 목표 점수에 도달하기 위한 '습'의 과정을 설계합니다.", "blogTitle": "2028 수능 서울대 합격선 391점, 6월 모평 실채점 분석으로 본 정시 전략", "blogSummary": "전남광주교육청 6월 모평 실채점 분석 결과, 서울대 391점 등 주요 대학 정시 합격선 공개. 현재 성적 기준 목표 설정 및 9월 전략.", "grades": {"중3": {"katok": "[중3 학부모님께]\n\n고교 입학 후 3년 뒤,\n'수능 몇 점'이 대학을 결정합니다.\n\n서울대 391점.\n이 숫자가 현실이 되려면\n고1부터 체계적 학습 관리 필요합니다.\n\n스코에서 고교 3년 수능 로드맵 설계해드립니다.", "actions": ["고교 수학·영어 선행 점검 (수능 연계 확인)", "중3 겨울방학 국어 독해력 강화 학습", "스코 수능 장기 로드맵 상담"]}, "고1": {"katok": "[고1 학부모님께]\n\n2년 뒤 6월 모평,\n지금부터 준비하는 학생이 합격합니다.\n\n수능은 '단기 공부'로 안 됩니다.\n고1부터 국·수·영 기본기 다져야 합니다.\n\n스코에서 내신+수능 병행 학습 전략 지원합니다.", "actions": ["국·수·영 고1 과정 완벽 이해 목표", "수능 기출 유형 월 1회 체험 학습", "스코 내신+수능 병행 전략 상담"]}, "고2": {"katok": "[고2 학부모님께]\n\n지금 6월 모평 점수,\n1년 뒤 수능 합격선과 직결됩니다.\n\n목표 대학 합격선과 현재 점수 차이,\n정확히 파악하고 계신가요?\n\n스코에서 9월 목표 점수 달성 전략 설계합니다.\n지금 바로 상담하세요!", "actions": ["6월 모평 실채점 점수 vs 목표 대학 합격선 비교", "부족 과목 여름방학 집중 학습 계획", "스코 9월 모평 목표 달성 전략 상담"]}, "고3": {"katok": "[고3 학부모님께]\n\n6월 모평 점수, 그대로 수능 보면\n어느 대학 갈 수 있는지 확인하셨나요?\n\n서울대 391점 기준,\n지금 점수와 비교해보세요.\n\n9월 모평까지 3개월.\n스코 수능 막판 전략으로\n목표 점수 달성 가능합니다. 상담 필수!", "actions": ["6월 모평 기준 정시 지원 가능 대학 리스트업", "9월 목표 점수 과목별 세분화 설정", "스코 수능 파이널 전략 컨설팅", "약점 과목 여름방학 집중 클리닉"]}}}};
+const TODAY_STR = "2026-07-08";
+
+function downloadFile(filename, content, mime){
+  mime = mime || 'text/plain;charset=utf-8';
+  const blob = new Blob([content],{type:mime});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob); a.download = filename;
+  document.body.appendChild(a); a.click(); document.body.removeChild(a);
+}
+function openInNewTab(html){
+  const blob = new Blob([html],{type:'text/html;charset=utf-8'});
+  window.open(URL.createObjectURL(blob),'_blank');
+}
+
+function copyParentUrl(btn){
+  const url = btn.dataset.url;
+  navigator.clipboard.writeText(url).then(()=>{
+    const o=btn.textContent; btn.textContent='✅ 복사됨!'; setTimeout(()=>btn.textContent=o,1500);
+  });
+}
+function copyParentFullMsg(btn){
+  const url = btn.dataset.url;
+  const title = btn.dataset.title;
+  const txt = '[SCO 긴급 입시속보 - '+TODAY_STR+']\n\n'+title+'\n\n전체 내용 ▶ '+url+'\n\n- SCO 학습관리';
+  navigator.clipboard.writeText(txt).then(()=>{
+    const o=btn.textContent; btn.textContent='✅ 복사됨!'; setTimeout(()=>btn.textContent=o,1500);
+  });
+}
+
+function genCardsHTML(id){
+  const a = ARTICLES[id]; if(!a) return '<h1>데이터 없음</h1>';
+  const titles = a.card_titles || [];
+  const cards = [
+    {cls:'c1', label:a.hookLabel||'📢', main:a.hookBig||a.title, isHook:true},
+    {cls:'c2', label:'CHANGE 1', main:(a.changeA&&a.changeA.title)||'', sub:(a.changeA&&a.changeA.desc)||''},
+    {cls:'c3', label:'CHANGE 2', main:(a.changeB&&a.changeB.title)||'', sub:(a.changeB&&a.changeB.desc)||''},
+    {cls:'c4', label:'⚠️ 학부모 오해', main:a.mythQ||'', sub:a.mythA||''},
+    {cls:'c5', label:'💔 영향', list:a.impacts||[]},
+    {cls:'c6', label:'📋 할 일', list:a.actions||[]},
+    {cls:'c7', label:'💡 SCO 관점', main:a.ctaHook||a.sco_view||'', sub:'학이 아닌 습'},
+    {cls:'c8', label:'📩 무료 진단', main:'우리 아이 맞춤 진단', sub:'카카오톡 채널/DM/프로필 링크', isCta:true}
+  ];
+  return '<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><title>'+a.title+' 카드뉴스</title><style>*{box-sizing:border-box;margin:0;padding:0}body{font-family:-apple-system,Pretendard,sans-serif;background:#e5e7eb;padding:20px}.cards{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(500px,1fr));gap:24px}.card{width:100%;aspect-ratio:1/1;border-radius:18px;padding:54px 48px;display:flex;flex-direction:column;justify-content:space-between;color:white;font-weight:700;position:relative;line-height:1.4}.num{position:absolute;top:20px;right:24px;font-size:13px;opacity:.6}.brand{position:absolute;bottom:24px;left:48px;font-size:12px;opacity:.7}.label{font-size:16px;font-weight:700;opacity:.85;margin-bottom:14px;letter-spacing:1px}.main{font-size:36px;font-weight:900;line-height:1.25}.hook{font-size:46px;font-weight:900;line-height:1.2}.sub{font-size:18px;line-height:1.5;font-weight:500;opacity:.9;margin-top:14px}.cta{font-size:42px;font-weight:900;color:#fbbf24}ul{padding-left:24px;margin-top:8px}li{font-size:24px;margin-bottom:8px;font-weight:600}.c1{background:linear-gradient(135deg,#0b1e3f,#1a3a6b)}.c2{background:linear-gradient(135deg,#b91c1c,#ea580c)}.c3{background:linear-gradient(135deg,#1a3a6b,#3b82f6)}.c4{background:linear-gradient(135deg,#b45309,#d97706)}.c5{background:linear-gradient(135deg,#7f1d1d,#dc2626)}.c6{background:linear-gradient(135deg,#064e3b,#059669)}.c7{background:linear-gradient(135deg,#0b1e3f,#1e293b)}.c8{background:linear-gradient(135deg,#0b1e3f,#ea580c)}</style></head><body><div class="cards">'+cards.map((c,i)=>{
+    let body='';
+    if(c.isHook) body='<div><div class="label">'+c.label+'</div><div class="hook">'+c.main+'</div></div>';
+    else if(c.isCta) body='<div><div class="label">'+c.label+'</div><div class="cta">'+c.main+'</div><div class="sub">'+c.sub+'</div></div>';
+    else if(c.list) body='<div><div class="label">'+c.label+'</div><ul>'+c.list.map(x=>'<li>'+x+'</li>').join('')+'</ul></div>';
+    else body='<div><div class="label">'+c.label+'</div><div class="main">'+c.main+'</div>'+(c.sub?'<div class="sub">'+c.sub+'</div>':'')+'</div>';
+    return '<div class="card '+c.cls+'"><div class="num">'+(i+1)+'/8</div>'+body+'<div class="brand">SCO LABS</div></div>';
+  }).join('')+'</div></body></html>';
+}
+
+function genBlogHTML(id){
+  const a = ARTICLES[id]; if(!a) return '<h1>데이터 없음</h1>';
+  return '<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><title>'+(a.blogTitle||a.title)+'</title><style>body{font-family:-apple-system,Pretendard,sans-serif;background:#f7f8fa;line-height:1.8;padding:20px}.wrap{max-width:780px;margin:0 auto;background:white;border-radius:14px;overflow:hidden}.hd{background:linear-gradient(135deg,#0b1e3f,#1a3a6b);color:white;padding:48px 44px}.hd h1{font-size:28px;font-weight:800}.summary{background:#fff7ed;border-left:6px solid #ea580c;padding:20px 28px;color:#9a3412;font-weight:600}.body{padding:24px 44px}.body h2{font-size:20px;font-weight:800;color:#0b1e3f;margin:30px 0 14px;padding-left:14px;border-left:5px solid #0b1e3f}.body p{font-size:15px;color:#374151;margin-bottom:12px}.body ul{padding-left:26px;margin:10px 0}.cta{background:linear-gradient(135deg,#0b1e3f,#ea580c);color:white;padding:24px;border-radius:12px;margin:24px 0}.tags{background:#f3f4f6;padding:18px;border-radius:10px;margin:20px 0;font-size:13px;color:#6b7280}</style></head><body><div class="wrap"><div class="hd"><div style="opacity:.7;font-size:12px">📅 '+a.date+' · SCO LABS</div><h1>'+(a.blogTitle||a.title)+'</h1></div><div class="summary">'+(a.blogSummary||a.summary1||'')+'</div><div class="body"><h2>1. 무엇이 바뀌었나</h2><p>'+(a.summary1||'')+'</p><h2>2. 학부모 오해</h2><p><b>Q.</b> '+(a.mythQ||'')+'<br><b>A.</b> '+(a.mythA||'')+'</p><h2>3. 우리 아이 영향</h2><ul>'+((a.impacts||[]).map(x=>'<li>'+x+'</li>').join(''))+'</ul><h2>4. 지금 할 일</h2><ul>'+((a.actions||[]).map(x=>'<li><b>'+x+'</b></li>').join(''))+'</ul><h2>5. SCO 관점</h2><p>'+(a.sco_view||'')+'</p><div class="cta"><h3>💡 무료 입시 진단</h3><p>카카오톡 채널/DM/프로필 링크</p></div><div class="tags">'+((a.hashtags||[]).map(h=>'#'+h).join(' '))+'</div></div></div></body></html>';
+}
+
+function genGradesHTML(id){
+  const a = ARTICLES[id]; if(!a||!a.grades) return '<h1>학년별 데이터 없음</h1>';
+  const colors = {'중3':'#b91c1c','고1':'#ea580c','고2':'#1a3a6b','고3':'#7c3aed'};
+  return '<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><title>학년별 카톡</title><style>body{font-family:-apple-system,Pretendard,sans-serif;background:#f7f8fa;padding:20px;line-height:1.7}.wrap{max-width:1000px;margin:0 auto}.hd{background:linear-gradient(135deg,#0b1e3f,#1a3a6b);color:white;padding:32px;border-radius:14px;margin-bottom:24px}.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.card{background:white;border-radius:12px;padding:24px}.card h2{font-size:18px;font-weight:800;color:white;padding:6px 14px;border-radius:6px;display:inline-block;margin-bottom:14px}.katok{background:#fef3c7;border:1.5px dashed #f59e0b;border-radius:8px;padding:16px;font-size:13px;color:#78350f;white-space:pre-line}.actions{margin-top:14px}.actions ul{padding-left:18px}.actions li{font-size:13px;color:#374151;margin-bottom:4px}@media(max-width:700px){.cards{grid-template-columns:1fr}}</style></head><body><div class="wrap"><div class="hd"><h1 style="font-size:22px">학년별 맞춤 카톡 안내문</h1><div style="font-size:14px;opacity:.85;margin-top:6px">'+a.title+' · '+a.date+'</div></div><div class="cards">'+Object.keys(a.grades).map(g=>{const d=a.grades[g];return '<div class="card"><h2 style="background:'+(colors[g]||'#0b1e3f')+'">'+g+' 학부모용</h2><div class="katok">'+d.katok+'</div><div class="actions"><b>이 학년이 할 일</b><ul>'+((d.actions||[]).map(x=>'<li>'+x+'</li>').join(''))+'</ul></div></div>';}).join('')+'</div></div></body></html>';
+}
+
+function genCaptions(id){
+  const a = ARTICLES[id]; if(!a) return '';
+  return '=== SCO 콘텐츠 패키지 · '+a.date+' ===\n\n[인스타 캡션]\n'+(a.hookBig||'').replace(/<[^>]+>/g,' ')+'\n\n'+(a.summary1||'')+'\n\n📩 DM/프로필\n\n'+((a.hashtags||[]).map(h=>'#'+h).join(' '))+'\n\n[카톡 채널 발송]\n'+(a.katok||'')+'\n\n[SMS]\n'+(a.sms||'')+'\n\n[상담 멘트]\n'+((a.counseling||[]).map((m,i)=>(i+1)+'. "'+m+'"').join('\n\n'));
+}
+
+function genParentMessage(id){
+  const a = ARTICLES[id]; if(!a) return '';
+  return '📢 SCO 입시 브리핑\n━━━━━━━━━━━━━━━\n'+a.date+'\n\n🎯 오늘의 핵심\n《'+a.title+'》\n\n📌 NOW\n  ✓ '+(a.summary1||'')+'\n\n❓ FAQ\n  Q. '+(a.mythQ||'')+'\n  A. '+(a.mythA||'')+'\n\n💡 SCO의 답\n  '+(a.sco_view||'')+'\n\n━━━━━━━━━━━━━━━\n📩 무료 입시 진단\n   ▶ 카카오톡 채널 / DM\n━━━━━━━━━━━━━━━\n\nSCO Labs · '+(a.source||'');
+}
+
+function _wrapText(ctx,text,x,y,maxW,lh){const chars=text.split('');let line='',cy=y;for(let i=0;i<chars.length;i++){const t=line+chars[i];if(ctx.measureText(t).width>maxW&&line!==''){ctx.fillText(line,x,cy);line=chars[i];cy+=lh}else line=t}ctx.fillText(line,x,cy);return cy+lh}
+function _roundRect(ctx,x,y,w,h,r){ctx.beginPath();ctx.moveTo(x+r,y);ctx.arcTo(x+w,y,x+w,y+h,r);ctx.arcTo(x+w,y+h,x,y+h,r);ctx.arcTo(x,y+h,x,y,r);ctx.arcTo(x,y,x+w,y,r);ctx.closePath()}
+
+function drawParentCardCanvas(id){
+  const a=ARTICLES[id]; if(!a){alert('데이터 없음');return}
+  const canvas=document.getElementById('sco-export-canvas');
+  const ctx=canvas.getContext('2d'); const W=1080,H=1350,PAD=80;
+  const FONT='"Apple SD Gothic Neo","Pretendard",-apple-system,sans-serif';
+  const bg=ctx.createLinearGradient(0,0,0,H);
+  bg.addColorStop(0,'#0b1e3f');bg.addColorStop(.6,'#1e3a8a');bg.addColorStop(1,'#1a3a6b');
+  ctx.fillStyle=bg;ctx.fillRect(0,0,W,H);
+  ctx.fillStyle='rgba(255,255,255,.85)';ctx.font='800 22px '+FONT;ctx.fillText('SCO LABS',PAD,PAD+10);
+  ctx.fillStyle='rgba(255,255,255,.7)';ctx.font='600 24px '+FONT;ctx.textAlign='right';ctx.fillText(a.date||'',W-PAD,PAD+10);ctx.textAlign='left';
+  let y=160;
+  ctx.fillStyle='rgba(251,191,36,.25)';_roundRect(ctx,PAD,y,260,50,25);ctx.fill();
+  ctx.fillStyle='#fbbf24';ctx.font='800 22px '+FONT;ctx.fillText('📢 SCO 입시 브리핑',PAD+22,y+33);
+  y=260;ctx.fillStyle='#fff';ctx.font='900 46px '+FONT;
+  y=_wrapText(ctx,(a.title||'').slice(0,60),PAD,y+40,W-PAD*2,60);
+  y+=30;ctx.fillStyle='rgba(255,255,255,.2)';ctx.fillRect(PAD,y,W-PAD*2,2);
+  y+=40;ctx.fillStyle='#fbbf24';ctx.font='800 22px '+FONT;ctx.fillText('📌 NOW',PAD,y);
+  y+=40;ctx.fillStyle='rgba(255,255,255,.95)';ctx.font='500 26px '+FONT;
+  y=_wrapText(ctx,(a.summary1||'').slice(0,150),PAD,y,W-PAD*2,40);
+  y+=20;ctx.fillStyle='rgba(255,255,255,.08)';_roundRect(ctx,PAD,y,W-PAD*2,200,20);ctx.fill();
+  ctx.fillStyle='#fbbf24';ctx.font='700 22px '+FONT;ctx.fillText('❓ '+(a.mythQ||'').slice(0,35),PAD+30,y+45);
+  ctx.fillStyle='rgba(255,255,255,.95)';ctx.font='500 22px '+FONT;
+  _wrapText(ctx,'→ '+(a.mythA||'').slice(0,100),PAD+30,y+90,W-PAD*2-60,36);
+  y+=230;ctx.fillStyle='rgba(255,255,255,.2)';ctx.fillRect(PAD,y,W-PAD*2,2);
+  y+=40;ctx.fillStyle='#fbbf24';ctx.font='800 22px '+FONT;ctx.fillText('💡 SCO의 답',PAD,y);
+  y+=40;ctx.fillStyle='rgba(255,255,255,.95)';ctx.font='700 28px '+FONT;
+  _wrapText(ctx,'학(學)이 아닌 습(習). 매일 실행이 결국 이깁니다.',PAD,y,W-PAD*2,42);
+  const cY=H-220;
+  const cg=ctx.createLinearGradient(0,cY,W,cY+130);
+  cg.addColorStop(0,'#ea580c');cg.addColorStop(1,'#fbbf24');
+  ctx.fillStyle=cg;_roundRect(ctx,PAD,cY,W-PAD*2,130,20);ctx.fill();
+  ctx.fillStyle='#0b1e3f';ctx.font='900 32px '+FONT;ctx.textAlign='center';
+  ctx.fillText('📩 무료 입시 진단 신청',W/2,cY+50);
+  ctx.font='600 20px '+FONT;ctx.fillText('카카오톡 채널 / DM / 프로필 링크',W/2,cY+90);
+  ctx.fillStyle='rgba(255,255,255,.5)';ctx.font='700 16px '+FONT;ctx.fillText('S C O   L A B S',W/2,H-30);ctx.textAlign='left';
+  const link=document.createElement('a');
+  link.download='SCO_학부모카드_'+(a.date||'')+'_'+id+'.png';
+  link.href=canvas.toDataURL('image/png');
+  document.body.appendChild(link);link.click();document.body.removeChild(link);
+}
+
+function makeContent(id, type){
+  const a = ARTICLES[id]; if(!a){alert('기사 데이터 없음');return}
+  const safeTitle = (a.shortTitle||a.title||'').replace(/[\/\\:*?"<>|]/g,'').slice(0,30);
+  const base = 'SCO_'+a.date+'_'+id+'_'+safeTitle;
+  if(type==='cards'){
+    const h=genCardsHTML(id);downloadFile(base+'_카드뉴스.html',h,'text/html;charset=utf-8');openInNewTab(h);
+  } else if(type==='blog'){
+    const h=genBlogHTML(id);downloadFile(base+'_블로그.html',h,'text/html;charset=utf-8');openInNewTab(h);
+  } else if(type==='captions'){
+    downloadFile(base+'_캡션.txt',genCaptions(id),'text/plain;charset=utf-8');
+  } else if(type==='grades'){
+    const h=genGradesHTML(id);downloadFile(base+'_학년별카톡.html',h,'text/html;charset=utf-8');openInNewTab(h);
+  } else if(type==='parent'){
+    drawParentCardCanvas(id);
+    const text=genParentMessage(id);
+    navigator.clipboard.writeText(text).then(()=>alert('📲 학부모 발송 풀세트!\n✅ PNG 카드 다운로드\n✅ 텍스트 클립보드 복사\n→ 카톡 채널에 첨부+붙여넣기')).catch(()=>{});
+    downloadFile(base+'_학부모발송.txt',text,'text/plain;charset=utf-8');
+  } else if(type==='full'){
+    const c=genCardsHTML(id),b=genBlogHTML(id),g=genGradesHTML(id),t=genCaptions(id);
+    downloadFile(base+'_카드뉴스.html',c,'text/html;charset=utf-8');
+    setTimeout(()=>downloadFile(base+'_블로그.html',b,'text/html;charset=utf-8'),300);
+    setTimeout(()=>downloadFile(base+'_캡션.txt',t,'text/plain;charset=utf-8'),600);
+    setTimeout(()=>downloadFile(base+'_학년별카톡.html',g,'text/html;charset=utf-8'),900);
+    setTimeout(()=>openInNewTab(c),1200);
+    alert('🚀 풀패키지 4개 파일 다운로드 시작!');
+  }
+}
+</script></body></html>
