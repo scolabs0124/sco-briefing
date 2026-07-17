@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>SCO 입시 브리핑 — 2026-07-17</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,'Pretendard','Apple SD Gothic Neo',sans-serif;background:#f4f6fa;color:#1a1a1a;line-height:1.6;padding:20px}
+.wrap{max-width:980px;margin:0 auto}
+.header{background:linear-gradient(135deg,#0b1e3f 0%,#1a3a6b 100%);color:#fff;padding:36px 28px;border-radius:14px}
+.header h1{font-size:28px;font-weight:800}
+.header .sub{margin-top:6px;font-size:14px;opacity:.92}
+.hero{background:#fff7ed;border-left:6px solid #f97316;padding:20px 22px;border-radius:10px;margin-top:18px}
+.hero h2{font-size:18px;color:#9a3412}
+.pick{background:#ecfdf5;border:1px solid #6ee7b7;border-radius:12px;padding:18px 22px;margin-top:18px}
+.pick h3{color:#065f46;font-size:15px}
+.card{background:#fff;border-radius:14px;box-shadow:0 4px 14px rgba(0,0,0,.06);padding:26px;margin-top:22px;border-top:5px solid #3b82f6}
+.card.urgent{border-top-color:#dc2626}.card.important{border-top-color:#f59e0b}.card.note{border-top-color:#6b7280}
+.badges{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+.badge{font-size:11px;padding:4px 10px;border-radius:999px;font-weight:700}
+.b-urgent{background:#fef2f2;color:#b91c1c}.b-important{background:#fffbeb;color:#b45309}.b-note{background:#f3f4f6;color:#374151}
+.b-cat{background:#eff6ff;color:#1d4ed8}.b-year{background:#f0fdf4;color:#15803d}.b-tgt{background:#fdf4ff;color:#a21caf}
+.card h2{font-size:20px;font-weight:800;color:#111827}
+.source{font-size:12px;color:#6b7280;margin-top:4px}.source a{color:#3b82f6;text-decoration:none}
+.parent-link{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;padding:10px 12px;background:#f0fdf4;border:1px dashed #86efac;border-radius:8px;align-items:center}
+.pl-lbl{font-size:11px;color:#065f46;font-weight:800;letter-spacing:.5px;margin-right:4px}
+.pl-btn{background:#059669;color:#fff;border:none;padding:8px 14px;border-radius:6px;font-size:12px;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block;font-family:inherit}
+.pl-btn:hover{background:#047857}
+.pl-copy{background:#0284c7}.pl-copy:hover{background:#0369a1}
+.pl-copyfull{background:#d97706}.pl-copyfull:hover{background:#b45309}
+.sum1{margin-top:14px;font-size:15px;color:#1f2937}
+.block{margin-top:14px;font-size:14px}.block ul{margin-top:6px;padding-left:22px}.block li{margin:3px 0}
+.myth{margin-top:14px;background:#fff7ed;border-left:4px solid #f59e0b;padding:14px 16px;border-radius:8px}
+.myth .q{font-weight:700;color:#9a3412}.myth .a{margin-top:6px;color:#7c2d12}
+.katok{margin-top:14px;background:#fef9c3;border-left:4px solid #eab308;padding:16px;border-radius:8px}
+.katok .l{font-size:11px;color:#854d0e;font-weight:700;letter-spacing:1px}
+.katok p{margin-top:6px;font-size:14px;color:#3f3f00;white-space:pre-wrap}
+.titles{margin-top:14px;background:#eff6ff;border-left:4px solid #3b82f6;padding:14px 16px;border-radius:8px}
+.titles .l{font-size:11px;color:#1d4ed8;font-weight:700;letter-spacing:1px}
+.titles ul{margin-top:6px;padding-left:18px}.titles li{color:#1e3a8a;margin:2px 0}
+.sco{margin-top:14px;background:#111827;color:#f9fafb;padding:14px 16px;border-radius:8px}
+.sco .l{font-size:11px;color:#9ca3af;font-weight:700;letter-spacing:1px}.sco p{margin-top:6px;color:#e5e7eb}
+.make-bar{background:linear-gradient(135deg,#7c2d12 0%,#b91c1c 100%);border-radius:10px;padding:14px 18px;margin-top:18px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.make-bar .lbl{color:white;font-size:12px;font-weight:800;letter-spacing:.5px;margin-right:6px}
+.make-btn{background:white;color:#7c2d12;border:none;padding:9px 14px;border-radius:7px;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit}
+.make-btn:hover{background:#fef2f2}.make-btn.full{background:#fbbf24;color:#78350f}.make-btn.parent{background:#16a34a;color:white}
+.ft{text-align:center;color:#9ca3af;font-size:12px;margin-top:30px;padding:20px}
+</style></head><body>
+<canvas id="sco-export-canvas" width="1080" height="1350" style="display:none"></canvas>
+<div class="wrap">
+<div class="header"><h1>📅 SCO 입시 브리핑</h1><div class="sub">2026-07-17 (금) · 스코랩스(SCO Labs) 입시정보팀</div></div>
+<div class="hero"><h2>🔥 2028 대입부터 N수생 배제 '재학생 전용 정시' 첫 등장, 고려대 489명·서강대 90명 선발</h2></div>
+<div class="pick"><h3>💡 학부모 즉시 발송 추천</h3><p>[단독] [2028대입] 'N수생 배제 재학생 전용' 정시 첫 등장.. 고대489명 서강대90명</p></div>
+
+<div class="card urgent" id="card-1">
+  <div class="badges">
+    <span class="badge b-urgent">긴급</span>
+    <span class="badge b-year">2028학년도</span>
+    <span class="badge b-tgt">중3/고1/학부모</span>
+    <span class="badge b-cat">정시</span> <span class="badge b-cat">내신</span> <span class="badge b-cat">학생부</span>
+  </div>
+  <h2>1. [단독] [2028대입] 'N수생 배제 재학생 전용' 정시 첫 등장.. 고대489명 서강대90명</h2>
+  <div class="source">베리타스알파 · 2026-07-17 · <a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE9ORDRvT2ktSDMzb0RxVUZDQmZZdk92WGVMekM2QlJVc3YyejhJSUhtWVhldGtRR2RWendrcGVNOTE3bVdIVHJ0LTRPbWVHOFpxYWczQ2dFZGhPTXNwMlhTdXVrZm1rY1VUTW9lbw?oc=5" target="_blank">원문</a></div>
+  <div class="parent-link">
+    <span class="pl-lbl">🎯 학부모 링크</span>
+    <a href="/p/2026-07-17-1.html" target="_blank" class="pl-btn">👀 미리보기</a>
+    <button class="pl-btn pl-copy" data-url="https://sco-daily.netlify.app/p/2026-07-17-1.html" onclick="copyParentUrl(this)">🔗 링크 복사</button>
+    <button class="pl-btn pl-copyfull" data-url="https://sco-daily.netlify.app/p/2026-07-17-1.html" data-title="[단독] [2028대입] 'N수생 배제 재학생 전용' 정시 첫 등장.. 고대489명 서강대90명" onclick="copyParentFullMsg(this)">📱 카톡 발송문</button>
+  </div>
+  <p class="sum1">2028학년도부터 고려대·서강대가 N수생 지원 불가, 재학생만 지원 가능한 정시 전형을 신설해 총 579명 선발</p>
+  <div class="block"><b>📌 무엇이 바뀌었나</b><ul><li>재학생 전용 정시 첫 등장: 고려대 489명(일반전형 내 구분), 서강대 90명(소프트웨어융합) 재학생만 지원 가능. N수생은 원천 차단되는 입시 역사상 첫 사례</li><li>재수 불리해지는 입시 구조 변화: 정시에서도 재학생 우대 시작. 내신 반영 확대와 맞물려 '고3 때 한 번에 끝내기' 압박 가속화. N수 메리트 급감</li></ul></div>
+  <div class="myth"><div class="q">❓ 정시는 재수생이 유리한 전형 아닌가요?</div><div class="a">→ 2028부터는 다릅니다. 재학생 전용 정시가 등장하며, 정시에서도 재수생이 불리해지는 구조로 전환되고 있습니다. 고3 때 한 번에 대입을 끝내야 하는 시대가 왔습니다.</div></div>
+  <div class="katok"><div class="l">📱 학부모 카톡문</div><p>[SCO Labs 긴급 분석]
+
+2028학년도부터 '재학생만' 지원 가능한 정시가 등장합니다.
+
+▪️고려대 489명, 서강대 90명
+▪️N수생 원천 차단
+▪️재수 메리트 급감
+
+정시도 이제 재학생 우대 시대.
+고3 때 한 번에 끝내는 전략이 필수입니다.
+
+스코랩스와 함께 지금부터 준비하세요.
+학이 아닌 습, 완성도가 답입니다.
+
+▶ 1:1 학습 전략 상담 신청
+</p></div>
+  <div class="titles"><div class="l">📰 카드뉴스 제목</div><ul><li>2028 대입 폭탄: 재학생 전용 정시 등장</li><li>고려대 489명·서강대 90명 N수생 차단</li><li>재수 불리한 시대, 고3 때 끝내는 전략</li></ul></div>
+  <div class="sco"><div class="l">💡 SCO 관점</div><p>재학생 전용 정시는 '완성도 중심 입시'의 신호탄입니다. 스코랩스의 철학 '학이 아닌 습, 성적이 아닌 완성도'가 더욱 중요해지는 시점입니다. 재수를 전제로 한 불완전한 학습이 아니라, 재학생 때 완성도 높은 학습 습관과 실력을 갖춰야 합니다. 내신·수능·학생부를 통합 관리하며, 고3 한 해에 모든 것을 쏟아붓는 집중 전략이 필요합니다.</p></div>
+  <div class="make-bar">
+    <span class="lbl">⚡ 자동 콘텐츠 제작</span>
+    <button class="make-btn full" onclick="makeContent(1,'full')">🚀 풀패키지</button>
+    <button class="make-btn" onclick="makeContent(1,'cards')">📸 카드뉴스</button>
+    <button class="make-btn" onclick="makeContent(1,'blog')">✍️ 블로그</button>
+    <button class="make-btn" onclick="makeContent(1,'captions')">💬 캡션</button>
+    <button class="make-btn" onclick="makeContent(1,'grades')">👨‍👩‍👧 학년별</button>
+    <button class="make-btn parent" onclick="makeContent(1,'parent')">📲 학부모 발송용</button>
+  </div>
+</div>
+<div class="card important" id="card-2">
+  <div class="badges">
+    <span class="badge b-important">중요</span>
+    <span class="badge b-year">2027학년도</span>
+    <span class="badge b-tgt">고3/재수생/학부모</span>
+    <span class="badge b-cat">수시</span> <span class="badge b-cat">정시</span> <span class="badge b-cat">입시전략</span>
+  </div>
+  <h2>2. "수시만 믿었다간 낭패"…정시 지원자 10명 중 7명은 '수시 탈락생'</h2>
+  <div class="source">네이트 · 2026-07-17 · <a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE1FWFNOQjVTNUdHS2NWRnZoUHNlWmZEanRNUlFHaXpNUzNubzJUTUNVd0E4T0twSXpYTDAxS2U5NURRMlhQWDI4QU5aYXRWRjNhbXRj?oc=5" target="_blank">원문</a></div>
+  <div class="parent-link">
+    <span class="pl-lbl">🎯 학부모 링크</span>
+    <a href="/p/2026-07-17-2.html" target="_blank" class="pl-btn">👀 미리보기</a>
+    <button class="pl-btn pl-copy" data-url="https://sco-daily.netlify.app/p/2026-07-17-2.html" onclick="copyParentUrl(this)">🔗 링크 복사</button>
+    <button class="pl-btn pl-copyfull" data-url="https://sco-daily.netlify.app/p/2026-07-17-2.html" data-title="&quot;수시만 믿었다간 낭패&quot;…정시 지원자 10명 중 7명은 '수시 탈락생'" onclick="copyParentFullMsg(this)">📱 카톡 발송문</button>
+  </div>
+  <p class="sum1">2027학년도 정시 지원자 10명 중 7명(고3 86%)이 수시 탈락생으로, 수시 올인 전략의 위험성 입증</p>
+  <div class="block"><b>📌 무엇이 바뀌었나</b><ul><li>수시 올인의 현실적 위험: 고3 정시 지원자 86%, 재수생 포함 시 70%가 수시 탈락생. 수시에만 집중했다가 정시로 밀려나는 학생 대다수</li><li>수시 6장 모두 불합격 가능: 수시 6장 지원해도 전부 불합격 가능성 존재. 정시 대비 없이 수시만 준비하면 재수 확률 급증</li></ul></div>
+  <div class="myth"><div class="q">❓ 수시로 6번 지원하면 어디 하나는 붙지 않나요?</div><div class="a">→ 아닙니다. 수시 6장 모두 불합격하는 경우가 매우 많습니다. 정시 지원자 10명 중 7명이 수시 탈락생이라는 것이 이를 증명합니다. 수시와 정시를 동시에 준비해야 합니다.</div></div>
+  <div class="katok"><div class="l">📱 학부모 카톡문</div><p>[SCO Labs 입시 현실]
+
+정시 지원자 10명 중 7명이 수시 탈락생입니다.
+
+▪️고3 정시 지원자 86% 수시 탈락
+▪️수시 6장 모두 불합격 가능
+▪️수시 올인 전략 위험
+
+수시+정시 병행 전략이 필수입니다.
+지금부터 수능 대비를 함께 진행하세요.
+
+스코랩스가 수시·정시 동시 완성을 돕습니다.
+
+▶ 1:1 입시 전략 상담
+</p></div>
+  <div class="titles"><div class="l">📰 카드뉴스 제목</div><ul><li>정시 지원자 86%, 수시 탈락생 현실</li><li>수시 올인 전략의 위험성 데이터로 증명</li><li>수시+정시 병행이 대입 성공의 열쇠</li></ul></div>
+  <div class="sco"><div class="l">💡 SCO 관점</div><p>수시 올인은 입시 도박입니다. 스코랩스는 '완성도 중심 학습'을 통해 수시와 정시를 동시에 준비합니다. 내신·학생부로 수시를 대비하면서도, 수능 실력을 꾸준히 쌓아 정시 카드를 확보하는 것이 진짜 전략입니다. 수시 탈락 후 정시로 밀려나는 86%에 속하지 않으려면, 지금부터 수시·정시 병행 체계를 구축해야 합니다.</p></div>
+  <div class="make-bar">
+    <span class="lbl">⚡ 자동 콘텐츠 제작</span>
+    <button class="make-btn full" onclick="makeContent(2,'full')">🚀 풀패키지</button>
+    <button class="make-btn" onclick="makeContent(2,'cards')">📸 카드뉴스</button>
+    <button class="make-btn" onclick="makeContent(2,'blog')">✍️ 블로그</button>
+    <button class="make-btn" onclick="makeContent(2,'captions')">💬 캡션</button>
+    <button class="make-btn" onclick="makeContent(2,'grades')">👨‍👩‍👧 학년별</button>
+    <button class="make-btn parent" onclick="makeContent(2,'parent')">📲 학부모 발송용</button>
+  </div>
+</div>
+<div class="card important" id="card-3">
+  <div class="badges">
+    <span class="badge b-important">중요</span>
+    <span class="badge b-year">2027학년도</span>
+    <span class="badge b-tgt">중3/고1/학부모</span>
+    <span class="badge b-cat">내신</span> <span class="badge b-cat">학생부종합</span> <span class="badge b-cat">특목자사고</span>
+  </div>
+  <h2>3. SKY 대학 특목·자사고 합격자 6년 만에 최저…내신 영향력 확대 영향</h2>
+  <div class="source">에듀인사이드 · 2026-07-17 · <a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE1EQXZHczNGZFVvZWkxa3B5TVN2Nzhma21YSWxHTV9nVG1zUk5tWEFQRlNXRjhqQ3NpT1Voc3M5azB2MG8yRlg2RUFJT2FUanJTUnJuUHNTVHlXajdpaElFUXkxS082Qk1S?oc=5" target="_blank">원문</a></div>
+  <div class="parent-link">
+    <span class="pl-lbl">🎯 학부모 링크</span>
+    <a href="/p/2026-07-17-3.html" target="_blank" class="pl-btn">👀 미리보기</a>
+    <button class="pl-btn pl-copy" data-url="https://sco-daily.netlify.app/p/2026-07-17-3.html" onclick="copyParentUrl(this)">🔗 링크 복사</button>
+    <button class="pl-btn pl-copyfull" data-url="https://sco-daily.netlify.app/p/2026-07-17-3.html" data-title="SKY 대학 특목·자사고 합격자 6년 만에 최저…내신 영향력 확대 영향" onclick="copyParentFullMsg(this)">📱 카톡 발송문</button>
+  </div>
+  <p class="sum1">SKY 대학 특목·자사고 합격자 비율 6년 만에 최저치 기록, 내신 영향력 확대로 일반고 학생 유리해져</p>
+  <div class="block"><b>📌 무엇이 바뀌었나</b><ul><li>특목·자사고 합격 비율 급감: SKY 대학 특목·자사고 합격자 6년 만에 최저. 내신 불리한 특목·자사고 학생들의 입시 경쟁력 약화</li><li>일반고 학생 유리한 구조 전환: 내신 영향력 확대로 일반고 내신 유리. 특목·자사고보다 일반고가 SKY 진학에 더 유리한 시대 도래</li></ul></div>
+  <div class="myth"><div class="q">❓ 특목·자사고가 SKY 가기 유리한 거 아닌가요?</div><div class="a">→ 이제 아닙니다. SKY 대학 특목·자사고 합격자 비율이 6년 만에 최저를 기록했습니다. 내신 영향력이 확대되면서 일반고 학생이 오히려 유리해졌습니다.</div></div>
+  <div class="katok"><div class="l">📱 학부모 카톡문</div><p>[SCO Labs 입시 트렌드]
+
+SKY 대학 특목·자사고 합격자 6년 만에 최저!
+
+▪️내신 영향력 확대
+▪️일반고 학생 유리
+▪️특목·자사고 경쟁력 약화
+
+이제는 내신 관리 가능한 학교가 최선의 선택입니다.
+
+스코랩스가 일반고 학생의 SKY 진학을 돕습니다.
+
+▶ 1:1 고교 선택 상담
+</p></div>
+  <div class="titles"><div class="l">📰 카드뉴스 제목</div><ul><li>SKY 특목·자사고 합격자 6년 만에 최저</li><li>내신 영향력 확대, 일반고 학생 유리해져</li><li>고교 선택의 기준: 내신 관리 가능성</li></ul></div>
+  <div class="sco"><div class="l">💡 SCO 관점</div><p>특목·자사고 신화가 무너지고 있습니다. 내신 영향력이 확대되면서 일반고 학생이 오히려 유리한 구조로 전환되고 있습니다. 스코랩스는 '완성도 중심 학습'을 통해 일반고 학생의 내신·학생부를 완성하고, SKY 진학 가능성을 높입니다. 학교 선택보다 중요한 것은 어디서든 내신 최상위권을 유지하고, 완성도 높은 학습을 실천하는 것입니다.</p></div>
+  <div class="make-bar">
+    <span class="lbl">⚡ 자동 콘텐츠 제작</span>
+    <button class="make-btn full" onclick="makeContent(3,'full')">🚀 풀패키지</button>
+    <button class="make-btn" onclick="makeContent(3,'cards')">📸 카드뉴스</button>
+    <button class="make-btn" onclick="makeContent(3,'blog')">✍️ 블로그</button>
+    <button class="make-btn" onclick="makeContent(3,'captions')">💬 캡션</button>
+    <button class="make-btn" onclick="makeContent(3,'grades')">👨‍👩‍👧 학년별</button>
+    <button class="make-btn parent" onclick="makeContent(3,'parent')">📲 학부모 발송용</button>
+  </div>
+</div>
+<div class="ft">SCO LABS · 학이 아닌 습 · 매일 오전 11시 자동 생성 (서버)</div>
+</div>
+<script>
+const ARTICLES = {"1": {"id": 1, "priority": "긴급", "title": "[단독] [2028대입] 'N수생 배제 재학생 전용' 정시 첫 등장.. 고대489명 서강대90명", "shortTitle": "2028재학생전용정시고려대서강대", "source": "베리타스알파", "date": "2026-07-17", "year": "2028학년도", "target": "중3/고1/학부모", "areas": ["정시", "내신", "학생부"], "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9ORDRvT2ktSDMzb0RxVUZDQmZZdk92WGVMekM2QlJVc3YyejhJSUhtWVhldGtRR2RWendrcGVNOTE3bVdIVHJ0LTRPbWVHOFpxYWczQ2dFZGhPTXNwMlhTdXVrZm1rY1VUTW9lbw?oc=5", "hookBig": "2028학년도부터 재수생 막는 정시 등장!<br>고려대 489명, 서강대 90명<br>N수 없이 재학생만 지원 가능한<br>새로운 정시 전형이 시작됩니다", "hookLabel": "🚨 2028 대입 폭탄", "summary1": "2028학년도부터 고려대·서강대가 N수생 지원 불가, 재학생만 지원 가능한 정시 전형을 신설해 총 579명 선발", "changeA": {"label": "CHANGE 1", "title": "재학생 전용 정시<br>첫 등장", "desc": "고려대 489명(일반전형 내 구분), 서강대 90명(소프트웨어융합) 재학생만 지원 가능. N수생은 원천 차단되는 입시 역사상 첫 사례"}, "changeB": {"label": "CHANGE 2", "title": "재수 불리해지는<br>입시 구조 변화", "desc": "정시에서도 재학생 우대 시작. 내신 반영 확대와 맞물려 '고3 때 한 번에 끝내기' 압박 가속화. N수 메리트 급감"}, "mythQ": "정시는 재수생이 유리한 전형 아닌가요?", "mythA": "2028부터는 다릅니다. 재학생 전용 정시가 등장하며, 정시에서도 재수생이 불리해지는 구조로 전환되고 있습니다. 고3 때 한 번에 대입을 끝내야 하는 시대가 왔습니다.", "impacts": ["고려대·서강대 정시 총 579명 재학생 전용 선발 시작", "N수생 정시 지원 폭 좁아지며 재수 전략 재검토 필수", "재학생 내신·학생부 관리 중요도 급상승", "고3 때 수시+정시 동시 준비 압박 강화"], "actions": ["현 중3·고1: 재학생 때 끝낸다는 마인드로 내신+수능 병행 전략 수립", "고2: 재수 불리한 2028 구조 정확히 파악, 재학생 전용 전형 체크", "고3: 수시 올인 위험, 정시 재학생 전형까지 포함한 6장 전략 설계", "학부모: 자녀 재수 가능성 낮다는 전제로 고3 집중 지원 체계 구축"], "ctaHook": "재학생 전용 정시 시대, 우리 아이 전략은?", "katok": "[SCO Labs 긴급 분석]\n\n2028학년도부터 '재학생만' 지원 가능한 정시가 등장합니다.\n\n▪️고려대 489명, 서강대 90명\n▪️N수생 원천 차단\n▪️재수 메리트 급감\n\n정시도 이제 재학생 우대 시대.\n고3 때 한 번에 끝내는 전략이 필수입니다.\n\n스코랩스와 함께 지금부터 준비하세요.\n학이 아닌 습, 완성도가 답입니다.\n\n▶ 1:1 학습 전략 상담 신청\n", "sms": "[SCO] 2028부터 재학생 전용 정시 등장! 고대489명·서강대90명. N수생 차단, 고3 때 끝내는 전략 필수", "hashtags": ["2028대입", "재학생전용정시", "고려대정시", "서강대정시", "N수생배제", "재수불리", "정시변화", "내신강화", "고3집중", "재학생우대", "입시전략", "수시정시병행", "학생부관리", "수능준비", "대입개편", "스코랩스", "입시분석", "학부모필독", "중3고1전략", "고2대입준비"], "counseling": ["재학생 전용 정시는 2028학년도의 가장 큰 변화입니다. 고3 때 한 번에 끝낸다는 각오로 내신과 수능을 동시에 준비해야 합니다.", "고려대 489명, 서강대 90명은 시작입니다. 다른 대학들도 재학생 우대 정시를 확대할 가능성이 높습니다.", "N수 메리트가 사라지는 입시 구조에서는 '완성도 높은 학습'이 핵심입니다. 양보다 질, 학이 아닌 습이 중요합니다.", "재수를 전제로 한 느슨한 고3 생활은 이제 불가능합니다. 재학생 때 최선을 다해야 합니다.", "스코랩스는 재학생 중심 입시 시대에 맞춰 내신·수능·학생부를 동시에 완성하는 통합 커리큘럼을 제공합니다."], "card_titles": ["2028 대입 폭탄: 재학생 전용 정시 등장", "고려대 489명·서강대 90명 N수생 차단", "재수 불리한 시대, 고3 때 끝내는 전략"], "sco_view": "재학생 전용 정시는 '완성도 중심 입시'의 신호탄입니다. 스코랩스의 철학 '학이 아닌 습, 성적이 아닌 완성도'가 더욱 중요해지는 시점입니다. 재수를 전제로 한 불완전한 학습이 아니라, 재학생 때 완성도 높은 학습 습관과 실력을 갖춰야 합니다. 내신·수능·학생부를 통합 관리하며, 고3 한 해에 모든 것을 쏟아붓는 집중 전략이 필요합니다.", "blogTitle": "[2028 대입 긴급] 재학생 전용 정시 첫 등장! 고려대 489명·서강대 90명, N수생 배제 시대 온다", "blogSummary": "2028학년도부터 고려대·서강대가 재학생만 지원 가능한 정시 전형 신설. N수생 원천 차단, 재수 불리한 입시 구조로 전환. 고3 때 한 번에 끝내는 전략 필수.", "grades": {"중3": {"katok": "[중3 학부모님께]\n\n2028학년도(현 중3) 대입부터 재학생 전용 정시가 등장합니다.\n\n▪️고려대 489명, 서강대 90명\n▪️N수생 지원 불가\n▪️고3 때 한 번에 끝내야\n\n지금부터 내신+수능 병행 전략으로 완성도 높은 학습 습관을 만들어야 합니다.\n\n스코랩스가 중3부터 함께합니다.", "actions": ["고1 진학 전 내신 학습법 체화 (고교학점제 대비)", "수능 기초 개념 정립 (수학·영어 중심)", "학생부 관리 시작 (진로·독서·활동)"]}, "고1": {"katok": "[고1 학부모님께]\n\n2028 대입, 재학생 전용 정시가 처음 등장합니다.\n\n▪️N수생 차단 시작\n▪️재수 메리트 급감\n▪️고3 한 번에 승부\n\n고1 내신부터 철저히 관리하고, 수능 기초를 지금 다져야 합니다.\n\n스코랩스가 고1부터 완성도를 만듭니다.", "actions": ["1학기 내신 복기 후 2학기 전략 수립", "수능 국어·수학·영어 기본 개념 완성", "학생부 진로 활동 구체화 (관심 분야 탐색)"]}, "고2": {"katok": "[고2 학부모님께]\n\n2028 대입, 재학생 전용 정시 579명 선발 시작.\n\n▪️고려대·서강대 N수생 배제\n▪️재수 전략 통하지 않음\n▪️고3 한 해가 전부\n\n고2 내신+모의고사 관리가 고3 운명을 결정합니다.\n\n스코랩스가 고2 완성도를 책임집니다.", "actions": ["2학년 내신 최종 점검 (1학기 복기)", "6월·9월 모의고사 약점 분석 후 여름방학 집중", "재학생 전용 정시 포함 6장 지원 전략 설계"]}, "고3": {"katok": "[고3 학부모님께]\n\n2027 대입에도 재학생 우대 흐름 시작.\n정시 재수생 비율 86%이지만, 2028부터는 판이 바뀝니다.\n\n▪️수시 탈락 시 정시 승부\n▪️재학생 전용 전형 체크\n▪️6장 전략 정교화 필수\n\n지금 수시 최선 + 정시 대비 병행이 답입니다.\n\n스코랩스가 고3 마지막까지 함께합니다.", "actions": ["수시 6장 최적화 (학종·교과·논술 배분)", "9월 모평 후 정시 가능 대학 재산출", "수능 D-120일 집중 관리 (약점 과목 보완)", "재학생 우대 정시 전형 사전 체크"]}}}, "2": {"id": 2, "priority": "중요", "title": "\"수시만 믿었다간 낭패\"…정시 지원자 10명 중 7명은 '수시 탈락생'", "shortTitle": "정시지원자86프로수시탈락생", "source": "네이트", "date": "2026-07-17", "year": "2027학년도", "target": "고3/재수생/학부모", "areas": ["수시", "정시", "입시전략"], "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1FWFNOQjVTNUdHS2NWRnZoUHNlWmZEanRNUlFHaXpNUzNubzJUTUNVd0E4T0twSXpYTDAxS2U5NURRMlhQWDI4QU5aYXRWRjNhbXRj?oc=5", "hookBig": "정시 지원자 86%가 수시 탈락생!<br>수시 올인 전략의 위험성이<br>데이터로 증명됐습니다<br>수시+정시 병행 전략이 필수입니다", "hookLabel": "📊 입시 데이터 충격", "summary1": "2027학년도 정시 지원자 10명 중 7명(고3 86%)이 수시 탈락생으로, 수시 올인 전략의 위험성 입증", "changeA": {"label": "REALITY 1", "title": "수시 올인의<br>현실적 위험", "desc": "고3 정시 지원자 86%, 재수생 포함 시 70%가 수시 탈락생. 수시에만 집중했다가 정시로 밀려나는 학생 대다수"}, "changeB": {"label": "REALITY 2", "title": "수시 6장<br>모두 불합격 가능", "desc": "수시 6장 지원해도 전부 불합격 가능성 존재. 정시 대비 없이 수시만 준비하면 재수 확률 급증"}, "mythQ": "수시로 6번 지원하면 어디 하나는 붙지 않나요?", "mythA": "아닙니다. 수시 6장 모두 불합격하는 경우가 매우 많습니다. 정시 지원자 10명 중 7명이 수시 탈락생이라는 것이 이를 증명합니다. 수시와 정시를 동시에 준비해야 합니다.", "impacts": ["정시 지원자 70%(고3 86%)가 수시 탈락 후 정시로 전환", "수시 올인 전략 실패 시 재수 확률 급증", "수시 6장 모두 불합격 가능성 현실로 입증", "수시+정시 병행 전략 필수화"], "actions": ["고3: 수시 준비와 동시에 수능 최저·정시 대비 병행", "9월 이후 정시 가능 대학 리스트업 및 지원 전략 수립", "수시 결과 발표 전부터 정시 집중 모드 전환 준비", "학부모: 수시 올인 위험성 인지, 정시 대비 지원 체계 구축"], "ctaHook": "수시 탈락 시 우리 아이 정시 전략은?", "katok": "[SCO Labs 입시 현실]\n\n정시 지원자 10명 중 7명이 수시 탈락생입니다.\n\n▪️고3 정시 지원자 86% 수시 탈락\n▪️수시 6장 모두 불합격 가능\n▪️수시 올인 전략 위험\n\n수시+정시 병행 전략이 필수입니다.\n지금부터 수능 대비를 함께 진행하세요.\n\n스코랩스가 수시·정시 동시 완성을 돕습니다.\n\n▶ 1:1 입시 전략 상담\n", "sms": "[SCO] 정시 지원자 86%가 수시 탈락생! 수시 올인 위험, 수시+정시 병행 필수. 스코랩스 상담", "hashtags": ["정시지원자", "수시탈락생", "수시올인위험", "입시전략", "수시정시병행", "정시대비", "수능준비", "고3입시", "재수방지", "입시현실", "6장전략", "수시불합격", "정시전환", "스코랩스", "입시상담", "학부모필독", "2027대입", "입시데이터", "수능최저", "대입성공"], "counseling": ["수시 올인은 매우 위험한 전략입니다. 정시 지원자의 86%가 수시 탈락생이라는 데이터가 이를 증명합니다.", "수시 6장을 모두 지원해도 전부 불합격할 수 있습니다. 정시 대비를 반드시 병행해야 합니다.", "9월 이후에는 수시 결과를 기다리지 말고, 정시 집중 모드로 전환할 준비를 해야 합니다.", "스코랩스는 수시와 정시를 동시에 준비할 수 있는 통합 커리큘럼을 제공합니다.", "수시 탈락 시 재수가 아니라 정시로 당해 입학할 수 있도록 지금부터 수능 실력을 완성해야 합니다."], "card_titles": ["정시 지원자 86%, 수시 탈락생 현실", "수시 올인 전략의 위험성 데이터로 증명", "수시+정시 병행이 대입 성공의 열쇠"], "sco_view": "수시 올인은 입시 도박입니다. 스코랩스는 '완성도 중심 학습'을 통해 수시와 정시를 동시에 준비합니다. 내신·학생부로 수시를 대비하면서도, 수능 실력을 꾸준히 쌓아 정시 카드를 확보하는 것이 진짜 전략입니다. 수시 탈락 후 정시로 밀려나는 86%에 속하지 않으려면, 지금부터 수시·정시 병행 체계를 구축해야 합니다.", "blogTitle": "정시 지원자 86%가 수시 탈락생? 수시 올인 전략의 위험성과 수시·정시 병행 전략", "blogSummary": "2027학년도 정시 지원자 10명 중 7명이 수시 탈락 후 정시 전환. 수시 올인의 위험성 데이터로 입증. 수시+정시 동시 준비 전략 필수.", "grades": {"중3": {"katok": "[중3 학부모님께]\n\n정시 지원자 86%가 수시 탈락생이라는 현실.\n\n중3 때부터 내신+수능을 병행하는 습관을 만들어야 고3 때 수시·정시 모두 잡을 수 있습니다.\n\n스코랩스가 중3부터 통합 전략을 제공합니다.", "actions": ["내신 학습과 수능 기초 개념 동시 학습 습관화", "진로 탐색 + 독서·활동으로 학생부 준비", "고1 진학 전 통합 학습 체계 구축"]}, "고1": {"katok": "[고1 학부모님께]\n\n수시 올인은 위험합니다.\n정시 지원자 86%가 수시 탈락생.\n\n고1부터 내신과 수능을 함께 준비해야 고3 때 선택지를 넓힐 수 있습니다.\n\n스코랩스가 고1 통합 전략을 제공합니다.", "actions": ["내신 최우선 + 수능 기본 개념 병행", "학생부 관리 시작 (진로·활동)", "모의고사 성적 추이 분석"]}, "고2": {"katok": "[고2 학부모님께]\n\n정시 지원자 86%가 수시 탈락생.\n수시 올인은 재수로 가는 지름길입니다.\n\n고2 때부터 수시+정시 병행 체계를 구축해야 합니다.\n\n스코랩스가 고2 통합 전략을 완성합니다.", "actions": ["2학년 내신 마무리 + 모의고사 약점 보완", "여름방학 수능 집중 학습 (국·수·영)", "수시·정시 6장 전략 설계"]}, "고3": {"katok": "[고3 학부모님께]\n\n지금 정시 지원자 86%가 수시 탈락생입니다.\n\n수시 최선 + 정시 대비 병행이 필수.\n수시 결과 나오기 전부터 정시 준비를 시작해야 합니다.\n\n스코랩스가 고3 마지막까지 함께합니다.", "actions": ["수시 6장 최적화 지원", "9월 모평 후 정시 가능 대학 산출", "수능 D-120일 집중 관리", "수시 결과 전 정시 전환 준비"]}}}, "3": {"id": 3, "priority": "중요", "title": "SKY 대학 특목·자사고 합격자 6년 만에 최저…내신 영향력 확대 영향", "source": "에듀인사이드", "date": "2026-07-17", "year": "2027학년도", "target": "중3/고1/학부모", "areas": ["내신", "학생부종합", "특목자사고"], "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1EQXZHczNGZFVvZWkxa3B5TVN2Nzhma21YSWxHTV9nVG1zUk5tWEFQRlNXRjhqQ3NpT1Voc3M5azB2MG8yRlg2RUFJT2FUanJTUnJuUHNTVHlXajdpaElFUXkxS082Qk1S?oc=5", "hookBig": "SKY 대학 특목·자사고 합격자<br>6년 만에 최저 기록!<br>내신 영향력 확대로<br>일반고 학생 유리한 구조 전환", "hookLabel": "📉 특목·자사고 위기", "summary1": "SKY 대학 특목·자사고 합격자 비율 6년 만에 최저치 기록, 내신 영향력 확대로 일반고 학생 유리해져", "changeA": {"label": "TREND 1", "title": "특목·자사고<br>합격 비율 급감", "desc": "SKY 대학 특목·자사고 합격자 6년 만에 최저. 내신 불리한 특목·자사고 학생들의 입시 경쟁력 약화"}, "changeB": {"label": "TREND 2", "title": "일반고 학생<br>유리한 구조 전환", "desc": "내신 영향력 확대로 일반고 내신 유리. 특목·자사고보다 일반고가 SKY 진학에 더 유리한 시대 도래"}, "mythQ": "특목·자사고가 SKY 가기 유리한 거 아닌가요?", "mythA": "이제 아닙니다. SKY 대학 특목·자사고 합격자 비율이 6년 만에 최저를 기록했습니다. 내신 영향력이 확대되면서 일반고 학생이 오히려 유리해졌습니다.", "impacts": ["SKY 대학 특목·자사고 합격자 6년 만에 최저 기록", "내신 영향력 확대로 특목·자사고 입시 경쟁력 약화", "일반고 내신 유리, SKY 진학 가능성 상승", "특목·자사고 진학 고민 중인 중3 학생 전략 재검토 필요"], "actions": ["중3: 특목·자사고 vs 일반고 선택 시 내신 관리 가능성 최우선 고려", "일반고 선택 학생: 내신 최상위권 목표, SKY 진학 가능성 열림", "특목·자사고 재학생: 내신 불리함 극복 위해 비교과·학생부 강화", "학부모: 무조건 특목·자사고가 아니라 내신 관리 가능한 학교 선택"], "ctaHook": "우리 아이 고교 선택, 어디가 유리할까?", "katok": "[SCO Labs 입시 트렌드]\n\nSKY 대학 특목·자사고 합격자 6년 만에 최저!\n\n▪️내신 영향력 확대\n▪️일반고 학생 유리\n▪️특목·자사고 경쟁력 약화\n\n이제는 내신 관리 가능한 학교가 최선의 선택입니다.\n\n스코랩스가 일반고 학생의 SKY 진학을 돕습니다.\n\n▶ 1:1 고교 선택 상담\n", "sms": "[SCO] SKY 특목·자사고 합격자 6년 만에 최저! 내신 영향력 확대, 일반고 유리. 고교 선택 상담", "hashtags": ["SKY대학", "특목자사고", "일반고유리", "내신영향력", "고교선택", "입시트렌드", "내신관리", "학생부종합", "일반고SKY", "특목자사고위기", "중3진학", "고교진학", "입시전략", "스코랩스", "학부모필독", "2027대입", "내신최우선", "고교선택전략", "일반고내신", "입시변화"], "counseling": ["SKY 대학 특목·자사고 합격자 비율이 6년 만에 최저를 기록했습니다. 내신 영향력이 확대되면서 특목·자사고의 입시 경쟁력이 약화되고 있습니다.", "일반고 학생이 내신 관리에서 유리하며, SKY 진학 가능성이 높아지고 있습니다. 무조건 특목·자사고가 아니라 내신 관리 가능한 학교를 선택해야 합니다.", "특목·자사고 재학생이라면 내신 불리함을 극복하기 위해 비교과·학생부를 강화해야 합니다.", "중3 학생이라면 고교 선택 시 내신 관리 가능성을 최우선으로 고려해야 합니다.", "스코랩스는 일반고 학생의 내신·학생부 완성을 통해 SKY 진학을 돕습니다."], "card_titles": ["SKY 특목·자사고 합격자 6년 만에 최저", "내신 영향력 확대, 일반고 학생 유리해져", "고교 선택의 기준: 내신 관리 가능성"], "sco_view": "특목·자사고 신화가 무너지고 있습니다. 내신 영향력이 확대되면서 일반고 학생이 오히려 유리한 구조로 전환되고 있습니다. 스코랩스는 '완성도 중심 학습'을 통해 일반고 학생의 내신·학생부를 완성하고, SKY 진학 가능성을 높입니다. 학교 선택보다 중요한 것은 어디서든 내신 최상위권을 유지하고, 완성도 높은 학습을 실천하는 것입니다.", "blogTitle": "SKY 대학 특목·자사고 합격자 6년 만에 최저! 내신 영향력 확대로 일반고 유리해진 이유", "blogSummary": "SKY 대학 특목·자사고 합격자 비율 6년 만에 최저 기록. 내신 영향력 확대로 일반고 학생 유리, 고교 선택 전략 재검토 필요.", "grades": {"중3": {"katok": "[중3 학부모님께]\n\nSKY 대학 특목·자사고 합격자 6년 만에 최저!\n\n내신 영향력 확대로 일반고가 더 유리합니다.\n고교 선택 시 내신 관리 가능성을 최우선으로 고려하세요.\n\n스코랩스가 일반고 학생의 SKY 진학을 돕습니다.", "actions": ["특목·자사고 vs 일반고 선택 시 내신 관리 가능성 최우선", "일반고 선택 시 내신 최상위권 전략 수립", "고교 진학 전 학습 습관 완성"]}, "고1": {"katok": "[고1 학부모님께]\n\nSKY 특목·자사고 합격자 6년 만에 최저.\n일반고 학생이 내신으로 유리합니다.\n\n고1 내신부터 철저히 관리하면 SKY 진학 가능성이 열립니다.\n\n스코랩스가 고1 내신 완성을 돕습니다.", "actions": ["1학기 내신 복기 후 2학기 전략 수립", "내신 최상위권 목표 설정", "학생부 비교과 활동 강화"]}, "고2": {"katok": "[고2 학부모님께]\n\n내신 영향력 확대로 일반고 학생이 SKY 진학에 유리합니다.\n\n고2 내신이 입시 승패를 결정합니다.\n지금부터 내신 최상위권을 목표로 집중하세요.\n\n스코랩스가 고2 내신 완성을 책임집니다.", "actions": ["2학년 내신 최종 점검", "내신 약점 과목 집중 보완", "학생부 심화 활동 추가"]}, "고3": {"katok": "[고3 학부모님께]\n\nSKY 특목·자사고 합격자 최저 기록.\n일반고 학생도 충분히 SKY 갈 수 있습니다.\n\n내신+학생부+수능 최저를 모두 갖추면 가능성이 열립니다.\n\n스코랩스가 고3 마지막까지 함께합니다.", "actions": ["수시 학생부종합 전형 집중", "내신 기반 6장 전략 최적화", "수능 최저 충족 목표 설정", "학생부 최종 점검"]}}}};
+const TODAY_STR = "2026-07-17";
+
+function downloadFile(filename, content, mime){
+  mime = mime || 'text/plain;charset=utf-8';
+  const blob = new Blob([content],{type:mime});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob); a.download = filename;
+  document.body.appendChild(a); a.click(); document.body.removeChild(a);
+}
+function openInNewTab(html){
+  const blob = new Blob([html],{type:'text/html;charset=utf-8'});
+  window.open(URL.createObjectURL(blob),'_blank');
+}
+
+function copyParentUrl(btn){
+  const url = btn.dataset.url;
+  navigator.clipboard.writeText(url).then(()=>{
+    const o=btn.textContent; btn.textContent='✅ 복사됨!'; setTimeout(()=>btn.textContent=o,1500);
+  });
+}
+function copyParentFullMsg(btn){
+  const url = btn.dataset.url;
+  const title = btn.dataset.title;
+  const txt = '[SCO 긴급 입시속보 - '+TODAY_STR+']\n\n'+title+'\n\n전체 내용 ▶ '+url+'\n\n- SCO 학습관리';
+  navigator.clipboard.writeText(txt).then(()=>{
+    const o=btn.textContent; btn.textContent='✅ 복사됨!'; setTimeout(()=>btn.textContent=o,1500);
+  });
+}
+
+function genCardsHTML(id){
+  const a = ARTICLES[id]; if(!a) return '<h1>데이터 없음</h1>';
+  const titles = a.card_titles || [];
+  const cards = [
+    {cls:'c1', label:a.hookLabel||'📢', main:a.hookBig||a.title, isHook:true},
+    {cls:'c2', label:'CHANGE 1', main:(a.changeA&&a.changeA.title)||'', sub:(a.changeA&&a.changeA.desc)||''},
+    {cls:'c3', label:'CHANGE 2', main:(a.changeB&&a.changeB.title)||'', sub:(a.changeB&&a.changeB.desc)||''},
+    {cls:'c4', label:'⚠️ 학부모 오해', main:a.mythQ||'', sub:a.mythA||''},
+    {cls:'c5', label:'💔 영향', list:a.impacts||[]},
+    {cls:'c6', label:'📋 할 일', list:a.actions||[]},
+    {cls:'c7', label:'💡 SCO 관점', main:a.ctaHook||a.sco_view||'', sub:'학이 아닌 습'},
+    {cls:'c8', label:'📩 무료 진단', main:'우리 아이 맞춤 진단', sub:'카카오톡 채널/DM/프로필 링크', isCta:true}
+  ];
+  return '<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><title>'+a.title+' 카드뉴스</title><style>*{box-sizing:border-box;margin:0;padding:0}body{font-family:-apple-system,Pretendard,sans-serif;background:#e5e7eb;padding:20px}.cards{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(500px,1fr));gap:24px}.card{width:100%;aspect-ratio:1/1;border-radius:18px;padding:54px 48px;display:flex;flex-direction:column;justify-content:space-between;color:white;font-weight:700;position:relative;line-height:1.4}.num{position:absolute;top:20px;right:24px;font-size:13px;opacity:.6}.brand{position:absolute;bottom:24px;left:48px;font-size:12px;opacity:.7}.label{font-size:16px;font-weight:700;opacity:.85;margin-bottom:14px;letter-spacing:1px}.main{font-size:36px;font-weight:900;line-height:1.25}.hook{font-size:46px;font-weight:900;line-height:1.2}.sub{font-size:18px;line-height:1.5;font-weight:500;opacity:.9;margin-top:14px}.cta{font-size:42px;font-weight:900;color:#fbbf24}ul{padding-left:24px;margin-top:8px}li{font-size:24px;margin-bottom:8px;font-weight:600}.c1{background:linear-gradient(135deg,#0b1e3f,#1a3a6b)}.c2{background:linear-gradient(135deg,#b91c1c,#ea580c)}.c3{background:linear-gradient(135deg,#1a3a6b,#3b82f6)}.c4{background:linear-gradient(135deg,#b45309,#d97706)}.c5{background:linear-gradient(135deg,#7f1d1d,#dc2626)}.c6{background:linear-gradient(135deg,#064e3b,#059669)}.c7{background:linear-gradient(135deg,#0b1e3f,#1e293b)}.c8{background:linear-gradient(135deg,#0b1e3f,#ea580c)}</style></head><body><div class="cards">'+cards.map((c,i)=>{
+    let body='';
+    if(c.isHook) body='<div><div class="label">'+c.label+'</div><div class="hook">'+c.main+'</div></div>';
+    else if(c.isCta) body='<div><div class="label">'+c.label+'</div><div class="cta">'+c.main+'</div><div class="sub">'+c.sub+'</div></div>';
+    else if(c.list) body='<div><div class="label">'+c.label+'</div><ul>'+c.list.map(x=>'<li>'+x+'</li>').join('')+'</ul></div>';
+    else body='<div><div class="label">'+c.label+'</div><div class="main">'+c.main+'</div>'+(c.sub?'<div class="sub">'+c.sub+'</div>':'')+'</div>';
+    return '<div class="card '+c.cls+'"><div class="num">'+(i+1)+'/8</div>'+body+'<div class="brand">SCO LABS</div></div>';
+  }).join('')+'</div></body></html>';
+}
+
+function genBlogHTML(id){
+  const a = ARTICLES[id]; if(!a) return '<h1>데이터 없음</h1>';
+  return '<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><title>'+(a.blogTitle||a.title)+'</title><style>body{font-family:-apple-system,Pretendard,sans-serif;background:#f7f8fa;line-height:1.8;padding:20px}.wrap{max-width:780px;margin:0 auto;background:white;border-radius:14px;overflow:hidden}.hd{background:linear-gradient(135deg,#0b1e3f,#1a3a6b);color:white;padding:48px 44px}.hd h1{font-size:28px;font-weight:800}.summary{background:#fff7ed;border-left:6px solid #ea580c;padding:20px 28px;color:#9a3412;font-weight:600}.body{padding:24px 44px}.body h2{font-size:20px;font-weight:800;color:#0b1e3f;margin:30px 0 14px;padding-left:14px;border-left:5px solid #0b1e3f}.body p{font-size:15px;color:#374151;margin-bottom:12px}.body ul{padding-left:26px;margin:10px 0}.cta{background:linear-gradient(135deg,#0b1e3f,#ea580c);color:white;padding:24px;border-radius:12px;margin:24px 0}.tags{background:#f3f4f6;padding:18px;border-radius:10px;margin:20px 0;font-size:13px;color:#6b7280}</style></head><body><div class="wrap"><div class="hd"><div style="opacity:.7;font-size:12px">📅 '+a.date+' · SCO LABS</div><h1>'+(a.blogTitle||a.title)+'</h1></div><div class="summary">'+(a.blogSummary||a.summary1||'')+'</div><div class="body"><h2>1. 무엇이 바뀌었나</h2><p>'+(a.summary1||'')+'</p><h2>2. 학부모 오해</h2><p><b>Q.</b> '+(a.mythQ||'')+'<br><b>A.</b> '+(a.mythA||'')+'</p><h2>3. 우리 아이 영향</h2><ul>'+((a.impacts||[]).map(x=>'<li>'+x+'</li>').join(''))+'</ul><h2>4. 지금 할 일</h2><ul>'+((a.actions||[]).map(x=>'<li><b>'+x+'</b></li>').join(''))+'</ul><h2>5. SCO 관점</h2><p>'+(a.sco_view||'')+'</p><div class="cta"><h3>💡 무료 입시 진단</h3><p>카카오톡 채널/DM/프로필 링크</p></div><div class="tags">'+((a.hashtags||[]).map(h=>'#'+h).join(' '))+'</div></div></div></body></html>';
+}
+
+function genGradesHTML(id){
+  const a = ARTICLES[id]; if(!a||!a.grades) return '<h1>학년별 데이터 없음</h1>';
+  const colors = {'중3':'#b91c1c','고1':'#ea580c','고2':'#1a3a6b','고3':'#7c3aed'};
+  return '<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><title>학년별 카톡</title><style>body{font-family:-apple-system,Pretendard,sans-serif;background:#f7f8fa;padding:20px;line-height:1.7}.wrap{max-width:1000px;margin:0 auto}.hd{background:linear-gradient(135deg,#0b1e3f,#1a3a6b);color:white;padding:32px;border-radius:14px;margin-bottom:24px}.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.card{background:white;border-radius:12px;padding:24px}.card h2{font-size:18px;font-weight:800;color:white;padding:6px 14px;border-radius:6px;display:inline-block;margin-bottom:14px}.katok{background:#fef3c7;border:1.5px dashed #f59e0b;border-radius:8px;padding:16px;font-size:13px;color:#78350f;white-space:pre-line}.actions{margin-top:14px}.actions ul{padding-left:18px}.actions li{font-size:13px;color:#374151;margin-bottom:4px}@media(max-width:700px){.cards{grid-template-columns:1fr}}</style></head><body><div class="wrap"><div class="hd"><h1 style="font-size:22px">학년별 맞춤 카톡 안내문</h1><div style="font-size:14px;opacity:.85;margin-top:6px">'+a.title+' · '+a.date+'</div></div><div class="cards">'+Object.keys(a.grades).map(g=>{const d=a.grades[g];return '<div class="card"><h2 style="background:'+(colors[g]||'#0b1e3f')+'">'+g+' 학부모용</h2><div class="katok">'+d.katok+'</div><div class="actions"><b>이 학년이 할 일</b><ul>'+((d.actions||[]).map(x=>'<li>'+x+'</li>').join(''))+'</ul></div></div>';}).join('')+'</div></div></body></html>';
+}
+
+function genCaptions(id){
+  const a = ARTICLES[id]; if(!a) return '';
+  return '=== SCO 콘텐츠 패키지 · '+a.date+' ===\n\n[인스타 캡션]\n'+(a.hookBig||'').replace(/<[^>]+>/g,' ')+'\n\n'+(a.summary1||'')+'\n\n📩 DM/프로필\n\n'+((a.hashtags||[]).map(h=>'#'+h).join(' '))+'\n\n[카톡 채널 발송]\n'+(a.katok||'')+'\n\n[SMS]\n'+(a.sms||'')+'\n\n[상담 멘트]\n'+((a.counseling||[]).map((m,i)=>(i+1)+'. "'+m+'"').join('\n\n'));
+}
+
+function genParentMessage(id){
+  const a = ARTICLES[id]; if(!a) return '';
+  return '📢 SCO 입시 브리핑\n━━━━━━━━━━━━━━━\n'+a.date+'\n\n🎯 오늘의 핵심\n《'+a.title+'》\n\n📌 NOW\n  ✓ '+(a.summary1||'')+'\n\n❓ FAQ\n  Q. '+(a.mythQ||'')+'\n  A. '+(a.mythA||'')+'\n\n💡 SCO의 답\n  '+(a.sco_view||'')+'\n\n━━━━━━━━━━━━━━━\n📩 무료 입시 진단\n   ▶ 카카오톡 채널 / DM\n━━━━━━━━━━━━━━━\n\nSCO Labs · '+(a.source||'');
+}
+
+function _wrapText(ctx,text,x,y,maxW,lh){const chars=text.split('');let line='',cy=y;for(let i=0;i<chars.length;i++){const t=line+chars[i];if(ctx.measureText(t).width>maxW&&line!==''){ctx.fillText(line,x,cy);line=chars[i];cy+=lh}else line=t}ctx.fillText(line,x,cy);return cy+lh}
+function _roundRect(ctx,x,y,w,h,r){ctx.beginPath();ctx.moveTo(x+r,y);ctx.arcTo(x+w,y,x+w,y+h,r);ctx.arcTo(x+w,y+h,x,y+h,r);ctx.arcTo(x,y+h,x,y,r);ctx.arcTo(x,y,x+w,y,r);ctx.closePath()}
+
+function drawParentCardCanvas(id){
+  const a=ARTICLES[id]; if(!a){alert('데이터 없음');return}
+  const canvas=document.getElementById('sco-export-canvas');
+  const ctx=canvas.getContext('2d'); const W=1080,H=1350,PAD=80;
+  const FONT='"Apple SD Gothic Neo","Pretendard",-apple-system,sans-serif';
+  const bg=ctx.createLinearGradient(0,0,0,H);
+  bg.addColorStop(0,'#0b1e3f');bg.addColorStop(.6,'#1e3a8a');bg.addColorStop(1,'#1a3a6b');
+  ctx.fillStyle=bg;ctx.fillRect(0,0,W,H);
+  ctx.fillStyle='rgba(255,255,255,.85)';ctx.font='800 22px '+FONT;ctx.fillText('SCO LABS',PAD,PAD+10);
+  ctx.fillStyle='rgba(255,255,255,.7)';ctx.font='600 24px '+FONT;ctx.textAlign='right';ctx.fillText(a.date||'',W-PAD,PAD+10);ctx.textAlign='left';
+  let y=160;
+  ctx.fillStyle='rgba(251,191,36,.25)';_roundRect(ctx,PAD,y,260,50,25);ctx.fill();
+  ctx.fillStyle='#fbbf24';ctx.font='800 22px '+FONT;ctx.fillText('📢 SCO 입시 브리핑',PAD+22,y+33);
+  y=260;ctx.fillStyle='#fff';ctx.font='900 46px '+FONT;
+  y=_wrapText(ctx,(a.title||'').slice(0,60),PAD,y+40,W-PAD*2,60);
+  y+=30;ctx.fillStyle='rgba(255,255,255,.2)';ctx.fillRect(PAD,y,W-PAD*2,2);
+  y+=40;ctx.fillStyle='#fbbf24';ctx.font='800 22px '+FONT;ctx.fillText('📌 NOW',PAD,y);
+  y+=40;ctx.fillStyle='rgba(255,255,255,.95)';ctx.font='500 26px '+FONT;
+  y=_wrapText(ctx,(a.summary1||'').slice(0,150),PAD,y,W-PAD*2,40);
+  y+=20;ctx.fillStyle='rgba(255,255,255,.08)';_roundRect(ctx,PAD,y,W-PAD*2,200,20);ctx.fill();
+  ctx.fillStyle='#fbbf24';ctx.font='700 22px '+FONT;ctx.fillText('❓ '+(a.mythQ||'').slice(0,35),PAD+30,y+45);
+  ctx.fillStyle='rgba(255,255,255,.95)';ctx.font='500 22px '+FONT;
+  _wrapText(ctx,'→ '+(a.mythA||'').slice(0,100),PAD+30,y+90,W-PAD*2-60,36);
+  y+=230;ctx.fillStyle='rgba(255,255,255,.2)';ctx.fillRect(PAD,y,W-PAD*2,2);
+  y+=40;ctx.fillStyle='#fbbf24';ctx.font='800 22px '+FONT;ctx.fillText('💡 SCO의 답',PAD,y);
+  y+=40;ctx.fillStyle='rgba(255,255,255,.95)';ctx.font='700 28px '+FONT;
+  _wrapText(ctx,'학(學)이 아닌 습(習). 매일 실행이 결국 이깁니다.',PAD,y,W-PAD*2,42);
+  const cY=H-220;
+  const cg=ctx.createLinearGradient(0,cY,W,cY+130);
+  cg.addColorStop(0,'#ea580c');cg.addColorStop(1,'#fbbf24');
+  ctx.fillStyle=cg;_roundRect(ctx,PAD,cY,W-PAD*2,130,20);ctx.fill();
+  ctx.fillStyle='#0b1e3f';ctx.font='900 32px '+FONT;ctx.textAlign='center';
+  ctx.fillText('📩 무료 입시 진단 신청',W/2,cY+50);
+  ctx.font='600 20px '+FONT;ctx.fillText('카카오톡 채널 / DM / 프로필 링크',W/2,cY+90);
+  ctx.fillStyle='rgba(255,255,255,.5)';ctx.font='700 16px '+FONT;ctx.fillText('S C O   L A B S',W/2,H-30);ctx.textAlign='left';
+  const link=document.createElement('a');
+  link.download='SCO_학부모카드_'+(a.date||'')+'_'+id+'.png';
+  link.href=canvas.toDataURL('image/png');
+  document.body.appendChild(link);link.click();document.body.removeChild(link);
+}
+
+function makeContent(id, type){
+  const a = ARTICLES[id]; if(!a){alert('기사 데이터 없음');return}
+  const safeTitle = (a.shortTitle||a.title||'').replace(/[\/\\:*?"<>|]/g,'').slice(0,30);
+  const base = 'SCO_'+a.date+'_'+id+'_'+safeTitle;
+  if(type==='cards'){
+    const h=genCardsHTML(id);downloadFile(base+'_카드뉴스.html',h,'text/html;charset=utf-8');openInNewTab(h);
+  } else if(type==='blog'){
+    const h=genBlogHTML(id);downloadFile(base+'_블로그.html',h,'text/html;charset=utf-8');openInNewTab(h);
+  } else if(type==='captions'){
+    downloadFile(base+'_캡션.txt',genCaptions(id),'text/plain;charset=utf-8');
+  } else if(type==='grades'){
+    const h=genGradesHTML(id);downloadFile(base+'_학년별카톡.html',h,'text/html;charset=utf-8');openInNewTab(h);
+  } else if(type==='parent'){
+    drawParentCardCanvas(id);
+    const text=genParentMessage(id);
+    navigator.clipboard.writeText(text).then(()=>alert('📲 학부모 발송 풀세트!\n✅ PNG 카드 다운로드\n✅ 텍스트 클립보드 복사\n→ 카톡 채널에 첨부+붙여넣기')).catch(()=>{});
+    downloadFile(base+'_학부모발송.txt',text,'text/plain;charset=utf-8');
+  } else if(type==='full'){
+    const c=genCardsHTML(id),b=genBlogHTML(id),g=genGradesHTML(id),t=genCaptions(id);
+    downloadFile(base+'_카드뉴스.html',c,'text/html;charset=utf-8');
+    setTimeout(()=>downloadFile(base+'_블로그.html',b,'text/html;charset=utf-8'),300);
+    setTimeout(()=>downloadFile(base+'_캡션.txt',t,'text/plain;charset=utf-8'),600);
+    setTimeout(()=>downloadFile(base+'_학년별카톡.html',g,'text/html;charset=utf-8'),900);
+    setTimeout(()=>openInNewTab(c),1200);
+    alert('🚀 풀패키지 4개 파일 다운로드 시작!');
+  }
+}
+</script></body></html>
