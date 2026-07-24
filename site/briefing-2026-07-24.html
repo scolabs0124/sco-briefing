@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>SCO 입시 브리핑 — 2026-07-24</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,'Pretendard','Apple SD Gothic Neo',sans-serif;background:#f4f6fa;color:#1a1a1a;line-height:1.6;padding:20px}
+.wrap{max-width:980px;margin:0 auto}
+.header{background:linear-gradient(135deg,#0b1e3f 0%,#1a3a6b 100%);color:#fff;padding:36px 28px;border-radius:14px}
+.header h1{font-size:28px;font-weight:800}
+.header .sub{margin-top:6px;font-size:14px;opacity:.92}
+.hero{background:#fff7ed;border-left:6px solid #f97316;padding:20px 22px;border-radius:10px;margin-top:18px}
+.hero h2{font-size:18px;color:#9a3412}
+.pick{background:#ecfdf5;border:1px solid #6ee7b7;border-radius:12px;padding:18px 22px;margin-top:18px}
+.pick h3{color:#065f46;font-size:15px}
+.card{background:#fff;border-radius:14px;box-shadow:0 4px 14px rgba(0,0,0,.06);padding:26px;margin-top:22px;border-top:5px solid #3b82f6}
+.card.urgent{border-top-color:#dc2626}.card.important{border-top-color:#f59e0b}.card.note{border-top-color:#6b7280}
+.badges{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+.badge{font-size:11px;padding:4px 10px;border-radius:999px;font-weight:700}
+.b-urgent{background:#fef2f2;color:#b91c1c}.b-important{background:#fffbeb;color:#b45309}.b-note{background:#f3f4f6;color:#374151}
+.b-cat{background:#eff6ff;color:#1d4ed8}.b-year{background:#f0fdf4;color:#15803d}.b-tgt{background:#fdf4ff;color:#a21caf}
+.card h2{font-size:20px;font-weight:800;color:#111827}
+.source{font-size:12px;color:#6b7280;margin-top:4px}.source a{color:#3b82f6;text-decoration:none}
+.parent-link{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;padding:10px 12px;background:#f0fdf4;border:1px dashed #86efac;border-radius:8px;align-items:center}
+.pl-lbl{font-size:11px;color:#065f46;font-weight:800;letter-spacing:.5px;margin-right:4px}
+.pl-btn{background:#059669;color:#fff;border:none;padding:8px 14px;border-radius:6px;font-size:12px;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block;font-family:inherit}
+.pl-btn:hover{background:#047857}
+.pl-copy{background:#0284c7}.pl-copy:hover{background:#0369a1}
+.pl-copyfull{background:#d97706}.pl-copyfull:hover{background:#b45309}
+.sum1{margin-top:14px;font-size:15px;color:#1f2937}
+.block{margin-top:14px;font-size:14px}.block ul{margin-top:6px;padding-left:22px}.block li{margin:3px 0}
+.myth{margin-top:14px;background:#fff7ed;border-left:4px solid #f59e0b;padding:14px 16px;border-radius:8px}
+.myth .q{font-weight:700;color:#9a3412}.myth .a{margin-top:6px;color:#7c2d12}
+.katok{margin-top:14px;background:#fef9c3;border-left:4px solid #eab308;padding:16px;border-radius:8px}
+.katok .l{font-size:11px;color:#854d0e;font-weight:700;letter-spacing:1px}
+.katok p{margin-top:6px;font-size:14px;color:#3f3f00;white-space:pre-wrap}
+.titles{margin-top:14px;background:#eff6ff;border-left:4px solid #3b82f6;padding:14px 16px;border-radius:8px}
+.titles .l{font-size:11px;color:#1d4ed8;font-weight:700;letter-spacing:1px}
+.titles ul{margin-top:6px;padding-left:18px}.titles li{color:#1e3a8a;margin:2px 0}
+.sco{margin-top:14px;background:#111827;color:#f9fafb;padding:14px 16px;border-radius:8px}
+.sco .l{font-size:11px;color:#9ca3af;font-weight:700;letter-spacing:1px}.sco p{margin-top:6px;color:#e5e7eb}
+.make-bar{background:linear-gradient(135deg,#7c2d12 0%,#b91c1c 100%);border-radius:10px;padding:14px 18px;margin-top:18px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.make-bar .lbl{color:white;font-size:12px;font-weight:800;letter-spacing:.5px;margin-right:6px}
+.make-btn{background:white;color:#7c2d12;border:none;padding:9px 14px;border-radius:7px;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit}
+.make-btn:hover{background:#fef2f2}.make-btn.full{background:#fbbf24;color:#78350f}.make-btn.parent{background:#16a34a;color:white}
+.ft{text-align:center;color:#9ca3af;font-size:12px;margin-top:30px;padding:20px}
+</style></head><body>
+<canvas id="sco-export-canvas" width="1080" height="1350" style="display:none"></canvas>
+<div class="wrap">
+<div class="header"><h1>📅 SCO 입시 브리핑</h1><div class="sub">2026-07-24 (금) · 스코랩스(SCO Labs) 입시정보팀</div></div>
+<div class="hero"><h2>🔥 2027 수시 박람회 본격 개막, 삼수생 적응 문제 대두, 지역별 맞춤 입시 지원 확대</h2></div>
+<div class="pick"><h3>💡 학부모 즉시 발송 추천</h3><p>[포토] 전남대, 2027학년도 수시 박람회 현장</p></div>
+
+<div class="card urgent" id="card-2">
+  <div class="badges">
+    <span class="badge b-urgent">긴급</span>
+    <span class="badge b-year">2027학년도</span>
+    <span class="badge b-tgt">고2/고3/학부모</span>
+    <span class="badge b-cat">수시</span> <span class="badge b-cat">대입전략</span>
+  </div>
+  <h2>2. [포토] 전남대, 2027학년도 수시 박람회 현장</h2>
+  <div class="source">교수신문 · 2026-07-24 · <a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5FWDZJNlJhS0MtQ0NERk1GOHFXd29kUG9MbnUxQUo3N1NDRUk3cjFuUFNscDJaX2JQNk84VFJXUzBtOTFVeVBNeGlOOHV4MmNqSE9qSnZBZGRMYk1OSlR1US1RS2oxbnc?oc=5" target="_blank">원문</a></div>
+  <div class="parent-link">
+    <span class="pl-lbl">🎯 학부모 링크</span>
+    <a href="/p/2026-07-24-2.html" target="_blank" class="pl-btn">👀 미리보기</a>
+    <button class="pl-btn pl-copy" data-url="https://sco-daily.netlify.app/p/2026-07-24-2.html" onclick="copyParentUrl(this)">🔗 링크 복사</button>
+    <button class="pl-btn pl-copyfull" data-url="https://sco-daily.netlify.app/p/2026-07-24-2.html" data-title="[포토] 전남대, 2027학년도 수시 박람회 현장" onclick="copyParentFullMsg(this)">📱 카톡 발송문</button>
+  </div>
+  <p class="sum1">전남대·전북대 등 2027학년도 수시 박람회 본격 개최, 전국 대학 입시 상담 시즌 돌입</p>
+  <div class="block"><b>📌 무엇이 바뀌었나</b><ul><li>전국 주요 대학 수시 박람회 동시 개최: 전남대, 전북대 등 지역 거점 국립대들이 7월 넷째 주부터 2027학년도 수시 박람회를 본격 개최. 학생부종합, 논술, 교과 등 전형별 맞춤 상담 진행</li><li>부산교육청, 전국 78개 대학 참여 대입상담캠프 운영: 부산시교육청은 전국 78개 대학이 참여하는 '2026 대입상담캠프'를 개최해 수험생들에게 1:1 맞춤 상담 기회 제공. 지역별 대입 지원 강화 추세</li></ul></div>
+  <div class="myth"><div class="q">❓ 수시 박람회는 성적 우수자만 가는 거 아닌가요?</div><div class="a">→ 절대 아닙니다. 수시 박람회는 모든 성적대 학생들에게 열려있으며, 오히려 중위권 학생들이 자신에게 맞는 전형과 대학을 발견하는 핵심 기회입니다. 대학 입학처 직접 상담으로 '숨은 기회'를 찾아내세요.</div></div>
+  <div class="katok"><div class="l">📱 학부모 카톡문</div><p>[SCO 긴급] 고2·고3 학부모님께
+
+2027 수시 박람회가 전국적으로 시작됐습니다!
+전남대·전북대·부산 78개 대학 등 주요 대학 입학처가 직접 상담 진행 중입니다.
+
+✅ 이번 주말 우리 지역 박람회 일정 확인
+✅ 학생부+성적표 지참하고 현장 상담
+✅ 수시 6장 전략, 지금 세워야 합니다
+
+수시는 '정보력'이 당락을 가릅니다.
+스코랩스가 박람회 이후 맞춤 전략까지 함께합니다.
+
+상담 문의: 1588-xxxx
+- SCO Labs 입시분석팀</p></div>
+  <div class="titles"><div class="l">📰 카드뉴스 제목</div><ul><li>2027 수시 박람회 시작! 지금 바로 움직여야 할 이유</li><li>전남대·전북대·부산 78개 대학 현장 상담 총정리</li><li>수시 박람회 200% 활용법 - 학부모 체크리스트 5가지</li></ul></div>
+  <div class="sco"><div class="l">💡 SCO 관점</div><p>수시 박람회는 '정보 수집'의 시작일 뿐입니다. 스코랩스는 그 정보를 '학습 완성도'로 전환하는 시스템을 제공합니다. 학이 아닌 습, 성적이 아닌 완성도. 박람회 후 일주일이 전략 수립의 골든타임입니다.</p></div>
+  <div class="make-bar">
+    <span class="lbl">⚡ 자동 콘텐츠 제작</span>
+    <button class="make-btn full" onclick="makeContent(2,'full')">🚀 풀패키지</button>
+    <button class="make-btn" onclick="makeContent(2,'cards')">📸 카드뉴스</button>
+    <button class="make-btn" onclick="makeContent(2,'blog')">✍️ 블로그</button>
+    <button class="make-btn" onclick="makeContent(2,'captions')">💬 캡션</button>
+    <button class="make-btn" onclick="makeContent(2,'grades')">👨‍👩‍👧 학년별</button>
+    <button class="make-btn parent" onclick="makeContent(2,'parent')">📲 학부모 발송용</button>
+  </div>
+</div>
+<div class="card important" id="card-23">
+  <div class="badges">
+    <span class="badge b-important">중요</span>
+    <span class="badge b-year">2025~2027학년도</span>
+    <span class="badge b-tgt">고3/재수생/학부모</span>
+    <span class="badge b-cat">재수</span> <span class="badge b-cat">대입전략</span>
+  </div>
+  <h2>23. 삼수생, 점수는 올랐지만…'대학생활 적응' 어려워해</h2>
+  <div class="source">한겨레 · 2026-07-23 · <a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE9pdVQxV1BnZTVTelBhNDg1a25zUldnU1dYVkl1YXFRd1VLRUFBN1NvVDNadXRtWUFxSzhnUjdkbVRJUC02OVFrUzVBQ0tqbnZIYzRySnZiSjE0ak1rU0NwRWZFTUZFd1lSZXc?oc=5" target="_blank">원문</a></div>
+  <div class="parent-link">
+    <span class="pl-lbl">🎯 학부모 링크</span>
+    <a href="/p/2026-07-24-23.html" target="_blank" class="pl-btn">👀 미리보기</a>
+    <button class="pl-btn pl-copy" data-url="https://sco-daily.netlify.app/p/2026-07-24-23.html" onclick="copyParentUrl(this)">🔗 링크 복사</button>
+    <button class="pl-btn pl-copyfull" data-url="https://sco-daily.netlify.app/p/2026-07-24-23.html" data-title="삼수생, 점수는 올랐지만…'대학생활 적응' 어려워해" onclick="copyParentFullMsg(this)">📱 카톡 발송문</button>
+  </div>
+  <p class="sum1">삼수생, 수능 성적 상승에도 전공 적합성·대학생활 만족도 낮아… 'n수 31% 시대' 재수 전략 재고 필요</p>
+  <div class="block"><b>📌 무엇이 바뀌었나</b><ul><li>삼수생, 수능 점수 올려도 전공 만족도·행복감 하락: 한겨레 보도에 따르면 삼수생들이 재수생보다 수능 성적은 높지만, 전공 적합성과 대학생활 행복감은 오히려 낮은 것으로 나타남. 나이 차이로 인한 적응 문제 발생</li><li>n수생 31% 시대, '무조건 재수'는 위험: 현재 대입 재수생 비율 31% 시대. 단순 점수 상승만을 목표로 한 재수는 장기적 만족도 저하로 이어질 수 있음. 전공 적합성·진로 명확성 고려한 재수 전략 필요</li></ul></div>
+  <div class="myth"><div class="q">❓ 재수하면 당연히 성적 오르고 더 좋은 대학 가는 거 아닌가요?</div><div class="a">→ 통계적으로 재수생의 70%가 성적 상승을 경험하지만, 삼수 이상부터는 전공 만족도와 대학생활 적응도가 떨어집니다. '어느 대학'보다 '어떤 전공, 어떤 목표'로 가느냐가 더 중요합니다. 재수는 '명확한 목표'가 있을 때만 선택해야 합니다.</div></div>
+  <div class="katok"><div class="l">📱 학부모 카톡문</div><p>[SCO 중요] 고3·재수생 학부모님께
+
+'삼수생, 점수는 올랐지만 행복감은 낮았다'
+한겨레 보도가 시사하는 바가 큽니다.
+
+✅ 재수해서 성적 올려도 전공 만족도 낮으면 의미 없음
+✅ n수생 31% 시대, '무조건 재수'는 위험
+✅ 명확한 목표 없는 재수는 시간 낭비
+
+재수는 '전략'이 있을 때만 선택하세요.
+스코랩스가 최적 경로 함께 찾아드립니다.
+
+상담 문의: 1588-xxxx
+- SCO Labs 입시분석팀</p></div>
+  <div class="titles"><div class="l">📰 카드뉴스 제목</div><ul><li>삼수생 행복감 저하 보고서 - 재수, 언제 해야 하나?</li><li>n수생 31% 시대, 무조건 재수는 위험한 이유 3가지</li><li>재수 vs 진학 결정 체크리스트 - 전문가 5문 5답</li></ul></div>
+  <div class="sco"><div class="l">💡 SCO 관점</div><p>스코랩스는 '성적 상승'보다 '완성도 있는 진로 설계'를 우선합니다. 재수는 명확한 목표와 실행 전략이 있을 때만 선택해야 하며, 단순 점수 올리기는 장기적 만족도를 보장하지 않습니다.</p></div>
+  <div class="make-bar">
+    <span class="lbl">⚡ 자동 콘텐츠 제작</span>
+    <button class="make-btn full" onclick="makeContent(23,'full')">🚀 풀패키지</button>
+    <button class="make-btn" onclick="makeContent(23,'cards')">📸 카드뉴스</button>
+    <button class="make-btn" onclick="makeContent(23,'blog')">✍️ 블로그</button>
+    <button class="make-btn" onclick="makeContent(23,'captions')">💬 캡션</button>
+    <button class="make-btn" onclick="makeContent(23,'grades')">👨‍👩‍👧 학년별</button>
+    <button class="make-btn parent" onclick="makeContent(23,'parent')">📲 학부모 발송용</button>
+  </div>
+</div>
+<div class="card important" id="card-10">
+  <div class="badges">
+    <span class="badge b-important">중요</span>
+    <span class="badge b-year">2027학년도</span>
+    <span class="badge b-tgt">중3/고1/고2/학부모</span>
+    <span class="badge b-cat">진로</span> <span class="badge b-cat">대입전략</span>
+  </div>
+  <h2>10. 서대문구, 입시부터 진로까지 맞춤형 교육지원 확대</h2>
+  <div class="source">핀포인트뉴스 · 2026-07-24 · <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE5ESXdQM2dXcmxCQ3BicXlpM1ljWDZMVnJYSGR5SUdpS2tFZzVVcl94S0FxdnpaNzd6dFpZOC12cTZISHVMSjVrSmVhc3lNSnI2YzBQUXhHaXBESjdreV9JVUFmVEFKUllqUmdtMU5hdExHZUXSAXdBVV95cUxQR2xoQ25INVJtTzJWVWhpLVltcUxjMllKVmJvNC1ta0xXdFhON2JxUlhVdFdvU3VMWlljV3FMR19RNnNHYTlPRTBCUG9kVExGbjhUTFlfNFpjc19INnRfbHJKRVgwQ0dQR2JQQWZhOC1HWjdiWnVQbw?oc=5" target="_blank">원문</a></div>
+  <div class="parent-link">
+    <span class="pl-lbl">🎯 학부모 링크</span>
+    <a href="/p/2026-07-24-10.html" target="_blank" class="pl-btn">👀 미리보기</a>
+    <button class="pl-btn pl-copy" data-url="https://sco-daily.netlify.app/p/2026-07-24-10.html" onclick="copyParentUrl(this)">🔗 링크 복사</button>
+    <button class="pl-btn pl-copyfull" data-url="https://sco-daily.netlify.app/p/2026-07-24-10.html" data-title="서대문구, 입시부터 진로까지 맞춤형 교육지원 확대" onclick="copyParentFullMsg(this)">📱 카톡 발송문</button>
+  </div>
+  <p class="sum1">서대문구, 입시·진로 맞춤형 교육지원 확대… AI 진로상담·대입컨설팅 등 공교육-지자체 협력 모델 주목</p>
+  <div class="block"><b>📌 무엇이 바뀌었나</b><ul><li>서대문구, 입시·진로 맞춤형 교육지원 본격화: 서대문구가 AI 진로상담, 대입 컨설팅, 학습 멘토링 등 입시부터 진로까지 학생 성장 맞춤형 교육지원 프로그램 확대. 공교육 사각지대 보완</li><li>전국 지자체, 교육청 협력 맞춤 지원 프로그램 확산: 서대문구 외에도 대전시교육청(고교학점제 학부모 진로교육), 서귀포시교육지원청(예비 고등학생 학부모 교육) 등 전국 지자체-교육청 협력 확대 추세</li></ul></div>
+  <div class="myth"><div class="q">❓ 우리 지역에선 이런 지원 안 받을 수 있나요?</div><div class="a">→ 대부분 지자체와 교육청이 유사한 프로그램을 운영합니다. 다만 홍보 부족으로 모르고 지나치는 경우가 많습니다. 거주 지역 교육청·구청 홈페이지에서 '학부모 지원 프로그램' 검색하면 대부분 무료 프로그램을 찾을 수 있습니다.</div></div>
+  <div class="katok"><div class="l">📱 학부모 카톡문</div><p>[SCO 정보] 학부모님께
+
+서대문구가 입시·진로 맞춤형 교육지원을 확대합니다!
+AI 진로상담, 대입 컨설팅 등 무료 프로그램이 늘고 있습니다.
+
+✅ 우리 지역 교육청·구청 프로그램 확인
+✅ 학부모 연수·입시설명회 신청
+✅ 공교육 지원 + 전문 관리 병행이 최선
+
+스코랩스는 공교육 지원과 연계해
+완성도 높은 맞춤 전략 제공합니다.
+
+상담 문의: 1588-xxxx
+- SCO Labs 입시분석팀</p></div>
+  <div class="titles"><div class="l">📰 카드뉴스 제목</div><ul><li>서대문구 교육지원 확대 소식 - 우리 지역은?</li><li>전국 지자체·교육청 무료 프로그램 총정리</li><li>공교육 지원 200% 활용법 - 학부모 가이드</li></ul></div>
+  <div class="sco"><div class="l">💡 SCO 관점</div><p>공교육과 지자체의 지원은 '정보 제공' 수준입니다. 스코랩스는 그 정보를 학생별 맞춤 전략으로 전환하고, 실행까지 관리합니다. 학이 아닌 습, 성적이 아닌 완성도입니다.</p></div>
+  <div class="make-bar">
+    <span class="lbl">⚡ 자동 콘텐츠 제작</span>
+    <button class="make-btn full" onclick="makeContent(10,'full')">🚀 풀패키지</button>
+    <button class="make-btn" onclick="makeContent(10,'cards')">📸 카드뉴스</button>
+    <button class="make-btn" onclick="makeContent(10,'blog')">✍️ 블로그</button>
+    <button class="make-btn" onclick="makeContent(10,'captions')">💬 캡션</button>
+    <button class="make-btn" onclick="makeContent(10,'grades')">👨‍👩‍👧 학년별</button>
+    <button class="make-btn parent" onclick="makeContent(10,'parent')">📲 학부모 발송용</button>
+  </div>
+</div>
+<div class="ft">SCO LABS · 학이 아닌 습 · 매일 오전 11시 자동 생성 (서버)</div>
+</div>
+<script>
+const ARTICLES = {"2": {"id": 2, "priority": "긴급", "title": "[포토] 전남대, 2027학년도 수시 박람회 현장", "shortTitle": "2027수시박람회전남대", "source": "교수신문", "date": "2026-07-24", "year": "2027학년도", "target": "고2/고3/학부모", "areas": ["수시", "대입전략"], "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5FWDZJNlJhS0MtQ0NERk1GOHFXd29kUG9MbnUxQUo3N1NDRUk3cjFuUFNscDJaX2JQNk84VFJXUzBtOTFVeVBNeGlOOHV4MmNqSE9qSnZBZGRMYk1OSlR1US1RS2oxbnc?oc=5", "hookBig": "2027 수시 박람회가 전국적으로 시작됐습니다!<br>전남대·전북대 등 주요 대학들이<br>학생·학부모 대상 현장 상담 진행 중<br>지금 바로 전략을 세워야 할 타이밍입니다", "hookLabel": "📢 고2·고3 학부모 필독", "summary1": "전남대·전북대 등 2027학년도 수시 박람회 본격 개최, 전국 대학 입시 상담 시즌 돌입", "changeA": {"label": "CHANGE 1", "title": "전국 주요 대학<br>수시 박람회 동시 개최", "desc": "전남대, 전북대 등 지역 거점 국립대들이 7월 넷째 주부터 2027학년도 수시 박람회를 본격 개최. 학생부종합, 논술, 교과 등 전형별 맞춤 상담 진행"}, "changeB": {"label": "CHANGE 2", "title": "부산교육청, 전국 78개 대학<br>참여 대입상담캠프 운영", "desc": "부산시교육청은 전국 78개 대학이 참여하는 '2026 대입상담캠프'를 개최해 수험생들에게 1:1 맞춤 상담 기회 제공. 지역별 대입 지원 강화 추세"}, "mythQ": "수시 박람회는 성적 우수자만 가는 거 아닌가요?", "mythA": "절대 아닙니다. 수시 박람회는 모든 성적대 학생들에게 열려있으며, 오히려 중위권 학생들이 자신에게 맞는 전형과 대학을 발견하는 핵심 기회입니다. 대학 입학처 직접 상담으로 '숨은 기회'를 찾아내세요.", "impacts": ["2027 수시 원서접수 9월 초 시작 예정, 지금부터 대학별 전형 분석 필수", "학생부종합전형 준비생은 여름방학 중 자소서·면접 준비 골든타임", "논술전형 지원자는 7~8월 각 대학 모의논술·설명회 참석이 합격 변수", "교과전형도 대학별 반영 과목·비율 상이, 박람회 통해 유불리 직접 확인 가능"], "actions": ["이번 주말 거주 지역 인근 대학 수시 박람회 일정 확인하고 예약", "관심 대학 3~5곳 선정해 입학처 홈페이지서 전형계획 사전 다운로드", "학생부, 모의고사 성적표 지참해 현장 상담 시 구체적 질문 준비", "박람회 후 일주일 내 학생과 함께 수시 6장 지원 전략 1차 시뮬레이션"], "ctaHook": "스코랩스 학습관리 시스템으로 수시 대비 완성도를 높이세요. 박람회 정보만으론 부족합니다. 지금 바로 1:1 전략 상담 신청하세요!", "katok": "[SCO 긴급] 고2·고3 학부모님께\n\n2027 수시 박람회가 전국적으로 시작됐습니다!\n전남대·전북대·부산 78개 대학 등 주요 대학 입학처가 직접 상담 진행 중입니다.\n\n✅ 이번 주말 우리 지역 박람회 일정 확인\n✅ 학생부+성적표 지참하고 현장 상담\n✅ 수시 6장 전략, 지금 세워야 합니다\n\n수시는 '정보력'이 당락을 가릅니다.\n스코랩스가 박람회 이후 맞춤 전략까지 함께합니다.\n\n상담 문의: 1588-xxxx\n- SCO Labs 입시분석팀", "sms": "[SCO] 2027수시 박람회 시작! 전남대·전북대 등 전국 대학 상담 중. 이번주말 우리지역 일정 확인 필수→스코랩스 1588-x", "hashtags": ["2027수시", "수시박람회", "전남대", "전북대", "부산교육청", "대입상담", "학생부종합", "논술전형", "교과전형", "입시상담", "수시6장", "고2학부모", "고3학부모", "입시전략", "대학박람회", "수시원서접수", "학종준비", "자소서", "면접준비", "스코랩스"], "counseling": ["학부모님, 박람회는 '정보 수집'의 장입니다. 가기 전 우리 아이 성적대와 관심 전공을 명확히 정리하고 가세요.", "현장에서 '합격 가능성'만 물으면 안 됩니다. '이 전형에서 우리 아이 강점은 무엇인가'를 물어야 실질적 답을 얻습니다.", "박람회 후 일주일이 골든타임입니다. 정보 수집만 하고 끝나면 무용지물이에요. 즉시 전략으로 전환해야 합니다.", "수시 6장은 '도전-적정-안정' 2:2:2 배분이 기본이지만, 올해는 의대 증원 여파로 상위권 변수가 큽니다. 신중한 시뮬레이션 필수입니다.", "스코랩스는 박람회 정보를 '학습 완성도'로 연결합니다. 정보만으론 합격 못 합니다. 실행이 답입니다."], "card_titles": ["2027 수시 박람회 시작! 지금 바로 움직여야 할 이유", "전남대·전북대·부산 78개 대학 현장 상담 총정리", "수시 박람회 200% 활용법 - 학부모 체크리스트 5가지"], "sco_view": "수시 박람회는 '정보 수집'의 시작일 뿐입니다. 스코랩스는 그 정보를 '학습 완성도'로 전환하는 시스템을 제공합니다. 학이 아닌 습, 성적이 아닌 완성도. 박람회 후 일주일이 전략 수립의 골든타임입니다.", "blogTitle": "2027 수시 박람회 총정리 | 전남대·전북대·부산 78개 대학 현장 상담 일정과 200% 활용법", "blogSummary": "2027학년도 수시 박람회가 전국적으로 시작됐습니다. 전남대, 전북대, 부산 78개 대학 등 주요 대학 입학처 직접 상담 일정과 박람회 200% 활용 전략을 정리했습니다.", "grades": {"중3": {"katok": "[SCO] 중3 학부모님께\n\n2027 수시 박람회가 시작됐습니다.\n'아직 중3인데?'라고 생각하시겠지만, 고교학점제 시대엔 중3 겨울방학이 입시 준비의 시작입니다.\n\n✅ 관심 대학·전공 미리 탐색\n✅ 학생부 관리 방향 조기 설정\n✅ 고1 선택과목, 입시 연계해 결정\n\n지금부터 '완성도' 관리 시작하세요.\n스코랩스가 함께합니다.", "actions": ["관심 대학 2~3곳 선정해 입학처 홈페이지서 학생부종합 평가 기준 확인", "고1 선택과목 결정 전, 대학별 권장 이수 과목 사전 체크", "중3 겨울방학 중 '진로 탐색 프로젝트' 1건 이상 진행해 학생부 씨앗 심기"]}, "고1": {"katok": "[SCO] 고1 학부모님께\n\n2027 수시 박람회, 고1에게도 중요합니다!\n지금 보는 입시 정보가 2년 후 우리 아이 수시 전략의 토대가 됩니다.\n\n✅ 학생부종합 평가 요소 구체적 파악\n✅ 전공 연계 활동, 어떻게 설계할지 힌트\n✅ 고2 선택과목, 입시 유불리 고려\n\n고1은 '설계'의 시기입니다.\n스코랩스가 완성도 높은 설계 도와드립니다.", "actions": ["여름방학 중 관심 대학 2곳 이상 캠퍼스 방문 및 입학처 상담 예약", "학생부 1학기 기록 점검 후, 2학기 활동 계획 구체화", "고2 선택과목 결정 전 대학별 권장 이수 과목 최종 확인"]}, "고2": {"katok": "[SCO] 고2 학부모님께\n\n2027 수시, 이제 1년 남았습니다!\n이번 박람회가 사실상 마지막 정보 수집 기회입니다.\n\n✅ 수시 6장 지원 전략 시뮬레이션\n✅ 학생부 2학년 기록, 대학별 평가 기준 대입\n✅ 논술·면접 준비 방향 확정\n\n고2 여름방학이 수시 당락의 분수령입니다.\n스코랩스가 완성도 높은 전략 제시합니다.", "actions": ["이번 주말 박람회 참석해 지원 가능 대학 3~5곳 리스트업", "학생부 1~2학년 기록 전수 점검 후 3학년 1학기 활동 방향 확정", "논술 지원 대학은 7~8월 모의논술 필수 참여, 학종은 자소서 초안 작성 시작"]}, "고3": {"katok": "[SCO] 고3 학부모님, 지금이 마지막 기회입니다!\n\n수시 원서접수 9월 초, 박람회가 전략 수정 마지막 찬스입니다.\n\n✅ 수시 6장 최종 점검\n✅ 대학별 전형 변경사항 확인\n✅ 논술·면접 일정 겹치는지 체크\n\n8월이 지나면 돌이킬 수 없습니다.\n스코랩스가 최종 점검 함께합니다.\n\n상담 문의: 1588-xxxx", "actions": ["박람회서 수시 6장 최종 시뮬레이션, 입학처 담당자에게 직접 확인", "논술 전형 지원 대학은 기출문제 3개년 필수 분석 및 모의논술 참여", "학생부 최종 마감 전 담임과 3학년 1학기 세특 내용 점검 면담"]}}}, "23": {"id": 23, "priority": "중요", "title": "삼수생, 점수는 올랐지만…'대학생활 적응' 어려워해", "shortTitle": "삼수생대학적응문제", "source": "한겨레", "date": "2026-07-23", "year": "2025~2027학년도", "target": "고3/재수생/학부모", "areas": ["재수", "대입전략"], "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9pdVQxV1BnZTVTelBhNDg1a25zUldnU1dYVkl1YXFRd1VLRUFBN1NvVDNadXRtWUFxSzhnUjdkbVRJUC02OVFrUzVBQ0tqbnZIYzRySnZiSjE0ak1rU0NwRWZFTUZFd1lSZXc?oc=5", "hookBig": "삼수해서 대학 간 학생들,<br>수능 점수는 올랐지만<br>전공 만족도·행복감은 오히려 낮았습니다<br>'무조건 재수'가 답이 아닐 수 있습니다", "hookLabel": "📢 재수 고민 학부모 필독", "summary1": "삼수생, 수능 성적 상승에도 전공 적합성·대학생활 만족도 낮아… 'n수 31% 시대' 재수 전략 재고 필요", "changeA": {"label": "REALITY 1", "title": "삼수생, 수능 점수 올려도<br>전공 만족도·행복감 하락", "desc": "한겨레 보도에 따르면 삼수생들이 재수생보다 수능 성적은 높지만, 전공 적합성과 대학생활 행복감은 오히려 낮은 것으로 나타남. 나이 차이로 인한 적응 문제 발생"}, "changeB": {"label": "REALITY 2", "title": "n수생 31% 시대,<br>'무조건 재수'는 위험", "desc": "현재 대입 재수생 비율 31% 시대. 단순 점수 상승만을 목표로 한 재수는 장기적 만족도 저하로 이어질 수 있음. 전공 적합성·진로 명확성 고려한 재수 전략 필요"}, "mythQ": "재수하면 당연히 성적 오르고 더 좋은 대학 가는 거 아닌가요?", "mythA": "통계적으로 재수생의 70%가 성적 상승을 경험하지만, 삼수 이상부터는 전공 만족도와 대학생활 적응도가 떨어집니다. '어느 대학'보다 '어떤 전공, 어떤 목표'로 가느냐가 더 중요합니다. 재수는 '명확한 목표'가 있을 때만 선택해야 합니다.", "impacts": ["삼수 이상 n수생, 수능 점수 상승에도 또래 관계·대학생활 적응에서 어려움 경험", "나이 차이로 인한 심리적 부담감, 학업 외 대학생활 만족도 저하 요인", "전공 적합성 고려 없는 '점수 맞춤 진학'은 중퇴율·편입 시도율 높여", "재수 결정 시 '성적 상승 가능성'뿐 아니라 '진로 명확성' 함께 고려 필수"], "actions": ["재수 고민 중이라면 '왜 재수하는가' 명확한 목표 먼저 설정", "단순 '더 좋은 대학'이 아닌 '희망 전공 진학 가능성' 중심으로 판단", "재수 대신 '지금 합격한 대학에서 편입·복수전공' 경로도 고려", "재수 결정 전 전문가 상담 통해 성적 상승 가능성·심리적 부담 종합 판단"], "ctaHook": "스코랩스는 '무조건 재수'를 권하지 않습니다. 학생의 완성도와 목표에 맞는 최적 경로를 함께 찾습니다. 재수 vs 진학, 지금 상담받으세요.", "katok": "[SCO 중요] 고3·재수생 학부모님께\n\n'삼수생, 점수는 올랐지만 행복감은 낮았다'\n한겨레 보도가 시사하는 바가 큽니다.\n\n✅ 재수해서 성적 올려도 전공 만족도 낮으면 의미 없음\n✅ n수생 31% 시대, '무조건 재수'는 위험\n✅ 명확한 목표 없는 재수는 시간 낭비\n\n재수는 '전략'이 있을 때만 선택하세요.\n스코랩스가 최적 경로 함께 찾아드립니다.\n\n상담 문의: 1588-xxxx\n- SCO Labs 입시분석팀", "sms": "[SCO] 삼수생 수능점수↑ 행복감↓ 보도 주목! 재수는 명확한 목표 있을때만. 스코랩스 재수전략 상담 1588-x", "hashtags": ["삼수생", "재수", "n수생", "대입전략", "전공선택", "대학적응", "수능", "재수성공", "재수고민", "대학만족도", "전공적합성", "입시상담", "고3학부모", "재수학원", "편입", "복수전공", "진로설계", "대입", "수험생", "스코랩스"], "counseling": ["학부모님, 재수는 '성적 올리기'가 목표가 아닙니다. '내가 가고 싶은 전공에 가기 위한 전략'이어야 합니다.", "삼수 이상부터는 심리적 부담이 성적 상승 효과를 상쇄합니다. 재수는 '1년'이라는 기한을 두고 명확히 결정하세요.", "지금 합격한 대학이 있다면, 그곳에서 편입·복수전공 경로도 충분히 고려할 만합니다. 무조건 재수가 답은 아닙니다.", "재수 결정 전 '우리 아이가 1년 더 견딜 수 있는가'를 먼저 물어보세요. 심리적 안정이 성적 상승의 전제입니다.", "스코랩스는 재수를 권하지도, 말리지도 않습니다. 학생의 상황에 맞는 최적 경로를 데이터로 제시합니다."], "card_titles": ["삼수생 행복감 저하 보고서 - 재수, 언제 해야 하나?", "n수생 31% 시대, 무조건 재수는 위험한 이유 3가지", "재수 vs 진학 결정 체크리스트 - 전문가 5문 5답"], "sco_view": "스코랩스는 '성적 상승'보다 '완성도 있는 진로 설계'를 우선합니다. 재수는 명확한 목표와 실행 전략이 있을 때만 선택해야 하며, 단순 점수 올리기는 장기적 만족도를 보장하지 않습니다.", "blogTitle": "삼수생 행복감 저하 보고서 분석 | 재수 결정 전 반드시 확인해야 할 5가지 체크리스트", "blogSummary": "한겨레 보도 '삼수생, 수능 점수 올라도 전공 만족도·행복감 낮아' 분석. n수생 31% 시대, 재수 결정 전 반드시 확인해야 할 체크리스트와 최적 경로 찾기 전략을 정리했습니다.", "grades": {"중3": {"katok": "[SCO] 중3 학부모님께\n\n'삼수생 행복감 저하' 보도, 남의 일이 아닙니다.\n지금부터 '전공 적합성' 고민해야 재수 없이 한 번에 갑니다.\n\n✅ 중3부터 진로 탐색 시작\n✅ 고교학점제 시대, 선택과목부터 전공 연계\n✅ '어느 대학'보다 '어떤 전공' 먼저\n\n스코랩스가 진로 설계 도와드립니다.", "actions": ["중3 겨울방학 중 적성검사·진로탐색 프로그램 1회 이상 참여", "고1 진학 전 관심 분야 3개 이상 구체화, 관련 독서·활동 시작", "고교학점제 선택과목 결정 시 대입 전공 연계성 고려"]}, "고1": {"katok": "[SCO] 고1 학부모님께\n\n'삼수생 행복감 저하' 보도는 고1에게도 중요합니다.\n지금 전공 적합성 고민하지 않으면 나중에 재수로 이어집니다.\n\n✅ 고1, 전공 탐색의 골든타임\n✅ 학생부 활동, 전공 연계성 중심으로\n✅ '성적 맞춤 진학' 아닌 '목표 중심 설계'\n\n스코랩스가 완성도 높은 설계 도와드립니다.", "actions": ["여름방학 중 관심 전공 관련 대학 학과 탐방 2곳 이상", "학생부 활동 설계 시 '전공 적합성' 키워드 중심으로 재구성", "고2 선택과목, 희망 전공 권장 이수 과목 고려해 최종 결정"]}, "고2": {"katok": "[SCO] 고2 학부모님께\n\n'삼수생 행복감 저하' 보도, 지금 우리 아이 진로 점검 신호입니다.\n전공 적합성 없이 '성적 맞춤'으로 가면 나중에 후회합니다.\n\n✅ 고2, 전공 확정의 마지막 기회\n✅ 수시 전략, 전공 중심으로 재설계\n✅ 목표 없는 '그냥 재수'는 절대 금물\n\n스코랩스가 명확한 목표 설정 도와드립니다.", "actions": ["여름방학 중 희망 전공 관련 심화 활동·프로젝트 1건 이상 진행", "수시 지원 대학 선정 시 '전공 커리큘럼' 비교 분석", "정시 대비하되, '점수 맞춤'이 아닌 '전공 목표' 중심 지원 전략"]}, "고3": {"katok": "[SCO] 고3 학부모님, 지금 결정이 평생 갑니다.\n\n'삼수생 행복감 저하' 보도는 재수 고민 중인 학부모님께 경고입니다.\n명확한 목표 없는 재수는 시간 낭비입니다.\n\n✅ 재수 vs 진학, 전문가 상담 필수\n✅ '더 좋은 대학' 아닌 '맞는 전공' 기준\n✅ 편입·복수전공 경로도 고려\n\n스코랩스가 최적 경로 함께 찾습니다.\n상담 문의: 1588-xxxx", "actions": ["재수 고민 중이라면 이번 주 내 전문가 상담 예약", "합격 대학 있다면 해당 대학 편입·복수전공 제도 상세 확인", "재수 결정 시 '목표 대학·전공·성적 상승 시나리오' 구체적 수립"]}}}, "10": {"id": 10, "priority": "중요", "title": "서대문구, 입시부터 진로까지 맞춤형 교육지원 확대", "shortTitle": "서대문구맞춤교육지원", "source": "핀포인트뉴스", "date": "2026-07-24", "year": "2027학년도", "target": "중3/고1/고2/학부모", "areas": ["진로", "대입전략"], "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5ESXdQM2dXcmxCQ3BicXlpM1ljWDZMVnJYSGR5SUdpS2tFZzVVcl94S0FxdnpaNzd6dFpZOC12cTZISHVMSjVrSmVhc3lNSnI2YzBQUXhHaXBESjdreV9JVUFmVEFKUllqUmdtMU5hdExHZUXSAXdBVV95cUxQR2xoQ25INVJtTzJWVWhpLVltcUxjMllKVmJvNC1ta0xXdFhON2JxUlhVdFdvU3VMWlljV3FMR19RNnNHYTlPRTBCUG9kVExGbjhUTFlfNFpjc19INnRfbHJKRVgwQ0dQR2JQQWZhOC1HWjdiWnVQbw?oc=5", "hookBig": "서대문구가 입시·진로 맞춤형 교육지원에 나섭니다<br>AI 진로상담부터 대입 컨설팅까지<br>공교육 + 지자체 협력 모델 확산 중<br>우리 지역은 어떤 지원 받을 수 있을까요?", "hookLabel": "📢 학부모 꼭 확인", "summary1": "서대문구, 입시·진로 맞춤형 교육지원 확대… AI 진로상담·대입컨설팅 등 공교육-지자체 협력 모델 주목", "changeA": {"label": "SUPPORT 1", "title": "서대문구, 입시·진로<br>맞춤형 교육지원 본격화", "desc": "서대문구가 AI 진로상담, 대입 컨설팅, 학습 멘토링 등 입시부터 진로까지 학생 성장 맞춤형 교육지원 프로그램 확대. 공교육 사각지대 보완"}, "changeB": {"label": "SUPPORT 2", "title": "전국 지자체, 교육청 협력<br>맞춤 지원 프로그램 확산", "desc": "서대문구 외에도 대전시교육청(고교학점제 학부모 진로교육), 서귀포시교육지원청(예비 고등학생 학부모 교육) 등 전국 지자체-교육청 협력 확대 추세"}, "mythQ": "우리 지역에선 이런 지원 안 받을 수 있나요?", "mythA": "대부분 지자체와 교육청이 유사한 프로그램을 운영합니다. 다만 홍보 부족으로 모르고 지나치는 경우가 많습니다. 거주 지역 교육청·구청 홈페이지에서 '학부모 지원 프로그램' 검색하면 대부분 무료 프로그램을 찾을 수 있습니다.", "impacts": ["공교육 + 지자체 협력 모델로 사교육 부담 완화 효과 기대", "AI 진로상담, 대입 컨설팅 등 전문 서비스 무료 제공으로 정보 격차 해소", "고교학점제 시대, 학부모 진로·과목선택 지도 역량 강화 프로그램 확대", "지역별 프로그램 차이 있으나, 대부분 교육청·지자체 홈페이지서 신청 가능"], "actions": ["거주 지역 교육청·구청 홈페이지에서 '학부모 교육 프로그램' 검색", "AI 진로상담, 대입 컨설팅 등 무료 프로그램 신청 일정 확인", "고교학점제 관련 학부모 연수 프로그램 있으면 우선 신청", "지역 교육지원청 주관 입시설명회·진로박람회 일정 미리 체크"], "ctaHook": "공교육 지원만으론 한계가 있습니다. 스코랩스는 지자체 프로그램과 연계해 완성도 높은 맞춤 전략을 제공합니다. 지금 상담 신청하세요!", "katok": "[SCO 정보] 학부모님께\n\n서대문구가 입시·진로 맞춤형 교육지원을 확대합니다!\nAI 진로상담, 대입 컨설팅 등 무료 프로그램이 늘고 있습니다.\n\n✅ 우리 지역 교육청·구청 프로그램 확인\n✅ 학부모 연수·입시설명회 신청\n✅ 공교육 지원 + 전문 관리 병행이 최선\n\n스코랩스는 공교육 지원과 연계해\n완성도 높은 맞춤 전략 제공합니다.\n\n상담 문의: 1588-xxxx\n- SCO Labs 입시분석팀", "sms": "[SCO] 서대문구 등 전국 지자체 입시·진로 무료지원 확대 중! 우리지역 교육청 홈페이지 확인→스코랩스 1588-x", "hashtags": ["서대문구", "교육지원", "진로상담", "대입컨설팅", "AI진로상담", "학부모교육", "고교학점제", "공교육", "지자체지원", "교육청", "입시지원", "진로박람회", "학습멘토링", "사교육경감", "무료프로그램", "학부모연수", "진로설계", "입시전략", "교육정책", "스코랩스"], "counseling": ["학부모님, 지자체와 교육청이 제공하는 무료 프로그램은 반드시 활용하세요. 정보만 알면 사교육비 상당 부분 줄일 수 있습니다.", "다만 공교육 지원은 '일반론'에 그치는 경우가 많습니다. 우리 아이 맞춤 전략은 별도로 설계해야 합니다.", "AI 진로상담은 참고 자료로만 활용하세요. 최종 결정은 학생·학부모·전문가가 함께 내려야 합니다.", "지역별 프로그램 차이가 큽니다. 우리 지역이 지원 부족하다면 인근 지역 프로그램도 적극 찾아보세요.", "스코랩스는 공교육 지원과 연계해 완성도 높은 개인별 전략을 제공합니다. 정보 + 실행이 답입니다."], "card_titles": ["서대문구 교육지원 확대 소식 - 우리 지역은?", "전국 지자체·교육청 무료 프로그램 총정리", "공교육 지원 200% 활용법 - 학부모 가이드"], "sco_view": "공교육과 지자체의 지원은 '정보 제공' 수준입니다. 스코랩스는 그 정보를 학생별 맞춤 전략으로 전환하고, 실행까지 관리합니다. 학이 아닌 습, 성적이 아닌 완성도입니다.", "blogTitle": "서대문구 등 전국 지자체 교육지원 확대 총정리 | 우리 지역 무료 프로그램 찾는 법", "blogSummary": "서대문구가 입시·진로 맞춤형 교육지원을 확대합니다. AI 진로상담, 대입 컨설팅 등 전국 지자체·교육청이 제공하는 무료 프로그램 찾는 법과 200% 활용 전략을 정리했습니다.", "grades": {"중3": {"katok": "[SCO] 중3 학부모님께\n\n서대문구 등 지자체가 진로·입시 지원을 확대합니다.\nAI 진로상담, 학부모 연수 등 무료 프로그램 활용하세요.\n\n✅ 중3, 고교학점제 준비 골든타임\n✅ 진로 탐색 프로그램 적극 참여\n✅ 공교육 지원 + 전문 관리 병행\n\n스코랩스가 완성도 높은 설계 도와드립니다.", "actions": ["거주 지역 교육청 '예비 고1 학부모 연수' 일정 확인 및 신청", "AI 진로상담 프로그램 활용해 관심 분야 3개 이상 구체화", "중3 겨울방학 중 진로 탐색 활동 1건 이상 진행"]}, "고1": {"katok": "[SCO] 고1 학부모님께\n\n지자체·교육청이 고교학점제 지원 프로그램을 확대합니다.\n학부모 진로교육, 과목선택 상담 등 적극 활용하세요.\n\n✅ 고1, 선택과목 결정 시기\n✅ 학부모 연수로 고교학점제 이해도 높이기\n✅ 공교육 정보 + 맞춤 전략 병행\n\n스코랩스가 완성도 높은 설계 도와드립니다.", "actions": ["거주 지역 교육청 '고교학점제 학부모 연수' 참여", "과목선택 상담 프로그램 있으면 학생과 함께 참여", "고1 여름방학 중 진로 연계 활동 구체화"]}, "고2": {"katok": "[SCO] 고2 학부모님께\n\n지자체·교육청이 대입 컨설팅을 확대합니다.\n무료 입시설명회, 1:1 상담 등 적극 활용하세요.\n\n✅ 고2, 수시 전략 수립 시기\n✅ 대입 컨설팅으로 지원 가능 대학 점검\n✅ 공교육 정보 + 전문 전략 병행\n\n스코랩스가 완성도 높은 전략 제공합니다.", "actions": ["거주 지역 교육청 '대입설명회' 일정 확인 및 참여", "무료 대입 컨설팅 프로그램 있으면 신청", "고2 여름방학 중 수시 전략 1차 시뮬레이션"]}, "고3": {"katok": "[SCO] 고3 학부모님께\n\n지자체·교육청이 수시 지원 프로그램을 운영합니다.\n1:1 컨설팅, 자소서 첨삭 등 마지막까지 활용하세요.\n\n✅ 수시 원서접수 9월 초\n✅ 무료 컨설팅으로 최종 점검\n✅ 공교육 정보 + 전문 전략 병행\n\n스코랩스가 최종 점검 함께합니다.\n상담 문의: 1588-xxxx", "actions": ["거주 지역 교육청 '수시 컨설팅' 일정 확인 및 예약", "자소서 첨삭 프로그램 있으면 초안 작성 후 신청", "수시 6장 최종 점검, 전문가 상담 병행"]}}}};
+const TODAY_STR = "2026-07-24";
+
+function downloadFile(filename, content, mime){
+  mime = mime || 'text/plain;charset=utf-8';
+  const blob = new Blob([content],{type:mime});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob); a.download = filename;
+  document.body.appendChild(a); a.click(); document.body.removeChild(a);
+}
+function openInNewTab(html){
+  const blob = new Blob([html],{type:'text/html;charset=utf-8'});
+  window.open(URL.createObjectURL(blob),'_blank');
+}
+
+function copyParentUrl(btn){
+  const url = btn.dataset.url;
+  navigator.clipboard.writeText(url).then(()=>{
+    const o=btn.textContent; btn.textContent='✅ 복사됨!'; setTimeout(()=>btn.textContent=o,1500);
+  });
+}
+function copyParentFullMsg(btn){
+  const url = btn.dataset.url;
+  const title = btn.dataset.title;
+  const txt = '[SCO 긴급 입시속보 - '+TODAY_STR+']\n\n'+title+'\n\n전체 내용 ▶ '+url+'\n\n- SCO 학습관리';
+  navigator.clipboard.writeText(txt).then(()=>{
+    const o=btn.textContent; btn.textContent='✅ 복사됨!'; setTimeout(()=>btn.textContent=o,1500);
+  });
+}
+
+function genCardsHTML(id){
+  const a = ARTICLES[id]; if(!a) return '<h1>데이터 없음</h1>';
+  const titles = a.card_titles || [];
+  const cards = [
+    {cls:'c1', label:a.hookLabel||'📢', main:a.hookBig||a.title, isHook:true},
+    {cls:'c2', label:'CHANGE 1', main:(a.changeA&&a.changeA.title)||'', sub:(a.changeA&&a.changeA.desc)||''},
+    {cls:'c3', label:'CHANGE 2', main:(a.changeB&&a.changeB.title)||'', sub:(a.changeB&&a.changeB.desc)||''},
+    {cls:'c4', label:'⚠️ 학부모 오해', main:a.mythQ||'', sub:a.mythA||''},
+    {cls:'c5', label:'💔 영향', list:a.impacts||[]},
+    {cls:'c6', label:'📋 할 일', list:a.actions||[]},
+    {cls:'c7', label:'💡 SCO 관점', main:a.ctaHook||a.sco_view||'', sub:'학이 아닌 습'},
+    {cls:'c8', label:'📩 무료 진단', main:'우리 아이 맞춤 진단', sub:'카카오톡 채널/DM/프로필 링크', isCta:true}
+  ];
+  return '<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><title>'+a.title+' 카드뉴스</title><style>*{box-sizing:border-box;margin:0;padding:0}body{font-family:-apple-system,Pretendard,sans-serif;background:#e5e7eb;padding:20px}.cards{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(500px,1fr));gap:24px}.card{width:100%;aspect-ratio:1/1;border-radius:18px;padding:54px 48px;display:flex;flex-direction:column;justify-content:space-between;color:white;font-weight:700;position:relative;line-height:1.4}.num{position:absolute;top:20px;right:24px;font-size:13px;opacity:.6}.brand{position:absolute;bottom:24px;left:48px;font-size:12px;opacity:.7}.label{font-size:16px;font-weight:700;opacity:.85;margin-bottom:14px;letter-spacing:1px}.main{font-size:36px;font-weight:900;line-height:1.25}.hook{font-size:46px;font-weight:900;line-height:1.2}.sub{font-size:18px;line-height:1.5;font-weight:500;opacity:.9;margin-top:14px}.cta{font-size:42px;font-weight:900;color:#fbbf24}ul{padding-left:24px;margin-top:8px}li{font-size:24px;margin-bottom:8px;font-weight:600}.c1{background:linear-gradient(135deg,#0b1e3f,#1a3a6b)}.c2{background:linear-gradient(135deg,#b91c1c,#ea580c)}.c3{background:linear-gradient(135deg,#1a3a6b,#3b82f6)}.c4{background:linear-gradient(135deg,#b45309,#d97706)}.c5{background:linear-gradient(135deg,#7f1d1d,#dc2626)}.c6{background:linear-gradient(135deg,#064e3b,#059669)}.c7{background:linear-gradient(135deg,#0b1e3f,#1e293b)}.c8{background:linear-gradient(135deg,#0b1e3f,#ea580c)}</style></head><body><div class="cards">'+cards.map((c,i)=>{
+    let body='';
+    if(c.isHook) body='<div><div class="label">'+c.label+'</div><div class="hook">'+c.main+'</div></div>';
+    else if(c.isCta) body='<div><div class="label">'+c.label+'</div><div class="cta">'+c.main+'</div><div class="sub">'+c.sub+'</div></div>';
+    else if(c.list) body='<div><div class="label">'+c.label+'</div><ul>'+c.list.map(x=>'<li>'+x+'</li>').join('')+'</ul></div>';
+    else body='<div><div class="label">'+c.label+'</div><div class="main">'+c.main+'</div>'+(c.sub?'<div class="sub">'+c.sub+'</div>':'')+'</div>';
+    return '<div class="card '+c.cls+'"><div class="num">'+(i+1)+'/8</div>'+body+'<div class="brand">SCO LABS</div></div>';
+  }).join('')+'</div></body></html>';
+}
+
+function genBlogHTML(id){
+  const a = ARTICLES[id]; if(!a) return '<h1>데이터 없음</h1>';
+  return '<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><title>'+(a.blogTitle||a.title)+'</title><style>body{font-family:-apple-system,Pretendard,sans-serif;background:#f7f8fa;line-height:1.8;padding:20px}.wrap{max-width:780px;margin:0 auto;background:white;border-radius:14px;overflow:hidden}.hd{background:linear-gradient(135deg,#0b1e3f,#1a3a6b);color:white;padding:48px 44px}.hd h1{font-size:28px;font-weight:800}.summary{background:#fff7ed;border-left:6px solid #ea580c;padding:20px 28px;color:#9a3412;font-weight:600}.body{padding:24px 44px}.body h2{font-size:20px;font-weight:800;color:#0b1e3f;margin:30px 0 14px;padding-left:14px;border-left:5px solid #0b1e3f}.body p{font-size:15px;color:#374151;margin-bottom:12px}.body ul{padding-left:26px;margin:10px 0}.cta{background:linear-gradient(135deg,#0b1e3f,#ea580c);color:white;padding:24px;border-radius:12px;margin:24px 0}.tags{background:#f3f4f6;padding:18px;border-radius:10px;margin:20px 0;font-size:13px;color:#6b7280}</style></head><body><div class="wrap"><div class="hd"><div style="opacity:.7;font-size:12px">📅 '+a.date+' · SCO LABS</div><h1>'+(a.blogTitle||a.title)+'</h1></div><div class="summary">'+(a.blogSummary||a.summary1||'')+'</div><div class="body"><h2>1. 무엇이 바뀌었나</h2><p>'+(a.summary1||'')+'</p><h2>2. 학부모 오해</h2><p><b>Q.</b> '+(a.mythQ||'')+'<br><b>A.</b> '+(a.mythA||'')+'</p><h2>3. 우리 아이 영향</h2><ul>'+((a.impacts||[]).map(x=>'<li>'+x+'</li>').join(''))+'</ul><h2>4. 지금 할 일</h2><ul>'+((a.actions||[]).map(x=>'<li><b>'+x+'</b></li>').join(''))+'</ul><h2>5. SCO 관점</h2><p>'+(a.sco_view||'')+'</p><div class="cta"><h3>💡 무료 입시 진단</h3><p>카카오톡 채널/DM/프로필 링크</p></div><div class="tags">'+((a.hashtags||[]).map(h=>'#'+h).join(' '))+'</div></div></div></body></html>';
+}
+
+function genGradesHTML(id){
+  const a = ARTICLES[id]; if(!a||!a.grades) return '<h1>학년별 데이터 없음</h1>';
+  const colors = {'중3':'#b91c1c','고1':'#ea580c','고2':'#1a3a6b','고3':'#7c3aed'};
+  return '<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><title>학년별 카톡</title><style>body{font-family:-apple-system,Pretendard,sans-serif;background:#f7f8fa;padding:20px;line-height:1.7}.wrap{max-width:1000px;margin:0 auto}.hd{background:linear-gradient(135deg,#0b1e3f,#1a3a6b);color:white;padding:32px;border-radius:14px;margin-bottom:24px}.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.card{background:white;border-radius:12px;padding:24px}.card h2{font-size:18px;font-weight:800;color:white;padding:6px 14px;border-radius:6px;display:inline-block;margin-bottom:14px}.katok{background:#fef3c7;border:1.5px dashed #f59e0b;border-radius:8px;padding:16px;font-size:13px;color:#78350f;white-space:pre-line}.actions{margin-top:14px}.actions ul{padding-left:18px}.actions li{font-size:13px;color:#374151;margin-bottom:4px}@media(max-width:700px){.cards{grid-template-columns:1fr}}</style></head><body><div class="wrap"><div class="hd"><h1 style="font-size:22px">학년별 맞춤 카톡 안내문</h1><div style="font-size:14px;opacity:.85;margin-top:6px">'+a.title+' · '+a.date+'</div></div><div class="cards">'+Object.keys(a.grades).map(g=>{const d=a.grades[g];return '<div class="card"><h2 style="background:'+(colors[g]||'#0b1e3f')+'">'+g+' 학부모용</h2><div class="katok">'+d.katok+'</div><div class="actions"><b>이 학년이 할 일</b><ul>'+((d.actions||[]).map(x=>'<li>'+x+'</li>').join(''))+'</ul></div></div>';}).join('')+'</div></div></body></html>';
+}
+
+function genCaptions(id){
+  const a = ARTICLES[id]; if(!a) return '';
+  return '=== SCO 콘텐츠 패키지 · '+a.date+' ===\n\n[인스타 캡션]\n'+(a.hookBig||'').replace(/<[^>]+>/g,' ')+'\n\n'+(a.summary1||'')+'\n\n📩 DM/프로필\n\n'+((a.hashtags||[]).map(h=>'#'+h).join(' '))+'\n\n[카톡 채널 발송]\n'+(a.katok||'')+'\n\n[SMS]\n'+(a.sms||'')+'\n\n[상담 멘트]\n'+((a.counseling||[]).map((m,i)=>(i+1)+'. "'+m+'"').join('\n\n'));
+}
+
+function genParentMessage(id){
+  const a = ARTICLES[id]; if(!a) return '';
+  return '📢 SCO 입시 브리핑\n━━━━━━━━━━━━━━━\n'+a.date+'\n\n🎯 오늘의 핵심\n《'+a.title+'》\n\n📌 NOW\n  ✓ '+(a.summary1||'')+'\n\n❓ FAQ\n  Q. '+(a.mythQ||'')+'\n  A. '+(a.mythA||'')+'\n\n💡 SCO의 답\n  '+(a.sco_view||'')+'\n\n━━━━━━━━━━━━━━━\n📩 무료 입시 진단\n   ▶ 카카오톡 채널 / DM\n━━━━━━━━━━━━━━━\n\nSCO Labs · '+(a.source||'');
+}
+
+function _wrapText(ctx,text,x,y,maxW,lh){const chars=text.split('');let line='',cy=y;for(let i=0;i<chars.length;i++){const t=line+chars[i];if(ctx.measureText(t).width>maxW&&line!==''){ctx.fillText(line,x,cy);line=chars[i];cy+=lh}else line=t}ctx.fillText(line,x,cy);return cy+lh}
+function _roundRect(ctx,x,y,w,h,r){ctx.beginPath();ctx.moveTo(x+r,y);ctx.arcTo(x+w,y,x+w,y+h,r);ctx.arcTo(x+w,y+h,x,y+h,r);ctx.arcTo(x,y+h,x,y,r);ctx.arcTo(x,y,x+w,y,r);ctx.closePath()}
+
+function drawParentCardCanvas(id){
+  const a=ARTICLES[id]; if(!a){alert('데이터 없음');return}
+  const canvas=document.getElementById('sco-export-canvas');
+  const ctx=canvas.getContext('2d'); const W=1080,H=1350,PAD=80;
+  const FONT='"Apple SD Gothic Neo","Pretendard",-apple-system,sans-serif';
+  const bg=ctx.createLinearGradient(0,0,0,H);
+  bg.addColorStop(0,'#0b1e3f');bg.addColorStop(.6,'#1e3a8a');bg.addColorStop(1,'#1a3a6b');
+  ctx.fillStyle=bg;ctx.fillRect(0,0,W,H);
+  ctx.fillStyle='rgba(255,255,255,.85)';ctx.font='800 22px '+FONT;ctx.fillText('SCO LABS',PAD,PAD+10);
+  ctx.fillStyle='rgba(255,255,255,.7)';ctx.font='600 24px '+FONT;ctx.textAlign='right';ctx.fillText(a.date||'',W-PAD,PAD+10);ctx.textAlign='left';
+  let y=160;
+  ctx.fillStyle='rgba(251,191,36,.25)';_roundRect(ctx,PAD,y,260,50,25);ctx.fill();
+  ctx.fillStyle='#fbbf24';ctx.font='800 22px '+FONT;ctx.fillText('📢 SCO 입시 브리핑',PAD+22,y+33);
+  y=260;ctx.fillStyle='#fff';ctx.font='900 46px '+FONT;
+  y=_wrapText(ctx,(a.title||'').slice(0,60),PAD,y+40,W-PAD*2,60);
+  y+=30;ctx.fillStyle='rgba(255,255,255,.2)';ctx.fillRect(PAD,y,W-PAD*2,2);
+  y+=40;ctx.fillStyle='#fbbf24';ctx.font='800 22px '+FONT;ctx.fillText('📌 NOW',PAD,y);
+  y+=40;ctx.fillStyle='rgba(255,255,255,.95)';ctx.font='500 26px '+FONT;
+  y=_wrapText(ctx,(a.summary1||'').slice(0,150),PAD,y,W-PAD*2,40);
+  y+=20;ctx.fillStyle='rgba(255,255,255,.08)';_roundRect(ctx,PAD,y,W-PAD*2,200,20);ctx.fill();
+  ctx.fillStyle='#fbbf24';ctx.font='700 22px '+FONT;ctx.fillText('❓ '+(a.mythQ||'').slice(0,35),PAD+30,y+45);
+  ctx.fillStyle='rgba(255,255,255,.95)';ctx.font='500 22px '+FONT;
+  _wrapText(ctx,'→ '+(a.mythA||'').slice(0,100),PAD+30,y+90,W-PAD*2-60,36);
+  y+=230;ctx.fillStyle='rgba(255,255,255,.2)';ctx.fillRect(PAD,y,W-PAD*2,2);
+  y+=40;ctx.fillStyle='#fbbf24';ctx.font='800 22px '+FONT;ctx.fillText('💡 SCO의 답',PAD,y);
+  y+=40;ctx.fillStyle='rgba(255,255,255,.95)';ctx.font='700 28px '+FONT;
+  _wrapText(ctx,'학(學)이 아닌 습(習). 매일 실행이 결국 이깁니다.',PAD,y,W-PAD*2,42);
+  const cY=H-220;
+  const cg=ctx.createLinearGradient(0,cY,W,cY+130);
+  cg.addColorStop(0,'#ea580c');cg.addColorStop(1,'#fbbf24');
+  ctx.fillStyle=cg;_roundRect(ctx,PAD,cY,W-PAD*2,130,20);ctx.fill();
+  ctx.fillStyle='#0b1e3f';ctx.font='900 32px '+FONT;ctx.textAlign='center';
+  ctx.fillText('📩 무료 입시 진단 신청',W/2,cY+50);
+  ctx.font='600 20px '+FONT;ctx.fillText('카카오톡 채널 / DM / 프로필 링크',W/2,cY+90);
+  ctx.fillStyle='rgba(255,255,255,.5)';ctx.font='700 16px '+FONT;ctx.fillText('S C O   L A B S',W/2,H-30);ctx.textAlign='left';
+  const link=document.createElement('a');
+  link.download='SCO_학부모카드_'+(a.date||'')+'_'+id+'.png';
+  link.href=canvas.toDataURL('image/png');
+  document.body.appendChild(link);link.click();document.body.removeChild(link);
+}
+
+function makeContent(id, type){
+  const a = ARTICLES[id]; if(!a){alert('기사 데이터 없음');return}
+  const safeTitle = (a.shortTitle||a.title||'').replace(/[\/\\:*?"<>|]/g,'').slice(0,30);
+  const base = 'SCO_'+a.date+'_'+id+'_'+safeTitle;
+  if(type==='cards'){
+    const h=genCardsHTML(id);downloadFile(base+'_카드뉴스.html',h,'text/html;charset=utf-8');openInNewTab(h);
+  } else if(type==='blog'){
+    const h=genBlogHTML(id);downloadFile(base+'_블로그.html',h,'text/html;charset=utf-8');openInNewTab(h);
+  } else if(type==='captions'){
+    downloadFile(base+'_캡션.txt',genCaptions(id),'text/plain;charset=utf-8');
+  } else if(type==='grades'){
+    const h=genGradesHTML(id);downloadFile(base+'_학년별카톡.html',h,'text/html;charset=utf-8');openInNewTab(h);
+  } else if(type==='parent'){
+    drawParentCardCanvas(id);
+    const text=genParentMessage(id);
+    navigator.clipboard.writeText(text).then(()=>alert('📲 학부모 발송 풀세트!\n✅ PNG 카드 다운로드\n✅ 텍스트 클립보드 복사\n→ 카톡 채널에 첨부+붙여넣기')).catch(()=>{});
+    downloadFile(base+'_학부모발송.txt',text,'text/plain;charset=utf-8');
+  } else if(type==='full'){
+    const c=genCardsHTML(id),b=genBlogHTML(id),g=genGradesHTML(id),t=genCaptions(id);
+    downloadFile(base+'_카드뉴스.html',c,'text/html;charset=utf-8');
+    setTimeout(()=>downloadFile(base+'_블로그.html',b,'text/html;charset=utf-8'),300);
+    setTimeout(()=>downloadFile(base+'_캡션.txt',t,'text/plain;charset=utf-8'),600);
+    setTimeout(()=>downloadFile(base+'_학년별카톡.html',g,'text/html;charset=utf-8'),900);
+    setTimeout(()=>openInNewTab(c),1200);
+    alert('🚀 풀패키지 4개 파일 다운로드 시작!');
+  }
+}
+</script></body></html>
