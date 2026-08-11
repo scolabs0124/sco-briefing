@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>SCO 입시 브리핑 — 2026-08-11</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,'Pretendard','Apple SD Gothic Neo',sans-serif;background:#f4f6fa;color:#1a1a1a;line-height:1.6;padding:20px}
+.wrap{max-width:980px;margin:0 auto}
+.header{background:linear-gradient(135deg,#0b1e3f 0%,#1a3a6b 100%);color:#fff;padding:36px 28px;border-radius:14px}
+.header h1{font-size:28px;font-weight:800}
+.header .sub{margin-top:6px;font-size:14px;opacity:.92}
+.hero{background:#fff7ed;border-left:6px solid #f97316;padding:20px 22px;border-radius:10px;margin-top:18px}
+.hero h2{font-size:18px;color:#9a3412}
+.pick{background:#ecfdf5;border:1px solid #6ee7b7;border-radius:12px;padding:18px 22px;margin-top:18px}
+.pick h3{color:#065f46;font-size:15px}
+.card{background:#fff;border-radius:14px;box-shadow:0 4px 14px rgba(0,0,0,.06);padding:26px;margin-top:22px;border-top:5px solid #3b82f6}
+.card.urgent{border-top-color:#dc2626}.card.important{border-top-color:#f59e0b}.card.note{border-top-color:#6b7280}
+.badges{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+.badge{font-size:11px;padding:4px 10px;border-radius:999px;font-weight:700}
+.b-urgent{background:#fef2f2;color:#b91c1c}.b-important{background:#fffbeb;color:#b45309}.b-note{background:#f3f4f6;color:#374151}
+.b-cat{background:#eff6ff;color:#1d4ed8}.b-year{background:#f0fdf4;color:#15803d}.b-tgt{background:#fdf4ff;color:#a21caf}
+.card h2{font-size:20px;font-weight:800;color:#111827}
+.source{font-size:12px;color:#6b7280;margin-top:4px}.source a{color:#3b82f6;text-decoration:none}
+.parent-link{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;padding:10px 12px;background:#f0fdf4;border:1px dashed #86efac;border-radius:8px;align-items:center}
+.pl-lbl{font-size:11px;color:#065f46;font-weight:800;letter-spacing:.5px;margin-right:4px}
+.pl-btn{background:#059669;color:#fff;border:none;padding:8px 14px;border-radius:6px;font-size:12px;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block;font-family:inherit}
+.pl-btn:hover{background:#047857}
+.pl-copy{background:#0284c7}.pl-copy:hover{background:#0369a1}
+.pl-copyfull{background:#d97706}.pl-copyfull:hover{background:#b45309}
+.sum1{margin-top:14px;font-size:15px;color:#1f2937}
+.block{margin-top:14px;font-size:14px}.block ul{margin-top:6px;padding-left:22px}.block li{margin:3px 0}
+.myth{margin-top:14px;background:#fff7ed;border-left:4px solid #f59e0b;padding:14px 16px;border-radius:8px}
+.myth .q{font-weight:700;color:#9a3412}.myth .a{margin-top:6px;color:#7c2d12}
+.katok{margin-top:14px;background:#fef9c3;border-left:4px solid #eab308;padding:16px;border-radius:8px}
+.katok .l{font-size:11px;color:#854d0e;font-weight:700;letter-spacing:1px}
+.katok p{margin-top:6px;font-size:14px;color:#3f3f00;white-space:pre-wrap}
+.titles{margin-top:14px;background:#eff6ff;border-left:4px solid #3b82f6;padding:14px 16px;border-radius:8px}
+.titles .l{font-size:11px;color:#1d4ed8;font-weight:700;letter-spacing:1px}
+.titles ul{margin-top:6px;padding-left:18px}.titles li{color:#1e3a8a;margin:2px 0}
+.sco{margin-top:14px;background:#111827;color:#f9fafb;padding:14px 16px;border-radius:8px}
+.sco .l{font-size:11px;color:#9ca3af;font-weight:700;letter-spacing:1px}.sco p{margin-top:6px;color:#e5e7eb}
+.make-bar{background:linear-gradient(135deg,#7c2d12 0%,#b91c1c 100%);border-radius:10px;padding:14px 18px;margin-top:18px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.make-bar .lbl{color:white;font-size:12px;font-weight:800;letter-spacing:.5px;margin-right:6px}
+.make-btn{background:white;color:#7c2d12;border:none;padding:9px 14px;border-radius:7px;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit}
+.make-btn:hover{background:#fef2f2}.make-btn.full{background:#fbbf24;color:#78350f}.make-btn.parent{background:#16a34a;color:white}
+.ft{text-align:center;color:#9ca3af;font-size:12px;margin-top:30px;padding:20px}
+</style></head><body>
+<canvas id="sco-export-canvas" width="1080" height="1350" style="display:none"></canvas>
+<div class="wrap">
+<div class="header"><h1>📅 SCO 입시 브리핑</h1><div class="sub">2026-08-11 (화) · 스코랩스(SCO Labs) 입시정보팀</div></div>
+<div class="hero"><h2>🔥 수능 D-100, 서술형 수능 논란, 휴원 신고 후 불법 운영 학원 적발</h2></div>
+<div class="pick"><h3>💡 학부모 즉시 발송 추천</h3><p>수능 D-100…"100일을 어떻게 쓰느냐가 대입 성패 가른다"</p></div>
+
+<div class="card urgent" id="card-15">
+  <div class="badges">
+    <span class="badge b-urgent">긴급</span>
+    <span class="badge b-year">2027학년도</span>
+    <span class="badge b-tgt">고3/재수생/학부모</span>
+    <span class="badge b-cat">수능</span> <span class="badge b-cat">학습전략</span>
+  </div>
+  <h2>15. 수능 D-100…"100일을 어떻게 쓰느냐가 대입 성패 가른다"</h2>
+  <div class="source">한국NGO신문 · 2026-08-10 · <a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTFBEV0NGTFJQTkhINUQ4T2lESkhmTHRveE1tVWFtWWJFRGtLdjg4dU5Pb0lWdE5ZMm1fU2dERGttQVFuZGg4Z0cwS29aNUh0dkVNc1hIaXlONGhIbWJ5Q3VCa3JCV1JGRHkz?oc=5" target="_blank">원문</a></div>
+  <div class="parent-link">
+    <span class="pl-lbl">🎯 학부모 링크</span>
+    <a href="/p/2026-08-11-15.html" target="_blank" class="pl-btn">👀 미리보기</a>
+    <button class="pl-btn pl-copy" data-url="https://sco-daily.netlify.app/p/2026-08-11-15.html" onclick="copyParentUrl(this)">🔗 링크 복사</button>
+    <button class="pl-btn pl-copyfull" data-url="https://sco-daily.netlify.app/p/2026-08-11-15.html" data-title="수능 D-100…&quot;100일을 어떻게 쓰느냐가 대입 성패 가른다&quot;" onclick="copyParentFullMsg(this)">📱 카톡 발송문</button>
+  </div>
+  <p class="sum1">2027학년도 수능까지 100일, 2028 대입개편 전 마지막 기회로 N수생 급증 예상. 국어·수학이 당락 좌우, 100일 전략이 합격 판가름</p>
+  <div class="block"><b>📌 무엇이 바뀌었나</b><ul><li>역대급 N수생 러시 예상: 2028 개편 전 마지막 수능으로 재수생·N수생 대거 몰려 경쟁률 상승 불가피. 재학생은 상대적 불리</li><li>국어·수학이 당락 좌우: 100일 동안 국어·수학 집중 학습이 합격 결정. 탐구는 사탐런 현상으로 변별력 약화, 주요 과목 승부</li></ul></div>
+  <div class="myth"><div class="q">❓ 100일 남았으면 이제 새로운 건 못 하는 거 아닌가요?</div><div class="a">→ 아닙니다. 100일은 국어·수학 한 영역을 완전히 재구축할 수 있는 충분한 시간입니다. 지금부터 '습'의 강도를 최대로 올리면 1등급도 가능합니다.</div></div>
+  <div class="katok"><div class="l">📱 학부모 카톡문</div><p>[수능 D-100 긴급 안내]
+
+2027수능까지 딱 100일 남았습니다.
+2028 개편 전 마지막 수능으로 N수생이 역대급으로 몰려 경쟁이 치열할 전망입니다.
+
+✅ 100일 핵심 전략
+• 국어·수학 중 약한 과목 1개 집중
+• 9월 모평 직후 취약점 완벽 보완
+• 주 1회 실전 모의고사 필수
+
+지금부터 '습'의 강도가 합격을 결정합니다.
+스코랩스와 함께 100일 완성 시작하세요!</p></div>
+  <div class="titles"><div class="l">📰 카드뉴스 제목</div><ul><li>수능 D-100, 지금부터가 진짜 승부</li><li>2028 개편 전 마지막 기회, N수생 러시 온다</li><li>국어·수학이 당락 좌우, 100일 집중 전략</li></ul></div>
+  <div class="sco"><div class="l">💡 SCO 관점</div><p>수능 100일은 '학'이 아닌 '습'의 시간입니다. 새로운 개념을 배우는 게 아니라, 지금까지 배운 것을 완벽하게 체화하는 시기입니다. 스코는 100일 동안 국어·수학 약점 과목 1개를 선택해 매일 오답 분석과 실전 훈련을 반복하는 '완성도 100%' 전략을 제안합니다. 성적이 아니라 완성도, 지금부터 시작입니다.</p></div>
+  <div class="make-bar">
+    <span class="lbl">⚡ 자동 콘텐츠 제작</span>
+    <button class="make-btn full" onclick="makeContent(15,'full')">🚀 풀패키지</button>
+    <button class="make-btn" onclick="makeContent(15,'cards')">📸 카드뉴스</button>
+    <button class="make-btn" onclick="makeContent(15,'blog')">✍️ 블로그</button>
+    <button class="make-btn" onclick="makeContent(15,'captions')">💬 캡션</button>
+    <button class="make-btn" onclick="makeContent(15,'grades')">👨‍👩‍👧 학년별</button>
+    <button class="make-btn parent" onclick="makeContent(15,'parent')">📲 학부모 발송용</button>
+  </div>
+</div>
+<div class="card important" id="card-8">
+  <div class="badges">
+    <span class="badge b-important">중요</span>
+    <span class="badge b-year">2028학년도</span>
+    <span class="badge b-tgt">중3/고1/학부모</span>
+    <span class="badge b-cat">수능</span> <span class="badge b-cat">정책</span>
+  </div>
+  <h2>8. '서술·논술형 수능 도입' 세 가지 쟁점 살펴보니…</h2>
+  <div class="source">한겨레 · 2026-08-11 · <a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE4zSDM3aHEzdTB1RU1RR2FVaWpTanNlTGEyOFhfY2VnaWk0NUxuWEF6WTAtWFlEdmFGM1JYTG9talUyWjdJbEdpZ096ZjBIMmtoMVNubFRCdFRLajdBNTMyYUJLbUI5a3F2WVE?oc=5" target="_blank">원문</a></div>
+  <div class="parent-link">
+    <span class="pl-lbl">🎯 학부모 링크</span>
+    <a href="/p/2026-08-11-8.html" target="_blank" class="pl-btn">👀 미리보기</a>
+    <button class="pl-btn pl-copy" data-url="https://sco-daily.netlify.app/p/2026-08-11-8.html" onclick="copyParentUrl(this)">🔗 링크 복사</button>
+    <button class="pl-btn pl-copyfull" data-url="https://sco-daily.netlify.app/p/2026-08-11-8.html" data-title="'서술·논술형 수능 도입' 세 가지 쟁점 살펴보니…" onclick="copyParentFullMsg(this)">📱 카톡 발송문</button>
+  </div>
+  <p class="sum1">2028 서술·논술형 수능 도입을 둘러싼 3대 쟁점 분석. 채점 공정성, 사교육 심화, 학습 부담 증가 우려 vs 사고력 평가 강화 주장 대립</p>
+  <div class="block"><b>📌 무엇이 바뀌었나</b><ul><li>채점 공정성 논란: 서술형 답안 채점 기준의 객관성 확보 가능 여부. 채점자 간 편차, 이의 제기 처리 등 공정성 우려 제기</li><li>사교육 심화 우려: 서술형 대비 글쓰기 학원 등 사교육 수요 폭증 예상. 경제적 격차가 수능 격차로 이어질 가능성</li></ul></div>
+  <div class="myth"><div class="q">❓ 서술형 수능이 도입되면 무조건 사교육이 늘어나나요?</div><div class="a">→ 그렇지 않습니다. 서술형은 단순 암기가 아닌 사고 과정을 평가하므로, 오히려 '학원식 찍기 스킬'이 무력화될 수 있습니다. 핵심은 학교 수업에서 토론·글쓰기를 얼마나 내실 있게 운영하느냐입니다.</div></div>
+  <div class="katok"><div class="l">📱 학부모 카톡문</div><p>[2028 서술형 수능 쟁점 정리]
+
+서술·논술형 수능 도입 논란이 뜨겁습니다.
+
+🔍 3대 쟁점
+1. 채점 공정성 확보 가능한가?
+2. 사교육 심화 우려는?
+3. 학생 학습 부담 증가는?
+
+현 중3(2028학년도)부터 적용 예정이지만,
+정책 변경 가능성도 있어 지속 모니터링 필수입니다.
+
+✅ 지금 할 일
+• 글쓰기 기본기 훈련 시작
+• 학교 서술형 평가 대비 철저
+
+스코랩스가 정확한 정보 드립니다!</p></div>
+  <div class="titles"><div class="l">📰 카드뉴스 제목</div><ul><li>2028 서술형 수능, 3대 쟁점 총정리</li><li>채점 공정성 vs 사교육 심화 vs 학습 부담</li><li>확정 전 지금 준비할 것은?</li></ul></div>
+  <div class="sco"><div class="l">💡 SCO 관점</div><p>서술형 수능은 '학'에서 '습'으로 가는 징검다리입니다. 단순 암기가 아닌 사고 과정을 평가하므로, 평소 학교 수업에서 토론하고 글 쓰는 습관이 중요합니다. 스코는 정책 변동 여부와 무관하게 '완성도 높은 글쓰기' 훈련을 강조합니다. 사교육이 아닌 공교육 중심, EBS 프로그램 활용이 핵심 전략입니다.</p></div>
+  <div class="make-bar">
+    <span class="lbl">⚡ 자동 콘텐츠 제작</span>
+    <button class="make-btn full" onclick="makeContent(8,'full')">🚀 풀패키지</button>
+    <button class="make-btn" onclick="makeContent(8,'cards')">📸 카드뉴스</button>
+    <button class="make-btn" onclick="makeContent(8,'blog')">✍️ 블로그</button>
+    <button class="make-btn" onclick="makeContent(8,'captions')">💬 캡션</button>
+    <button class="make-btn" onclick="makeContent(8,'grades')">👨‍👩‍👧 학년별</button>
+    <button class="make-btn parent" onclick="makeContent(8,'parent')">📲 학부모 발송용</button>
+  </div>
+</div>
+<div class="card important" id="card-1">
+  <div class="badges">
+    <span class="badge b-important">중요</span>
+    <span class="badge b-year">2027학년도</span>
+    <span class="badge b-tgt">학부모/수험생</span>
+    <span class="badge b-cat">학원</span> <span class="badge b-cat">정책</span>
+  </div>
+  <h2>1. 강화교육청, 휴원 신고 후 몰래 수업한 입시학원 대표 고발</h2>
+  <div class="source">경기일보 · 2026-08-11 · <a href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE5TM1p3TktVYjdGZDluNk5sbVJhMFZDdFhrYjdCNzZzb1p6LUFVaERZVzVEeW8zWGVOZjNONUtlZS04Z1VVRWIxVkpvZEd6U0lVVmxzNE9qTTU4VlE?oc=5" target="_blank">원문</a></div>
+  <div class="parent-link">
+    <span class="pl-lbl">🎯 학부모 링크</span>
+    <a href="/p/2026-08-11-1.html" target="_blank" class="pl-btn">👀 미리보기</a>
+    <button class="pl-btn pl-copy" data-url="https://sco-daily.netlify.app/p/2026-08-11-1.html" onclick="copyParentUrl(this)">🔗 링크 복사</button>
+    <button class="pl-btn pl-copyfull" data-url="https://sco-daily.netlify.app/p/2026-08-11-1.html" data-title="강화교육청, 휴원 신고 후 몰래 수업한 입시학원 대표 고발" onclick="copyParentFullMsg(this)">📱 카톡 발송문</button>
+  </div>
+  <p class="sum1">인천 강화 기숙입시학원이 휴원 신고 후 100명 학생 불법 수업. 교육청이 학원 대표 경찰 고발. 학원 등록 여부 사전 확인 필수</p>
+  <div class="block"><b>📌 무엇이 바뀌었나</b><ul><li>휴원 신고 후 불법 운영: 정식 휴원 신고 상태에서 다른 학원 학생까지 받아 100여 명 수업 진행. 학원법 위반으로 고발 조치</li><li>학원 등록 여부 사전 확인 필수: 기숙학원·입시학원 등록 전 교육청 나이스 학원정보 시스템에서 정식 등록 여부 반드시 확인</li></ul></div>
+  <div class="myth"><div class="q">❓ 유명하고 비싼 학원이면 다 합법 아닌가요?</div><div class="a">→ 아닙니다. 휴원·폐원 상태에서도 몰래 운영하는 불법 학원이 있습니다. 교육청 '나이스 학원정보 시스템'에서 정식 등록 여부를 반드시 확인해야 합니다.</div></div>
+  <div class="katok"><div class="l">📱 학부모 카톡문</div><p>[학원 선택 긴급 주의보]
+
+인천 강화 기숙입시학원이 휴원 신고 후 100명 학생을 몰래 가르치다 적발됐습니다.
+
+⚠️ 학부모 필수 체크
+• 학원 등록 전 교육청 '나이스 학원정보'에서 등록 상태 확인
+• 휴원·폐원 학원은 학습권 보호 불가
+• 학원비 선납 전 환불 규정 서면 확인
+
+불법 학원은 피해 구제가 어렵습니다.
+스코랩스가 안전한 학습 환경 지켜드립니다!</p></div>
+  <div class="titles"><div class="l">📰 카드뉴스 제목</div><ul><li>휴원 학원이 100명 몰래 수업?</li><li>학원 등록 전 필수 확인 사항</li><li>불법 학원 피해 예방 3단계</li></ul></div>
+  <div class="sco"><div class="l">💡 SCO 관점</div><p>학원은 '학습 파트너'가 아니라 '학습 도구'입니다. 도구가 불량하면 성적은 물론 안전까지 위협받습니다. 스코는 학원 의존도를 낮추고, 학생 스스로 '습'을 완성하는 자기주도 학습을 지향합니다. 학원 선택 시 반드시 교육청 등록 여부를 확인하고, 과도한 선납은 피하세요. '완성도'는 학원이 아니라 학생 본인이 만드는 겁니다.</p></div>
+  <div class="make-bar">
+    <span class="lbl">⚡ 자동 콘텐츠 제작</span>
+    <button class="make-btn full" onclick="makeContent(1,'full')">🚀 풀패키지</button>
+    <button class="make-btn" onclick="makeContent(1,'cards')">📸 카드뉴스</button>
+    <button class="make-btn" onclick="makeContent(1,'blog')">✍️ 블로그</button>
+    <button class="make-btn" onclick="makeContent(1,'captions')">💬 캡션</button>
+    <button class="make-btn" onclick="makeContent(1,'grades')">👨‍👩‍👧 학년별</button>
+    <button class="make-btn parent" onclick="makeContent(1,'parent')">📲 학부모 발송용</button>
+  </div>
+</div>
+<div class="ft">SCO LABS · 학이 아닌 습 · 매일 오전 11시 자동 생성 (서버)</div>
+</div>
+<script>
+const ARTICLES = {"15": {"id": 15, "priority": "긴급", "title": "수능 D-100…\"100일을 어떻게 쓰느냐가 대입 성패 가른다\"", "shortTitle": "수능D100전략", "source": "한국NGO신문", "date": "2026-08-10", "year": "2027학년도", "target": "고3/재수생/학부모", "areas": ["수능", "학습전략"], "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBEV0NGTFJQTkhINUQ4T2lESkhmTHRveE1tVWFtWWJFRGtLdjg4dU5Pb0lWdE5ZMm1fU2dERGttQVFuZGg4Z0cwS29aNUh0dkVNc1hIaXlONGhIbWJ5Q3VCa3JCV1JGRHkz?oc=5", "hookBig": "2027수능까지 딱 100일!<br>2028 개편 전 마지막 기회,<br>N수생 역대급 몰려온다<br>지금부터가 진짜 승부처", "hookLabel": "⏰ 100일 카운트다운", "summary1": "2027학년도 수능까지 100일, 2028 대입개편 전 마지막 기회로 N수생 급증 예상. 국어·수학이 당락 좌우, 100일 전략이 합격 판가름", "changeA": {"label": "CHANGE 1", "title": "역대급 N수생 러시<br>예상", "desc": "2028 개편 전 마지막 수능으로 재수생·N수생 대거 몰려 경쟁률 상승 불가피. 재학생은 상대적 불리"}, "changeB": {"label": "CHANGE 2", "title": "국어·수학이<br>당락 좌우", "desc": "100일 동안 국어·수학 집중 학습이 합격 결정. 탐구는 사탐런 현상으로 변별력 약화, 주요 과목 승부"}, "mythQ": "100일 남았으면 이제 새로운 건 못 하는 거 아닌가요?", "mythA": "아닙니다. 100일은 국어·수학 한 영역을 완전히 재구축할 수 있는 충분한 시간입니다. 지금부터 '습'의 강도를 최대로 올리면 1등급도 가능합니다.", "impacts": ["N수생 증가로 재학생 상대 경쟁률 상승, 표준점수 컷 상승 예상", "국어·수학 1등급 확보 여부가 주요대 합격 당락 결정", "탐구 사탐런으로 변별력 약화, 국수 비중 더욱 증가", "100일 학습 전략 유무가 재학생·N수생 격차 결정"], "actions": ["오늘부터 D-Day 카운터 설치, 매일 아침 학습 목표 체크", "국어·수학 중 약한 과목 1개 선택, 100일 집중 공략 계획 수립", "9월 모평 이후 오답노트 기반 취약 유형 완벽 정리", "주 1회 실전 모의고사 풀이로 시간 관리 훈련 필수"], "ctaHook": "💬 우리 아이 100일 전략, 스코에서 1:1 맞춤 설계 받으세요", "katok": "[수능 D-100 긴급 안내]\n\n2027수능까지 딱 100일 남았습니다.\n2028 개편 전 마지막 수능으로 N수생이 역대급으로 몰려 경쟁이 치열할 전망입니다.\n\n✅ 100일 핵심 전략\n• 국어·수학 중 약한 과목 1개 집중\n• 9월 모평 직후 취약점 완벽 보완\n• 주 1회 실전 모의고사 필수\n\n지금부터 '습'의 강도가 합격을 결정합니다.\n스코랩스와 함께 100일 완성 시작하세요!", "sms": "[SCO] 수능 D-100! 2028개편 전 마지막 기회, N수생 역대급 몰려옵니다. 국어·수학 집중이 합격 열쇠 skolabs.com", "hashtags": ["수능100일", "2027수능", "N수생", "국어수학", "수능전략", "재수생", "9월모평", "수능개편", "2028대입", "입시전략", "수능공부법", "100일플랜", "수능카운트다운", "표준점수", "사탐런", "수능국어", "수능수학", "실전모의고사", "오답노트", "스코랩스"], "counseling": ["지금 수능까지 100일 남았는데, 솔직히 불안하시죠? 하지만 100일은 국어나 수학 한 과목을 완전히 바꿀 수 있는 충분한 시간입니다.", "올해는 2028 개편 전 마지막 수능이라 N수생이 엄청나게 몰릴 겁니다. 재학생은 지금부터 '습'의 강도를 최대로 올려야 합니다.", "국어·수학 중 약한 과목 하나를 정하고, 100일 동안 그 과목만 파고드세요. 탐구는 사탐런으로 변별력이 약해서 국수가 진짜 승부처예요.", "9월 모평 이후 오답노트를 철저히 분석해서 취약 유형을 완벽하게 잡아야 합니다. 이게 11월까지 가는 핵심 전략이에요.", "주 1회는 반드시 실전 모의고사를 풀면서 시간 관리 훈련하세요. 100일, 하루하루가 합격을 결정합니다."], "card_titles": ["수능 D-100, 지금부터가 진짜 승부", "2028 개편 전 마지막 기회, N수생 러시 온다", "국어·수학이 당락 좌우, 100일 집중 전략"], "sco_view": "수능 100일은 '학'이 아닌 '습'의 시간입니다. 새로운 개념을 배우는 게 아니라, 지금까지 배운 것을 완벽하게 체화하는 시기입니다. 스코는 100일 동안 국어·수학 약점 과목 1개를 선택해 매일 오답 분석과 실전 훈련을 반복하는 '완성도 100%' 전략을 제안합니다. 성적이 아니라 완성도, 지금부터 시작입니다.", "blogTitle": "2027 수능 D-100 전략 총정리 | N수생 러시 대비 국어·수학 집중 공략법", "blogSummary": "2027수능까지 100일, 2028 개편 전 마지막 기회로 N수생 급증 예상. 국어·수학 집중 학습이 합격 열쇠, 100일 완성 전략 공개", "grades": {"중3": {"katok": "[중3 학부모님께]\n고입 준비 중이시지만, 수능 100일 카운트다운이 시작됐습니다. 3년 후 우리 아이도 이 긴장감을 느낄 텐데요. 지금부터 국어·수학 기본기를 탄탄히 쌓아두면 고등 진학 후 여유가 생깁니다. 중3 겨울방학이 고1 내신 1등급을 결정합니다!", "actions": ["고등 국어 문학·비문학 기본 개념 선행 시작", "수학 중등 과정 완벽 정리 후 고등 수학(상) 준비", "겨울방학 고1 1학기 내신 대비 계획 수립"]}, "고1": {"katok": "[고1 학부모님께]\n2년 후 수능까지 100일 남은 선배들이 사투를 벌이고 있습니다. 우리 아이는 지금 고1 내신이 수시 당락을 좌우하는 중요한 시기입니다. 100일의 긴장감을 지금부터 느끼며 국어·수학 내신을 완벽히 잡아야 2년 후 여유가 생깁니다!", "actions": ["2학기 중간고사 국어·수학 내신 집중 대비", "수능 기출 문제 유형 미리 접해보기 (쉬운 것부터)", "학생부 비교과 활동 2학기 집중 관리"]}, "고2": {"katok": "[고2 학부모님께]\n1년 후 우리 아이 차례입니다. 선배들이 100일 카운트다운에 들어간 지금, 고2는 수능 과목 선택과 기본기 완성의 골든타임입니다. 국어·수학을 지금 잡지 않으면 고3 때 100일로는 부족합니다. 지금이 진짜 승부처입니다!", "actions": ["수능 국어·수학 기출 분석 시작 (최근 3개년)", "9월 모평 응시 후 취약 영역 집중 보완", "탐구 과목 확정 및 개념 완성 로드맵 수립"]}, "고3": {"katok": "[고3 학부모님께]\n수능 D-100, 100일이 합격을 결정합니다. 2028 개편 전 마지막 수능으로 N수생이 역대급 몰려옵니다. 국어·수학 중 약한 과목 하나를 정해 100일 집중하세요. 9월 모평 직후 오답 분석이 핵심입니다. 지금부터 '습'의 강도가 대학을 결정합니다!", "actions": ["국어·수학 중 약한 과목 선택, 100일 올인 계획 수립", "9월 모평 직후 오답노트 기반 취약 유형 완벽 정리", "주 1회 실전 모의고사 풀이로 시간 관리 훈련", "수시 최저 충족 여부 매일 체크, 정시 라인업 확정"]}}}, "8": {"id": 8, "priority": "중요", "title": "'서술·논술형 수능 도입' 세 가지 쟁점 살펴보니…", "shortTitle": "서술형수능쟁점", "source": "한겨레", "date": "2026-08-11", "year": "2028학년도", "target": "중3/고1/학부모", "areas": ["수능", "정책"], "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE4zSDM3aHEzdTB1RU1RR2FVaWpTanNlTGEyOFhfY2VnaWk0NUxuWEF6WTAtWFlEdmFGM1JYTG9talUyWjdJbEdpZ096ZjBIMmtoMVNubFRCdFRLajdBNTMyYUJLbUI5a3F2WVE?oc=5", "hookBig": "2028 서술형 수능,<br>찬반 논란 3가지 쟁점 정리<br>채점 공정성·사교육 심화·학습 부담<br>학부모가 알아야 할 핵심", "hookLabel": "📋 정책 핵심 정리", "summary1": "2028 서술·논술형 수능 도입을 둘러싼 3대 쟁점 분석. 채점 공정성, 사교육 심화, 학습 부담 증가 우려 vs 사고력 평가 강화 주장 대립", "changeA": {"label": "쟁점 1", "title": "채점 공정성<br>논란", "desc": "서술형 답안 채점 기준의 객관성 확보 가능 여부. 채점자 간 편차, 이의 제기 처리 등 공정성 우려 제기"}, "changeB": {"label": "쟁점 2", "title": "사교육 심화<br>우려", "desc": "서술형 대비 글쓰기 학원 등 사교육 수요 폭증 예상. 경제적 격차가 수능 격차로 이어질 가능성"}, "mythQ": "서술형 수능이 도입되면 무조건 사교육이 늘어나나요?", "mythA": "그렇지 않습니다. 서술형은 단순 암기가 아닌 사고 과정을 평가하므로, 오히려 '학원식 찍기 스킬'이 무력화될 수 있습니다. 핵심은 학교 수업에서 토론·글쓰기를 얼마나 내실 있게 운영하느냐입니다.", "impacts": ["2028학년도(현 중3) 대상 서술형 수능 도입 확정 시 학습 방식 전환 필요", "채점 공정성 논란으로 정책 변경 가능성 상존, 입시 불확실성 증가", "사교육 대응 전략 변화 예상 (글쓰기·논술 학원 수요 증가)", "학교 현장 교사 부담 증가, 서술형 평가 역량 강화 필요"], "actions": ["2028 서술형 수능 확정 여부 교육부 공식 발표 매월 체크", "학교 수업 중 서술형·논술형 평가 비중 확인 (국어·사회 중심)", "글쓰기 기본기 훈련 (요약·논리 전개) 지금부터 시작", "사교육 의존 전 학교 방과후·EBS 서술형 프로그램 우선 활용"], "ctaHook": "💬 서술형 수능, 스코에서 정확한 정보와 대비법 확인하세요", "katok": "[2028 서술형 수능 쟁점 정리]\n\n서술·논술형 수능 도입 논란이 뜨겁습니다.\n\n🔍 3대 쟁점\n1. 채점 공정성 확보 가능한가?\n2. 사교육 심화 우려는?\n3. 학생 학습 부담 증가는?\n\n현 중3(2028학년도)부터 적용 예정이지만,\n정책 변경 가능성도 있어 지속 모니터링 필수입니다.\n\n✅ 지금 할 일\n• 글쓰기 기본기 훈련 시작\n• 학교 서술형 평가 대비 철저\n\n스코랩스가 정확한 정보 드립니다!", "sms": "[SCO] 2028 서술형 수능 3대 쟁점: 채점 공정성·사교육·학습부담. 현 중3 해당, 정책 변동 가능성 주시 필요 skolabs.com", "hashtags": ["서술형수능", "2028수능", "수능개편", "논술형평가", "채점공정성", "사교육", "입시정책", "교육부", "중3입시", "고1입시", "수능논란", "서술형평가", "글쓰기교육", "사고력평가", "입시불확실성", "수능변화", "학습부담", "공교육", "EBS", "스코랩스"], "counseling": ["서술형 수능 도입이 확정됐다 번복됐다 하면서 학부모님들 혼란스러우시죠? 핵심은 '확정 여부'보다 '대비 방향'입니다.", "첫 번째 쟁점은 채점 공정성이에요. 서술형 답안을 누가 어떤 기준으로 채점하느냐가 관건인데, 이게 해결 안 되면 정책 자체가 흔들릴 수 있어요.", "두 번째는 사교육 심화 우려. 하지만 서술형은 단순 암기가 아니라 사고 과정을 보는 거라, 학원 찍기 스킬은 통하지 않습니다. 학교 수업이 핵심이에요.", "세 번째는 학습 부담 증가. 객관식+서술형 병행 시 학생 부담이 커지는 건 사실이지만, 장기적으론 사고력 향상에 도움이 됩니다.", "지금은 정책 확정을 기다리며 글쓰기 기본기(요약·논리 전개)를 꾸준히 다져두는 게 최선입니다. 스코가 함께하겠습니다."], "card_titles": ["2028 서술형 수능, 3대 쟁점 총정리", "채점 공정성 vs 사교육 심화 vs 학습 부담", "확정 전 지금 준비할 것은?"], "sco_view": "서술형 수능은 '학'에서 '습'으로 가는 징검다리입니다. 단순 암기가 아닌 사고 과정을 평가하므로, 평소 학교 수업에서 토론하고 글 쓰는 습관이 중요합니다. 스코는 정책 변동 여부와 무관하게 '완성도 높은 글쓰기' 훈련을 강조합니다. 사교육이 아닌 공교육 중심, EBS 프로그램 활용이 핵심 전략입니다.", "blogTitle": "2028 서술형 수능 3대 쟁점 완벽 정리 | 채점 공정성·사교육·학습부담 분석", "blogSummary": "2028 서술·논술형 수능 도입 논란의 핵심 쟁점 3가지(채점 공정성, 사교육 심화, 학습 부담)를 분석하고 학부모 대비 전략 제시", "grades": {"중3": {"katok": "[중3 학부모님께]\n2028학년도 서술형 수능, 바로 우리 아이 해당입니다. 채점 공정성·사교육 논란이 뜨겁지만, 정책 확정 전까지 글쓰기 기본기를 탄탄히 다지는 게 최선입니다. 학교 국어·사회 수업 중 서술형 평가에 집중하고, 요약·논리 전개 훈련 지금 시작하세요!", "actions": ["국어·사회 서술형 평가 대비 학교 수업 집중", "매일 10분 신문 사설 요약 훈련 (글쓰기 기본기)", "교육부 2028 수능 확정 발표 매월 체크"]}, "고1": {"katok": "[고1 학부모님께]\n고1은 서술형 수능 직접 대상은 아니지만, 학교 내신에서 서술형 비중이 늘고 있습니다. 2학기 중간고사부터 국어·사회 서술형 문항이 증가할 예정이니, 지금부터 글쓰기 훈련 필수입니다. 학교 방과후 논술 프로그램 적극 활용하세요!", "actions": ["2학기 국어·사회 내신 서술형 대비 (배점 30% 이상)", "학교 방과후 글쓰기·논술 프로그램 수강", "주 1회 주제별 짧은 에세이 작성 연습"]}, "고2": {"katok": "[고2 학부모님께]\n고2는 수능 객관식 세대지만, 논술 전형 준비 시 서술형 훈련이 필수입니다. 연세대·고려대 등 주요대 논술은 긴 지문 분석 후 논리적 서술 요구하므로, 지금부터 기출 분석과 첨삭 훈련 병행하세요. EBS 논술 강의 무료 활용 가능합니다!", "actions": ["논술 전형 준비 시 대학별 기출 분석 시작", "EBS 논술 강의 수강 (무료)", "월 2회 논술 모의고사 + 첨삭 받기"]}, "고3": {"katok": "[고3 학부모님께]\n고3은 객관식 수능 세대라 서술형과 무관하지만, 논술 전형 최저 충족 후 논술 실력이 당락 좌우합니다. 9월 모평 이후 논술 파이널 특강 수강하고, 대학별 출제 유형 완벽 숙지하세요. 서울대·연고대 논술은 첨삭 5회 이상 필수입니다!", "actions": ["논술 전형 지원 대학 기출 10개년 분석", "9월 이후 논술 파이널 특강 수강", "대학별 모의논술 응시 + 첨삭 5회 이상"]}}}, "1": {"id": 1, "priority": "중요", "title": "강화교육청, 휴원 신고 후 몰래 수업한 입시학원 대표 고발", "shortTitle": "휴원학원불법운영", "source": "경기일보", "date": "2026-08-11", "year": "2027학년도", "target": "학부모/수험생", "areas": ["학원", "정책"], "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5TM1p3TktVYjdGZDluNk5sbVJhMFZDdFhrYjdCNzZzb1p6LUFVaERZVzVEeW8zWGVOZjNONUtlZS04Z1VVRWIxVkpvZEd6U0lVVmxzNE9qTTU4VlE?oc=5", "hookBig": "휴원 신고하고 100명 몰래 수업<br>강화 기숙입시학원 적발<br>학원 선택 전 등록 여부 필수 확인<br>불법 학원 피해 주의보", "hookLabel": "⚠️ 학원 선택 주의", "summary1": "인천 강화 기숙입시학원이 휴원 신고 후 100명 학생 불법 수업. 교육청이 학원 대표 경찰 고발. 학원 등록 여부 사전 확인 필수", "changeA": {"label": "사건 핵심", "title": "휴원 신고 후<br>불법 운영", "desc": "정식 휴원 신고 상태에서 다른 학원 학생까지 받아 100여 명 수업 진행. 학원법 위반으로 고발 조치"}, "changeB": {"label": "학부모 대응", "title": "학원 등록 여부<br>사전 확인 필수", "desc": "기숙학원·입시학원 등록 전 교육청 나이스 학원정보 시스템에서 정식 등록 여부 반드시 확인"}, "mythQ": "유명하고 비싼 학원이면 다 합법 아닌가요?", "mythA": "아닙니다. 휴원·폐원 상태에서도 몰래 운영하는 불법 학원이 있습니다. 교육청 '나이스 학원정보 시스템'에서 정식 등록 여부를 반드시 확인해야 합니다.", "impacts": ["불법 학원 수강 시 학습권 보호 불가, 환불·피해 구제 어려움", "휴원·폐원 학원은 시설 안전·교습 품질 관리 불가능", "학원비 선납 후 폐원 시 금전적 피해 발생 가능성", "불법 학원 적발 증가로 학원 선택 시 사전 검증 필수화"], "actions": ["학원 등록 전 교육청 '나이스 학원정보 시스템'에서 등록 상태 확인", "기숙학원은 시설 안전 점검 이력, 원장 자격 여부 추가 확인", "학원비 선납 전 환불 규정 서면 확인, 계약서 필수 작성", "불법 운영 의심 시 교육청(1566-0990) 즉시 신고"], "ctaHook": "💬 우리 아이 학원, 안전한가요? 스코에서 학원 선택 가이드 확인하세요", "katok": "[학원 선택 긴급 주의보]\n\n인천 강화 기숙입시학원이 휴원 신고 후 100명 학생을 몰래 가르치다 적발됐습니다.\n\n⚠️ 학부모 필수 체크\n• 학원 등록 전 교육청 '나이스 학원정보'에서 등록 상태 확인\n• 휴원·폐원 학원은 학습권 보호 불가\n• 학원비 선납 전 환불 규정 서면 확인\n\n불법 학원은 피해 구제가 어렵습니다.\n스코랩스가 안전한 학습 환경 지켜드립니다!", "sms": "[SCO] 강화 기숙학원 휴원 후 불법 운영 적발. 학원 등록 전 교육청 나이스 시스템 필수 확인! skolabs.com", "hashtags": ["불법학원", "휴원학원", "기숙학원", "입시학원", "학원선택", "나이스학원정보", "교육청", "학원법", "학원등록", "학원피해", "강화교육청", "학원비환불", "학원계약", "학습권보호", "학원안전", "학원신고", "불법운영", "학원점검", "학부모주의", "스코랩스"], "counseling": ["학원 선택할 때 '유명하다', '비싸다'만 보고 결정하시면 안 됩니다. 이번처럼 휴원 상태에서 몰래 운영하는 곳도 있어요.", "교육청 '나이스 학원정보 시스템'에서 정식 등록 여부를 반드시 확인하세요. 5분이면 충분합니다.", "특히 기숙학원은 시설 안전, 원장 자격, 교습 과목 등록 여부까지 꼼꼼히 체크해야 합니다. 우리 아이가 몇 달씩 생활하는 공간이잖아요.", "학원비 선납 전에는 환불 규정을 서면으로 받고, 계약서를 반드시 작성하세요. 불법 학원은 환불도 안 됩니다.", "불법 운영 의심되면 교육청(1566-0990)에 즉시 신고하세요. 우리 아이뿐 아니라 다른 학생들도 보호할 수 있습니다."], "card_titles": ["휴원 학원이 100명 몰래 수업?", "학원 등록 전 필수 확인 사항", "불법 학원 피해 예방 3단계"], "sco_view": "학원은 '학습 파트너'가 아니라 '학습 도구'입니다. 도구가 불량하면 성적은 물론 안전까지 위협받습니다. 스코는 학원 의존도를 낮추고, 학생 스스로 '습'을 완성하는 자기주도 학습을 지향합니다. 학원 선택 시 반드시 교육청 등록 여부를 확인하고, 과도한 선납은 피하세요. '완성도'는 학원이 아니라 학생 본인이 만드는 겁니다.", "blogTitle": "휴원 학원 불법 운영 적발 | 학원 선택 전 필수 확인 사항 총정리", "blogSummary": "강화 기숙입시학원 휴원 후 불법 운영 적발 사례 분석. 학원 등록 여부 확인 방법, 피해 예방 전략 제시", "grades": {"중3": {"katok": "[중3 학부모님께]\n고입 준비로 학원 알아보시는 분들 많으실 텐데요. 이번 강화 사건처럼 휴원 상태에서 몰래 운영하는 곳도 있습니다. 겨울방학 기숙학원 등록 전 교육청 '나이스 학원정보'에서 정식 등록 여부 반드시 확인하세요. 5분 투자가 몇백만 원 피해 막습니다!", "actions": ["겨울방학 기숙학원 등록 전 나이스 시스템 등록 상태 확인", "학원 계약서 작성 및 환불 규정 서면 수령", "시설 안전 점검 이력 교육청 홈페이지에서 확인"]}, "고1": {"katok": "[고1 학부모님께]\n내신 관리 위해 학원 다니시는 분들 많으실 텐데, 학원 등록 여부 확인하셨나요? 불법 학원은 환불도 안 되고 학습권 보호도 불가능합니다. 2학기 학원 등록 전 교육청 '나이스 학원정보'에서 5분만 투자해 확인하세요!", "actions": ["2학기 국어·수학 학원 등록 전 나이스 시스템 확인", "학원비 선납 전 환불 규정 서면 확인", "불법 운영 의심 시 교육청 신고 (1566-0990)"]}, "고2": {"katok": "[고2 학부모님께]\n수능 준비로 입시학원 알아보시는 분들 계실 텐데요. 이번 강화 사건처럼 휴원 상태 불법 운영 학원도 있습니다. 특히 기숙학원은 시설 안전이 생명이니, 등록 전 나이스 시스템에서 정식 등록 여부 + 안전 점검 이력 필수 확인하세요!", "actions": ["기숙학원 등록 전 나이스 시스템 등록 상태 + 안전 점검 이력 확인", "원장 자격, 교습 과목 등록 여부 체크", "학원비 선납 전 계약서 작성 및 환불 규정 서면 수령"]}, "고3": {"katok": "[고3 학부모님께]\n재수 준비로 기숙학원 알아보시는 분들 계실 텐데요. 불법 학원은 환불도 안 되고 학습 품질도 보장 못 합니다. 재수 성공은 학원이 아니라 '습'의 완성도입니다. 등록 전 나이스 시스템에서 정식 등록 여부 확인하시고, 과도한 학원 의존은 피하세요!", "actions": ["재수 기숙학원 등록 전 나이스 시스템 확인 필수", "학원비 선납 전 환불 규정 + 계약서 작성", "학원 의존도 낮추고 자기주도 학습 비중 높이기"]}}}};
+const TODAY_STR = "2026-08-11";
+
+function downloadFile(filename, content, mime){
+  mime = mime || 'text/plain;charset=utf-8';
+  const blob = new Blob([content],{type:mime});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob); a.download = filename;
+  document.body.appendChild(a); a.click(); document.body.removeChild(a);
+}
+function openInNewTab(html){
+  const blob = new Blob([html],{type:'text/html;charset=utf-8'});
+  window.open(URL.createObjectURL(blob),'_blank');
+}
+
+function copyParentUrl(btn){
+  const url = btn.dataset.url;
+  navigator.clipboard.writeText(url).then(()=>{
+    const o=btn.textContent; btn.textContent='✅ 복사됨!'; setTimeout(()=>btn.textContent=o,1500);
+  });
+}
+function copyParentFullMsg(btn){
+  const url = btn.dataset.url;
+  const title = btn.dataset.title;
+  const txt = '[SCO 긴급 입시속보 - '+TODAY_STR+']\n\n'+title+'\n\n전체 내용 ▶ '+url+'\n\n- SCO 학습관리';
+  navigator.clipboard.writeText(txt).then(()=>{
+    const o=btn.textContent; btn.textContent='✅ 복사됨!'; setTimeout(()=>btn.textContent=o,1500);
+  });
+}
+
+function genCardsHTML(id){
+  const a = ARTICLES[id]; if(!a) return '<h1>데이터 없음</h1>';
+  const titles = a.card_titles || [];
+  const cards = [
+    {cls:'c1', label:a.hookLabel||'📢', main:a.hookBig||a.title, isHook:true},
+    {cls:'c2', label:'CHANGE 1', main:(a.changeA&&a.changeA.title)||'', sub:(a.changeA&&a.changeA.desc)||''},
+    {cls:'c3', label:'CHANGE 2', main:(a.changeB&&a.changeB.title)||'', sub:(a.changeB&&a.changeB.desc)||''},
+    {cls:'c4', label:'⚠️ 학부모 오해', main:a.mythQ||'', sub:a.mythA||''},
+    {cls:'c5', label:'💔 영향', list:a.impacts||[]},
+    {cls:'c6', label:'📋 할 일', list:a.actions||[]},
+    {cls:'c7', label:'💡 SCO 관점', main:a.ctaHook||a.sco_view||'', sub:'학이 아닌 습'},
+    {cls:'c8', label:'📩 무료 진단', main:'우리 아이 맞춤 진단', sub:'카카오톡 채널/DM/프로필 링크', isCta:true}
+  ];
+  return '<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><title>'+a.title+' 카드뉴스</title><style>*{box-sizing:border-box;margin:0;padding:0}body{font-family:-apple-system,Pretendard,sans-serif;background:#e5e7eb;padding:20px}.cards{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(500px,1fr));gap:24px}.card{width:100%;aspect-ratio:1/1;border-radius:18px;padding:54px 48px;display:flex;flex-direction:column;justify-content:space-between;color:white;font-weight:700;position:relative;line-height:1.4}.num{position:absolute;top:20px;right:24px;font-size:13px;opacity:.6}.brand{position:absolute;bottom:24px;left:48px;font-size:12px;opacity:.7}.label{font-size:16px;font-weight:700;opacity:.85;margin-bottom:14px;letter-spacing:1px}.main{font-size:36px;font-weight:900;line-height:1.25}.hook{font-size:46px;font-weight:900;line-height:1.2}.sub{font-size:18px;line-height:1.5;font-weight:500;opacity:.9;margin-top:14px}.cta{font-size:42px;font-weight:900;color:#fbbf24}ul{padding-left:24px;margin-top:8px}li{font-size:24px;margin-bottom:8px;font-weight:600}.c1{background:linear-gradient(135deg,#0b1e3f,#1a3a6b)}.c2{background:linear-gradient(135deg,#b91c1c,#ea580c)}.c3{background:linear-gradient(135deg,#1a3a6b,#3b82f6)}.c4{background:linear-gradient(135deg,#b45309,#d97706)}.c5{background:linear-gradient(135deg,#7f1d1d,#dc2626)}.c6{background:linear-gradient(135deg,#064e3b,#059669)}.c7{background:linear-gradient(135deg,#0b1e3f,#1e293b)}.c8{background:linear-gradient(135deg,#0b1e3f,#ea580c)}</style></head><body><div class="cards">'+cards.map((c,i)=>{
+    let body='';
+    if(c.isHook) body='<div><div class="label">'+c.label+'</div><div class="hook">'+c.main+'</div></div>';
+    else if(c.isCta) body='<div><div class="label">'+c.label+'</div><div class="cta">'+c.main+'</div><div class="sub">'+c.sub+'</div></div>';
+    else if(c.list) body='<div><div class="label">'+c.label+'</div><ul>'+c.list.map(x=>'<li>'+x+'</li>').join('')+'</ul></div>';
+    else body='<div><div class="label">'+c.label+'</div><div class="main">'+c.main+'</div>'+(c.sub?'<div class="sub">'+c.sub+'</div>':'')+'</div>';
+    return '<div class="card '+c.cls+'"><div class="num">'+(i+1)+'/8</div>'+body+'<div class="brand">SCO LABS</div></div>';
+  }).join('')+'</div></body></html>';
+}
+
+function genBlogHTML(id){
+  const a = ARTICLES[id]; if(!a) return '<h1>데이터 없음</h1>';
+  return '<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><title>'+(a.blogTitle||a.title)+'</title><style>body{font-family:-apple-system,Pretendard,sans-serif;background:#f7f8fa;line-height:1.8;padding:20px}.wrap{max-width:780px;margin:0 auto;background:white;border-radius:14px;overflow:hidden}.hd{background:linear-gradient(135deg,#0b1e3f,#1a3a6b);color:white;padding:48px 44px}.hd h1{font-size:28px;font-weight:800}.summary{background:#fff7ed;border-left:6px solid #ea580c;padding:20px 28px;color:#9a3412;font-weight:600}.body{padding:24px 44px}.body h2{font-size:20px;font-weight:800;color:#0b1e3f;margin:30px 0 14px;padding-left:14px;border-left:5px solid #0b1e3f}.body p{font-size:15px;color:#374151;margin-bottom:12px}.body ul{padding-left:26px;margin:10px 0}.cta{background:linear-gradient(135deg,#0b1e3f,#ea580c);color:white;padding:24px;border-radius:12px;margin:24px 0}.tags{background:#f3f4f6;padding:18px;border-radius:10px;margin:20px 0;font-size:13px;color:#6b7280}</style></head><body><div class="wrap"><div class="hd"><div style="opacity:.7;font-size:12px">📅 '+a.date+' · SCO LABS</div><h1>'+(a.blogTitle||a.title)+'</h1></div><div class="summary">'+(a.blogSummary||a.summary1||'')+'</div><div class="body"><h2>1. 무엇이 바뀌었나</h2><p>'+(a.summary1||'')+'</p><h2>2. 학부모 오해</h2><p><b>Q.</b> '+(a.mythQ||'')+'<br><b>A.</b> '+(a.mythA||'')+'</p><h2>3. 우리 아이 영향</h2><ul>'+((a.impacts||[]).map(x=>'<li>'+x+'</li>').join(''))+'</ul><h2>4. 지금 할 일</h2><ul>'+((a.actions||[]).map(x=>'<li><b>'+x+'</b></li>').join(''))+'</ul><h2>5. SCO 관점</h2><p>'+(a.sco_view||'')+'</p><div class="cta"><h3>💡 무료 입시 진단</h3><p>카카오톡 채널/DM/프로필 링크</p></div><div class="tags">'+((a.hashtags||[]).map(h=>'#'+h).join(' '))+'</div></div></div></body></html>';
+}
+
+function genGradesHTML(id){
+  const a = ARTICLES[id]; if(!a||!a.grades) return '<h1>학년별 데이터 없음</h1>';
+  const colors = {'중3':'#b91c1c','고1':'#ea580c','고2':'#1a3a6b','고3':'#7c3aed'};
+  return '<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><title>학년별 카톡</title><style>body{font-family:-apple-system,Pretendard,sans-serif;background:#f7f8fa;padding:20px;line-height:1.7}.wrap{max-width:1000px;margin:0 auto}.hd{background:linear-gradient(135deg,#0b1e3f,#1a3a6b);color:white;padding:32px;border-radius:14px;margin-bottom:24px}.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.card{background:white;border-radius:12px;padding:24px}.card h2{font-size:18px;font-weight:800;color:white;padding:6px 14px;border-radius:6px;display:inline-block;margin-bottom:14px}.katok{background:#fef3c7;border:1.5px dashed #f59e0b;border-radius:8px;padding:16px;font-size:13px;color:#78350f;white-space:pre-line}.actions{margin-top:14px}.actions ul{padding-left:18px}.actions li{font-size:13px;color:#374151;margin-bottom:4px}@media(max-width:700px){.cards{grid-template-columns:1fr}}</style></head><body><div class="wrap"><div class="hd"><h1 style="font-size:22px">학년별 맞춤 카톡 안내문</h1><div style="font-size:14px;opacity:.85;margin-top:6px">'+a.title+' · '+a.date+'</div></div><div class="cards">'+Object.keys(a.grades).map(g=>{const d=a.grades[g];return '<div class="card"><h2 style="background:'+(colors[g]||'#0b1e3f')+'">'+g+' 학부모용</h2><div class="katok">'+d.katok+'</div><div class="actions"><b>이 학년이 할 일</b><ul>'+((d.actions||[]).map(x=>'<li>'+x+'</li>').join(''))+'</ul></div></div>';}).join('')+'</div></div></body></html>';
+}
+
+function genCaptions(id){
+  const a = ARTICLES[id]; if(!a) return '';
+  return '=== SCO 콘텐츠 패키지 · '+a.date+' ===\n\n[인스타 캡션]\n'+(a.hookBig||'').replace(/<[^>]+>/g,' ')+'\n\n'+(a.summary1||'')+'\n\n📩 DM/프로필\n\n'+((a.hashtags||[]).map(h=>'#'+h).join(' '))+'\n\n[카톡 채널 발송]\n'+(a.katok||'')+'\n\n[SMS]\n'+(a.sms||'')+'\n\n[상담 멘트]\n'+((a.counseling||[]).map((m,i)=>(i+1)+'. "'+m+'"').join('\n\n'));
+}
+
+function genParentMessage(id){
+  const a = ARTICLES[id]; if(!a) return '';
+  return '📢 SCO 입시 브리핑\n━━━━━━━━━━━━━━━\n'+a.date+'\n\n🎯 오늘의 핵심\n《'+a.title+'》\n\n📌 NOW\n  ✓ '+(a.summary1||'')+'\n\n❓ FAQ\n  Q. '+(a.mythQ||'')+'\n  A. '+(a.mythA||'')+'\n\n💡 SCO의 답\n  '+(a.sco_view||'')+'\n\n━━━━━━━━━━━━━━━\n📩 무료 입시 진단\n   ▶ 카카오톡 채널 / DM\n━━━━━━━━━━━━━━━\n\nSCO Labs · '+(a.source||'');
+}
+
+function _wrapText(ctx,text,x,y,maxW,lh){const chars=text.split('');let line='',cy=y;for(let i=0;i<chars.length;i++){const t=line+chars[i];if(ctx.measureText(t).width>maxW&&line!==''){ctx.fillText(line,x,cy);line=chars[i];cy+=lh}else line=t}ctx.fillText(line,x,cy);return cy+lh}
+function _roundRect(ctx,x,y,w,h,r){ctx.beginPath();ctx.moveTo(x+r,y);ctx.arcTo(x+w,y,x+w,y+h,r);ctx.arcTo(x+w,y+h,x,y+h,r);ctx.arcTo(x,y+h,x,y,r);ctx.arcTo(x,y,x+w,y,r);ctx.closePath()}
+
+function drawParentCardCanvas(id){
+  const a=ARTICLES[id]; if(!a){alert('데이터 없음');return}
+  const canvas=document.getElementById('sco-export-canvas');
+  const ctx=canvas.getContext('2d'); const W=1080,H=1350,PAD=80;
+  const FONT='"Apple SD Gothic Neo","Pretendard",-apple-system,sans-serif';
+  const bg=ctx.createLinearGradient(0,0,0,H);
+  bg.addColorStop(0,'#0b1e3f');bg.addColorStop(.6,'#1e3a8a');bg.addColorStop(1,'#1a3a6b');
+  ctx.fillStyle=bg;ctx.fillRect(0,0,W,H);
+  ctx.fillStyle='rgba(255,255,255,.85)';ctx.font='800 22px '+FONT;ctx.fillText('SCO LABS',PAD,PAD+10);
+  ctx.fillStyle='rgba(255,255,255,.7)';ctx.font='600 24px '+FONT;ctx.textAlign='right';ctx.fillText(a.date||'',W-PAD,PAD+10);ctx.textAlign='left';
+  let y=160;
+  ctx.fillStyle='rgba(251,191,36,.25)';_roundRect(ctx,PAD,y,260,50,25);ctx.fill();
+  ctx.fillStyle='#fbbf24';ctx.font='800 22px '+FONT;ctx.fillText('📢 SCO 입시 브리핑',PAD+22,y+33);
+  y=260;ctx.fillStyle='#fff';ctx.font='900 46px '+FONT;
+  y=_wrapText(ctx,(a.title||'').slice(0,60),PAD,y+40,W-PAD*2,60);
+  y+=30;ctx.fillStyle='rgba(255,255,255,.2)';ctx.fillRect(PAD,y,W-PAD*2,2);
+  y+=40;ctx.fillStyle='#fbbf24';ctx.font='800 22px '+FONT;ctx.fillText('📌 NOW',PAD,y);
+  y+=40;ctx.fillStyle='rgba(255,255,255,.95)';ctx.font='500 26px '+FONT;
+  y=_wrapText(ctx,(a.summary1||'').slice(0,150),PAD,y,W-PAD*2,40);
+  y+=20;ctx.fillStyle='rgba(255,255,255,.08)';_roundRect(ctx,PAD,y,W-PAD*2,200,20);ctx.fill();
+  ctx.fillStyle='#fbbf24';ctx.font='700 22px '+FONT;ctx.fillText('❓ '+(a.mythQ||'').slice(0,35),PAD+30,y+45);
+  ctx.fillStyle='rgba(255,255,255,.95)';ctx.font='500 22px '+FONT;
+  _wrapText(ctx,'→ '+(a.mythA||'').slice(0,100),PAD+30,y+90,W-PAD*2-60,36);
+  y+=230;ctx.fillStyle='rgba(255,255,255,.2)';ctx.fillRect(PAD,y,W-PAD*2,2);
+  y+=40;ctx.fillStyle='#fbbf24';ctx.font='800 22px '+FONT;ctx.fillText('💡 SCO의 답',PAD,y);
+  y+=40;ctx.fillStyle='rgba(255,255,255,.95)';ctx.font='700 28px '+FONT;
+  _wrapText(ctx,'학(學)이 아닌 습(習). 매일 실행이 결국 이깁니다.',PAD,y,W-PAD*2,42);
+  const cY=H-220;
+  const cg=ctx.createLinearGradient(0,cY,W,cY+130);
+  cg.addColorStop(0,'#ea580c');cg.addColorStop(1,'#fbbf24');
+  ctx.fillStyle=cg;_roundRect(ctx,PAD,cY,W-PAD*2,130,20);ctx.fill();
+  ctx.fillStyle='#0b1e3f';ctx.font='900 32px '+FONT;ctx.textAlign='center';
+  ctx.fillText('📩 무료 입시 진단 신청',W/2,cY+50);
+  ctx.font='600 20px '+FONT;ctx.fillText('카카오톡 채널 / DM / 프로필 링크',W/2,cY+90);
+  ctx.fillStyle='rgba(255,255,255,.5)';ctx.font='700 16px '+FONT;ctx.fillText('S C O   L A B S',W/2,H-30);ctx.textAlign='left';
+  const link=document.createElement('a');
+  link.download='SCO_학부모카드_'+(a.date||'')+'_'+id+'.png';
+  link.href=canvas.toDataURL('image/png');
+  document.body.appendChild(link);link.click();document.body.removeChild(link);
+}
+
+function makeContent(id, type){
+  const a = ARTICLES[id]; if(!a){alert('기사 데이터 없음');return}
+  const safeTitle = (a.shortTitle||a.title||'').replace(/[\/\\:*?"<>|]/g,'').slice(0,30);
+  const base = 'SCO_'+a.date+'_'+id+'_'+safeTitle;
+  if(type==='cards'){
+    const h=genCardsHTML(id);downloadFile(base+'_카드뉴스.html',h,'text/html;charset=utf-8');openInNewTab(h);
+  } else if(type==='blog'){
+    const h=genBlogHTML(id);downloadFile(base+'_블로그.html',h,'text/html;charset=utf-8');openInNewTab(h);
+  } else if(type==='captions'){
+    downloadFile(base+'_캡션.txt',genCaptions(id),'text/plain;charset=utf-8');
+  } else if(type==='grades'){
+    const h=genGradesHTML(id);downloadFile(base+'_학년별카톡.html',h,'text/html;charset=utf-8');openInNewTab(h);
+  } else if(type==='parent'){
+    drawParentCardCanvas(id);
+    const text=genParentMessage(id);
+    navigator.clipboard.writeText(text).then(()=>alert('📲 학부모 발송 풀세트!\n✅ PNG 카드 다운로드\n✅ 텍스트 클립보드 복사\n→ 카톡 채널에 첨부+붙여넣기')).catch(()=>{});
+    downloadFile(base+'_학부모발송.txt',text,'text/plain;charset=utf-8');
+  } else if(type==='full'){
+    const c=genCardsHTML(id),b=genBlogHTML(id),g=genGradesHTML(id),t=genCaptions(id);
+    downloadFile(base+'_카드뉴스.html',c,'text/html;charset=utf-8');
+    setTimeout(()=>downloadFile(base+'_블로그.html',b,'text/html;charset=utf-8'),300);
+    setTimeout(()=>downloadFile(base+'_캡션.txt',t,'text/plain;charset=utf-8'),600);
+    setTimeout(()=>downloadFile(base+'_학년별카톡.html',g,'text/html;charset=utf-8'),900);
+    setTimeout(()=>openInNewTab(c),1200);
+    alert('🚀 풀패키지 4개 파일 다운로드 시작!');
+  }
+}
+</script></body></html>
