@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>SCO 입시 브리핑 — 2026-09-13</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,'Pretendard','Apple SD Gothic Neo',sans-serif;background:#f4f6fa;color:#1a1a1a;line-height:1.6;padding:20px}
+.wrap{max-width:980px;margin:0 auto}
+.header{background:linear-gradient(135deg,#0b1e3f 0%,#1a3a6b 100%);color:#fff;padding:36px 28px;border-radius:14px}
+.header h1{font-size:28px;font-weight:800}
+.header .sub{margin-top:6px;font-size:14px;opacity:.92}
+.hero{background:#fff7ed;border-left:6px solid #f97316;padding:20px 22px;border-radius:10px;margin-top:18px}
+.hero h2{font-size:18px;color:#9a3412}
+.pick{background:#ecfdf5;border:1px solid #6ee7b7;border-radius:12px;padding:18px 22px;margin-top:18px}
+.pick h3{color:#065f46;font-size:15px}
+.card{background:#fff;border-radius:14px;box-shadow:0 4px 14px rgba(0,0,0,.06);padding:26px;margin-top:22px;border-top:5px solid #3b82f6}
+.card.urgent{border-top-color:#dc2626}.card.important{border-top-color:#f59e0b}.card.note{border-top-color:#6b7280}
+.badges{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+.badge{font-size:11px;padding:4px 10px;border-radius:999px;font-weight:700}
+.b-urgent{background:#fef2f2;color:#b91c1c}.b-important{background:#fffbeb;color:#b45309}.b-note{background:#f3f4f6;color:#374151}
+.b-cat{background:#eff6ff;color:#1d4ed8}.b-year{background:#f0fdf4;color:#15803d}.b-tgt{background:#fdf4ff;color:#a21caf}
+.card h2{font-size:20px;font-weight:800;color:#111827}
+.source{font-size:12px;color:#6b7280;margin-top:4px}.source a{color:#3b82f6;text-decoration:none}
+.parent-link{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;padding:10px 12px;background:#f0fdf4;border:1px dashed #86efac;border-radius:8px;align-items:center}
+.pl-lbl{font-size:11px;color:#065f46;font-weight:800;letter-spacing:.5px;margin-right:4px}
+.pl-btn{background:#059669;color:#fff;border:none;padding:8px 14px;border-radius:6px;font-size:12px;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block;font-family:inherit}
+.pl-btn:hover{background:#047857}
+.pl-copy{background:#0284c7}.pl-copy:hover{background:#0369a1}
+.pl-copyfull{background:#d97706}.pl-copyfull:hover{background:#b45309}
+.sum1{margin-top:14px;font-size:15px;color:#1f2937}
+.block{margin-top:14px;font-size:14px}.block ul{margin-top:6px;padding-left:22px}.block li{margin:3px 0}
+.myth{margin-top:14px;background:#fff7ed;border-left:4px solid #f59e0b;padding:14px 16px;border-radius:8px}
+.myth .q{font-weight:700;color:#9a3412}.myth .a{margin-top:6px;color:#7c2d12}
+.katok{margin-top:14px;background:#fef9c3;border-left:4px solid #eab308;padding:16px;border-radius:8px}
+.katok .l{font-size:11px;color:#854d0e;font-weight:700;letter-spacing:1px}
+.katok p{margin-top:6px;font-size:14px;color:#3f3f00;white-space:pre-wrap}
+.titles{margin-top:14px;background:#eff6ff;border-left:4px solid #3b82f6;padding:14px 16px;border-radius:8px}
+.titles .l{font-size:11px;color:#1d4ed8;font-weight:700;letter-spacing:1px}
+.titles ul{margin-top:6px;padding-left:18px}.titles li{color:#1e3a8a;margin:2px 0}
+.sco{margin-top:14px;background:#111827;color:#f9fafb;padding:14px 16px;border-radius:8px}
+.sco .l{font-size:11px;color:#9ca3af;font-weight:700;letter-spacing:1px}.sco p{margin-top:6px;color:#e5e7eb}
+.make-bar{background:linear-gradient(135deg,#7c2d12 0%,#b91c1c 100%);border-radius:10px;padding:14px 18px;margin-top:18px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.make-bar .lbl{color:white;font-size:12px;font-weight:800;letter-spacing:.5px;margin-right:6px}
+.make-btn{background:white;color:#7c2d12;border:none;padding:9px 14px;border-radius:7px;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit}
+.make-btn:hover{background:#fef2f2}.make-btn.full{background:#fbbf24;color:#78350f}.make-btn.parent{background:#16a34a;color:white}
+.ft{text-align:center;color:#9ca3af;font-size:12px;margin-top:30px;padding:20px}
+</style></head><body>
+<canvas id="sco-export-canvas" width="1080" height="1350" style="display:none"></canvas>
+<div class="wrap">
+<div class="header"><h1>📅 SCO 입시 브리핑</h1><div class="sub">2026-09-13 (일) · 스코랩스(SCO Labs) 입시정보팀</div></div>
+<div class="hero"><h2>🔥 2027 수시 경쟁률 발표 완료, 지방국립대 7.6%↑·서울주요대 소폭상승 속 약술형논술 쏠림 심화</h2></div>
+<div class="pick"><h3>💡 학부모 즉시 발송 추천</h3><p>지방거점국립대 수시 지원자 5.2% 증가…지방사립대는 0.5%↑</p></div>
+
+<div class="card urgent" id="card-20">
+  <div class="badges">
+    <span class="badge b-urgent">긴급</span>
+    <span class="badge b-year">2027학년도</span>
+    <span class="badge b-tgt">고3/학부모/고2</span>
+    <span class="badge b-cat">수시</span> <span class="badge b-cat">지역균형</span> <span class="badge b-cat">등록금</span>
+  </div>
+  <h2>20. 지방거점국립대 수시 지원자 5.2% 증가…지방사립대는 0.5%↑</h2>
+  <div class="source">연합뉴스 · 2026-09-12 · <a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTFBfZVRNWjVjVkY4ZGxWa1VwNnY3dkQ3WUpIaUpsZFpUMGJicVJYemFmQkliZWxmdUFUTFYtV3NRcGYxZldpNUhUNFZoQXd5d21wRmlrY0dINFBLNEE0RzFTdNIBYEFVX3lxTFBfZVRNWjVjVkY4ZGxWa1VwNnY3dkQ3WUpIaUpsZFpUMGJicVJYemFmQkliZWxmdUFUTFYtV3NRcGYxZldpNUhUNFZoQXd5d21wRmlrY0dINFBLNEE0RzFTdA" target="_blank">원문</a></div>
+  <div class="parent-link">
+    <span class="pl-lbl">🎯 학부모 링크</span>
+    <a href="/p/2026-09-13-20.html" target="_blank" class="pl-btn">👀 미리보기</a>
+    <button class="pl-btn pl-copy" data-url="https://sco-daily.netlify.app/p/2026-09-13-20.html" onclick="copyParentUrl(this)">🔗 링크 복사</button>
+    <button class="pl-btn pl-copyfull" data-url="https://sco-daily.netlify.app/p/2026-09-13-20.html" data-title="지방거점국립대 수시 지원자 5.2% 증가…지방사립대는 0.5%↑" onclick="copyParentFullMsg(this)">📱 카톡 발송문</button>
+  </div>
+  <p class="sum1">2027 수시에서 지방거점국립대 지원자 5.2% 증가, 지방사립대는 0.5% 미미한 상승으로 국립대 선호 뚜렷</p>
+  <div class="block"><b>📌 무엇이 바뀌었나</b><ul><li>지방국립 21개교 수시지원 7.6%↑: 전남대·부산대 등 지방거점국립대 지원자 전년대비 5.2% 증가. 반면 지방사립은 0.5% 정체. 국립대 등록금 면제 정책과 취업난 속 지역정착 선호가 주요 원인</li><li>서울권 집중 완화, 지역균형 전환 신호탄: 서울 주요 11개대 경쟁률 소폭 상승에 그친 반면 지방국립대는 12.6% 급증. 학생·학부모가 '지역 내 안정적 진학+취업'을 우선 고려하기 시작</li></ul></div>
+  <div class="myth"><div class="q">❓ 지방대는 경쟁력이 없어서 취업도 어렵지 않나요?</div><div class="a">→ 지방거점국립대는 지역인재채용·공기업 지역할당으로 오히려 취업률이 상승 중입니다. 등록금 면제+기숙사+장학금까지 고려하면 실질 경쟁력은 서울 중하위권보다 높습니다.</div></div>
+  <div class="katok"><div class="l">📱 학부모 카톡문</div><p>[SCO 입시속보]
+
+2027 수시에서 지방거점국립대 지원자가 5.2% 급증했습니다. 반면 지방사립대는 0.5% 제자리.
+
+등록금 0원+기숙사+지역인재채용 효과로, 이제 '서울 하위 vs 지방국립 상위' 선택 기준이 완전히 바뀌고 있습니다.
+
+고3은 지방국립 지원 전략 재점검 필수,
+고2는 내신 3등급대도 지방국립 상위학과 목표 가능.
+
+스코랩스가 학교별 실질 경쟁률과 합격선 데이터를 분석해드립니다.</p></div>
+  <div class="titles"><div class="l">📰 카드뉴스 제목</div><ul><li>2027 수시, 지방국립 5.2% 급증</li><li>등록금 0원 효과, 지원 패턴 바꿨다</li><li>서울 하위 vs 지방국립 상위, 이제 답은?</li></ul></div>
+  <div class="sco"><div class="l">💡 SCO 관점</div><p>스코랩스는 '성적이 아닌 완성도'를 추구합니다. 지방국립대 경쟁률 상승은 학생들이 '브랜드'가 아닌 '실질 가성비'를 계산하기 시작했다는 신호입니다. 내신 3등급대 학생도 등록금·취업률·생활비를 종합하면 지방국립 상위학과가 최선의 선택일 수 있습니다. 스코는 학생 개개인의 상황에 맞춰 '완성도 높은 대입 전략'을 설계합니다.</p></div>
+  <div class="make-bar">
+    <span class="lbl">⚡ 자동 콘텐츠 제작</span>
+    <button class="make-btn full" onclick="makeContent(20,'full')">🚀 풀패키지</button>
+    <button class="make-btn" onclick="makeContent(20,'cards')">📸 카드뉴스</button>
+    <button class="make-btn" onclick="makeContent(20,'blog')">✍️ 블로그</button>
+    <button class="make-btn" onclick="makeContent(20,'captions')">💬 캡션</button>
+    <button class="make-btn" onclick="makeContent(20,'grades')">👨‍👩‍👧 학년별</button>
+    <button class="make-btn parent" onclick="makeContent(20,'parent')">📲 학부모 발송용</button>
+  </div>
+</div>
+<div class="card important" id="card-23">
+  <div class="badges">
+    <span class="badge b-important">중요</span>
+    <span class="badge b-year">2027학년도</span>
+    <span class="badge b-tgt">고3/고2/학부모</span>
+    <span class="badge b-cat">논술</span> <span class="badge b-cat">수시전형</span>
+  </div>
+  <h2>23. 약술형 논술 시행 대학 4년 새 두 배, 2027 수시에서도 지원 집중</h2>
+  <div class="source">교육을 비추다 · 2026-09-12 · <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE9MUXFWdWcxNWJDbHFSMHM1My01T3F4Yy1HX3JDdW15NXVnYXlWSkxyZ2RoM2M5WS16d0tlSjZ0SDJ6M0Uyd1pqMjhUWHRaY3hQb3picHpLWHkzR0RjSFd1ZE9uWE9HUQ" target="_blank">원문</a></div>
+  <div class="parent-link">
+    <span class="pl-lbl">🎯 학부모 링크</span>
+    <a href="/p/2026-09-13-23.html" target="_blank" class="pl-btn">👀 미리보기</a>
+    <button class="pl-btn pl-copy" data-url="https://sco-daily.netlify.app/p/2026-09-13-23.html" onclick="copyParentUrl(this)">🔗 링크 복사</button>
+    <button class="pl-btn pl-copyfull" data-url="https://sco-daily.netlify.app/p/2026-09-13-23.html" data-title="약술형 논술 시행 대학 4년 새 두 배, 2027 수시에서도 지원 집중" onclick="copyParentFullMsg(this)">📱 카톡 발송문</button>
+  </div>
+  <p class="sum1">약술형 논술 시행 대학이 4년 새 2배로 증가하며 2027 수시에서 지원 쏠림 심화, 짧지만 변별력 높음</p>
+  <div class="block"><b>📌 무엇이 바뀌었나</b><ul><li>약술형 논술 대학 4년 새 2배 증가: 2024학년도 이후 약술형(500~800자) 논술 시행 대학이 급증. 기존 장문형 대비 '부담 적다'는 인식으로 지원자 몰림. 하지만 채점 기준은 오히려 까다로워짐</li><li>논술 경쟁률 급등, '쉬운 논술' 착각 주의: 약술형 논술 전형 경쟁률이 전년 대비 평균 15~20% 상승. 짧은 분량이지만 핵심 논리+근거 제시 능력 요구. 준비 없이 지원 시 합격 가능성 낮음</li></ul></div>
+  <div class="myth"><div class="q">❓ 약술형 논술은 짧으니까 준비 부담이 적지 않나요?</div><div class="a">→ 아닙니다. 약술형은 500~800자 안에 핵심 논리+근거+반박을 모두 담아야 해서 오히려 고난도입니다. 채점 기준도 엄격해 준비 없이 지원하면 낭패입니다.</div></div>
+  <div class="katok"><div class="l">📱 학부모 카톡문</div><p>[SCO 입시전략]
+
+약술형 논술 시행 대학이 4년 새 2배로 증가했습니다.
+'짧으니까 쉽다'는 착각으로 지원자가 몰리며 경쟁률이 15~20% 급등했습니다.
+
+하지만 500~800자 안에 핵심 논리+근거+반박을 담아야 하는 고난도 전형입니다.
+
+고3은 기출 3개년 실전 풀이 필수,
+고2는 겨울방학부터 논리 구조 훈련 시작.
+
+스코랩스가 약술형 논술 실전 첨삭과 합격 전략을 제공합니다.</p></div>
+  <div class="titles"><div class="l">📰 카드뉴스 제목</div><ul><li>약술형 논술, 4년 새 2배 증가</li><li>짧다고 쉬운 게 아니다, 경쟁률 급등</li><li>논술 6장 올인 전략, 이제 위험하다</li></ul></div>
+  <div class="sco"><div class="l">💡 SCO 관점</div><p>스코랩스는 '학이 아닌 습'을 강조합니다. 약술형 논술은 '이론'으로는 쉬워 보이지만, '실전 첨삭 없는 연습'으로는 절대 합격할 수 없습니다. 500자 안에 논리+근거+반박을 담는 훈련은 최소 10회 이상 반복해야 체화됩니다. 스코는 학생이 '완성도 높은 답안'을 쓸 수 있을 때까지 첨삭과 피드백을 반복합니다.</p></div>
+  <div class="make-bar">
+    <span class="lbl">⚡ 자동 콘텐츠 제작</span>
+    <button class="make-btn full" onclick="makeContent(23,'full')">🚀 풀패키지</button>
+    <button class="make-btn" onclick="makeContent(23,'cards')">📸 카드뉴스</button>
+    <button class="make-btn" onclick="makeContent(23,'blog')">✍️ 블로그</button>
+    <button class="make-btn" onclick="makeContent(23,'captions')">💬 캡션</button>
+    <button class="make-btn" onclick="makeContent(23,'grades')">👨‍👩‍👧 학년별</button>
+    <button class="make-btn parent" onclick="makeContent(23,'parent')">📲 학부모 발송용</button>
+  </div>
+</div>
+<div class="card important" id="card-1">
+  <div class="badges">
+    <span class="badge b-important">중요</span>
+    <span class="badge b-year">2028학년도</span>
+    <span class="badge b-tgt">고1/고2/학부모</span>
+    <span class="badge b-cat">학습전략</span> <span class="badge b-cat">고교학점제</span>
+  </div>
+  <h2>1. 대구교육청·EBS, 고1·2 대상 학습전략 설명회</h2>
+  <div class="source">뉴시스 · 2026-09-13 · <a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTFBmd2JUUlFwYzlFSWpxV3VZbFNBS2prVGw0ZkN3elI4VVFNbmRPT0ZTM3FLUVRNelRSRGRRSG1wUVVRZTFZaHUzTE9jTm5lTG8tVjFvRFNhODFhS2pERjBwc9IBeEFVX3lxTE12bnRaVTNKR2Q0TlJZSzhkRkhsNFNoa2g2eW1UNjFBOURTX2tzenNmb1VxMDZLZU93SzFxMFRON3pUNXlYV2cyUElUR3ZjNXFzeE9HZm9qMlRoX2tRX0w1anFmWEFvaUFlaE1mdmVyZXJ6bk5qelFtZg" target="_blank">원문</a></div>
+  <div class="parent-link">
+    <span class="pl-lbl">🎯 학부모 링크</span>
+    <a href="/p/2026-09-13-1.html" target="_blank" class="pl-btn">👀 미리보기</a>
+    <button class="pl-btn pl-copy" data-url="https://sco-daily.netlify.app/p/2026-09-13-1.html" onclick="copyParentUrl(this)">🔗 링크 복사</button>
+    <button class="pl-btn pl-copyfull" data-url="https://sco-daily.netlify.app/p/2026-09-13-1.html" data-title="대구교육청·EBS, 고1·2 대상 학습전략 설명회" onclick="copyParentFullMsg(this)">📱 카톡 발송문</button>
+  </div>
+  <p class="sum1">대구교육청과 EBS가 고1·2 대상 학습전략 설명회 개최, 2028 대입 개편 대비 고교학점제+내신+수능 통합 전략 제시</p>
+  <div class="block"><b>📌 무엇이 바뀌었나</b><ul><li>2028 대입 개편, 고1·2가 첫 세대: 고1은 2028학년도, 고2는 2027학년도 대입 대상. 고교학점제 전면 시행+내신 절대평가 전환 가능성. 지금부터 과목 선택·학습 전략 잘못 세우면 2년 뒤 낭패</li><li>대구교육청·EBS 학습전략 설명회 개최: 고1·2 학생·학부모 대상 학습전략 설명회 진행. 고교학점제 과목 선택, 내신 관리, 수능 대비 통합 로드맵 제시. 지역 교육청 차원의 체계적 지원 시작</li></ul></div>
+  <div class="myth"><div class="q">❓ 고1·2는 아직 시간이 많아서 천천히 준비해도 되지 않나요?</div><div class="a">→ 아닙니다. 고1은 2028 대입 개편 첫 세대로, 지금 과목 선택과 내신 관리 방향을 잘못 잡으면 2년 뒤 돌이킬 수 없습니다. 고2는 2027 대입까지 1년 남았습니다.</div></div>
+  <div class="katok"><div class="l">📱 학부모 카톡문</div><p>[SCO 학습전략]
+
+대구교육청과 EBS가 고1·2 대상 학습전략 설명회를 개최합니다.
+
+고1은 2028 대입 개편 첫 세대,
+고2는 2027 수시까지 1년.
+
+지금 과목 선택·내신 관리·수능 대비 전략을 제대로 세우지 않으면 2년 뒤 낭패입니다.
+
+고교학점제+내신+수능 통합 로드맵,
+스코랩스가 학생 개개인에 맞춰 설계해드립니다.</p></div>
+  <div class="titles"><div class="l">📰 카드뉴스 제목</div><ul><li>고1·2, 지금 전략 세우지 않으면 낭패</li><li>대구교육청·EBS 학습전략 설명회</li><li>2028 대입 개편 첫 세대, 과목 선택이 합격 좌우</li></ul></div>
+  <div class="sco"><div class="l">💡 SCO 관점</div><p>스코랩스는 '성적이 아닌 완성도'를 추구합니다. 고1·2는 성적보다 '과목 선택·이수 전략·학습 루틴'이 더 중요한 시기입니다. 대구교육청·EBS 설명회는 교육청 차원의 체계적 정보 제공 기회이므로 반드시 참여해야 합니다. 스코는 설명회 내용을 바탕으로 학생 개개인에 맞는 '완성도 높은 로드맵'을 설계합니다.</p></div>
+  <div class="make-bar">
+    <span class="lbl">⚡ 자동 콘텐츠 제작</span>
+    <button class="make-btn full" onclick="makeContent(1,'full')">🚀 풀패키지</button>
+    <button class="make-btn" onclick="makeContent(1,'cards')">📸 카드뉴스</button>
+    <button class="make-btn" onclick="makeContent(1,'blog')">✍️ 블로그</button>
+    <button class="make-btn" onclick="makeContent(1,'captions')">💬 캡션</button>
+    <button class="make-btn" onclick="makeContent(1,'grades')">👨‍👩‍👧 학년별</button>
+    <button class="make-btn parent" onclick="makeContent(1,'parent')">📲 학부모 발송용</button>
+  </div>
+</div>
+<div class="ft">SCO LABS · 학이 아닌 습 · 매일 오전 11시 자동 생성 (서버)</div>
+</div>
+<script>
+const ARTICLES = {"20": {"id": 20, "priority": "긴급", "title": "지방거점국립대 수시 지원자 5.2% 증가…지방사립대는 0.5%↑", "shortTitle": "지방국립대수시증가", "source": "연합뉴스", "date": "2026-09-12", "year": "2027학년도", "target": "고3/학부모/고2", "areas": ["수시", "지역균형", "등록금"], "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBfZVRNWjVjVkY4ZGxWa1VwNnY3dkQ3WUpIaUpsZFpUMGJicVJYemFmQkliZWxmdUFUTFYtV3NRcGYxZldpNUhUNFZoQXd5d21wRmlrY0dINFBLNEE0RzFTdNIBYEFVX3lxTFBfZVRNWjVjVkY4ZGxWa1VwNnY3dkQ3WUpIaUpsZFpUMGJicVJYemFmQkliZWxmdUFUTFYtV3NRcGYxZldpNUhUNFZoQXd5d21wRmlrY0dINFBLNEE0RzFTdA", "hookBig": "서울권 쏠림 드디어 꺾였다!<br>지방국립대 수시지원 5.2% 급등,<br>반면 지방사립은 0.5% 제자리걸음<br>'등록금 0원' 효과인가, 취업난 대비인가?", "hookLabel": "📊 2027 수시 흐름 변화", "summary1": "2027 수시에서 지방거점국립대 지원자 5.2% 증가, 지방사립대는 0.5% 미미한 상승으로 국립대 선호 뚜렷", "changeA": {"label": "CHANGE 1", "title": "지방국립 21개교<br>수시지원 7.6%↑", "desc": "전남대·부산대 등 지방거점국립대 지원자 전년대비 5.2% 증가. 반면 지방사립은 0.5% 정체. 국립대 등록금 면제 정책과 취업난 속 지역정착 선호가 주요 원인"}, "changeB": {"label": "CHANGE 2", "title": "서울권 집중 완화,<br>지역균형 전환 신호탄", "desc": "서울 주요 11개대 경쟁률 소폭 상승에 그친 반면 지방국립대는 12.6% 급증. 학생·학부모가 '지역 내 안정적 진학+취업'을 우선 고려하기 시작"}, "mythQ": "지방대는 경쟁력이 없어서 취업도 어렵지 않나요?", "mythA": "지방거점국립대는 지역인재채용·공기업 지역할당으로 오히려 취업률이 상승 중입니다. 등록금 면제+기숙사+장학금까지 고려하면 실질 경쟁력은 서울 중하위권보다 높습니다.", "impacts": ["지방국립대 경쟁률 상승으로 '안정 지원' 전략도 위험 구간 진입", "서울권 하위학과 눈높이 낮춰도 지방국립 상위학과가 더 안전할 수 있음", "등록금 0원 정책이 수시 지원 패턴을 구조적으로 바꾸기 시작", "지방사립대는 0.5% 증가에 그쳐 양극화 심화, 선택 시 신중 필요"], "actions": ["고3: 지방국립대 6개 지원 중 1개라도 있다면 최종 성적 기준 재점검 필수", "고2: 내신 3등급대라면 지방국립대 상위학과도 목표권, 지금부터 내신 관리 강화", "고1: 등록금·취업률·지역할당 등 '실질 가성비' 기준으로 목표대학 재설정", "학부모: '서울 무조건' 프레임 버리고 등록금+기숙사+취업률 종합 계산해보기"], "ctaHook": "지방국립대 합격생의 내신·수능 평균 데이터, 지금 바로 확인하세요", "katok": "[SCO 입시속보]\n\n2027 수시에서 지방거점국립대 지원자가 5.2% 급증했습니다. 반면 지방사립대는 0.5% 제자리.\n\n등록금 0원+기숙사+지역인재채용 효과로, 이제 '서울 하위 vs 지방국립 상위' 선택 기준이 완전히 바뀌고 있습니다.\n\n고3은 지방국립 지원 전략 재점검 필수,\n고2는 내신 3등급대도 지방국립 상위학과 목표 가능.\n\n스코랩스가 학교별 실질 경쟁률과 합격선 데이터를 분석해드립니다.", "sms": "[SCO] 지방국립대 수시 5.2%↑, 지방사립 0.5% 정체. 서울집중 완화, 지역균형 전환 시작. 고3 지원전략 재점검 필수", "hashtags": ["2027수시", "지방국립대", "수시경쟁률", "등록금0원", "지방거점대", "부산대", "전남대", "경북대", "지역인재", "취업률", "서울권쏠림", "수시지원전략", "내신3등급", "고3수시", "고2입시", "학부모입시", "지방사립대", "국립대선호", "기숙사", "입시변화"], "counseling": ["요즘 지방국립대 경쟁률이 서울 중위권보다 높아지는 학과도 생기고 있어요. 등록금 면제 효과가 생각보다 큽니다.", "내신 3등급 초반이면 지방국립 상위학과도 충분히 목표로 잡을 수 있어요. 수능 최저만 맞추면 합격 가능성 높습니다.", "서울 하위학과 진학 후 등록금+생활비 부담 vs 지방국립 전액면제+기숙사, 4년 총비용 계산해보면 답 나옵니다.", "지방사립은 0.5% 증가에 그쳤어요. 같은 '지방'이어도 국립이냐 사립이냐에 따라 선호도가 완전히 갈리고 있습니다.", "지금부터라도 지방국립대 합격생 평균 내신·수능 데이터 확인하고, 현실적인 목표 설정이 중요합니다."], "card_titles": ["2027 수시, 지방국립 5.2% 급증", "등록금 0원 효과, 지원 패턴 바꿨다", "서울 하위 vs 지방국립 상위, 이제 답은?"], "sco_view": "스코랩스는 '성적이 아닌 완성도'를 추구합니다. 지방국립대 경쟁률 상승은 학생들이 '브랜드'가 아닌 '실질 가성비'를 계산하기 시작했다는 신호입니다. 내신 3등급대 학생도 등록금·취업률·생활비를 종합하면 지방국립 상위학과가 최선의 선택일 수 있습니다. 스코는 학생 개개인의 상황에 맞춰 '완성도 높은 대입 전략'을 설계합니다.", "blogTitle": "2027 수시 지방국립대 경쟁률 5.2% 급등, 등록금 0원 효과로 서울 쏠림 꺾였다", "blogSummary": "2027 수시에서 지방거점국립대 지원자가 5.2% 증가하며 서울 집중 현상이 완화되기 시작했습니다. 반면 지방사립대는 0.5% 증가에 그쳤습니다.", "grades": {"중3": {"katok": "[중3 학부모님께]\n\n2027 수시에서 지방국립대 지원자가 5.2% 급증했습니다.\n등록금 0원+기숙사+지역인재 채용 효과입니다.\n\n중3 때부터 '서울 무조건'이 아니라 '실질 가성비' 기준으로 목표를 세워야 고1 내신 전략이 달라집니다.\n\n스코는 중3부터 고교학점제+내신+수능 통합 로드맵을 설계합니다.", "actions": ["등록금·기숙사·취업률 포함한 '4년 총비용' 계산 시작", "지방국립 상위학과 vs 서울 중하위학과 비교 자료 확인", "고1 내신 목표 설정 시 지방국립도 선택지에 포함"]}, "고1": {"katok": "[고1 학부모님께]\n\n2027 수시에서 지방국립대 경쟁률이 5.2% 급등했습니다.\n내신 3등급대도 지방국립 상위학과 합격 가능 구간입니다.\n\n고1 내신부터 '지방국립 목표'를 설정하면 과목 선택·수능 최저 전략이 훨씬 현실적으로 짜여집니다.\n\n스코는 고1부터 내신+선택과목+수능 최저를 통합 관리합니다.", "actions": ["1학기 내신 결과 기준으로 지방국립 목표학과 설정", "지방국립 학과별 수능 최저 기준 미리 확인", "등록금 면제+기숙사 조건 포함한 4년 계획 수립"]}, "고2": {"katok": "[고2 학부모님께]\n\n2027 수시에서 지방국립대 지원자가 5.2% 급증했습니다.\n고2 내신 3등급 초반이면 지방국립 상위학과도 충분히 목표권입니다.\n\n2학기 내신+수능 최저 준비를 지금부터 병행하면 2027 수시에서 안정적인 합격 가능성을 확보할 수 있습니다.\n\n스코는 고2 내신+수능 최저+학생부 관리를 통합 코칭합니다.", "actions": ["2학기 내신 목표 3등급 초반 이내로 재설정", "지방국립 목표학과별 수능 최저 충족 전략 수립", "생활기록부 세특·독서 지방국립 학과 연계 강화"]}, "고3": {"katok": "[고3 학부모님께]\n\n2027 수시에서 지방국립대 경쟁률이 5.2% 급등했습니다.\n이미 지원한 6개 중 지방국립이 있다면 최종 성적 기준으로 재점검 필수입니다.\n\n'안정 지원'이라고 생각한 학과도 경쟁률 상승으로 위험 구간일 수 있습니다.\n\n스코는 최종 모의고사+내신 기준으로 6개 지원 전략을 재분석합니다.", "actions": ["지방국립 지원 학과 최종 경쟁률·합격선 재확인", "수능 최저 충족 가능성 최종 점검 (9월 모평 기준)", "정시 지방국립 가능 점수대도 병행 확인"]}}}, "23": {"id": 23, "priority": "중요", "title": "약술형 논술 시행 대학 4년 새 두 배, 2027 수시에서도 지원 집중", "shortTitle": "약술형논술급증", "source": "교육을 비추다", "date": "2026-09-12", "year": "2027학년도", "target": "고3/고2/학부모", "areas": ["논술", "수시전형"], "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9MUXFWdWcxNWJDbHFSMHM1My01T3F4Yy1HX3JDdW15NXVnYXlWSkxyZ2RoM2M5WS16d0tlSjZ0SDJ6M0Uyd1pqMjhUWHRaY3hQb3picHpLWHkzR0RjSFd1ZE9uWE9HUQ", "hookBig": "논술 쉬워졌다고? 착각입니다!<br>약술형 논술 시행 대학 4년 새 2배 증가,<br>2027 수시 경쟁률 '쏠림' 현상 심각<br>짧다고 쉬운 게 아니다", "hookLabel": "⚠️ 논술 전형 트렌드", "summary1": "약술형 논술 시행 대학이 4년 새 2배로 증가하며 2027 수시에서 지원 쏠림 심화, 짧지만 변별력 높음", "changeA": {"label": "CHANGE 1", "title": "약술형 논술 대학<br>4년 새 2배 증가", "desc": "2024학년도 이후 약술형(500~800자) 논술 시행 대학이 급증. 기존 장문형 대비 '부담 적다'는 인식으로 지원자 몰림. 하지만 채점 기준은 오히려 까다로워짐"}, "changeB": {"label": "CHANGE 2", "title": "논술 경쟁률 급등,<br>'쉬운 논술' 착각 주의", "desc": "약술형 논술 전형 경쟁률이 전년 대비 평균 15~20% 상승. 짧은 분량이지만 핵심 논리+근거 제시 능력 요구. 준비 없이 지원 시 합격 가능성 낮음"}, "mythQ": "약술형 논술은 짧으니까 준비 부담이 적지 않나요?", "mythA": "아닙니다. 약술형은 500~800자 안에 핵심 논리+근거+반박을 모두 담아야 해서 오히려 고난도입니다. 채점 기준도 엄격해 준비 없이 지원하면 낭패입니다.", "impacts": ["약술형 논술 전형 경쟁률 급등으로 '논술 6장 올인' 전략 위험도 증가", "짧은 분량이지만 논리 구조·근거 제시 훈련 없으면 0점 처리 가능", "학생부 반영 비율 낮은 논술 전형, 수능 최저만 맞으면 역전 가능하다는 착각 주의", "약술형 논술 대비 학원 수강생 급증, 실전 첨삭 없이는 합격 어려움"], "actions": ["고3: 논술 지원 대학 중 약술형 있다면 기출 3개년 이상 실전 풀이 필수", "고2: 약술형 논술 준비는 고2 겨울방학부터 시작, 논리 구조 훈련 우선", "고1: 약술형도 독서·비문학 독해력 기반, 지금부터 수능 독서 공부가 논술 대비", "학부모: '논술 쉬워졌다'는 학원 홍보 주의, 실제 합격생 평균 점수·등급 확인"], "ctaHook": "약술형 논술 실전 채점 기준과 합격생 답안, 지금 확인하세요", "katok": "[SCO 입시전략]\n\n약술형 논술 시행 대학이 4년 새 2배로 증가했습니다.\n'짧으니까 쉽다'는 착각으로 지원자가 몰리며 경쟁률이 15~20% 급등했습니다.\n\n하지만 500~800자 안에 핵심 논리+근거+반박을 담아야 하는 고난도 전형입니다.\n\n고3은 기출 3개년 실전 풀이 필수,\n고2는 겨울방학부터 논리 구조 훈련 시작.\n\n스코랩스가 약술형 논술 실전 첨삭과 합격 전략을 제공합니다.", "sms": "[SCO] 약술형 논술 대학 4년새 2배↑, 경쟁률 15~20%↑. 짧다고 쉬운 거 아님. 고3 기출 풀이 필수", "hashtags": ["약술형논술", "2027논술", "논술전형", "수시논술", "논술경쟁률", "논술준비", "고3논술", "고2논술", "논술채점", "논술기출", "논술첨삭", "수시전략", "학생부논술", "수능최저", "논술합격", "입시논술", "논술학원", "논술독서", "비문학", "논술쏠림"], "counseling": ["약술형 논술은 분량만 짧을 뿐, 논리 구조와 근거 제시 기준은 오히려 까다로워요. 준비 없이 지원하면 안 됩니다.", "500자 안에 서론-본론-결론 구조를 갖추고 반박까지 넣어야 해요. 실전 연습 없이는 시간 내 완성이 불가능합니다.", "약술형 논술도 독서·비문학 독해력이 기반입니다. 수능 국어 공부가 논술 대비의 출발점이에요.", "논술 6장 중 약술형이 3장 이상이면 실전 첨삭을 최소 10회 이상 받아야 합격 가능성이 생깁니다.", "학원에서 '약술형은 쉽다'고 홍보하지만, 실제 합격생 평균 점수 확인해보면 상위 1~2% 수준입니다."], "card_titles": ["약술형 논술, 4년 새 2배 증가", "짧다고 쉬운 게 아니다, 경쟁률 급등", "논술 6장 올인 전략, 이제 위험하다"], "sco_view": "스코랩스는 '학이 아닌 습'을 강조합니다. 약술형 논술은 '이론'으로는 쉬워 보이지만, '실전 첨삭 없는 연습'으로는 절대 합격할 수 없습니다. 500자 안에 논리+근거+반박을 담는 훈련은 최소 10회 이상 반복해야 체화됩니다. 스코는 학생이 '완성도 높은 답안'을 쓸 수 있을 때까지 첨삭과 피드백을 반복합니다.", "blogTitle": "약술형 논술 대학 4년 새 2배 증가, 2027 수시 경쟁률 쏠림 심화…짧다고 쉬운 게 아니다", "blogSummary": "약술형 논술 시행 대학이 4년 새 2배로 증가하며 2027 수시에서 지원 쏠림이 심화되고 있습니다. 하지만 짧은 분량이 오히려 고난도 변별력을 만듭니다.", "grades": {"중3": {"katok": "[중3 학부모님께]\n\n약술형 논술 대학이 4년 새 2배로 증가했습니다.\n중3 때부터 독서·비문학 독해력을 키워야 고2 논술 대비가 가능합니다.\n\n논술은 '고3 단기 준비'가 아니라 '고1부터 독서 기반'이 필수입니다.\n\n스코는 중3부터 독서 기반 논리력을 키우는 커리큘럼을 운영합니다.", "actions": ["중3 겨울방학부터 수능 독서 지문 읽기 훈련 시작", "고1 진학 전 논술 기출 1개년 읽어보며 감 익히기", "독서 기록 시 '논리 구조' 파악 습관 들이기"]}, "고1": {"katok": "[고1 학부모님께]\n\n약술형 논술은 독서·비문학 독해력이 기반입니다.\n고1 때부터 수능 국어 독서 영역을 제대로 공부하면 고2 논술 대비가 자연스럽게 됩니다.\n\n논술은 '따로 준비'가 아니라 '수능 국어 연장선'입니다.\n\n스코는 고1 수능 국어 학습과 논술 논리력을 통합 관리합니다.", "actions": ["수능 국어 독서 영역 주 3회 이상 풀이", "비문학 지문 읽고 '주장-근거-반박' 구조 정리 습관", "고1 겨울방학부터 논술 기출 1개 대학 선택해 읽기 시작"]}, "고2": {"katok": "[고2 학부모님께]\n\n약술형 논술 대비는 고2 겨울방학부터 시작해야 합니다.\n500~800자 안에 논리+근거+반박을 담는 훈련은 최소 10회 이상 첨삭 필요합니다.\n\n고2 2학기부터 목표 대학 기출 3개년 풀이 시작하세요.\n\n스코는 고2 논술 실전 첨삭과 합격 전략을 제공합니다.", "actions": ["겨울방학 전 목표 대학 논술 기출 3개년 확보", "주 1회 논술 첨삭 시스템 구축 (학원 or 과외)", "수능 국어 독서 공부와 논술 준비 병행 일정표 작성"]}, "고3": {"katok": "[고3 학부모님께]\n\n약술형 논술 지원했다면 기출 3개년 이상 실전 풀이 필수입니다.\n경쟁률이 15~20% 급등했고, 준비 없이 지원하면 합격 가능성 거의 없습니다.\n\n수능 최저만 맞추면 된다는 착각 버리고, 지금이라도 실전 첨삭 시작하세요.\n\n스코는 고3 논술 긴급 첨삭과 최종 점검을 지원합니다.", "actions": ["논술 시험일까지 주 2회 실전 첨삭 일정 확보", "목표 대학 기출 3개년 실전 시간 내 풀이 완료", "수능 최저 충족 가능성 최종 점검 (9월 모평 기준)"]}}}, "1": {"id": 1, "priority": "중요", "title": "대구교육청·EBS, 고1·2 대상 학습전략 설명회", "shortTitle": "대구EBS학습전략", "source": "뉴시스", "date": "2026-09-13", "year": "2028학년도", "target": "고1/고2/학부모", "areas": ["학습전략", "고교학점제"], "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBmd2JUUlFwYzlFSWpxV3VZbFNBS2prVGw0ZkN3elI4VVFNbmRPT0ZTM3FLUVRNelRSRGRRSG1wUVVRZTFZaHUzTE9jTm5lTG8tVjFvRFNhODFhS2pERjBwc9IBeEFVX3lxTE12bnRaVTNKR2Q0TlJZSzhkRkhsNFNoa2g2eW1UNjFBOURTX2tzenNmb1VxMDZLZU93SzFxMFRON3pUNXlYV2cyUElUR3ZjNXFzeE9HZm9qMlRoX2tRX0w1anFmWEFvaUFlaE1mdmVyZXJ6bk5qelFtZg", "hookBig": "고1·2, 지금 전략 세우지 않으면<br>2028 대입 개편 직격탄 맞는다!<br>대구교육청·EBS 학습전략 설명회,<br>고교학점제+내신+수능 통합 로드맵 공개", "hookLabel": "🎓 고1·2 필수 참여", "summary1": "대구교육청과 EBS가 고1·2 대상 학습전략 설명회 개최, 2028 대입 개편 대비 고교학점제+내신+수능 통합 전략 제시", "changeA": {"label": "CHANGE 1", "title": "2028 대입 개편,<br>고1·2가 첫 세대", "desc": "고1은 2028학년도, 고2는 2027학년도 대입 대상. 고교학점제 전면 시행+내신 절대평가 전환 가능성. 지금부터 과목 선택·학습 전략 잘못 세우면 2년 뒤 낭패"}, "changeB": {"label": "CHANGE 2", "title": "대구교육청·EBS<br>학습전략 설명회 개최", "desc": "고1·2 학생·학부모 대상 학습전략 설명회 진행. 고교학점제 과목 선택, 내신 관리, 수능 대비 통합 로드맵 제시. 지역 교육청 차원의 체계적 지원 시작"}, "mythQ": "고1·2는 아직 시간이 많아서 천천히 준비해도 되지 않나요?", "mythA": "아닙니다. 고1은 2028 대입 개편 첫 세대로, 지금 과목 선택과 내신 관리 방향을 잘못 잡으면 2년 뒤 돌이킬 수 없습니다. 고2는 2027 대입까지 1년 남았습니다.", "impacts": ["2028 대입 개편으로 고1은 과목 선택·내신 전략이 합격을 좌우", "고교학점제 전면 시행 시 '학점 이수 실패' 학생 속출 가능성", "고2는 2027 수시까지 1년, 지금부터 내신+수능 최저 병행 필수", "교육청 차원의 학습전략 설명회, 참여 여부가 정보 격차 만듦"], "actions": ["고1: 대구교육청·EBS 설명회 참여해 과목 선택 전략 확인", "고2: 2학기 내신+수능 최저 병행 학습 계획 즉시 수립", "고1·2 공통: 고교학점제 이수 기준 미달 과목 없는지 중간 점검", "학부모: 2028 대입 개편 핵심 변화 사항 정리해 자녀와 공유"], "ctaHook": "2028 대입 개편 핵심 변화와 고1·2 필수 전략, 지금 확인하세요", "katok": "[SCO 학습전략]\n\n대구교육청과 EBS가 고1·2 대상 학습전략 설명회를 개최합니다.\n\n고1은 2028 대입 개편 첫 세대,\n고2는 2027 수시까지 1년.\n\n지금 과목 선택·내신 관리·수능 대비 전략을 제대로 세우지 않으면 2년 뒤 낭패입니다.\n\n고교학점제+내신+수능 통합 로드맵,\n스코랩스가 학생 개개인에 맞춰 설계해드립니다.", "sms": "[SCO] 대구교육청·EBS 고1·2 학습전략 설명회 개최. 2028 대입 개편 대비 과목선택·내신·수능 통합 전략 필수", "hashtags": ["고1학습전략", "고2학습전략", "2028대입개편", "고교학점제", "대구교육청", "EBS", "과목선택", "내신관리", "수능대비", "학습설명회", "고1입시", "고2입시", "학부모입시", "입시전략", "내신절대평가", "학점이수", "고1고2", "대입로드맵", "교육청지원", "정보격차"], "counseling": ["고1·2 학습전략 설명회는 교육청 차원에서 체계적으로 정보를 제공하는 귀한 기회예요. 꼭 참여하세요.", "고1은 2028 대입 개편 첫 세대라 지금 과목 선택이 2년 뒤 합격을 좌우합니다. 신중하게 결정하세요.", "고2는 2027 수시까지 1년밖에 안 남았어요. 2학기 내신과 수능 최저를 병행해야 합니다.", "고교학점제 이수 기준 미달 과목이 생기면 졸업도 못 할 수 있어요. 중간 점검 필수입니다.", "교육청 설명회 참여 여부가 정보 격차를 만듭니다. 학부모님도 함께 참여해서 자녀와 공유하세요."], "card_titles": ["고1·2, 지금 전략 세우지 않으면 낭패", "대구교육청·EBS 학습전략 설명회", "2028 대입 개편 첫 세대, 과목 선택이 합격 좌우"], "sco_view": "스코랩스는 '성적이 아닌 완성도'를 추구합니다. 고1·2는 성적보다 '과목 선택·이수 전략·학습 루틴'이 더 중요한 시기입니다. 대구교육청·EBS 설명회는 교육청 차원의 체계적 정보 제공 기회이므로 반드시 참여해야 합니다. 스코는 설명회 내용을 바탕으로 학생 개개인에 맞는 '완성도 높은 로드맵'을 설계합니다.", "blogTitle": "대구교육청·EBS 고1·2 학습전략 설명회, 2028 대입 개편 대비 필수 참여", "blogSummary": "대구교육청과 EBS가 고1·2 대상 학습전략 설명회를 개최합니다. 2028 대입 개편 대비 고교학점제+내신+수능 통합 로드맵을 제시합니다.", "grades": {"중3": {"katok": "[중3 학부모님께]\n\n대구교육청·EBS가 고1·2 학습전략 설명회를 개최합니다.\n중3은 고1 진학 전 미리 2028 대입 개편 핵심 변화를 알아야 고교 3년 전략을 제대로 세울 수 있습니다.\n\n과목 선택·내신 관리·수능 대비,\n스코는 중3부터 통합 로드맵을 설계합니다.", "actions": ["고1 진학 전 2028 대입 개편 핵심 변화 사항 정리", "고교학점제 이수 기준과 과목 선택 원칙 미리 학습", "중3 겨울방학부터 고1 1학기 내신 대비 시작"]}, "고1": {"katok": "[고1 학부모님께]\n\n대구교육청·EBS 학습전략 설명회에 꼭 참여하세요.\n고1은 2028 대입 개편 첫 세대로, 지금 과목 선택과 내신 관리 방향을 잘못 잡으면 2년 뒤 돌이킬 수 없습니다.\n\n고교학점제+내신+수능 통합 로드맵,\n스코는 고1부터 완성도 높게 설계합니다.", "actions": ["대구교육청·EBS 설명회 참여 일정 확인 및 신청", "1학기 내신 결과 기준으로 과목 선택 전략 재점검", "고교학점제 이수 기준 미달 과목 없는지 중간 점검"]}, "고2": {"katok": "[고2 학부모님께]\n\n2027 수시까지 1년밖에 안 남았습니다.\n대구교육청·EBS 학습전략 설명회에 참여해 2학기 내신+수능 최저 병행 전략을 확인하세요.\n\n지금부터 통합 학습 계획 세우지 않으면 수시 6개 지원이 모두 위험합니다.\n\n스코는 고2 내신+수능 최저를 통합 코칭합니다.", "actions": ["설명회 참여해 2학기 내신+수능 최저 병행 전략 확인", "9월 모평 기준 수능 최저 충족 가능성 점검", "2학기 내신 목표 등급 재설정 및 과목별 학습 계획 수립"]}, "고3": {"katok": "[고3 학부모님께]\n\n고3은 현재 2027 수시 지원 완료 상태입니다.\n하지만 고1·2 동생이 있다면 대구교육청·EBS 학습전략 설명회 정보를 공유해주세요.\n\n2028 대입 개편은 고1·2에게 직격탄입니다.\n\n스코는 형제자매 통합 입시 전략도 지원합니다.", "actions": ["고1·2 동생 있다면 설명회 정보 공유", "고3 수능 최저 충족 최종 점검 (9월 모평 기준)", "정시 지원 전략도 병행 준비"]}}}};
+const TODAY_STR = "2026-09-13";
+
+function downloadFile(filename, content, mime){
+  mime = mime || 'text/plain;charset=utf-8';
+  const blob = new Blob([content],{type:mime});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob); a.download = filename;
+  document.body.appendChild(a); a.click(); document.body.removeChild(a);
+}
+function openInNewTab(html){
+  const blob = new Blob([html],{type:'text/html;charset=utf-8'});
+  window.open(URL.createObjectURL(blob),'_blank');
+}
+
+function copyParentUrl(btn){
+  const url = btn.dataset.url;
+  navigator.clipboard.writeText(url).then(()=>{
+    const o=btn.textContent; btn.textContent='✅ 복사됨!'; setTimeout(()=>btn.textContent=o,1500);
+  });
+}
+function copyParentFullMsg(btn){
+  const url = btn.dataset.url;
+  const title = btn.dataset.title;
+  const txt = '[SCO 긴급 입시속보 - '+TODAY_STR+']\n\n'+title+'\n\n전체 내용 ▶ '+url+'\n\n- SCO 학습관리';
+  navigator.clipboard.writeText(txt).then(()=>{
+    const o=btn.textContent; btn.textContent='✅ 복사됨!'; setTimeout(()=>btn.textContent=o,1500);
+  });
+}
+
+function genCardsHTML(id){
+  const a = ARTICLES[id]; if(!a) return '<h1>데이터 없음</h1>';
+  const titles = a.card_titles || [];
+  const cards = [
+    {cls:'c1', label:a.hookLabel||'📢', main:a.hookBig||a.title, isHook:true},
+    {cls:'c2', label:'CHANGE 1', main:(a.changeA&&a.changeA.title)||'', sub:(a.changeA&&a.changeA.desc)||''},
+    {cls:'c3', label:'CHANGE 2', main:(a.changeB&&a.changeB.title)||'', sub:(a.changeB&&a.changeB.desc)||''},
+    {cls:'c4', label:'⚠️ 학부모 오해', main:a.mythQ||'', sub:a.mythA||''},
+    {cls:'c5', label:'💔 영향', list:a.impacts||[]},
+    {cls:'c6', label:'📋 할 일', list:a.actions||[]},
+    {cls:'c7', label:'💡 SCO 관점', main:a.ctaHook||a.sco_view||'', sub:'학이 아닌 습'},
+    {cls:'c8', label:'📩 무료 진단', main:'우리 아이 맞춤 진단', sub:'카카오톡 채널/DM/프로필 링크', isCta:true}
+  ];
+  return '<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><title>'+a.title+' 카드뉴스</title><style>*{box-sizing:border-box;margin:0;padding:0}body{font-family:-apple-system,Pretendard,sans-serif;background:#e5e7eb;padding:20px}.cards{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(500px,1fr));gap:24px}.card{width:100%;aspect-ratio:1/1;border-radius:18px;padding:54px 48px;display:flex;flex-direction:column;justify-content:space-between;color:white;font-weight:700;position:relative;line-height:1.4}.num{position:absolute;top:20px;right:24px;font-size:13px;opacity:.6}.brand{position:absolute;bottom:24px;left:48px;font-size:12px;opacity:.7}.label{font-size:16px;font-weight:700;opacity:.85;margin-bottom:14px;letter-spacing:1px}.main{font-size:36px;font-weight:900;line-height:1.25}.hook{font-size:46px;font-weight:900;line-height:1.2}.sub{font-size:18px;line-height:1.5;font-weight:500;opacity:.9;margin-top:14px}.cta{font-size:42px;font-weight:900;color:#fbbf24}ul{padding-left:24px;margin-top:8px}li{font-size:24px;margin-bottom:8px;font-weight:600}.c1{background:linear-gradient(135deg,#0b1e3f,#1a3a6b)}.c2{background:linear-gradient(135deg,#b91c1c,#ea580c)}.c3{background:linear-gradient(135deg,#1a3a6b,#3b82f6)}.c4{background:linear-gradient(135deg,#b45309,#d97706)}.c5{background:linear-gradient(135deg,#7f1d1d,#dc2626)}.c6{background:linear-gradient(135deg,#064e3b,#059669)}.c7{background:linear-gradient(135deg,#0b1e3f,#1e293b)}.c8{background:linear-gradient(135deg,#0b1e3f,#ea580c)}</style></head><body><div class="cards">'+cards.map((c,i)=>{
+    let body='';
+    if(c.isHook) body='<div><div class="label">'+c.label+'</div><div class="hook">'+c.main+'</div></div>';
+    else if(c.isCta) body='<div><div class="label">'+c.label+'</div><div class="cta">'+c.main+'</div><div class="sub">'+c.sub+'</div></div>';
+    else if(c.list) body='<div><div class="label">'+c.label+'</div><ul>'+c.list.map(x=>'<li>'+x+'</li>').join('')+'</ul></div>';
+    else body='<div><div class="label">'+c.label+'</div><div class="main">'+c.main+'</div>'+(c.sub?'<div class="sub">'+c.sub+'</div>':'')+'</div>';
+    return '<div class="card '+c.cls+'"><div class="num">'+(i+1)+'/8</div>'+body+'<div class="brand">SCO LABS</div></div>';
+  }).join('')+'</div></body></html>';
+}
+
+function genBlogHTML(id){
+  const a = ARTICLES[id]; if(!a) return '<h1>데이터 없음</h1>';
+  return '<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><title>'+(a.blogTitle||a.title)+'</title><style>body{font-family:-apple-system,Pretendard,sans-serif;background:#f7f8fa;line-height:1.8;padding:20px}.wrap{max-width:780px;margin:0 auto;background:white;border-radius:14px;overflow:hidden}.hd{background:linear-gradient(135deg,#0b1e3f,#1a3a6b);color:white;padding:48px 44px}.hd h1{font-size:28px;font-weight:800}.summary{background:#fff7ed;border-left:6px solid #ea580c;padding:20px 28px;color:#9a3412;font-weight:600}.body{padding:24px 44px}.body h2{font-size:20px;font-weight:800;color:#0b1e3f;margin:30px 0 14px;padding-left:14px;border-left:5px solid #0b1e3f}.body p{font-size:15px;color:#374151;margin-bottom:12px}.body ul{padding-left:26px;margin:10px 0}.cta{background:linear-gradient(135deg,#0b1e3f,#ea580c);color:white;padding:24px;border-radius:12px;margin:24px 0}.tags{background:#f3f4f6;padding:18px;border-radius:10px;margin:20px 0;font-size:13px;color:#6b7280}</style></head><body><div class="wrap"><div class="hd"><div style="opacity:.7;font-size:12px">📅 '+a.date+' · SCO LABS</div><h1>'+(a.blogTitle||a.title)+'</h1></div><div class="summary">'+(a.blogSummary||a.summary1||'')+'</div><div class="body"><h2>1. 무엇이 바뀌었나</h2><p>'+(a.summary1||'')+'</p><h2>2. 학부모 오해</h2><p><b>Q.</b> '+(a.mythQ||'')+'<br><b>A.</b> '+(a.mythA||'')+'</p><h2>3. 우리 아이 영향</h2><ul>'+((a.impacts||[]).map(x=>'<li>'+x+'</li>').join(''))+'</ul><h2>4. 지금 할 일</h2><ul>'+((a.actions||[]).map(x=>'<li><b>'+x+'</b></li>').join(''))+'</ul><h2>5. SCO 관점</h2><p>'+(a.sco_view||'')+'</p><div class="cta"><h3>💡 무료 입시 진단</h3><p>카카오톡 채널/DM/프로필 링크</p></div><div class="tags">'+((a.hashtags||[]).map(h=>'#'+h).join(' '))+'</div></div></div></body></html>';
+}
+
+function genGradesHTML(id){
+  const a = ARTICLES[id]; if(!a||!a.grades) return '<h1>학년별 데이터 없음</h1>';
+  const colors = {'중3':'#b91c1c','고1':'#ea580c','고2':'#1a3a6b','고3':'#7c3aed'};
+  return '<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><title>학년별 카톡</title><style>body{font-family:-apple-system,Pretendard,sans-serif;background:#f7f8fa;padding:20px;line-height:1.7}.wrap{max-width:1000px;margin:0 auto}.hd{background:linear-gradient(135deg,#0b1e3f,#1a3a6b);color:white;padding:32px;border-radius:14px;margin-bottom:24px}.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.card{background:white;border-radius:12px;padding:24px}.card h2{font-size:18px;font-weight:800;color:white;padding:6px 14px;border-radius:6px;display:inline-block;margin-bottom:14px}.katok{background:#fef3c7;border:1.5px dashed #f59e0b;border-radius:8px;padding:16px;font-size:13px;color:#78350f;white-space:pre-line}.actions{margin-top:14px}.actions ul{padding-left:18px}.actions li{font-size:13px;color:#374151;margin-bottom:4px}@media(max-width:700px){.cards{grid-template-columns:1fr}}</style></head><body><div class="wrap"><div class="hd"><h1 style="font-size:22px">학년별 맞춤 카톡 안내문</h1><div style="font-size:14px;opacity:.85;margin-top:6px">'+a.title+' · '+a.date+'</div></div><div class="cards">'+Object.keys(a.grades).map(g=>{const d=a.grades[g];return '<div class="card"><h2 style="background:'+(colors[g]||'#0b1e3f')+'">'+g+' 학부모용</h2><div class="katok">'+d.katok+'</div><div class="actions"><b>이 학년이 할 일</b><ul>'+((d.actions||[]).map(x=>'<li>'+x+'</li>').join(''))+'</ul></div></div>';}).join('')+'</div></div></body></html>';
+}
+
+function genCaptions(id){
+  const a = ARTICLES[id]; if(!a) return '';
+  return '=== SCO 콘텐츠 패키지 · '+a.date+' ===\n\n[인스타 캡션]\n'+(a.hookBig||'').replace(/<[^>]+>/g,' ')+'\n\n'+(a.summary1||'')+'\n\n📩 DM/프로필\n\n'+((a.hashtags||[]).map(h=>'#'+h).join(' '))+'\n\n[카톡 채널 발송]\n'+(a.katok||'')+'\n\n[SMS]\n'+(a.sms||'')+'\n\n[상담 멘트]\n'+((a.counseling||[]).map((m,i)=>(i+1)+'. "'+m+'"').join('\n\n'));
+}
+
+function genParentMessage(id){
+  const a = ARTICLES[id]; if(!a) return '';
+  return '📢 SCO 입시 브리핑\n━━━━━━━━━━━━━━━\n'+a.date+'\n\n🎯 오늘의 핵심\n《'+a.title+'》\n\n📌 NOW\n  ✓ '+(a.summary1||'')+'\n\n❓ FAQ\n  Q. '+(a.mythQ||'')+'\n  A. '+(a.mythA||'')+'\n\n💡 SCO의 답\n  '+(a.sco_view||'')+'\n\n━━━━━━━━━━━━━━━\n📩 무료 입시 진단\n   ▶ 카카오톡 채널 / DM\n━━━━━━━━━━━━━━━\n\nSCO Labs · '+(a.source||'');
+}
+
+function _wrapText(ctx,text,x,y,maxW,lh){const chars=text.split('');let line='',cy=y;for(let i=0;i<chars.length;i++){const t=line+chars[i];if(ctx.measureText(t).width>maxW&&line!==''){ctx.fillText(line,x,cy);line=chars[i];cy+=lh}else line=t}ctx.fillText(line,x,cy);return cy+lh}
+function _roundRect(ctx,x,y,w,h,r){ctx.beginPath();ctx.moveTo(x+r,y);ctx.arcTo(x+w,y,x+w,y+h,r);ctx.arcTo(x+w,y+h,x,y+h,r);ctx.arcTo(x,y+h,x,y,r);ctx.arcTo(x,y,x+w,y,r);ctx.closePath()}
+
+function drawParentCardCanvas(id){
+  const a=ARTICLES[id]; if(!a){alert('데이터 없음');return}
+  const canvas=document.getElementById('sco-export-canvas');
+  const ctx=canvas.getContext('2d'); const W=1080,H=1350,PAD=80;
+  const FONT='"Apple SD Gothic Neo","Pretendard",-apple-system,sans-serif';
+  const bg=ctx.createLinearGradient(0,0,0,H);
+  bg.addColorStop(0,'#0b1e3f');bg.addColorStop(.6,'#1e3a8a');bg.addColorStop(1,'#1a3a6b');
+  ctx.fillStyle=bg;ctx.fillRect(0,0,W,H);
+  ctx.fillStyle='rgba(255,255,255,.85)';ctx.font='800 22px '+FONT;ctx.fillText('SCO LABS',PAD,PAD+10);
+  ctx.fillStyle='rgba(255,255,255,.7)';ctx.font='600 24px '+FONT;ctx.textAlign='right';ctx.fillText(a.date||'',W-PAD,PAD+10);ctx.textAlign='left';
+  let y=160;
+  ctx.fillStyle='rgba(251,191,36,.25)';_roundRect(ctx,PAD,y,260,50,25);ctx.fill();
+  ctx.fillStyle='#fbbf24';ctx.font='800 22px '+FONT;ctx.fillText('📢 SCO 입시 브리핑',PAD+22,y+33);
+  y=260;ctx.fillStyle='#fff';ctx.font='900 46px '+FONT;
+  y=_wrapText(ctx,(a.title||'').slice(0,60),PAD,y+40,W-PAD*2,60);
+  y+=30;ctx.fillStyle='rgba(255,255,255,.2)';ctx.fillRect(PAD,y,W-PAD*2,2);
+  y+=40;ctx.fillStyle='#fbbf24';ctx.font='800 22px '+FONT;ctx.fillText('📌 NOW',PAD,y);
+  y+=40;ctx.fillStyle='rgba(255,255,255,.95)';ctx.font='500 26px '+FONT;
+  y=_wrapText(ctx,(a.summary1||'').slice(0,150),PAD,y,W-PAD*2,40);
+  y+=20;ctx.fillStyle='rgba(255,255,255,.08)';_roundRect(ctx,PAD,y,W-PAD*2,200,20);ctx.fill();
+  ctx.fillStyle='#fbbf24';ctx.font='700 22px '+FONT;ctx.fillText('❓ '+(a.mythQ||'').slice(0,35),PAD+30,y+45);
+  ctx.fillStyle='rgba(255,255,255,.95)';ctx.font='500 22px '+FONT;
+  _wrapText(ctx,'→ '+(a.mythA||'').slice(0,100),PAD+30,y+90,W-PAD*2-60,36);
+  y+=230;ctx.fillStyle='rgba(255,255,255,.2)';ctx.fillRect(PAD,y,W-PAD*2,2);
+  y+=40;ctx.fillStyle='#fbbf24';ctx.font='800 22px '+FONT;ctx.fillText('💡 SCO의 답',PAD,y);
+  y+=40;ctx.fillStyle='rgba(255,255,255,.95)';ctx.font='700 28px '+FONT;
+  _wrapText(ctx,'학(學)이 아닌 습(習). 매일 실행이 결국 이깁니다.',PAD,y,W-PAD*2,42);
+  const cY=H-220;
+  const cg=ctx.createLinearGradient(0,cY,W,cY+130);
+  cg.addColorStop(0,'#ea580c');cg.addColorStop(1,'#fbbf24');
+  ctx.fillStyle=cg;_roundRect(ctx,PAD,cY,W-PAD*2,130,20);ctx.fill();
+  ctx.fillStyle='#0b1e3f';ctx.font='900 32px '+FONT;ctx.textAlign='center';
+  ctx.fillText('📩 무료 입시 진단 신청',W/2,cY+50);
+  ctx.font='600 20px '+FONT;ctx.fillText('카카오톡 채널 / DM / 프로필 링크',W/2,cY+90);
+  ctx.fillStyle='rgba(255,255,255,.5)';ctx.font='700 16px '+FONT;ctx.fillText('S C O   L A B S',W/2,H-30);ctx.textAlign='left';
+  const link=document.createElement('a');
+  link.download='SCO_학부모카드_'+(a.date||'')+'_'+id+'.png';
+  link.href=canvas.toDataURL('image/png');
+  document.body.appendChild(link);link.click();document.body.removeChild(link);
+}
+
+function makeContent(id, type){
+  const a = ARTICLES[id]; if(!a){alert('기사 데이터 없음');return}
+  const safeTitle = (a.shortTitle||a.title||'').replace(/[\/\\:*?"<>|]/g,'').slice(0,30);
+  const base = 'SCO_'+a.date+'_'+id+'_'+safeTitle;
+  if(type==='cards'){
+    const h=genCardsHTML(id);downloadFile(base+'_카드뉴스.html',h,'text/html;charset=utf-8');openInNewTab(h);
+  } else if(type==='blog'){
+    const h=genBlogHTML(id);downloadFile(base+'_블로그.html',h,'text/html;charset=utf-8');openInNewTab(h);
+  } else if(type==='captions'){
+    downloadFile(base+'_캡션.txt',genCaptions(id),'text/plain;charset=utf-8');
+  } else if(type==='grades'){
+    const h=genGradesHTML(id);downloadFile(base+'_학년별카톡.html',h,'text/html;charset=utf-8');openInNewTab(h);
+  } else if(type==='parent'){
+    drawParentCardCanvas(id);
+    const text=genParentMessage(id);
+    navigator.clipboard.writeText(text).then(()=>alert('📲 학부모 발송 풀세트!\n✅ PNG 카드 다운로드\n✅ 텍스트 클립보드 복사\n→ 카톡 채널에 첨부+붙여넣기')).catch(()=>{});
+    downloadFile(base+'_학부모발송.txt',text,'text/plain;charset=utf-8');
+  } else if(type==='full'){
+    const c=genCardsHTML(id),b=genBlogHTML(id),g=genGradesHTML(id),t=genCaptions(id);
+    downloadFile(base+'_카드뉴스.html',c,'text/html;charset=utf-8');
+    setTimeout(()=>downloadFile(base+'_블로그.html',b,'text/html;charset=utf-8'),300);
+    setTimeout(()=>downloadFile(base+'_캡션.txt',t,'text/plain;charset=utf-8'),600);
+    setTimeout(()=>downloadFile(base+'_학년별카톡.html',g,'text/html;charset=utf-8'),900);
+    setTimeout(()=>openInNewTab(c),1200);
+    alert('🚀 풀패키지 4개 파일 다운로드 시작!');
+  }
+}
+</script></body></html>
