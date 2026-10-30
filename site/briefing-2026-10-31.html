@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>SCO 입시 브리핑 — 2026-10-31</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,'Pretendard','Apple SD Gothic Neo',sans-serif;background:#f4f6fa;color:#1a1a1a;line-height:1.6;padding:20px}
+.wrap{max-width:980px;margin:0 auto}
+.header{background:linear-gradient(135deg,#0b1e3f 0%,#1a3a6b 100%);color:#fff;padding:36px 28px;border-radius:14px}
+.header h1{font-size:28px;font-weight:800}
+.header .sub{margin-top:6px;font-size:14px;opacity:.92}
+.hero{background:#fff7ed;border-left:6px solid #f97316;padding:20px 22px;border-radius:10px;margin-top:18px}
+.hero h2{font-size:18px;color:#9a3412}
+.pick{background:#ecfdf5;border:1px solid #6ee7b7;border-radius:12px;padding:18px 22px;margin-top:18px}
+.pick h3{color:#065f46;font-size:15px}
+.card{background:#fff;border-radius:14px;box-shadow:0 4px 14px rgba(0,0,0,.06);padding:26px;margin-top:22px;border-top:5px solid #3b82f6}
+.card.urgent{border-top-color:#dc2626}.card.important{border-top-color:#f59e0b}.card.note{border-top-color:#6b7280}
+.badges{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+.badge{font-size:11px;padding:4px 10px;border-radius:999px;font-weight:700}
+.b-urgent{background:#fef2f2;color:#b91c1c}.b-important{background:#fffbeb;color:#b45309}.b-note{background:#f3f4f6;color:#374151}
+.b-cat{background:#eff6ff;color:#1d4ed8}.b-year{background:#f0fdf4;color:#15803d}.b-tgt{background:#fdf4ff;color:#a21caf}
+.card h2{font-size:20px;font-weight:800;color:#111827}
+.source{font-size:12px;color:#6b7280;margin-top:4px}.source a{color:#3b82f6;text-decoration:none}
+.parent-link{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;padding:10px 12px;background:#f0fdf4;border:1px dashed #86efac;border-radius:8px;align-items:center}
+.pl-lbl{font-size:11px;color:#065f46;font-weight:800;letter-spacing:.5px;margin-right:4px}
+.pl-btn{background:#059669;color:#fff;border:none;padding:8px 14px;border-radius:6px;font-size:12px;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block;font-family:inherit}
+.pl-btn:hover{background:#047857}
+.pl-copy{background:#0284c7}.pl-copy:hover{background:#0369a1}
+.pl-copyfull{background:#d97706}.pl-copyfull:hover{background:#b45309}
+.sum1{margin-top:14px;font-size:15px;color:#1f2937}
+.block{margin-top:14px;font-size:14px}.block ul{margin-top:6px;padding-left:22px}.block li{margin:3px 0}
+.myth{margin-top:14px;background:#fff7ed;border-left:4px solid #f59e0b;padding:14px 16px;border-radius:8px}
+.myth .q{font-weight:700;color:#9a3412}.myth .a{margin-top:6px;color:#7c2d12}
+.katok{margin-top:14px;background:#fef9c3;border-left:4px solid #eab308;padding:16px;border-radius:8px}
+.katok .l{font-size:11px;color:#854d0e;font-weight:700;letter-spacing:1px}
+.katok p{margin-top:6px;font-size:14px;color:#3f3f00;white-space:pre-wrap}
+.titles{margin-top:14px;background:#eff6ff;border-left:4px solid #3b82f6;padding:14px 16px;border-radius:8px}
+.titles .l{font-size:11px;color:#1d4ed8;font-weight:700;letter-spacing:1px}
+.titles ul{margin-top:6px;padding-left:18px}.titles li{color:#1e3a8a;margin:2px 0}
+.sco{margin-top:14px;background:#111827;color:#f9fafb;padding:14px 16px;border-radius:8px}
+.sco .l{font-size:11px;color:#9ca3af;font-weight:700;letter-spacing:1px}.sco p{margin-top:6px;color:#e5e7eb}
+.make-bar{background:linear-gradient(135deg,#7c2d12 0%,#b91c1c 100%);border-radius:10px;padding:14px 18px;margin-top:18px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.make-bar .lbl{color:white;font-size:12px;font-weight:800;letter-spacing:.5px;margin-right:6px}
+.make-btn{background:white;color:#7c2d12;border:none;padding:9px 14px;border-radius:7px;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit}
+.make-btn:hover{background:#fef2f2}.make-btn.full{background:#fbbf24;color:#78350f}.make-btn.parent{background:#16a34a;color:white}
+.ft{text-align:center;color:#9ca3af;font-size:12px;margin-top:30px;padding:20px}
+</style></head><body>
+<canvas id="sco-export-canvas" width="1080" height="1350" style="display:none"></canvas>
+<div class="wrap">
+<div class="header"><h1>📅 SCO 입시 브리핑</h1><div class="sub">2026-10-31 (토) · 스코랩스(SCO Labs) 입시정보팀</div></div>
+<div class="hero"><h2>🔥 2028 대입, 내신 5등급제 첫 적용 세대의 같은 등급 다른 평가 시작</h2></div>
+<div class="pick"><h3>💡 학부모 즉시 발송 추천</h3><p>내신 5등급제 첫 세대, 같은 2등급인데 대학의 평가는 왜 달라질까</p></div>
+
+<div class="card urgent" id="card-1">
+  <div class="badges">
+    <span class="badge b-urgent">긴급</span>
+    <span class="badge b-year">2028학년도</span>
+    <span class="badge b-tgt">중3/고1/학부모</span>
+    <span class="badge b-cat">내신</span> <span class="badge b-cat">학생부</span>
+  </div>
+  <h2>1. 내신 5등급제 첫 세대, 같은 2등급인데 대학의 평가는 왜 달라질까</h2>
+  <div class="source">에듀진 · 2026-10-31 · <a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE1Jdmx6eVVPTmU5N2JrN2Vwal9lanZ2bWc2UDlhUi12bzFySlNIbjB2VnpkWExhT0JjbkdwTEZjWmtmN3NVcHNnLWFJYWlCbk5wMFRqTFRUd29VSXpSUHhHd0JRTXBUU0o1X2c" target="_blank">원문</a></div>
+  <div class="parent-link">
+    <span class="pl-lbl">🎯 학부모 링크</span>
+    <a href="/p/2026-10-31-1.html" target="_blank" class="pl-btn">👀 미리보기</a>
+    <button class="pl-btn pl-copy" data-url="https://sco-daily.netlify.app/p/2026-10-31-1.html" onclick="copyParentUrl(this)">🔗 링크 복사</button>
+    <button class="pl-btn pl-copyfull" data-url="https://sco-daily.netlify.app/p/2026-10-31-1.html" data-title="내신 5등급제 첫 세대, 같은 2등급인데 대학의 평가는 왜 달라질까" onclick="copyParentFullMsg(this)">📱 카톡 발송문</button>
+  </div>
+  <p class="sum1">2028학년도부터 적용되는 내신 5등급제, 같은 등급이어도 원점수·표준편차에 따라 대학의 실질 평가가 달라지는 구조 확인</p>
+  <div class="block"><b>📌 무엇이 바뀌었나</b><ul><li>9등급→5등급 전환 같은 등급, 다른 평가: 기존 9등급제는 등급만 보면 됐지만, 5등급제는 같은 2등급이라도 원점수 85점과 95점이 같은 등급으로 표기. 대학은 원점수, 평균, 표준편차로 실질 변별</li><li>학생부 기재 방식 변화 대학 평가 기준 복잡화: 성취도(A~E) + 원점수 + 과목평균 + 표준편차 모두 기재. 대학은 이 데이터를 종합해 학생 간 실질 석차 재산출하여 평가</li></ul></div>
+  <div class="myth"><div class="q">❓ 5등급제로 바뀌면 등급 받기 쉬워지는 거 아닌가요?</div><div class="a">→ 아닙니다. 등급 폭이 넓어져 같은 등급 내 학생 수는 증가하지만, 대학은 원점수·표준편차로 실질 서열을 재평가합니다. 오히려 '등급은 같은데 실력 차이'가 더 세밀하게 드러납니다.</div></div>
+  <div class="katok"><div class="l">📱 학부모 카톡문</div><p>[SCO 긴급 브리핑]
+
+2028학년도 내신 5등급제 첫 적용!
+같은 2등급이라도 원점수 85점 vs 95점,
+대학 평가는 완전히 다릅니다.
+
+✅ 등급만 믿으면 안 됩니다
+✅ 원점수·표준편차 관리 필수
+✅ 변별력 높은 과목 전략 필요
+
+"학이 아닌 습, 성적이 아닌 완성도"
+스코랩스가 5등급제 완전 분석,
+1:1 맞춤 학습 설계해드립니다.
+
+상담 문의 ☎ 1234-5678</p></div>
+  <div class="titles"><div class="l">📰 카드뉴스 제목</div><ul><li>2028 내신 5등급제 시작</li><li>같은 등급, 다른 평가 이유</li><li>원점수·표준편차가 당락 가른다</li><li>5등급제 완전 대응 전략</li><li>스코랩스 맞춤 솔루션</li></ul></div>
+  <div class="sco"><div class="l">💡 SCO 관점</div><p>5등급제는 '등급 수 감소'가 아니라 '평가 정보 증가'입니다. 등급만 보는 학습은 위험합니다. 원점수, 표준편차까지 관리하는 '완성도 중심 학습'이 필요합니다. 스코랩스는 단순 성적 관리가 아니라, 대학 평가 기준을 역산한 학습 설계로 5등급제 시대 실질 경쟁력을 만듭니다.</p></div>
+  <div class="make-bar">
+    <span class="lbl">⚡ 자동 콘텐츠 제작</span>
+    <button class="make-btn full" onclick="makeContent(1,'full')">🚀 풀패키지</button>
+    <button class="make-btn" onclick="makeContent(1,'cards')">📸 카드뉴스</button>
+    <button class="make-btn" onclick="makeContent(1,'blog')">✍️ 블로그</button>
+    <button class="make-btn" onclick="makeContent(1,'captions')">💬 캡션</button>
+    <button class="make-btn" onclick="makeContent(1,'grades')">👨‍👩‍👧 학년별</button>
+    <button class="make-btn parent" onclick="makeContent(1,'parent')">📲 학부모 발송용</button>
+  </div>
+</div>
+<div class="card important" id="card-2">
+  <div class="badges">
+    <span class="badge b-important">중요</span>
+    <span class="badge b-year">2027학년도</span>
+    <span class="badge b-tgt">고3/재수생/학부모</span>
+    <span class="badge b-cat">수능</span> <span class="badge b-cat">입시윤리</span>
+  </div>
+  <h2>2. 수능 부정행위 첨단화… 교육당국 비상</h2>
+  <div class="source">용인신문 · 2026-10-31 · <a href="https://news.google.com/rss/articles/CBMiZEFVX3lxTE5JNlhIeFQya1hjZzE2VldWcWxlRlZab2NVM1RzLXJ3NUV4cnB4Mm5pWlFRZkwyVmYwTjFSdm1MWTg2VWsyTWdDV3RYN290SmJVUlpvTXBBel93b0xSUjF2YmNBNDk?oc=5" target="_blank">원문</a></div>
+  <div class="parent-link">
+    <span class="pl-lbl">🎯 학부모 링크</span>
+    <a href="/p/2026-10-31-2.html" target="_blank" class="pl-btn">👀 미리보기</a>
+    <button class="pl-btn pl-copy" data-url="https://sco-daily.netlify.app/p/2026-10-31-2.html" onclick="copyParentUrl(this)">🔗 링크 복사</button>
+    <button class="pl-btn pl-copyfull" data-url="https://sco-daily.netlify.app/p/2026-10-31-2.html" data-title="수능 부정행위 첨단화… 교육당국 비상" onclick="copyParentFullMsg(this)">📱 카톡 발송문</button>
+  </div>
+  <p class="sum1">2027 수능을 앞두고 초소형 무선 이어폰, AI 활용 등 첨단 부정행위 시도 증가로 교육당국이 감시 시스템 전면 강화</p>
+  <div class="block"><b>📌 무엇이 바뀌었나</b><ul><li>부정행위 기술 고도화 적발 시스템도 진화: 초소형 블루투스 이어폰, 스마트워치 활용, AI 문제 풀이 앱 등 기술 발전에 따라 부정행위 수법 다양화. 교육청은 전파 탐지, CCTV 확대, 감독관 교육 강화로 대응</li><li>적발 시 전 과목 무효 3년간 응시 금지: 부정행위 적발 시 해당 시험 전 영역 무효 처리 + 향후 3년간 수능 응시 자격 박탈. 대학 입학 후 적발 시 입학 취소 및 학위 무효 처리까지 가능</li></ul></div>
+  <div class="myth"><div class="q">❓ 다른 학생들도 하는데 나만 손해 아닌가요?</div><div class="a">→ 절대 아닙니다. 부정행위는 99.9% 적발되며, 적발 시 3년간 수능 응시 불가로 인생 계획 전체가 무너집니다. 정직한 노력만이 유일한 길입니다.</div></div>
+  <div class="katok"><div class="l">📱 학부모 카톡문</div><p>[SCO 윤리 경고]
+
+수능 D-20, 부정행위 적발 급증!
+초소형 이어폰·AI 활용 등 첨단 부정 시도,
+교육당국 전면 감시 강화 중입니다.
+
+⚠️ 적발 시 전 과목 무효
+⚠️ 3년간 수능 응시 금지
+⚠️ 대학 입학 후에도 취소 가능
+
+"학이 아닌 습, 성적이 아닌 완성도"
+스코랩스는 정직한 노력으로
+실력을 완성하는 교육을 지향합니다.
+
+상담 문의 ☎ 1234-5678</p></div>
+  <div class="titles"><div class="l">📰 카드뉴스 제목</div><ul><li>수능 부정행위 첨단화 경고</li><li>적발 시 3년 응시 금지</li><li>감시 시스템 전면 강화</li><li>정직한 노력만이 답</li><li>스코랩스 정도 학습</li></ul></div>
+  <div class="sco"><div class="l">💡 SCO 관점</div><p>부정행위는 '실력 부족'이 아니라 '가치관 부재'의 문제입니다. 스코랩스는 단순 성적 향상이 아니라, 정직한 노력으로 실력을 완성하는 '정도 학습'을 지향합니다. 부정 없이 당당히 승부하는 학습 습관이 평생 경쟁력이 됩니다.</p></div>
+  <div class="make-bar">
+    <span class="lbl">⚡ 자동 콘텐츠 제작</span>
+    <button class="make-btn full" onclick="makeContent(2,'full')">🚀 풀패키지</button>
+    <button class="make-btn" onclick="makeContent(2,'cards')">📸 카드뉴스</button>
+    <button class="make-btn" onclick="makeContent(2,'blog')">✍️ 블로그</button>
+    <button class="make-btn" onclick="makeContent(2,'captions')">💬 캡션</button>
+    <button class="make-btn" onclick="makeContent(2,'grades')">👨‍👩‍👧 학년별</button>
+    <button class="make-btn parent" onclick="makeContent(2,'parent')">📲 학부모 발송용</button>
+  </div>
+</div>
+<div class="card important" id="card-3">
+  <div class="badges">
+    <span class="badge b-important">중요</span>
+    <span class="badge b-year">2028학년도</span>
+    <span class="badge b-tgt">중3/고1/학부모</span>
+    <span class="badge b-cat">수능</span> <span class="badge b-cat">입시정책</span>
+  </div>
+  <h2>3. [단독] '속도전/N수 유리' 수능 전면개편해야.. '2028개편도 객관식 유지'</h2>
+  <div class="source">베리타스알파 · 2026-10-31 · <a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE9leTBzMGphZ3BWQlJEQUZyVkJjQU1hT1otV2NfTVhVcF82ZXU5Y3ZteXhuVUZOUXQ4TUFRZG5mZ2NBcVRIUXdyOUZXNGVZam5fRzB6Z2Juc19YalIzbGlBNjk3Um45UU5TazVxdw?oc=5" target="_blank">원문</a></div>
+  <div class="parent-link">
+    <span class="pl-lbl">🎯 학부모 링크</span>
+    <a href="/p/2026-10-31-3.html" target="_blank" class="pl-btn">👀 미리보기</a>
+    <button class="pl-btn pl-copy" data-url="https://sco-daily.netlify.app/p/2026-10-31-3.html" onclick="copyParentUrl(this)">🔗 링크 복사</button>
+    <button class="pl-btn pl-copyfull" data-url="https://sco-daily.netlify.app/p/2026-10-31-3.html" data-title="[단독] '속도전/N수 유리' 수능 전면개편해야.. '2028개편도 객관식 유지'" onclick="copyParentFullMsg(this)">📱 카톡 발송문</button>
+  </div>
+  <p class="sum1">2028학년도 수능 개편에도 객관식 문제 형식 유지, '속도전·N수생 유리' 구조 지속으로 전면 개편 필요성 제기</p>
+  <div class="block"><b>📌 무엇이 바뀌었나</b><ul><li>2028 개편에도 객관식 유지 확정: 킬러문항 배제, 공통+선택 과목 구조 변화 등 일부 개편에도 불구, 객관식 5지선다형 문제 형식은 그대로 유지. 속도와 패턴 학습 중심 구조 지속</li><li>N수생 유리 구조 재학생 불리 지속: 객관식 중심 수능은 반복 학습과 시간 투자가 유리한 구조. N수생 비율 30% 육박, 재학생은 내신+수능 병행으로 시간 부족 불리 지속</li></ul></div>
+  <div class="myth"><div class="q">❓ 객관식이 공정하고 채점도 객관적이지 않나요?</div><div class="a">→ 객관성은 맞지만, '속도전·패턴 학습'으로 변질되어 사고력보다 반복 훈련이 유리한 구조입니다. 재학생은 내신 병행으로 시간 부족, N수생이 압도적 유리합니다.</div></div>
+  <div class="katok"><div class="l">📱 학부모 카톡문</div><p>[SCO 정책 브리핑]
+
+2028 수능 개편에도 객관식 유지 확정!
+'속도전·N수생 유리' 구조 지속,
+전면 개편 요구 목소리 커지고 있습니다.
+
+✅ 객관식 5지선다 유지
+✅ N수생 유리 구조 그대로
+✅ 속도+정확도 훈련 필수
+
+"학이 아닌 습, 성적이 아닌 완성도"
+스코랩스는 개념 이해+속도 균형,
+완성도 높은 수능 대비 시스템 제공.
+
+상담 문의 ☎ 1234-5678</p></div>
+  <div class="titles"><div class="l">📰 카드뉴스 제목</div><ul><li>2028 수능 객관식 유지 확정</li><li>속도전·N수생 유리 구조 지속</li><li>재학생 불리 개선 없음</li><li>개념+속도 균형 전략 필수</li><li>스코랩스 완성도 학습</li></ul></div>
+  <div class="sco"><div class="l">💡 SCO 관점</div><p>객관식 수능은 '속도전·패턴 학습'으로 변질되기 쉬운 구조입니다. 단기 점수는 올라도 개념 구멍은 커집니다. 스코랩스는 '개념 이해 우선+속도 훈련 병행' 균형 시스템으로 객관식 수능에서도 완성도 높은 실력을 만듭니다. 패턴이 아닌 실력이 진짜 경쟁력입니다.</p></div>
+  <div class="make-bar">
+    <span class="lbl">⚡ 자동 콘텐츠 제작</span>
+    <button class="make-btn full" onclick="makeContent(3,'full')">🚀 풀패키지</button>
+    <button class="make-btn" onclick="makeContent(3,'cards')">📸 카드뉴스</button>
+    <button class="make-btn" onclick="makeContent(3,'blog')">✍️ 블로그</button>
+    <button class="make-btn" onclick="makeContent(3,'captions')">💬 캡션</button>
+    <button class="make-btn" onclick="makeContent(3,'grades')">👨‍👩‍👧 학년별</button>
+    <button class="make-btn parent" onclick="makeContent(3,'parent')">📲 학부모 발송용</button>
+  </div>
+</div>
+<div class="ft">SCO LABS · 학이 아닌 습 · 매일 오전 11시 자동 생성 (서버)</div>
+</div>
+<script>
+const ARTICLES = {"1": {"id": 1, "priority": "긴급", "title": "내신 5등급제 첫 세대, 같은 2등급인데 대학의 평가는 왜 달라질까", "shortTitle": "내신5등급제평가차이", "source": "에듀진", "date": "2026-10-31", "year": "2028학년도", "target": "중3/고1/학부모", "areas": ["내신", "학생부"], "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1Jdmx6eVVPTmU5N2JrN2Vwal9lanZ2bWc2UDlhUi12bzFySlNIbjB2VnpkWExhT0JjbkdwTEZjWmtmN3NVcHNnLWFJYWlCbk5wMFRqTFRUd29VSXpSUHhHd0JRTXBUU0o1X2c", "hookBig": "2028학년도 첫 적용!<br>같은 내신 2등급인데<br>대학 평가는 왜 다를까?<br>5등급제 숨겨진 함정 공개", "hookLabel": "📢 학부모 주목", "summary1": "2028학년도부터 적용되는 내신 5등급제, 같은 등급이어도 원점수·표준편차에 따라 대학의 실질 평가가 달라지는 구조 확인", "changeA": {"label": "CHANGE 1", "title": "9등급→5등급 전환<br>같은 등급, 다른 평가", "desc": "기존 9등급제는 등급만 보면 됐지만, 5등급제는 같은 2등급이라도 원점수 85점과 95점이 같은 등급으로 표기. 대학은 원점수, 평균, 표준편차로 실질 변별"}, "changeB": {"label": "CHANGE 2", "title": "학생부 기재 방식 변화<br>대학 평가 기준 복잡화", "desc": "성취도(A~E) + 원점수 + 과목평균 + 표준편차 모두 기재. 대학은 이 데이터를 종합해 학생 간 실질 석차 재산출하여 평가"}, "mythQ": "5등급제로 바뀌면 등급 받기 쉬워지는 거 아닌가요?", "mythA": "아닙니다. 등급 폭이 넓어져 같은 등급 내 학생 수는 증가하지만, 대학은 원점수·표준편차로 실질 서열을 재평가합니다. 오히려 '등급은 같은데 실력 차이'가 더 세밀하게 드러납니다.", "impacts": ["같은 2등급이라도 원점수 차이에 따라 대학 평가 점수 5~10점 이상 차이 발생 가능", "표준편차 큰 과목(변별력 높음)에서 받은 등급이 유리하게 작용", "내신 등급만 보고 안심할 수 없는 구조, 원점수 관리 필수", "학생부 기재 정보 증가로 대학의 정성평가 비중 확대"], "actions": ["자녀 성적표에서 등급뿐 아니라 원점수, 과목평균, 표준편차 함께 확인하세요", "같은 등급이라도 원점수가 높은 과목 집중 관리 전략 필요합니다", "변별력 높은 과목(표준편차 큰 과목)에서 상위 등급 확보가 유리합니다", "2028 입시 설명회 참여해 대학별 평가 방식 미리 파악하세요"], "ctaHook": "5등급제 시대, 등급만 보면 낭패!<br>원점수·표준편차 관리 전략<br>스코랩스가 1:1 맞춤 설계합니다", "katok": "[SCO 긴급 브리핑]\n\n2028학년도 내신 5등급제 첫 적용!\n같은 2등급이라도 원점수 85점 vs 95점,\n대학 평가는 완전히 다릅니다.\n\n✅ 등급만 믿으면 안 됩니다\n✅ 원점수·표준편차 관리 필수\n✅ 변별력 높은 과목 전략 필요\n\n\"학이 아닌 습, 성적이 아닌 완성도\"\n스코랩스가 5등급제 완전 분석,\n1:1 맞춤 학습 설계해드립니다.\n\n상담 문의 ☎ 1234-5678", "sms": "[SCO] 2028 내신 5등급제, 같은 등급도 원점수로 평가 달라집니다. 등급만 보면 낭패! 상담 1234-5678", "hashtags": ["내신5등급제", "2028학년도", "내신관리", "원점수관리", "표준편차", "학생부종합", "고교학점제", "내신전략", "대입준비", "중3학부모", "고1학부모", "학생부기재", "성취도평가", "입시변화", "스코랩스", "내신완성도", "등급함정", "대학평가기준", "학습전략", "입시컨설팅"], "counseling": ["어머님, 5등급제는 '등급 폭 확대'가 아니라 '평가 기준 다층화'입니다. 등급만 보면 안심할 수 없어요.", "같은 2등급이라도 원점수 90점대와 80점대는 대학 평가에서 5~10점 차이 납니다. 원점수 관리가 핵심입니다.", "표준편차가 큰 과목일수록 변별력이 높아 상위 등급의 가치가 커집니다. 과목 선택부터 전략이 필요해요.", "학생부에 원점수·평균·표준편차 모두 기재되므로, 대학은 이 데이터로 실질 석차를 재산출합니다.", "스코랩스는 5등급제 시대에 맞춰 '등급+원점수+표준편차' 종합 관리 시스템으로 완성도 높은 내신을 만들어드립니다."], "card_titles": ["2028 내신 5등급제 시작", "같은 등급, 다른 평가 이유", "원점수·표준편차가 당락 가른다", "5등급제 완전 대응 전략", "스코랩스 맞춤 솔루션"], "sco_view": "5등급제는 '등급 수 감소'가 아니라 '평가 정보 증가'입니다. 등급만 보는 학습은 위험합니다. 원점수, 표준편차까지 관리하는 '완성도 중심 학습'이 필요합니다. 스코랩스는 단순 성적 관리가 아니라, 대학 평가 기준을 역산한 학습 설계로 5등급제 시대 실질 경쟁력을 만듭니다.", "blogTitle": "2028 내신 5등급제, 같은 2등급인데 대학 평가가 다른 이유 | 원점수·표준편차 완전 분석", "blogSummary": "2028학년도부터 적용되는 내신 5등급제, 같은 등급이라도 원점수와 표준편차에 따라 대학의 실질 평가가 달라지는 구조를 완전 분석합니다.", "grades": {"중3": {"katok": "[중3 학부모님]\n2028 입시, 내신 5등급제 첫 적용!\n고1 되면 같은 2등급도 원점수로 평가 갈립니다.\n\n✅ 등급만 믿으면 안 됩니다\n✅ 원점수 관리 시작 필수\n✅ 과목 선택부터 전략 필요\n\n스코랩스 중3→고1 대비 프로그램,\n5등급제 완전 대응 시스템 제공.\n상담 ☎ 1234-5678", "actions": ["겨울방학 중 5등급제 구조 이해하고 고1 과목 선택 전략 수립하세요", "원점수 관리 습관 지금부터 형성, 고1 첫 중간고사가 기준점입니다", "표준편차 높은 과목(수학·과학) 기초 탄탄히 다져야 유리합니다"]}, "고1": {"katok": "[고1 학부모님]\n5등급제 첫 세대, 등급만 보면 낙오!\n같은 2등급도 원점수 차이로 대학 평가 5~10점 차이.\n\n✅ 지금부터 원점수 중심 관리\n✅ 표준편차 큰 과목 집중\n✅ 학생부 기재 정보 체크\n\n스코랩스 5등급제 맞춤 전략,\n1:1 학습 설계로 완성도 높입니다.\n상담 ☎ 1234-5678", "actions": ["매 시험마다 등급+원점수+표준편차 함께 기록하고 추이 분석하세요", "변별력 높은 과목(표준편차 큰 과목)에서 상위 등급 확보 우선", "2학년 과목 선택 전, 5등급제 평가 구조 반영한 전략 수립 필수"]}, "고2": {"katok": "[고2 학부모님]\n2028 입시, 5등급제 평가 본격화!\n지금 받는 내신, 등급만으로 판단 금지.\n\n✅ 원점수·표준편차 종합 관리\n✅ 학생부 기재 정보 확인\n✅ 대학별 평가 방식 파악\n\n스코랩스 고2 완성도 프로그램,\n5등급제 실전 대응력 극대화.\n상담 ☎ 1234-5678", "actions": ["1학년 성적표 다시 분석, 원점수·표준편차 기준 강약점 파악하세요", "2학년 선택과목, 표준편차 예상치 반영한 전략적 이수 필요", "학생부 기재 내용 정기 점검, 대학 평가 시뮬레이션 실시"]}, "고3": {"katok": "[고3 학부모님]\n수시 D-10일, 5등급제 영향은 2028부터지만\n원점수 중심 평가 트렌드 이미 시작!\n\n✅ 학생부 원점수 재확인\n✅ 대학별 평가 기준 체크\n✅ 면접 대비 성적 설명 준비\n\n스코랩스 수시 최종 점검,\n1:1 맞춤 전략으로 마무리.\n상담 ☎ 1234-5678", "actions": ["학생부 원점수·표준편차 기재 오류 없는지 최종 확인하세요", "대학별 환산 점수 시뮬레이션, 지원 전략 재점검 필수", "면접에서 성적 설명 시 등급보다 원점수·노력 과정 강조"]}}}, "2": {"id": 2, "priority": "중요", "title": "수능 부정행위 첨단화… 교육당국 비상", "shortTitle": "수능부정행위첨단화", "source": "용인신문", "date": "2026-10-31", "year": "2027학년도", "target": "고3/재수생/학부모", "areas": ["수능", "입시윤리"], "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5JNlhIeFQya1hjZzE2VldWcWxlRlZab2NVM1RzLXJ3NUV4cnB4Mm5pWlFRZkwyVmYwTjFSdm1MWTg2VWsyTWdDV3RYN290SmJVUlpvTXBBel93b0xSUjF2YmNBNDk?oc=5", "hookBig": "수능 D-20, 부정행위 적발 급증!<br>초소형 이어폰·AI 활용 등<br>첨단 부정 시도 비상<br>교육당국 전면 감시 강화", "hookLabel": "⚠️ 입시 윤리", "summary1": "2027 수능을 앞두고 초소형 무선 이어폰, AI 활용 등 첨단 부정행위 시도 증가로 교육당국이 감시 시스템 전면 강화", "changeA": {"label": "CHANGE 1", "title": "부정행위 기술 고도화<br>적발 시스템도 진화", "desc": "초소형 블루투스 이어폰, 스마트워치 활용, AI 문제 풀이 앱 등 기술 발전에 따라 부정행위 수법 다양화. 교육청은 전파 탐지, CCTV 확대, 감독관 교육 강화로 대응"}, "changeB": {"label": "CHANGE 2", "title": "적발 시 전 과목 무효<br>3년간 응시 금지", "desc": "부정행위 적발 시 해당 시험 전 영역 무효 처리 + 향후 3년간 수능 응시 자격 박탈. 대학 입학 후 적발 시 입학 취소 및 학위 무효 처리까지 가능"}, "mythQ": "다른 학생들도 하는데 나만 손해 아닌가요?", "mythA": "절대 아닙니다. 부정행위는 99.9% 적발되며, 적발 시 3년간 수능 응시 불가로 인생 계획 전체가 무너집니다. 정직한 노력만이 유일한 길입니다.", "impacts": ["부정행위 적발 시 전 과목 무효 + 3년간 수능 응시 금지, 재수·삼수 기회 박탈", "대학 입학 후에도 소급 적발 시 입학 취소 및 학위 무효 처리", "전파 탐지 장비, CCTV, 감독관 순찰 강화로 적발률 99% 이상", "부정행위 전력은 학생부에 영구 기록, 향후 진로에 치명적 영향"], "actions": ["자녀에게 부정행위의 심각성과 법적 처벌 명확히 교육하세요", "수능 당일 전자기기 일체 소지 금지, 시계도 아날로그만 허용 확인하세요", "주변 유혹에 흔들리지 않도록 정직 가치관 재강조 필요합니다", "부정행위 의심 상황 목격 시 즉시 감독관에게 신고하도록 안내하세요"], "ctaHook": "정직한 노력만이 유일한 길!<br>스코랩스는 실력으로 승부하는<br>정도(正道) 학습을 지원합니다", "katok": "[SCO 윤리 경고]\n\n수능 D-20, 부정행위 적발 급증!\n초소형 이어폰·AI 활용 등 첨단 부정 시도,\n교육당국 전면 감시 강화 중입니다.\n\n⚠️ 적발 시 전 과목 무효\n⚠️ 3년간 수능 응시 금지\n⚠️ 대학 입학 후에도 취소 가능\n\n\"학이 아닌 습, 성적이 아닌 완성도\"\n스코랩스는 정직한 노력으로\n실력을 완성하는 교육을 지향합니다.\n\n상담 문의 ☎ 1234-5678", "sms": "[SCO] 수능 부정행위 적발 시 3년간 응시 금지! 정직한 노력만이 답입니다. 스코 ☎ 1234-5678", "hashtags": ["수능부정행위", "입시윤리", "수능D20", "교육당국", "부정행위적발", "수능응시금지", "정직한노력", "입시공정성", "전자기기금지", "수능감독", "AI부정", "이어폰적발", "수능규정", "학생윤리", "스코랩스", "정도학습", "실력완성", "공정입시", "수능준비", "학부모교육"], "counseling": ["어머님, 부정행위는 단 한 번의 유혹이 3년간의 기회를 박탈합니다. 자녀에게 명확히 경고해주세요.", "첨단 기술 활용 부정행위도 99% 적발됩니다. 전파 탐지, CCTV, 감독관 순찰이 삼중으로 작동해요.", "적발 시 전 과목 무효 + 3년 응시 금지, 재수·삼수 기회 완전 박탈입니다. 리스크가 너무 큽니다.", "정직한 노력만이 유일한 길입니다. 실력으로 승부하는 학습 습관이 평생 자산이 됩니다.", "스코랩스는 '정도(正道) 학습'을 지향합니다. 부정 없이 실력으로 완성도를 높이는 시스템을 제공합니다."], "card_titles": ["수능 부정행위 첨단화 경고", "적발 시 3년 응시 금지", "감시 시스템 전면 강화", "정직한 노력만이 답", "스코랩스 정도 학습"], "sco_view": "부정행위는 '실력 부족'이 아니라 '가치관 부재'의 문제입니다. 스코랩스는 단순 성적 향상이 아니라, 정직한 노력으로 실력을 완성하는 '정도 학습'을 지향합니다. 부정 없이 당당히 승부하는 학습 습관이 평생 경쟁력이 됩니다.", "blogTitle": "2027 수능 부정행위 첨단화, 적발 시 3년 응시 금지 | 교육당국 감시 강화 총정리", "blogSummary": "수능 D-20, 초소형 이어폰·AI 활용 등 첨단 부정행위 시도 증가에 따른 교육당국의 전면 감시 강화 및 처벌 규정을 완전 분석합니다.", "grades": {"중3": {"katok": "[중3 학부모님]\n입시 윤리, 지금부터 교육 시작!\n부정행위는 평생 오점, 정직한 노력만이 답.\n\n✅ 가치관 교육 우선\n✅ 정도 학습 습관 형성\n✅ 실력 중심 입시 준비\n\n스코랩스 중3 프로그램,\n정직한 노력으로 실력 완성.\n상담 ☎ 1234-5678", "actions": ["입시 윤리 교육, 중학교 때부터 가치관 형성하세요", "정직한 노력이 최고의 전략임을 반복 강조 필요", "실력 중심 학습 습관, 지금부터 뿌리내리기"]}, "고1": {"katok": "[고1 학부모님]\n고교 입학 후 시험 윤리 더 중요!\n부정행위는 학생부 영구 기록.\n\n✅ 정직한 시험 태도 확립\n✅ 전자기기 관리 철저\n✅ 실력 중심 학습 강화\n\n스코랩스 고1 프로그램,\n정도 학습으로 완성도 높입니다.\n상담 ☎ 1234-5678", "actions": ["고교 내신 시험부터 정직 태도 확립, 습관화하세요", "전자기기 의존 학습 지양, 실력 중심 공부법 전환", "부정행위 유혹 차단, 주변 환경 관리 필요"]}, "고2": {"katok": "[고2 학부모님]\n모의고사·내신 부정행위도 기록!\n수능까지 정직 원칙 유지 필수.\n\n✅ 시험 윤리 재확인\n✅ 실력 점검 정직하게\n✅ 정도 학습 습관 강화\n\n스코랩스 고2 완성도 프로그램,\n정직한 노력으로 실력 완성.\n상담 ☎ 1234-5678", "actions": ["모의고사부터 정직하게, 실력 점검 왜곡 금지", "부정행위 유혹 차단, 실력 중심 학습 강화", "수능까지 정직 원칙 유지, 가치관 재교육"]}, "고3": {"katok": "[고3 학부모님]\n수능 D-20, 부정행위 적발 급증!\n적발 시 3년 응시 금지, 정직만이 답.\n\n⚠️ 전자기기 일체 금지\n⚠️ 부정 유혹 단호 차단\n⚠️ 실력으로 당당히 승부\n\n스코랩스 수능 최종 점검,\n정직한 노력으로 마무리.\n상담 ☎ 1234-5678", "actions": ["수능 당일 전자기기 일체 소지 금지 재확인하세요", "부정행위 심각성 최종 교육, 유혹 단호 차단", "실력으로 당당히 승부, 정직한 태도로 시험장 입실"]}}}, "3": {"id": 3, "priority": "중요", "title": "[단독] '속도전/N수 유리' 수능 전면개편해야.. '2028개편도 객관식 유지'", "shortTitle": "수능개편객관식유지", "source": "베리타스알파", "date": "2026-10-31", "year": "2028학년도", "target": "중3/고1/학부모", "areas": ["수능", "입시정책"], "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9leTBzMGphZ3BWQlJEQUZyVkJjQU1hT1otV2NfTVhVcF82ZXU5Y3ZteXhuVUZOUXQ4TUFRZG5mZ2NBcVRIUXdyOUZXNGVZam5fRzB6Z2Juc19YalIzbGlBNjk3Um45UU5TazVxdw?oc=5", "hookBig": "2028 수능 개편에도<br>객관식 유지 확정!<br>'속도전·N수 유리' 구조<br>전면 개편 요구 목소리", "hookLabel": "📰 입시 정책", "summary1": "2028학년도 수능 개편에도 객관식 문제 형식 유지, '속도전·N수생 유리' 구조 지속으로 전면 개편 필요성 제기", "changeA": {"label": "CHANGE 1", "title": "2028 개편에도<br>객관식 유지 확정", "desc": "킬러문항 배제, 공통+선택 과목 구조 변화 등 일부 개편에도 불구, 객관식 5지선다형 문제 형식은 그대로 유지. 속도와 패턴 학습 중심 구조 지속"}, "changeB": {"label": "CHANGE 2", "title": "N수생 유리 구조<br>재학생 불리 지속", "desc": "객관식 중심 수능은 반복 학습과 시간 투자가 유리한 구조. N수생 비율 30% 육박, 재학생은 내신+수능 병행으로 시간 부족 불리 지속"}, "mythQ": "객관식이 공정하고 채점도 객관적이지 않나요?", "mythA": "객관성은 맞지만, '속도전·패턴 학습'으로 변질되어 사고력보다 반복 훈련이 유리한 구조입니다. 재학생은 내신 병행으로 시간 부족, N수생이 압도적 유리합니다.", "impacts": ["2028 개편에도 객관식 유지로 '속도전·패턴 학습' 구조 지속", "N수생 유리 구조 개선 없음, 재학생 불리 여전", "사고력·창의력보다 반복 훈련 중심 입시 경쟁 심화", "전면 개편 요구 목소리 커지나 단기간 변화 가능성 낮음"], "actions": ["2028 수능 객관식 유지 확인, 속도·정확도 훈련 병행 필수입니다", "N수생 유리 구조 인지, 재학생은 내신+수능 균형 전략 필요합니다", "패턴 학습보다 개념 이해 우선, 장기 학습 계획 수립하세요", "수능 개편 논의 지속 관찰, 정책 변화 대응력 유지 필요합니다"], "ctaHook": "객관식 수능, 속도만으로는 한계!<br>개념 이해+속도 훈련 균형<br>스코랩스 완성도 학습이 답입니다", "katok": "[SCO 정책 브리핑]\n\n2028 수능 개편에도 객관식 유지 확정!\n'속도전·N수생 유리' 구조 지속,\n전면 개편 요구 목소리 커지고 있습니다.\n\n✅ 객관식 5지선다 유지\n✅ N수생 유리 구조 그대로\n✅ 속도+정확도 훈련 필수\n\n\"학이 아닌 습, 성적이 아닌 완성도\"\n스코랩스는 개념 이해+속도 균형,\n완성도 높은 수능 대비 시스템 제공.\n\n상담 문의 ☎ 1234-5678", "sms": "[SCO] 2028 수능 객관식 유지! N수생 유리 구조 지속, 속도+개념 균형 필수. 상담 1234-5678", "hashtags": ["수능개편", "2028학년도", "객관식유지", "N수생유리", "속도전수능", "패턴학습", "수능정책", "입시개편", "재학생불리", "수능전략", "개념학습", "속도훈련", "입시공정성", "수능준비", "스코랩스", "완성도학습", "균형학습", "정책대응", "입시변화", "수능분석"], "counseling": ["어머님, 2028 개편에도 객관식 유지로 '속도전' 구조는 그대로입니다. 패턴 학습 유혹이 크지만 위험해요.", "객관식은 반복 훈련이 유리한 구조라 N수생이 압도적입니다. 재학생은 내신 병행으로 시간 부족이 불리해요.", "속도만 키우면 개념 구멍 생깁니다. 개념 이해 우선, 속도는 자연스럽게 따라옵니다.", "수능 개편 논의는 계속되지만 단기 변화는 어렵습니다. 현 구조에 맞춘 전략 필요해요.", "스코랩스는 '개념 이해+속도 훈련' 균형 시스템으로 객관식 수능 완성도를 높입니다. 패턴 아닌 실력입니다."], "card_titles": ["2028 수능 객관식 유지 확정", "속도전·N수생 유리 구조 지속", "재학생 불리 개선 없음", "개념+속도 균형 전략 필수", "스코랩스 완성도 학습"], "sco_view": "객관식 수능은 '속도전·패턴 학습'으로 변질되기 쉬운 구조입니다. 단기 점수는 올라도 개념 구멍은 커집니다. 스코랩스는 '개념 이해 우선+속도 훈련 병행' 균형 시스템으로 객관식 수능에서도 완성도 높은 실력을 만듭니다. 패턴이 아닌 실력이 진짜 경쟁력입니다.", "blogTitle": "2028 수능 개편에도 객관식 유지, N수생 유리 구조 지속 | 전면 개편 요구와 대응 전략", "blogSummary": "2028학년도 수능 개편에도 객관식 문제 형식 유지 확정, '속도전·N수생 유리' 구조 지속에 따른 전면 개편 필요성과 대응 전략을 분석합니다.", "grades": {"중3": {"katok": "[중3 학부모님]\n2028 수능 객관식 유지 확정!\n속도전 구조 지속, 개념 학습 지금부터.\n\n✅ 패턴보다 개념 우선\n✅ 속도는 자연스럽게\n✅ 장기 학습 계획 수립\n\n스코랩스 중3→고1 프로그램,\n개념+속도 균형 시스템 제공.\n상담 ☎ 1234-5678", "actions": ["객관식 수능 구조 이해, 개념 학습 우선 습관 형성하세요", "속도 훈련은 고2부터, 지금은 개념 탄탄히 다지기", "장기 학습 계획 수립, 패턴 학습 유혹 차단 필요"]}, "고1": {"katok": "[고1 학부모님]\n2028 수능 객관식 유지!\nN수생 유리 구조, 재학생은 내신+수능 균형.\n\n✅ 개념 이해 최우선\n✅ 속도 훈련 병행 시작\n✅ 내신+수능 균형 전략\n\n스코랩스 고1 완성도 프로그램,\n개념+속도 균형으로 경쟁력 확보.\n상담 ☎ 1234-5678", "actions": ["내신+수능 병행 구조 인지, 시간 관리 전략 필수", "개념 이해 우선, 속도 훈련은 점진적 병행", "N수생 유리 구조 인지, 재학 중 최대 완성도 목표"]}, "고2": {"katok": "[고2 학부모님]\n객관식 수능, 속도전 본격화!\n개념 구멍 메우고 속도 훈련 병행.\n\n✅ 개념 재점검 필수\n✅ 속도 훈련 본격화\n✅ 패턴 아닌 실력 중심\n\n스코랩스 고2 완성도 프로그램,\n개념+속도 균형으로 수능 대비.\n상담 ☎ 1234-5678", "actions": ["개념 구멍 재점검, 속도 훈련 본격 시작", "패턴 학습 유혹 차단, 실력 중심 학습 유지", "모의고사 속도 분석, 약점 과목 집중 훈련"]}, "고3": {"katok": "[고3 학부모님]\n수능 D-20, 객관식 속도전 마무리!\n개념 재확인+속도 최종 점검.\n\n✅ 개념 재확인 필수\n✅ 속도 최종 점검\n✅ 실전 감각 유지\n\n스코랩스 수능 최종 점검,\n개념+속도 균형으로 마무리.\n상담 ☎ 1234-5678", "actions": ["개념 구멍 최종 메우기, 속도 훈련 마무리", "실전 모의고사로 속도 감각 유지", "패턴 의존 탈피, 실력으로 당당히 마무리"]}}}};
+const TODAY_STR = "2026-10-31";
+
+function downloadFile(filename, content, mime){
+  mime = mime || 'text/plain;charset=utf-8';
+  const blob = new Blob([content],{type:mime});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob); a.download = filename;
+  document.body.appendChild(a); a.click(); document.body.removeChild(a);
+}
+function openInNewTab(html){
+  const blob = new Blob([html],{type:'text/html;charset=utf-8'});
+  window.open(URL.createObjectURL(blob),'_blank');
+}
+
+function copyParentUrl(btn){
+  const url = btn.dataset.url;
+  navigator.clipboard.writeText(url).then(()=>{
+    const o=btn.textContent; btn.textContent='✅ 복사됨!'; setTimeout(()=>btn.textContent=o,1500);
+  });
+}
+function copyParentFullMsg(btn){
+  const url = btn.dataset.url;
+  const title = btn.dataset.title;
+  const txt = '[SCO 긴급 입시속보 - '+TODAY_STR+']\n\n'+title+'\n\n전체 내용 ▶ '+url+'\n\n- SCO 학습관리';
+  navigator.clipboard.writeText(txt).then(()=>{
+    const o=btn.textContent; btn.textContent='✅ 복사됨!'; setTimeout(()=>btn.textContent=o,1500);
+  });
+}
+
+function genCardsHTML(id){
+  const a = ARTICLES[id]; if(!a) return '<h1>데이터 없음</h1>';
+  const titles = a.card_titles || [];
+  const cards = [
+    {cls:'c1', label:a.hookLabel||'📢', main:a.hookBig||a.title, isHook:true},
+    {cls:'c2', label:'CHANGE 1', main:(a.changeA&&a.changeA.title)||'', sub:(a.changeA&&a.changeA.desc)||''},
+    {cls:'c3', label:'CHANGE 2', main:(a.changeB&&a.changeB.title)||'', sub:(a.changeB&&a.changeB.desc)||''},
+    {cls:'c4', label:'⚠️ 학부모 오해', main:a.mythQ||'', sub:a.mythA||''},
+    {cls:'c5', label:'💔 영향', list:a.impacts||[]},
+    {cls:'c6', label:'📋 할 일', list:a.actions||[]},
+    {cls:'c7', label:'💡 SCO 관점', main:a.ctaHook||a.sco_view||'', sub:'학이 아닌 습'},
+    {cls:'c8', label:'📩 무료 진단', main:'우리 아이 맞춤 진단', sub:'카카오톡 채널/DM/프로필 링크', isCta:true}
+  ];
+  return '<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><title>'+a.title+' 카드뉴스</title><style>*{box-sizing:border-box;margin:0;padding:0}body{font-family:-apple-system,Pretendard,sans-serif;background:#e5e7eb;padding:20px}.cards{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(500px,1fr));gap:24px}.card{width:100%;aspect-ratio:1/1;border-radius:18px;padding:54px 48px;display:flex;flex-direction:column;justify-content:space-between;color:white;font-weight:700;position:relative;line-height:1.4}.num{position:absolute;top:20px;right:24px;font-size:13px;opacity:.6}.brand{position:absolute;bottom:24px;left:48px;font-size:12px;opacity:.7}.label{font-size:16px;font-weight:700;opacity:.85;margin-bottom:14px;letter-spacing:1px}.main{font-size:36px;font-weight:900;line-height:1.25}.hook{font-size:46px;font-weight:900;line-height:1.2}.sub{font-size:18px;line-height:1.5;font-weight:500;opacity:.9;margin-top:14px}.cta{font-size:42px;font-weight:900;color:#fbbf24}ul{padding-left:24px;margin-top:8px}li{font-size:24px;margin-bottom:8px;font-weight:600}.c1{background:linear-gradient(135deg,#0b1e3f,#1a3a6b)}.c2{background:linear-gradient(135deg,#b91c1c,#ea580c)}.c3{background:linear-gradient(135deg,#1a3a6b,#3b82f6)}.c4{background:linear-gradient(135deg,#b45309,#d97706)}.c5{background:linear-gradient(135deg,#7f1d1d,#dc2626)}.c6{background:linear-gradient(135deg,#064e3b,#059669)}.c7{background:linear-gradient(135deg,#0b1e3f,#1e293b)}.c8{background:linear-gradient(135deg,#0b1e3f,#ea580c)}</style></head><body><div class="cards">'+cards.map((c,i)=>{
+    let body='';
+    if(c.isHook) body='<div><div class="label">'+c.label+'</div><div class="hook">'+c.main+'</div></div>';
+    else if(c.isCta) body='<div><div class="label">'+c.label+'</div><div class="cta">'+c.main+'</div><div class="sub">'+c.sub+'</div></div>';
+    else if(c.list) body='<div><div class="label">'+c.label+'</div><ul>'+c.list.map(x=>'<li>'+x+'</li>').join('')+'</ul></div>';
+    else body='<div><div class="label">'+c.label+'</div><div class="main">'+c.main+'</div>'+(c.sub?'<div class="sub">'+c.sub+'</div>':'')+'</div>';
+    return '<div class="card '+c.cls+'"><div class="num">'+(i+1)+'/8</div>'+body+'<div class="brand">SCO LABS</div></div>';
+  }).join('')+'</div></body></html>';
+}
+
+function genBlogHTML(id){
+  const a = ARTICLES[id]; if(!a) return '<h1>데이터 없음</h1>';
+  return '<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><title>'+(a.blogTitle||a.title)+'</title><style>body{font-family:-apple-system,Pretendard,sans-serif;background:#f7f8fa;line-height:1.8;padding:20px}.wrap{max-width:780px;margin:0 auto;background:white;border-radius:14px;overflow:hidden}.hd{background:linear-gradient(135deg,#0b1e3f,#1a3a6b);color:white;padding:48px 44px}.hd h1{font-size:28px;font-weight:800}.summary{background:#fff7ed;border-left:6px solid #ea580c;padding:20px 28px;color:#9a3412;font-weight:600}.body{padding:24px 44px}.body h2{font-size:20px;font-weight:800;color:#0b1e3f;margin:30px 0 14px;padding-left:14px;border-left:5px solid #0b1e3f}.body p{font-size:15px;color:#374151;margin-bottom:12px}.body ul{padding-left:26px;margin:10px 0}.cta{background:linear-gradient(135deg,#0b1e3f,#ea580c);color:white;padding:24px;border-radius:12px;margin:24px 0}.tags{background:#f3f4f6;padding:18px;border-radius:10px;margin:20px 0;font-size:13px;color:#6b7280}</style></head><body><div class="wrap"><div class="hd"><div style="opacity:.7;font-size:12px">📅 '+a.date+' · SCO LABS</div><h1>'+(a.blogTitle||a.title)+'</h1></div><div class="summary">'+(a.blogSummary||a.summary1||'')+'</div><div class="body"><h2>1. 무엇이 바뀌었나</h2><p>'+(a.summary1||'')+'</p><h2>2. 학부모 오해</h2><p><b>Q.</b> '+(a.mythQ||'')+'<br><b>A.</b> '+(a.mythA||'')+'</p><h2>3. 우리 아이 영향</h2><ul>'+((a.impacts||[]).map(x=>'<li>'+x+'</li>').join(''))+'</ul><h2>4. 지금 할 일</h2><ul>'+((a.actions||[]).map(x=>'<li><b>'+x+'</b></li>').join(''))+'</ul><h2>5. SCO 관점</h2><p>'+(a.sco_view||'')+'</p><div class="cta"><h3>💡 무료 입시 진단</h3><p>카카오톡 채널/DM/프로필 링크</p></div><div class="tags">'+((a.hashtags||[]).map(h=>'#'+h).join(' '))+'</div></div></div></body></html>';
+}
+
+function genGradesHTML(id){
+  const a = ARTICLES[id]; if(!a||!a.grades) return '<h1>학년별 데이터 없음</h1>';
+  const colors = {'중3':'#b91c1c','고1':'#ea580c','고2':'#1a3a6b','고3':'#7c3aed'};
+  return '<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><title>학년별 카톡</title><style>body{font-family:-apple-system,Pretendard,sans-serif;background:#f7f8fa;padding:20px;line-height:1.7}.wrap{max-width:1000px;margin:0 auto}.hd{background:linear-gradient(135deg,#0b1e3f,#1a3a6b);color:white;padding:32px;border-radius:14px;margin-bottom:24px}.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.card{background:white;border-radius:12px;padding:24px}.card h2{font-size:18px;font-weight:800;color:white;padding:6px 14px;border-radius:6px;display:inline-block;margin-bottom:14px}.katok{background:#fef3c7;border:1.5px dashed #f59e0b;border-radius:8px;padding:16px;font-size:13px;color:#78350f;white-space:pre-line}.actions{margin-top:14px}.actions ul{padding-left:18px}.actions li{font-size:13px;color:#374151;margin-bottom:4px}@media(max-width:700px){.cards{grid-template-columns:1fr}}</style></head><body><div class="wrap"><div class="hd"><h1 style="font-size:22px">학년별 맞춤 카톡 안내문</h1><div style="font-size:14px;opacity:.85;margin-top:6px">'+a.title+' · '+a.date+'</div></div><div class="cards">'+Object.keys(a.grades).map(g=>{const d=a.grades[g];return '<div class="card"><h2 style="background:'+(colors[g]||'#0b1e3f')+'">'+g+' 학부모용</h2><div class="katok">'+d.katok+'</div><div class="actions"><b>이 학년이 할 일</b><ul>'+((d.actions||[]).map(x=>'<li>'+x+'</li>').join(''))+'</ul></div></div>';}).join('')+'</div></div></body></html>';
+}
+
+function genCaptions(id){
+  const a = ARTICLES[id]; if(!a) return '';
+  return '=== SCO 콘텐츠 패키지 · '+a.date+' ===\n\n[인스타 캡션]\n'+(a.hookBig||'').replace(/<[^>]+>/g,' ')+'\n\n'+(a.summary1||'')+'\n\n📩 DM/프로필\n\n'+((a.hashtags||[]).map(h=>'#'+h).join(' '))+'\n\n[카톡 채널 발송]\n'+(a.katok||'')+'\n\n[SMS]\n'+(a.sms||'')+'\n\n[상담 멘트]\n'+((a.counseling||[]).map((m,i)=>(i+1)+'. "'+m+'"').join('\n\n'));
+}
+
+function genParentMessage(id){
+  const a = ARTICLES[id]; if(!a) return '';
+  return '📢 SCO 입시 브리핑\n━━━━━━━━━━━━━━━\n'+a.date+'\n\n🎯 오늘의 핵심\n《'+a.title+'》\n\n📌 NOW\n  ✓ '+(a.summary1||'')+'\n\n❓ FAQ\n  Q. '+(a.mythQ||'')+'\n  A. '+(a.mythA||'')+'\n\n💡 SCO의 답\n  '+(a.sco_view||'')+'\n\n━━━━━━━━━━━━━━━\n📩 무료 입시 진단\n   ▶ 카카오톡 채널 / DM\n━━━━━━━━━━━━━━━\n\nSCO Labs · '+(a.source||'');
+}
+
+function _wrapText(ctx,text,x,y,maxW,lh){const chars=text.split('');let line='',cy=y;for(let i=0;i<chars.length;i++){const t=line+chars[i];if(ctx.measureText(t).width>maxW&&line!==''){ctx.fillText(line,x,cy);line=chars[i];cy+=lh}else line=t}ctx.fillText(line,x,cy);return cy+lh}
+function _roundRect(ctx,x,y,w,h,r){ctx.beginPath();ctx.moveTo(x+r,y);ctx.arcTo(x+w,y,x+w,y+h,r);ctx.arcTo(x+w,y+h,x,y+h,r);ctx.arcTo(x,y+h,x,y,r);ctx.arcTo(x,y,x+w,y,r);ctx.closePath()}
+
+function drawParentCardCanvas(id){
+  const a=ARTICLES[id]; if(!a){alert('데이터 없음');return}
+  const canvas=document.getElementById('sco-export-canvas');
+  const ctx=canvas.getContext('2d'); const W=1080,H=1350,PAD=80;
+  const FONT='"Apple SD Gothic Neo","Pretendard",-apple-system,sans-serif';
+  const bg=ctx.createLinearGradient(0,0,0,H);
+  bg.addColorStop(0,'#0b1e3f');bg.addColorStop(.6,'#1e3a8a');bg.addColorStop(1,'#1a3a6b');
+  ctx.fillStyle=bg;ctx.fillRect(0,0,W,H);
+  ctx.fillStyle='rgba(255,255,255,.85)';ctx.font='800 22px '+FONT;ctx.fillText('SCO LABS',PAD,PAD+10);
+  ctx.fillStyle='rgba(255,255,255,.7)';ctx.font='600 24px '+FONT;ctx.textAlign='right';ctx.fillText(a.date||'',W-PAD,PAD+10);ctx.textAlign='left';
+  let y=160;
+  ctx.fillStyle='rgba(251,191,36,.25)';_roundRect(ctx,PAD,y,260,50,25);ctx.fill();
+  ctx.fillStyle='#fbbf24';ctx.font='800 22px '+FONT;ctx.fillText('📢 SCO 입시 브리핑',PAD+22,y+33);
+  y=260;ctx.fillStyle='#fff';ctx.font='900 46px '+FONT;
+  y=_wrapText(ctx,(a.title||'').slice(0,60),PAD,y+40,W-PAD*2,60);
+  y+=30;ctx.fillStyle='rgba(255,255,255,.2)';ctx.fillRect(PAD,y,W-PAD*2,2);
+  y+=40;ctx.fillStyle='#fbbf24';ctx.font='800 22px '+FONT;ctx.fillText('📌 NOW',PAD,y);
+  y+=40;ctx.fillStyle='rgba(255,255,255,.95)';ctx.font='500 26px '+FONT;
+  y=_wrapText(ctx,(a.summary1||'').slice(0,150),PAD,y,W-PAD*2,40);
+  y+=20;ctx.fillStyle='rgba(255,255,255,.08)';_roundRect(ctx,PAD,y,W-PAD*2,200,20);ctx.fill();
+  ctx.fillStyle='#fbbf24';ctx.font='700 22px '+FONT;ctx.fillText('❓ '+(a.mythQ||'').slice(0,35),PAD+30,y+45);
+  ctx.fillStyle='rgba(255,255,255,.95)';ctx.font='500 22px '+FONT;
+  _wrapText(ctx,'→ '+(a.mythA||'').slice(0,100),PAD+30,y+90,W-PAD*2-60,36);
+  y+=230;ctx.fillStyle='rgba(255,255,255,.2)';ctx.fillRect(PAD,y,W-PAD*2,2);
+  y+=40;ctx.fillStyle='#fbbf24';ctx.font='800 22px '+FONT;ctx.fillText('💡 SCO의 답',PAD,y);
+  y+=40;ctx.fillStyle='rgba(255,255,255,.95)';ctx.font='700 28px '+FONT;
+  _wrapText(ctx,'학(學)이 아닌 습(習). 매일 실행이 결국 이깁니다.',PAD,y,W-PAD*2,42);
+  const cY=H-220;
+  const cg=ctx.createLinearGradient(0,cY,W,cY+130);
+  cg.addColorStop(0,'#ea580c');cg.addColorStop(1,'#fbbf24');
+  ctx.fillStyle=cg;_roundRect(ctx,PAD,cY,W-PAD*2,130,20);ctx.fill();
+  ctx.fillStyle='#0b1e3f';ctx.font='900 32px '+FONT;ctx.textAlign='center';
+  ctx.fillText('📩 무료 입시 진단 신청',W/2,cY+50);
+  ctx.font='600 20px '+FONT;ctx.fillText('카카오톡 채널 / DM / 프로필 링크',W/2,cY+90);
+  ctx.fillStyle='rgba(255,255,255,.5)';ctx.font='700 16px '+FONT;ctx.fillText('S C O   L A B S',W/2,H-30);ctx.textAlign='left';
+  const link=document.createElement('a');
+  link.download='SCO_학부모카드_'+(a.date||'')+'_'+id+'.png';
+  link.href=canvas.toDataURL('image/png');
+  document.body.appendChild(link);link.click();document.body.removeChild(link);
+}
+
+function makeContent(id, type){
+  const a = ARTICLES[id]; if(!a){alert('기사 데이터 없음');return}
+  const safeTitle = (a.shortTitle||a.title||'').replace(/[\/\\:*?"<>|]/g,'').slice(0,30);
+  const base = 'SCO_'+a.date+'_'+id+'_'+safeTitle;
+  if(type==='cards'){
+    const h=genCardsHTML(id);downloadFile(base+'_카드뉴스.html',h,'text/html;charset=utf-8');openInNewTab(h);
+  } else if(type==='blog'){
+    const h=genBlogHTML(id);downloadFile(base+'_블로그.html',h,'text/html;charset=utf-8');openInNewTab(h);
+  } else if(type==='captions'){
+    downloadFile(base+'_캡션.txt',genCaptions(id),'text/plain;charset=utf-8');
+  } else if(type==='grades'){
+    const h=genGradesHTML(id);downloadFile(base+'_학년별카톡.html',h,'text/html;charset=utf-8');openInNewTab(h);
+  } else if(type==='parent'){
+    drawParentCardCanvas(id);
+    const text=genParentMessage(id);
+    navigator.clipboard.writeText(text).then(()=>alert('📲 학부모 발송 풀세트!\n✅ PNG 카드 다운로드\n✅ 텍스트 클립보드 복사\n→ 카톡 채널에 첨부+붙여넣기')).catch(()=>{});
+    downloadFile(base+'_학부모발송.txt',text,'text/plain;charset=utf-8');
+  } else if(type==='full'){
+    const c=genCardsHTML(id),b=genBlogHTML(id),g=genGradesHTML(id),t=genCaptions(id);
+    downloadFile(base+'_카드뉴스.html',c,'text/html;charset=utf-8');
+    setTimeout(()=>downloadFile(base+'_블로그.html',b,'text/html;charset=utf-8'),300);
+    setTimeout(()=>downloadFile(base+'_캡션.txt',t,'text/plain;charset=utf-8'),600);
+    setTimeout(()=>downloadFile(base+'_학년별카톡.html',g,'text/html;charset=utf-8'),900);
+    setTimeout(()=>openInNewTab(c),1200);
+    alert('🚀 풀패키지 4개 파일 다운로드 시작!');
+  }
+}
+</script></body></html>
