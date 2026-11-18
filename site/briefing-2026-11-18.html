@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>SCO 입시 브리핑 — 2026-11-18</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,'Pretendard','Apple SD Gothic Neo',sans-serif;background:#f4f6fa;color:#1a1a1a;line-height:1.6;padding:20px}
+.wrap{max-width:980px;margin:0 auto}
+.header{background:linear-gradient(135deg,#0b1e3f 0%,#1a3a6b 100%);color:#fff;padding:36px 28px;border-radius:14px}
+.header h1{font-size:28px;font-weight:800}
+.header .sub{margin-top:6px;font-size:14px;opacity:.92}
+.hero{background:#fff7ed;border-left:6px solid #f97316;padding:20px 22px;border-radius:10px;margin-top:18px}
+.hero h2{font-size:18px;color:#9a3412}
+.pick{background:#ecfdf5;border:1px solid #6ee7b7;border-radius:12px;padding:18px 22px;margin-top:18px}
+.pick h3{color:#065f46;font-size:15px}
+.card{background:#fff;border-radius:14px;box-shadow:0 4px 14px rgba(0,0,0,.06);padding:26px;margin-top:22px;border-top:5px solid #3b82f6}
+.card.urgent{border-top-color:#dc2626}.card.important{border-top-color:#f59e0b}.card.note{border-top-color:#6b7280}
+.badges{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+.badge{font-size:11px;padding:4px 10px;border-radius:999px;font-weight:700}
+.b-urgent{background:#fef2f2;color:#b91c1c}.b-important{background:#fffbeb;color:#b45309}.b-note{background:#f3f4f6;color:#374151}
+.b-cat{background:#eff6ff;color:#1d4ed8}.b-year{background:#f0fdf4;color:#15803d}.b-tgt{background:#fdf4ff;color:#a21caf}
+.card h2{font-size:20px;font-weight:800;color:#111827}
+.source{font-size:12px;color:#6b7280;margin-top:4px}.source a{color:#3b82f6;text-decoration:none}
+.parent-link{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;padding:10px 12px;background:#f0fdf4;border:1px dashed #86efac;border-radius:8px;align-items:center}
+.pl-lbl{font-size:11px;color:#065f46;font-weight:800;letter-spacing:.5px;margin-right:4px}
+.pl-btn{background:#059669;color:#fff;border:none;padding:8px 14px;border-radius:6px;font-size:12px;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block;font-family:inherit}
+.pl-btn:hover{background:#047857}
+.pl-copy{background:#0284c7}.pl-copy:hover{background:#0369a1}
+.pl-copyfull{background:#d97706}.pl-copyfull:hover{background:#b45309}
+.sum1{margin-top:14px;font-size:15px;color:#1f2937}
+.block{margin-top:14px;font-size:14px}.block ul{margin-top:6px;padding-left:22px}.block li{margin:3px 0}
+.myth{margin-top:14px;background:#fff7ed;border-left:4px solid #f59e0b;padding:14px 16px;border-radius:8px}
+.myth .q{font-weight:700;color:#9a3412}.myth .a{margin-top:6px;color:#7c2d12}
+.katok{margin-top:14px;background:#fef9c3;border-left:4px solid #eab308;padding:16px;border-radius:8px}
+.katok .l{font-size:11px;color:#854d0e;font-weight:700;letter-spacing:1px}
+.katok p{margin-top:6px;font-size:14px;color:#3f3f00;white-space:pre-wrap}
+.titles{margin-top:14px;background:#eff6ff;border-left:4px solid #3b82f6;padding:14px 16px;border-radius:8px}
+.titles .l{font-size:11px;color:#1d4ed8;font-weight:700;letter-spacing:1px}
+.titles ul{margin-top:6px;padding-left:18px}.titles li{color:#1e3a8a;margin:2px 0}
+.sco{margin-top:14px;background:#111827;color:#f9fafb;padding:14px 16px;border-radius:8px}
+.sco .l{font-size:11px;color:#9ca3af;font-weight:700;letter-spacing:1px}.sco p{margin-top:6px;color:#e5e7eb}
+.make-bar{background:linear-gradient(135deg,#7c2d12 0%,#b91c1c 100%);border-radius:10px;padding:14px 18px;margin-top:18px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.make-bar .lbl{color:white;font-size:12px;font-weight:800;letter-spacing:.5px;margin-right:6px}
+.make-btn{background:white;color:#7c2d12;border:none;padding:9px 14px;border-radius:7px;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit}
+.make-btn:hover{background:#fef2f2}.make-btn.full{background:#fbbf24;color:#78350f}.make-btn.parent{background:#16a34a;color:white}
+.ft{text-align:center;color:#9ca3af;font-size:12px;margin-top:30px;padding:20px}
+</style></head><body>
+<canvas id="sco-export-canvas" width="1080" height="1350" style="display:none"></canvas>
+<div class="wrap">
+<div class="header"><h1>📅 SCO 입시 브리핑</h1><div class="sub">2026-11-18 (수) · 스코랩스(SCO Labs) 입시정보팀</div></div>
+<div class="hero"><h2>🔥 2027 수능 D-1, AI 부정행위 우려 속 23년 만에 최다 N수생 응시·가채점 전략부터 정시 상담까지 실전 대응 시작</h2></div>
+<div class="pick"><h3>💡 학부모 즉시 발송 추천</h3><p>수능 끝, 이제 진짜 실전이다…가채점 분석부터 수시 대학별고사의 갈림길까지</p></div>
+
+<div class="card urgent" id="card-1">
+  <div class="badges">
+    <span class="badge b-urgent">긴급</span>
+    <span class="badge b-year">2027학년도</span>
+    <span class="badge b-tgt">고3/학부모</span>
+    <span class="badge b-cat">수능</span> <span class="badge b-cat">정시</span> <span class="badge b-cat">수시</span>
+  </div>
+  <h2>1. 수능 끝, 이제 진짜 실전이다…가채점 분석부터 수시 대학별고사의 갈림길까지</h2>
+  <div class="source">스마트경제 · 2026-11-18 · <a href="https://news.google.com/rss/articles/CBMicEFVX3lxTFA1bDVidnUyUzlrd2FVckFXekJ3SV9vX0x2ZVppR0Ftc1hJTlg0a25qVWNSZTZFM2k3NVM5TV9ILVlzTzlTZktnVFVRM0VBWlE0SnJTbnZtVU9zUkE2QXBJelNCcktfaFMzaFpfbUpsMkk?oc=5" target="_blank">원문</a></div>
+  <div class="parent-link">
+    <span class="pl-lbl">🎯 학부모 링크</span>
+    <a href="/p/2026-11-18-1.html" target="_blank" class="pl-btn">👀 미리보기</a>
+    <button class="pl-btn pl-copy" data-url="https://sco-daily.netlify.app/p/2026-11-18-1.html" onclick="copyParentUrl(this)">🔗 링크 복사</button>
+    <button class="pl-btn pl-copyfull" data-url="https://sco-daily.netlify.app/p/2026-11-18-1.html" data-title="수능 끝, 이제 진짜 실전이다…가채점 분석부터 수시 대학별고사의 갈림길까지" onclick="copyParentFullMsg(this)">📱 카톡 발송문</button>
+  </div>
+  <p class="sum1">수능 당일 가채점부터 수시 대학별고사 응시 여부 결정, 정시 지원까지 수능 후 72시간 전략이 합격의 갈림길</p>
+  <div class="block"><b>📌 무엇이 바뀌었나</b><ul><li>수능 당일 저녁 가채점이 시작: 19일 수능 종료 직후부터 각 입시기관 가채점 서비스 시작. 예상 등급 확인 후 23일~12월 2일 수시 논술·면접 응시 여부를 24시간 내 결정해야 함</li><li>수시냐 정시냐 3일 내 판단: 가채점 결과로 수시 대학별고사 집중할지, 정시 준비로 전환할지 결정. 잘못된 판단은 수시·정시 둘 다 놓치는 결과 초래</li></ul></div>
+  <div class="myth"><div class="q">❓ 수능 끝나면 한숨 돌려도 되죠?</div><div class="a">→ 절대 아닙니다. 수능 당일 저녁부터 가채점 분석, 익일부터 논술·면접 응시 여부 결정, 정시 지원 전략 수립까지 72시간이 가장 중요한 골든타임입니다.</div></div>
+  <div class="katok"><div class="l">📱 학부모 카톡문</div><p>[SCO 학부모님께]
+
+수능 끝났다고 안심하시면 안 됩니다.
+
+오늘(19일) 저녁부터 가채점 시작
+→ 내일(20일) 오전까지 등급 확인
+→ 23일부터 논술·면접 응시 여부 결정
+
+이 72시간이 합격을 결정합니다.
+
+스코에서 가채점 분석부터
+수시·정시 전략까지
+1:1 맞춤 상담 진행합니다.
+
+📞 상담 예약: 1522-0000
+지금 바로 연락주세요.</p></div>
+  <div class="titles"><div class="l">📰 카드뉴스 제목</div><ul><li>수능 끝=입시 시작! 72시간 골든타임</li><li>19일 저녁 가채점→20일 전략 결정</li><li>논술이냐 정시냐, 3일 내 판단이 합격 갈림길</li></ul></div>
+  <div class="sco"><div class="l">💡 SCO 관점</div><p>수능 후 72시간은 '학습'이 아닌 '전략'의 시간입니다. 가채점 분석의 정확성, 수시·정시 병행 전략의 완성도가 1년 준비의 결실을 결정합니다. 스코는 완성도 높은 입시 전략으로 합격을 완성합니다.</p></div>
+  <div class="make-bar">
+    <span class="lbl">⚡ 자동 콘텐츠 제작</span>
+    <button class="make-btn full" onclick="makeContent(1,'full')">🚀 풀패키지</button>
+    <button class="make-btn" onclick="makeContent(1,'cards')">📸 카드뉴스</button>
+    <button class="make-btn" onclick="makeContent(1,'blog')">✍️ 블로그</button>
+    <button class="make-btn" onclick="makeContent(1,'captions')">💬 캡션</button>
+    <button class="make-btn" onclick="makeContent(1,'grades')">👨‍👩‍👧 학년별</button>
+    <button class="make-btn parent" onclick="makeContent(1,'parent')">📲 학부모 발송용</button>
+  </div>
+</div>
+<div class="card important" id="card-11">
+  <div class="badges">
+    <span class="badge b-important">중요</span>
+    <span class="badge b-year">2027학년도</span>
+    <span class="badge b-tgt">고3/학부모</span>
+    <span class="badge b-cat">정시</span> <span class="badge b-cat">사범대</span>
+  </div>
+  <h2>11. 정시 다군의 새로운 선택지…같은 사범대도 수능·학생부 비중 다르다</h2>
+  <div class="source">교육을 비추다 · 2026-11-18 · <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE5lUkNQeGpZMmJXUU9MNzF5N2R1ejEyQTVZWi1VdGNyRkQxOGhUQnFzSDV2VHhkZFRsR0lubU1aY3BCQVltb1JWWnRpVEFldExNb0VHdkEtUXhrOVpudnZYV3ZEMTlCdw?oc=5" target="_blank">원문</a></div>
+  <div class="parent-link">
+    <span class="pl-lbl">🎯 학부모 링크</span>
+    <a href="/p/2026-11-18-11.html" target="_blank" class="pl-btn">👀 미리보기</a>
+    <button class="pl-btn pl-copy" data-url="https://sco-daily.netlify.app/p/2026-11-18-11.html" onclick="copyParentUrl(this)">🔗 링크 복사</button>
+    <button class="pl-btn pl-copyfull" data-url="https://sco-daily.netlify.app/p/2026-11-18-11.html" data-title="정시 다군의 새로운 선택지…같은 사범대도 수능·학생부 비중 다르다" onclick="copyParentFullMsg(this)">📱 카톡 발송문</button>
+  </div>
+  <p class="sum1">2027 정시 다군에서 같은 사범대도 대학별로 수능 100% 또는 수능+학생부 반영 등 전형 방식 차이, 세밀한 전략 필요</p>
+  <div class="block"><b>📌 무엇이 바뀌었나</b><ul><li>정시 다군 사범대 선택폭 확대: 서울교대, 경인교대, 춘천교대 등 교대가 다군 이동하며 사범대 지망생에게 새로운 선택지 제공. 가군·나군 실패 시 다군 재도전 기회</li><li>대학별 반영 비율 천차만별: 같은 사범대도 수능 100% 반영 대학 vs 학생부 30% 반영 대학 등 차이. 수능 성적과 학생부 등급 조합에 따라 유불리 판단 필수</li></ul></div>
+  <div class="myth"><div class="q">❓ 정시는 수능 성적만 보면 되는 거 아닌가요?</div><div class="a">→ 아닙니다. 같은 사범대도 대학별로 수능 100% 반영, 수능+학생부 반영 등 차이가 큽니다. 학생부 등급이 좋으면 학생부 반영 대학이 유리하고, 수능만 잘 봤다면 수능 100% 대학을 노려야 합니다.</div></div>
+  <div class="katok"><div class="l">📱 학부모 카톡문</div><p>[SCO 학부모님께]
+
+정시 다군 사범대,
+같은 학과인데 반영 비율이 다릅니다.
+
+수능 100% vs 수능+학생부 30%
+어디에 넣느냐에 따라
+합격이 갈립니다.
+
+우리 아이 수능 성적과
+학생부 등급 조합해
+가장 유리한 대학 찾아드립니다.
+
+스코 정시 다군 1:1 전략 상담
+📞 1522-0000</p></div>
+  <div class="titles"><div class="l">📰 카드뉴스 제목</div><ul><li>정시 다군 사범대, 반영 비율이 합격 갈림길</li><li>수능 100% vs 수능+학생부, 어디가 유리?</li><li>가군·나군 실패해도 다군에서 역전 가능</li></ul></div>
+  <div class="sco"><div class="l">💡 SCO 관점</div><p>정시는 '성적'이 아닌 '전략'입니다. 같은 점수도 대학별 반영 비율에 따라 합격·불합격이 갈립니다. 스코는 완성도 높은 정시 전략으로 합격을 완성합니다.</p></div>
+  <div class="make-bar">
+    <span class="lbl">⚡ 자동 콘텐츠 제작</span>
+    <button class="make-btn full" onclick="makeContent(11,'full')">🚀 풀패키지</button>
+    <button class="make-btn" onclick="makeContent(11,'cards')">📸 카드뉴스</button>
+    <button class="make-btn" onclick="makeContent(11,'blog')">✍️ 블로그</button>
+    <button class="make-btn" onclick="makeContent(11,'captions')">💬 캡션</button>
+    <button class="make-btn" onclick="makeContent(11,'grades')">👨‍👩‍👧 학년별</button>
+    <button class="make-btn parent" onclick="makeContent(11,'parent')">📲 학부모 발송용</button>
+  </div>
+</div>
+<div class="card important" id="card-4">
+  <div class="badges">
+    <span class="badge b-important">중요</span>
+    <span class="badge b-year">2027~2028학년도</span>
+    <span class="badge b-tgt">중3/고1/고2/학부모</span>
+    <span class="badge b-cat">수능</span> <span class="badge b-cat">AI</span> <span class="badge b-cat">교육정책</span>
+  </div>
+  <h2>4. 1년 전 챗GPT, 수능 수학 만점…국가 교육·시험체계 개편해야</h2>
+  <div class="source">전자신문 · 2026-11-18 · <a href="https://news.google.com/rss/articles/CBMiTkFVX3lxTE5CZUlKWTlMVTNDUVdOMlFqNE5LR1dJMzJMMlVhYk1fZDBGNi1ueTZVclRmeXRKakEwZzdadEZINHFlS0JHc2QyWmVnZ0xmQQ?oc=5" target="_blank">원문</a></div>
+  <div class="parent-link">
+    <span class="pl-lbl">🎯 학부모 링크</span>
+    <a href="/p/2026-11-18-4.html" target="_blank" class="pl-btn">👀 미리보기</a>
+    <button class="pl-btn pl-copy" data-url="https://sco-daily.netlify.app/p/2026-11-18-4.html" onclick="copyParentUrl(this)">🔗 링크 복사</button>
+    <button class="pl-btn pl-copyfull" data-url="https://sco-daily.netlify.app/p/2026-11-18-4.html" data-title="1년 전 챗GPT, 수능 수학 만점…국가 교육·시험체계 개편해야" onclick="copyParentFullMsg(this)">📱 카톡 발송문</button>
+  </div>
+  <p class="sum1">2025년 ChatGPT가 수능 수학 만점 받으며 현행 평가 체계의 한계 드러나, 전문가들 국가 교육·시험 체계 전면 개편 필요성 제기</p>
+  <div class="block"><b>📌 무엇이 바뀌었나</b><ul><li>AI가 수능 만점 평가 체계 한계: 1년 전 ChatGPT가 수능 수학 만점 받으며 현행 수능이 단순 문제 풀이 능력만 측정한다는 비판. AI 시대 교육 목표 재정립 필요</li><li>AI 부정행위 우려 시험 체계 개편 시급: AI 부정행위 가능성 높아지며 현행 수능 체계로는 공정성 담보 어려움. 전문가들 AI 시대에 맞는 새로운 평가 방식 개발 촉구</li></ul></div>
+  <div class="myth"><div class="q">❓ 수능만 잘 보면 대학 가는 거 아닌가요?</div><div class="a">→ 이제는 아닙니다. AI가 수능 만점 받는 시대, 단순 문제 풀이 능력보다 창의력·사고력·협업 능력이 중요해집니다. 교육 목표 자체가 바뀌어야 하는 시점입니다.</div></div>
+  <div class="katok"><div class="l">📱 학부모 카톡문</div><p>[SCO 학부모님께]
+
+1년 전 AI가 수능 수학 만점 받았습니다.
+
+이제 단순 문제 풀이 능력은
+AI가 더 잘합니다.
+
+우리 아이들에게 필요한 건
+AI로 대체 불가능한
+창의력, 사고력, 협업 능력입니다.
+
+스코는 미래 경쟁력 중심
+학습 전략을 완성합니다.
+
+📞 1522-0000</p></div>
+  <div class="titles"><div class="l">📰 카드뉴스 제목</div><ul><li>AI가 수능 만점? 교육 목표 재정립 시급</li><li>단순 암기 넘어 창의력·사고력이 미래 경쟁력</li><li>AI 시대, 대체 불가능한 역량 키워야</li></ul></div>
+  <div class="sco"><div class="l">💡 SCO 관점</div><p>AI가 수능 만점 받는 시대, '학습'의 의미가 바뀌고 있습니다. 단순 암기·문제 풀이가 아닌 깊이 있는 이해와 응용, AI로 대체 불가능한 역량이 진짜 경쟁력입니다. 스코는 미래를 준비하는 완성도 높은 학습을 제공합니다.</p></div>
+  <div class="make-bar">
+    <span class="lbl">⚡ 자동 콘텐츠 제작</span>
+    <button class="make-btn full" onclick="makeContent(4,'full')">🚀 풀패키지</button>
+    <button class="make-btn" onclick="makeContent(4,'cards')">📸 카드뉴스</button>
+    <button class="make-btn" onclick="makeContent(4,'blog')">✍️ 블로그</button>
+    <button class="make-btn" onclick="makeContent(4,'captions')">💬 캡션</button>
+    <button class="make-btn" onclick="makeContent(4,'grades')">👨‍👩‍👧 학년별</button>
+    <button class="make-btn parent" onclick="makeContent(4,'parent')">📲 학부모 발송용</button>
+  </div>
+</div>
+<div class="ft">SCO LABS · 학이 아닌 습 · 매일 오전 11시 자동 생성 (서버)</div>
+</div>
+<script>
+const ARTICLES = {"1": {"id": 1, "priority": "긴급", "title": "수능 끝, 이제 진짜 실전이다…가채점 분석부터 수시 대학별고사의 갈림길까지", "shortTitle": "수능후가채점전략", "source": "스마트경제", "date": "2026-11-18", "year": "2027학년도", "target": "고3/학부모", "areas": ["수능", "정시", "수시"], "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFA1bDVidnUyUzlrd2FVckFXekJ3SV9vX0x2ZVppR0Ftc1hJTlg0a25qVWNSZTZFM2k3NVM5TV9ILVlzTzlTZktnVFVRM0VBWlE0SnJTbnZtVU9zUkE2QXBJelNCcktfaFMzaFpfbUpsMkk?oc=5", "hookBig": "수능 끝나고 집에 가면 끝?<br>가채점부터 논술·면접 선택까지<br>72시간이 합격을 결정합니다", "hookLabel": "📢 고3 학부모 필독", "summary1": "수능 당일 가채점부터 수시 대학별고사 응시 여부 결정, 정시 지원까지 수능 후 72시간 전략이 합격의 갈림길", "changeA": {"label": "CHANGE 1", "title": "수능 당일 저녁<br>가채점이 시작", "desc": "19일 수능 종료 직후부터 각 입시기관 가채점 서비스 시작. 예상 등급 확인 후 23일~12월 2일 수시 논술·면접 응시 여부를 24시간 내 결정해야 함"}, "changeB": {"label": "CHANGE 2", "title": "수시냐 정시냐<br>3일 내 판단", "desc": "가채점 결과로 수시 대학별고사 집중할지, 정시 준비로 전환할지 결정. 잘못된 판단은 수시·정시 둘 다 놓치는 결과 초래"}, "mythQ": "수능 끝나면 한숨 돌려도 되죠?", "mythA": "절대 아닙니다. 수능 당일 저녁부터 가채점 분석, 익일부터 논술·면접 응시 여부 결정, 정시 지원 전략 수립까지 72시간이 가장 중요한 골든타임입니다.", "impacts": ["수능 당일 저녁부터 주요 입시기관 가채점 서비스 오픈, 예상 등급 산출", "23일~12월 2일 주요 대학 논술·면접 집중, 가채점 결과로 응시 여부 결정 필요", "정시 지원은 12월 말~1월 초, 하지만 전략 수립은 가채점 직후부터 시작", "수시 최초합격 발표 12월 중순, 정시 원서접수 전 수시 결과 확인 가능"], "actions": ["19일 수능 당일 저녁 주요 입시기관(메가스터디, 이투스, 대성 등) 가채점 서비스 접속", "20일 오전까지 예상 등급 확인 후 수시 논술·면접 응시 여부 최종 결정", "논술 응시 결정 시 20~22일 집중 준비, 미응시 결정 시 정시 지원 전략 즉시 수립", "전문가 1:1 상담 통해 가채점 결과 기반 수시·정시 병행 전략 구체화"], "ctaHook": "수능 후 72시간, 스코가 함께합니다", "katok": "[SCO 학부모님께]\n\n수능 끝났다고 안심하시면 안 됩니다.\n\n오늘(19일) 저녁부터 가채점 시작\n→ 내일(20일) 오전까지 등급 확인\n→ 23일부터 논술·면접 응시 여부 결정\n\n이 72시간이 합격을 결정합니다.\n\n스코에서 가채점 분석부터\n수시·정시 전략까지\n1:1 맞춤 상담 진행합니다.\n\n📞 상담 예약: 1522-0000\n지금 바로 연락주세요.", "sms": "[SCO] 수능 끝=시작! 오늘 저녁 가채점→내일 전략 결정. 72시간이 합격 갈림길. 1:1 상담 1522-0000", "hashtags": ["수능후전략", "가채점", "논술면접", "정시지원", "수시정시병행", "72시간", "입시상담", "2027수능", "대입전략", "수능당일", "예상등급", "대학별고사", "정시원서", "합격전략", "입시컨설팅", "수능분석", "학종면접", "논술전형", "정시모집", "스코랩스"], "counseling": ["어머님, 수능 끝났다고 방심하시면 안 됩니다. 오늘 저녁부터 가채점 분석이 시작되고, 내일 오전까지 예상 등급을 확인해야 합니다.", "가채점 결과로 23일부터 시작되는 논술·면접에 응시할지, 아니면 정시에 올인할지 결정해야 하는데 이게 72시간 안에 판단해야 합니다.", "잘못 판단하면 수시는 불합격, 정시는 준비 부족으로 둘 다 놓치는 최악의 상황이 올 수 있어요.", "스코에서는 가채점 결과 나오는 즉시 1:1 맞춤 분석해드리고, 수시·정시 병행 전략을 구체적으로 세워드립니다.", "지금 바로 상담 예약하시면 수능 당일 저녁부터 바로 분석 시작할 수 있습니다. 합격은 준비된 자의 것입니다."], "card_titles": ["수능 끝=입시 시작! 72시간 골든타임", "19일 저녁 가채점→20일 전략 결정", "논술이냐 정시냐, 3일 내 판단이 합격 갈림길"], "sco_view": "수능 후 72시간은 '학습'이 아닌 '전략'의 시간입니다. 가채점 분석의 정확성, 수시·정시 병행 전략의 완성도가 1년 준비의 결실을 결정합니다. 스코는 완성도 높은 입시 전략으로 합격을 완성합니다.", "blogTitle": "2027 수능 끝나고 72시간이 합격 결정! 가채점부터 정시 전략까지 완벽 가이드", "blogSummary": "수능 당일 저녁 가채점부터 논술·면접 응시 결정, 정시 지원 전략까지 수능 후 72시간 완벽 대응법. 입시 전문가가 알려주는 합격 전략 총정리.", "grades": {"중3": {"katok": "[중3 학부모님께]\n\n2년 뒤 우리 아이도 겪을 상황입니다.\n\n수능 끝나고 72시간이\n합격을 결정한다는 사실,\n지금부터 알아두세요.\n\n가채점→전략 수립→실행\n이 과정의 완성도가\n대입 성패를 가릅니다.\n\n스코는 중3부터 체계적으로\n입시 전략 완성도를 높입니다.\n\n📞 1522-0000", "actions": ["2027 수능 후 입시 흐름 학부모 세미나 참석해 전체 프로세스 이해", "중3 2학기부터 모의고사 가채점 연습으로 등급 산출 감각 키우기", "수시·정시 기본 개념 학습, 2년 뒤 72시간 대응 위한 사전 준비"]}, "고1": {"katok": "[고1 학부모님께]\n\n1년 뒤 우리 아이 차례입니다.\n\n수능 후 가채점 분석부터\n논술·면접 응시 결정까지\n72시간이 합격 갈림길.\n\n지금부터 모의고사마다\n가채점 연습하고\n수시·정시 전략 세워야\n1년 뒤 당황하지 않습니다.\n\n스코에서 체계적으로 준비하세요.\n\n📞 1522-0000", "actions": ["고1 모의고사부터 가채점 연습, 등급 산출 및 분석 능력 키우기", "수시 학생부 관리와 정시 수능 준비 병행 전략 1년 전부터 수립", "2027 수능 후 입시 사례 분석, 1년 뒤 대응 시뮬레이션 진행"]}, "고2": {"katok": "[고2 학부모님께]\n\n내년 이맘때 우리 아이입니다.\n\n수능 당일 저녁 가채점\n→ 다음날 전략 결정\n→ 논술·면접 or 정시 선택\n\n이 72시간 준비는\n지금부터 시작됩니다.\n\n모의고사마다 가채점 분석,\n수시·정시 병행 전략 수립,\n스코에서 완성도 높입니다.\n\n📞 1522-0000", "actions": ["매 모의고사 가채점 즉시 분석, 예상 등급별 수시·정시 전략 시뮬레이션", "논술 준비생은 수능 후 일정 미리 체크, 면접 준비생은 예상 질문 정리", "정시 지원 대학별 반영 비율 분석, 수능 후 72시간 액션플랜 사전 작성"]}, "고3": {"katok": "[고3 학부모님께]\n\n바로 오늘입니다.\n\n수능 끝나고 저녁부터\n가채점 시작합니다.\n\n내일 오전까지 등급 확인\n→ 논술·면접 응시 여부 결정\n→ 정시 전략 즉시 수립\n\n72시간이 1년 준비의\n결실을 결정합니다.\n\n스코 1:1 긴급 상담\n지금 바로 예약하세요.\n\n📞 1522-0000", "actions": ["19일 수능 당일 저녁 주요 입시기관 가채점 서비스 즉시 접속", "20일 오전 예상 등급 확인 후 스코 1:1 상담으로 수시·정시 전략 최종 결정", "논술·면접 응시 결정 시 23일까지 집중 준비, 정시 선택 시 지원 전략 구체화", "12월 중순 수시 결과 발표 전까지 정시 원서 작성 완료, 최종 점검"]}}}, "11": {"id": 11, "priority": "중요", "title": "정시 다군의 새로운 선택지…같은 사범대도 수능·학생부 비중 다르다", "shortTitle": "정시다군사범대전략", "source": "교육을 비추다", "date": "2026-11-18", "year": "2027학년도", "target": "고3/학부모", "areas": ["정시", "사범대"], "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5lUkNQeGpZMmJXUU9MNzF5N2R1ejEyQTVZWi1VdGNyRkQxOGhUQnFzSDV2VHhkZFRsR0lubU1aY3BCQVltb1JWWnRpVEFldExNb0VHdkEtUXhrOVpudnZYV3ZEMTlCdw?oc=5", "hookBig": "같은 사범대인데<br>수능 100% vs 학생부 30% 반영?<br>정시 다군 전략이 합격을 바꿉니다", "hookLabel": "📢 정시 지원 필독", "summary1": "2027 정시 다군에서 같은 사범대도 대학별로 수능 100% 또는 수능+학생부 반영 등 전형 방식 차이, 세밀한 전략 필요", "changeA": {"label": "CHANGE 1", "title": "정시 다군<br>사범대 선택폭 확대", "desc": "서울교대, 경인교대, 춘천교대 등 교대가 다군 이동하며 사범대 지망생에게 새로운 선택지 제공. 가군·나군 실패 시 다군 재도전 기회"}, "changeB": {"label": "CHANGE 2", "title": "대학별 반영 비율<br>천차만별", "desc": "같은 사범대도 수능 100% 반영 대학 vs 학생부 30% 반영 대학 등 차이. 수능 성적과 학생부 등급 조합에 따라 유불리 판단 필수"}, "mythQ": "정시는 수능 성적만 보면 되는 거 아닌가요?", "mythA": "아닙니다. 같은 사범대도 대학별로 수능 100% 반영, 수능+학생부 반영 등 차이가 큽니다. 학생부 등급이 좋으면 학생부 반영 대학이 유리하고, 수능만 잘 봤다면 수능 100% 대학을 노려야 합니다.", "impacts": ["2027 정시 다군에 교대 다수 편성, 사범대 지망생 선택폭 확대", "같은 사범대도 대학별 수능 반영 100% vs 수능 70%+학생부 30% 등 차이", "학생부 등급 우수 학생은 학생부 반영 대학에서 수능 부족분 만회 가능", "수능 고득점·학생부 낮은 학생은 수능 100% 반영 대학 집중 공략 필요"], "actions": ["정시 다군 사범대별 수능·학생부 반영 비율 정확히 확인 (대학 입학처 홈페이지)", "본인 수능 예상 등급과 학생부 등급 조합해 유리한 대학 리스트업", "가군·나군 지원 대학과 다군 대학 조합, 3회 기회 최대한 활용하는 전략 수립", "정시 다군 추가 모집 가능성 체크, 최종 합격 발표 후 추가 기회 대비"], "ctaHook": "정시 다군, 스코가 전략을 완성합니다", "katok": "[SCO 학부모님께]\n\n정시 다군 사범대,\n같은 학과인데 반영 비율이 다릅니다.\n\n수능 100% vs 수능+학생부 30%\n어디에 넣느냐에 따라\n합격이 갈립니다.\n\n우리 아이 수능 성적과\n학생부 등급 조합해\n가장 유리한 대학 찾아드립니다.\n\n스코 정시 다군 1:1 전략 상담\n📞 1522-0000", "sms": "[SCO] 정시 다군 사범대, 대학별 반영비율 다름! 수능+학생부 조합 전략 필수. 1:1 상담 1522-0000", "hashtags": ["정시다군", "사범대", "교대", "수능반영비율", "학생부반영", "정시전략", "2027정시", "사범대입시", "교대입시", "정시지원", "반영비율", "합격전략", "정시모집", "다군지원", "입시컨설팅", "수능100", "학생부30", "정시조합", "사대입시", "스코랩스"], "counseling": ["어머님, 정시 다군에 교대와 사범대가 많이 편성됐는데, 같은 사범대라도 대학별로 반영 비율이 완전히 다릅니다.", "예를 들어 A대는 수능 100% 반영, B대는 수능 70%+학생부 30% 반영. 학생부 등급이 좋으면 B대가 훨씬 유리합니다.", "우리 아이 수능 예상 등급과 학생부 등급을 정확히 조합해서 가장 유리한 대학을 찾아야 합격 확률이 높아집니다.", "가군·나군에서 실패했어도 다군에서 재도전할 수 있는 기회가 생긴 거라 전략을 잘 짜면 역전 가능합니다.", "스코에서 정시 다군 대학별 반영 비율 분석해드리고, 가군·나군·다군 조합 전략까지 완성해드립니다."], "card_titles": ["정시 다군 사범대, 반영 비율이 합격 갈림길", "수능 100% vs 수능+학생부, 어디가 유리?", "가군·나군 실패해도 다군에서 역전 가능"], "sco_view": "정시는 '성적'이 아닌 '전략'입니다. 같은 점수도 대학별 반영 비율에 따라 합격·불합격이 갈립니다. 스코는 완성도 높은 정시 전략으로 합격을 완성합니다.", "blogTitle": "2027 정시 다군 사범대 완벽 공략! 대학별 반영 비율 분석과 합격 전략", "blogSummary": "같은 사범대도 수능 100% vs 수능+학생부 반영 등 대학별 차이 분석. 정시 다군 사범대 합격을 위한 세밀한 전략 총정리.", "grades": {"중3": {"katok": "[중3 학부모님께]\n\n정시는 수능만 보는 게 아닙니다.\n\n같은 사범대도\n대학별로 반영 비율이 다르고,\n수능+학생부 조합이\n합격을 결정합니다.\n\n중3부터 내신 관리 철저히 하면\n정시에서도 유리합니다.\n\n스코에서 중3부터 완성도 높게\n준비하세요.\n\n📞 1522-0000", "actions": ["정시도 학생부 반영한다는 사실 인지, 중3부터 내신 관리 중요성 이해", "사범대·교대 목표 시 정시 반영 비율 미리 체크, 2년 계획 수립", "수능 모의고사 성적과 내신 등급 조합 연습, 정시 전략 감각 키우기"]}, "고1": {"katok": "[고1 학부모님께]\n\n사범대 꿈꾸는 우리 아이,\n정시도 학생부가 중요합니다.\n\n대학별로\n수능 100% vs 수능+학생부\n반영 비율이 다르니\n내신도 절대 놓치면 안 됩니다.\n\n고1 내신부터 철저히 관리하면\n정시에서 역전 가능합니다.\n\n스코가 완성합니다.\n📞 1522-0000", "actions": ["목표 사범대별 정시 반영 비율 확인, 수능+학생부 조합 목표 설정", "고1 내신 관리 철저히, 정시에서도 유리한 학생부 등급 확보 전략", "모의고사 성적과 내신 등급 조합해 목표 대학 합격 가능성 시뮬레이션"]}, "고2": {"katok": "[고2 학부모님께]\n\n내년 정시 다군,\n사범대 선택폭이 넓어졌습니다.\n\n하지만 대학별 반영 비율이\n천차만별이라\n전략 없이는 합격 어렵습니다.\n\n수능 성적+학생부 등급 조합\n지금부터 시뮬레이션하고\n최적 전략 세우세요.\n\n스코가 완성합니다.\n📞 1522-0000", "actions": ["목표 사범대 정시 다군 반영 비율 정확히 파악, 유불리 분석", "모의고사 성적과 현재 내신 등급으로 합격 가능 대학 리스트업", "가군·나군·다군 조합 전략 사전 수립, 3회 기회 최대 활용 계획"]}, "고3": {"katok": "[고3 학부모님께]\n\n정시 다군 사범대,\n반영 비율이 합격을 결정합니다.\n\n수능 100% vs 수능+학생부\n어디가 유리한지\n정확히 계산해야 합니다.\n\n가채점 결과 나오면\n즉시 대학별 유불리 분석하고\n가군·나군·다군 조합 완성하세요.\n\n스코 1:1 긴급 상담\n📞 1522-0000", "actions": ["가채점 결과로 예상 등급 산출, 학생부 등급과 조합해 유리한 대학 선별", "정시 다군 사범대별 반영 비율 정확히 계산, 합격 가능 점수 산출", "가군·나군 지원 대학과 다군 조합, 3회 기회 최대한 활용하는 최종 전략 수립", "정시 원서 접수 전 스코 1:1 상담으로 최종 점검, 완성도 높이기"]}}}, "4": {"id": 4, "priority": "중요", "title": "1년 전 챗GPT, 수능 수학 만점…국가 교육·시험체계 개편해야", "shortTitle": "AI수능만점교육개편", "source": "전자신문", "date": "2026-11-18", "year": "2027~2028학년도", "target": "중3/고1/고2/학부모", "areas": ["수능", "AI", "교육정책"], "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5CZUlKWTlMVTNDUVdOMlFqNE5LR1dJMzJMMlVhYk1fZDBGNi1ueTZVclRmeXRKakEwZzdadEZINHFlS0JHc2QyWmVnZ0xmQQ?oc=5", "hookBig": "1년 전 AI가 수능 수학 만점 받았습니다<br>지금 우리 아이들이 준비하는 시험,<br>과연 미래 경쟁력을 측정할까요?", "hookLabel": "📢 미래 교육 주목", "summary1": "2025년 ChatGPT가 수능 수학 만점 받으며 현행 평가 체계의 한계 드러나, 전문가들 국가 교육·시험 체계 전면 개편 필요성 제기", "changeA": {"label": "CHANGE 1", "title": "AI가 수능 만점<br>평가 체계 한계", "desc": "1년 전 ChatGPT가 수능 수학 만점 받으며 현행 수능이 단순 문제 풀이 능력만 측정한다는 비판. AI 시대 교육 목표 재정립 필요"}, "changeB": {"label": "CHANGE 2", "title": "AI 부정행위 우려<br>시험 체계 개편 시급", "desc": "AI 부정행위 가능성 높아지며 현행 수능 체계로는 공정성 담보 어려움. 전문가들 AI 시대에 맞는 새로운 평가 방식 개발 촉구"}, "mythQ": "수능만 잘 보면 대학 가는 거 아닌가요?", "mythA": "이제는 아닙니다. AI가 수능 만점 받는 시대, 단순 문제 풀이 능력보다 창의력·사고력·협업 능력이 중요해집니다. 교육 목표 자체가 바뀌어야 하는 시점입니다.", "impacts": ["2025년 ChatGPT 수능 수학 만점으로 현행 평가 체계 한계 명확히 드러남", "AI 부정행위 우려 속 2027 수능 진행, 공정성 논란 지속 가능성", "전문가들 AI 시대에 맞는 새로운 교육 목표·평가 방식 개발 촉구", "2028 대입 개편도 AI 시대 대응 부족하다는 비판, 추가 개편 가능성"], "actions": ["AI 시대 필요 역량(창의력, 비판적 사고, 협업) 중심 학습 전략 전환", "단순 암기·문제 풀이 넘어 깊이 있는 이해·응용 능력 키우기", "학생부종합전형 대비, AI로 대체 불가능한 역량(리더십, 탐구력) 강화", "교육 정책 변화 지속 모니터링, 새로운 평가 방식 대응 준비"], "ctaHook": "AI 시대, 스코는 미래 역량을 완성합니다", "katok": "[SCO 학부모님께]\n\n1년 전 AI가 수능 수학 만점 받았습니다.\n\n이제 단순 문제 풀이 능력은\nAI가 더 잘합니다.\n\n우리 아이들에게 필요한 건\nAI로 대체 불가능한\n창의력, 사고력, 협업 능력입니다.\n\n스코는 미래 경쟁력 중심\n학습 전략을 완성합니다.\n\n📞 1522-0000", "sms": "[SCO] AI가 수능 만점 받는 시대. 단순 암기 넘어 미래 역량 키워야. 스코 1:1 상담 1522-0000", "hashtags": ["AI수능", "ChatGPT만점", "교육개편", "미래역량", "AI시대교육", "수능개편", "창의력", "사고력", "학생부종합", "교육정책", "2028대입", "평가체계", "AI부정행위", "입시변화", "미래교육", "역량중심", "교육혁신", "수능논란", "대입개편", "스코랩스"], "counseling": ["어머님, 1년 전에 ChatGPT가 수능 수학 만점 받았다는 거 아시나요? 이제 AI가 사람보다 문제를 더 잘 푸는 시대입니다.", "그렇다면 우리 아이들이 단순히 문제 풀이만 잘한다고 미래 경쟁력이 있을까요? 절대 아닙니다.", "AI 시대에는 창의력, 비판적 사고력, 협업 능력처럼 AI로 대체할 수 없는 역량이 핵심입니다.", "지금 수능 준비도 중요하지만, 학생부종합전형처럼 깊이 있는 탐구와 사고를 요구하는 전형에 대비하는 게 장기적으로 유리합니다.", "스코는 단순 문제 풀이가 아니라 미래 역량 중심으로 학습 전략을 완성해드립니다. AI 시대, 진짜 경쟁력을 키우세요."], "card_titles": ["AI가 수능 만점? 교육 목표 재정립 시급", "단순 암기 넘어 창의력·사고력이 미래 경쟁력", "AI 시대, 대체 불가능한 역량 키워야"], "sco_view": "AI가 수능 만점 받는 시대, '학습'의 의미가 바뀌고 있습니다. 단순 암기·문제 풀이가 아닌 깊이 있는 이해와 응용, AI로 대체 불가능한 역량이 진짜 경쟁력입니다. 스코는 미래를 준비하는 완성도 높은 학습을 제공합니다.", "blogTitle": "ChatGPT 수능 만점 시대, 우리 아이 교육 전략은? AI 시대 미래 역량 완벽 가이드", "blogSummary": "AI가 수능 수학 만점 받으며 드러난 현행 교육 체계의 한계. AI 시대 필요한 창의력·사고력 중심 학습 전략과 대입 대응법 총정리.", "grades": {"중3": {"katok": "[중3 학부모님께]\n\nAI가 수능 만점 받는 시대,\n우리 아이는 무엇을 준비해야 할까요?\n\n단순 암기·문제 풀이가 아닌\n창의력, 탐구력, 사고력이\n진짜 경쟁력입니다.\n\n중3부터 깊이 있는 학습,\nAI로 대체 불가능한 역량 키우세요.\n\n스코가 미래를 완성합니다.\n📞 1522-0000", "actions": ["단순 암기 넘어 개념 깊이 이해하고 응용하는 학습 습관 형성", "탐구 활동·프로젝트 학습으로 창의력·사고력 키우기", "AI 시대 필요 역량(협업, 문제 해결) 중심 학생부 관리 시작"]}, "고1": {"katok": "[고1 학부모님께]\n\nAI가 문제 풀이는 더 잘합니다.\n\n우리 아이에게 필요한 건\nAI로 대체 불가능한\n창의력, 비판적 사고, 탐구력입니다.\n\n고1부터 깊이 있는 학습,\n학생부종합전형 대비로\n미래 역량 키우세요.\n\n스코가 완성합니다.\n📞 1522-0000", "actions": ["교과 학습도 단순 암기 아닌 깊이 있는 이해·응용 중심으로 전환", "학생부 탐구 활동·동아리로 창의력·사고력 역량 구체화", "AI 시대 대비 학생부종합전형 준비, 차별화된 스토리 만들기"]}, "고2": {"katok": "[고2 학부모님께]\n\nAI 시대, 수능만으로는 부족합니다.\n\n학생부종합전형처럼\n깊이 있는 탐구와 사고를\n요구하는 전형이\n미래 경쟁력을 측정합니다.\n\n고2 지금,\nAI로 대체 불가능한 역량 키우세요.\n\n스코가 완성합니다.\n📞 1522-0000", "actions": ["수능 준비와 병행, 학생부 탐구 활동으로 깊이 있는 역량 강화", "AI 시대 필요 역량(창의력, 협업) 중심 학생부 스토리 구체화", "학생부종합전형 준비로 수능 외 경쟁력 확보, 대입 선택지 넓히기"]}, "고3": {"katok": "[고3 학부모님께]\n\nAI가 수능 만점 받는 시대,\n수능만으로 미래를 담보할 수 없습니다.\n\n대학 가서도\nAI로 대체 불가능한 역량 키우는\n학과·전공 선택이 중요합니다.\n\n정시 지원 시\n미래 경쟁력 고려한 전략 세우세요.\n\n스코 1:1 상담\n📞 1522-0000", "actions": ["정시 지원 시 단순 점수 맞추기 아닌 미래 경쟁력 고려한 학과 선택", "대학 입학 후에도 AI 시대 필요 역량 키울 수 있는 전공·커리큘럼 확인", "수능 결과와 무관하게 장기적 진로 관점에서 대학·학과 선택 전략 수립", "스코 상담으로 수능 후 진로까지 고려한 완성도 높은 전략 완성"]}}}};
+const TODAY_STR = "2026-11-18";
+
+function downloadFile(filename, content, mime){
+  mime = mime || 'text/plain;charset=utf-8';
+  const blob = new Blob([content],{type:mime});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob); a.download = filename;
+  document.body.appendChild(a); a.click(); document.body.removeChild(a);
+}
+function openInNewTab(html){
+  const blob = new Blob([html],{type:'text/html;charset=utf-8'});
+  window.open(URL.createObjectURL(blob),'_blank');
+}
+
+function copyParentUrl(btn){
+  const url = btn.dataset.url;
+  navigator.clipboard.writeText(url).then(()=>{
+    const o=btn.textContent; btn.textContent='✅ 복사됨!'; setTimeout(()=>btn.textContent=o,1500);
+  });
+}
+function copyParentFullMsg(btn){
+  const url = btn.dataset.url;
+  const title = btn.dataset.title;
+  const txt = '[SCO 긴급 입시속보 - '+TODAY_STR+']\n\n'+title+'\n\n전체 내용 ▶ '+url+'\n\n- SCO 학습관리';
+  navigator.clipboard.writeText(txt).then(()=>{
+    const o=btn.textContent; btn.textContent='✅ 복사됨!'; setTimeout(()=>btn.textContent=o,1500);
+  });
+}
+
+function genCardsHTML(id){
+  const a = ARTICLES[id]; if(!a) return '<h1>데이터 없음</h1>';
+  const titles = a.card_titles || [];
+  const cards = [
+    {cls:'c1', label:a.hookLabel||'📢', main:a.hookBig||a.title, isHook:true},
+    {cls:'c2', label:'CHANGE 1', main:(a.changeA&&a.changeA.title)||'', sub:(a.changeA&&a.changeA.desc)||''},
+    {cls:'c3', label:'CHANGE 2', main:(a.changeB&&a.changeB.title)||'', sub:(a.changeB&&a.changeB.desc)||''},
+    {cls:'c4', label:'⚠️ 학부모 오해', main:a.mythQ||'', sub:a.mythA||''},
+    {cls:'c5', label:'💔 영향', list:a.impacts||[]},
+    {cls:'c6', label:'📋 할 일', list:a.actions||[]},
+    {cls:'c7', label:'💡 SCO 관점', main:a.ctaHook||a.sco_view||'', sub:'학이 아닌 습'},
+    {cls:'c8', label:'📩 무료 진단', main:'우리 아이 맞춤 진단', sub:'카카오톡 채널/DM/프로필 링크', isCta:true}
+  ];
+  return '<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><title>'+a.title+' 카드뉴스</title><style>*{box-sizing:border-box;margin:0;padding:0}body{font-family:-apple-system,Pretendard,sans-serif;background:#e5e7eb;padding:20px}.cards{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(500px,1fr));gap:24px}.card{width:100%;aspect-ratio:1/1;border-radius:18px;padding:54px 48px;display:flex;flex-direction:column;justify-content:space-between;color:white;font-weight:700;position:relative;line-height:1.4}.num{position:absolute;top:20px;right:24px;font-size:13px;opacity:.6}.brand{position:absolute;bottom:24px;left:48px;font-size:12px;opacity:.7}.label{font-size:16px;font-weight:700;opacity:.85;margin-bottom:14px;letter-spacing:1px}.main{font-size:36px;font-weight:900;line-height:1.25}.hook{font-size:46px;font-weight:900;line-height:1.2}.sub{font-size:18px;line-height:1.5;font-weight:500;opacity:.9;margin-top:14px}.cta{font-size:42px;font-weight:900;color:#fbbf24}ul{padding-left:24px;margin-top:8px}li{font-size:24px;margin-bottom:8px;font-weight:600}.c1{background:linear-gradient(135deg,#0b1e3f,#1a3a6b)}.c2{background:linear-gradient(135deg,#b91c1c,#ea580c)}.c3{background:linear-gradient(135deg,#1a3a6b,#3b82f6)}.c4{background:linear-gradient(135deg,#b45309,#d97706)}.c5{background:linear-gradient(135deg,#7f1d1d,#dc2626)}.c6{background:linear-gradient(135deg,#064e3b,#059669)}.c7{background:linear-gradient(135deg,#0b1e3f,#1e293b)}.c8{background:linear-gradient(135deg,#0b1e3f,#ea580c)}</style></head><body><div class="cards">'+cards.map((c,i)=>{
+    let body='';
+    if(c.isHook) body='<div><div class="label">'+c.label+'</div><div class="hook">'+c.main+'</div></div>';
+    else if(c.isCta) body='<div><div class="label">'+c.label+'</div><div class="cta">'+c.main+'</div><div class="sub">'+c.sub+'</div></div>';
+    else if(c.list) body='<div><div class="label">'+c.label+'</div><ul>'+c.list.map(x=>'<li>'+x+'</li>').join('')+'</ul></div>';
+    else body='<div><div class="label">'+c.label+'</div><div class="main">'+c.main+'</div>'+(c.sub?'<div class="sub">'+c.sub+'</div>':'')+'</div>';
+    return '<div class="card '+c.cls+'"><div class="num">'+(i+1)+'/8</div>'+body+'<div class="brand">SCO LABS</div></div>';
+  }).join('')+'</div></body></html>';
+}
+
+function genBlogHTML(id){
+  const a = ARTICLES[id]; if(!a) return '<h1>데이터 없음</h1>';
+  return '<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><title>'+(a.blogTitle||a.title)+'</title><style>body{font-family:-apple-system,Pretendard,sans-serif;background:#f7f8fa;line-height:1.8;padding:20px}.wrap{max-width:780px;margin:0 auto;background:white;border-radius:14px;overflow:hidden}.hd{background:linear-gradient(135deg,#0b1e3f,#1a3a6b);color:white;padding:48px 44px}.hd h1{font-size:28px;font-weight:800}.summary{background:#fff7ed;border-left:6px solid #ea580c;padding:20px 28px;color:#9a3412;font-weight:600}.body{padding:24px 44px}.body h2{font-size:20px;font-weight:800;color:#0b1e3f;margin:30px 0 14px;padding-left:14px;border-left:5px solid #0b1e3f}.body p{font-size:15px;color:#374151;margin-bottom:12px}.body ul{padding-left:26px;margin:10px 0}.cta{background:linear-gradient(135deg,#0b1e3f,#ea580c);color:white;padding:24px;border-radius:12px;margin:24px 0}.tags{background:#f3f4f6;padding:18px;border-radius:10px;margin:20px 0;font-size:13px;color:#6b7280}</style></head><body><div class="wrap"><div class="hd"><div style="opacity:.7;font-size:12px">📅 '+a.date+' · SCO LABS</div><h1>'+(a.blogTitle||a.title)+'</h1></div><div class="summary">'+(a.blogSummary||a.summary1||'')+'</div><div class="body"><h2>1. 무엇이 바뀌었나</h2><p>'+(a.summary1||'')+'</p><h2>2. 학부모 오해</h2><p><b>Q.</b> '+(a.mythQ||'')+'<br><b>A.</b> '+(a.mythA||'')+'</p><h2>3. 우리 아이 영향</h2><ul>'+((a.impacts||[]).map(x=>'<li>'+x+'</li>').join(''))+'</ul><h2>4. 지금 할 일</h2><ul>'+((a.actions||[]).map(x=>'<li><b>'+x+'</b></li>').join(''))+'</ul><h2>5. SCO 관점</h2><p>'+(a.sco_view||'')+'</p><div class="cta"><h3>💡 무료 입시 진단</h3><p>카카오톡 채널/DM/프로필 링크</p></div><div class="tags">'+((a.hashtags||[]).map(h=>'#'+h).join(' '))+'</div></div></div></body></html>';
+}
+
+function genGradesHTML(id){
+  const a = ARTICLES[id]; if(!a||!a.grades) return '<h1>학년별 데이터 없음</h1>';
+  const colors = {'중3':'#b91c1c','고1':'#ea580c','고2':'#1a3a6b','고3':'#7c3aed'};
+  return '<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><title>학년별 카톡</title><style>body{font-family:-apple-system,Pretendard,sans-serif;background:#f7f8fa;padding:20px;line-height:1.7}.wrap{max-width:1000px;margin:0 auto}.hd{background:linear-gradient(135deg,#0b1e3f,#1a3a6b);color:white;padding:32px;border-radius:14px;margin-bottom:24px}.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.card{background:white;border-radius:12px;padding:24px}.card h2{font-size:18px;font-weight:800;color:white;padding:6px 14px;border-radius:6px;display:inline-block;margin-bottom:14px}.katok{background:#fef3c7;border:1.5px dashed #f59e0b;border-radius:8px;padding:16px;font-size:13px;color:#78350f;white-space:pre-line}.actions{margin-top:14px}.actions ul{padding-left:18px}.actions li{font-size:13px;color:#374151;margin-bottom:4px}@media(max-width:700px){.cards{grid-template-columns:1fr}}</style></head><body><div class="wrap"><div class="hd"><h1 style="font-size:22px">학년별 맞춤 카톡 안내문</h1><div style="font-size:14px;opacity:.85;margin-top:6px">'+a.title+' · '+a.date+'</div></div><div class="cards">'+Object.keys(a.grades).map(g=>{const d=a.grades[g];return '<div class="card"><h2 style="background:'+(colors[g]||'#0b1e3f')+'">'+g+' 학부모용</h2><div class="katok">'+d.katok+'</div><div class="actions"><b>이 학년이 할 일</b><ul>'+((d.actions||[]).map(x=>'<li>'+x+'</li>').join(''))+'</ul></div></div>';}).join('')+'</div></div></body></html>';
+}
+
+function genCaptions(id){
+  const a = ARTICLES[id]; if(!a) return '';
+  return '=== SCO 콘텐츠 패키지 · '+a.date+' ===\n\n[인스타 캡션]\n'+(a.hookBig||'').replace(/<[^>]+>/g,' ')+'\n\n'+(a.summary1||'')+'\n\n📩 DM/프로필\n\n'+((a.hashtags||[]).map(h=>'#'+h).join(' '))+'\n\n[카톡 채널 발송]\n'+(a.katok||'')+'\n\n[SMS]\n'+(a.sms||'')+'\n\n[상담 멘트]\n'+((a.counseling||[]).map((m,i)=>(i+1)+'. "'+m+'"').join('\n\n'));
+}
+
+function genParentMessage(id){
+  const a = ARTICLES[id]; if(!a) return '';
+  return '📢 SCO 입시 브리핑\n━━━━━━━━━━━━━━━\n'+a.date+'\n\n🎯 오늘의 핵심\n《'+a.title+'》\n\n📌 NOW\n  ✓ '+(a.summary1||'')+'\n\n❓ FAQ\n  Q. '+(a.mythQ||'')+'\n  A. '+(a.mythA||'')+'\n\n💡 SCO의 답\n  '+(a.sco_view||'')+'\n\n━━━━━━━━━━━━━━━\n📩 무료 입시 진단\n   ▶ 카카오톡 채널 / DM\n━━━━━━━━━━━━━━━\n\nSCO Labs · '+(a.source||'');
+}
+
+function _wrapText(ctx,text,x,y,maxW,lh){const chars=text.split('');let line='',cy=y;for(let i=0;i<chars.length;i++){const t=line+chars[i];if(ctx.measureText(t).width>maxW&&line!==''){ctx.fillText(line,x,cy);line=chars[i];cy+=lh}else line=t}ctx.fillText(line,x,cy);return cy+lh}
+function _roundRect(ctx,x,y,w,h,r){ctx.beginPath();ctx.moveTo(x+r,y);ctx.arcTo(x+w,y,x+w,y+h,r);ctx.arcTo(x+w,y+h,x,y+h,r);ctx.arcTo(x,y+h,x,y,r);ctx.arcTo(x,y,x+w,y,r);ctx.closePath()}
+
+function drawParentCardCanvas(id){
+  const a=ARTICLES[id]; if(!a){alert('데이터 없음');return}
+  const canvas=document.getElementById('sco-export-canvas');
+  const ctx=canvas.getContext('2d'); const W=1080,H=1350,PAD=80;
+  const FONT='"Apple SD Gothic Neo","Pretendard",-apple-system,sans-serif';
+  const bg=ctx.createLinearGradient(0,0,0,H);
+  bg.addColorStop(0,'#0b1e3f');bg.addColorStop(.6,'#1e3a8a');bg.addColorStop(1,'#1a3a6b');
+  ctx.fillStyle=bg;ctx.fillRect(0,0,W,H);
+  ctx.fillStyle='rgba(255,255,255,.85)';ctx.font='800 22px '+FONT;ctx.fillText('SCO LABS',PAD,PAD+10);
+  ctx.fillStyle='rgba(255,255,255,.7)';ctx.font='600 24px '+FONT;ctx.textAlign='right';ctx.fillText(a.date||'',W-PAD,PAD+10);ctx.textAlign='left';
+  let y=160;
+  ctx.fillStyle='rgba(251,191,36,.25)';_roundRect(ctx,PAD,y,260,50,25);ctx.fill();
+  ctx.fillStyle='#fbbf24';ctx.font='800 22px '+FONT;ctx.fillText('📢 SCO 입시 브리핑',PAD+22,y+33);
+  y=260;ctx.fillStyle='#fff';ctx.font='900 46px '+FONT;
+  y=_wrapText(ctx,(a.title||'').slice(0,60),PAD,y+40,W-PAD*2,60);
+  y+=30;ctx.fillStyle='rgba(255,255,255,.2)';ctx.fillRect(PAD,y,W-PAD*2,2);
+  y+=40;ctx.fillStyle='#fbbf24';ctx.font='800 22px '+FONT;ctx.fillText('📌 NOW',PAD,y);
+  y+=40;ctx.fillStyle='rgba(255,255,255,.95)';ctx.font='500 26px '+FONT;
+  y=_wrapText(ctx,(a.summary1||'').slice(0,150),PAD,y,W-PAD*2,40);
+  y+=20;ctx.fillStyle='rgba(255,255,255,.08)';_roundRect(ctx,PAD,y,W-PAD*2,200,20);ctx.fill();
+  ctx.fillStyle='#fbbf24';ctx.font='700 22px '+FONT;ctx.fillText('❓ '+(a.mythQ||'').slice(0,35),PAD+30,y+45);
+  ctx.fillStyle='rgba(255,255,255,.95)';ctx.font='500 22px '+FONT;
+  _wrapText(ctx,'→ '+(a.mythA||'').slice(0,100),PAD+30,y+90,W-PAD*2-60,36);
+  y+=230;ctx.fillStyle='rgba(255,255,255,.2)';ctx.fillRect(PAD,y,W-PAD*2,2);
+  y+=40;ctx.fillStyle='#fbbf24';ctx.font='800 22px '+FONT;ctx.fillText('💡 SCO의 답',PAD,y);
+  y+=40;ctx.fillStyle='rgba(255,255,255,.95)';ctx.font='700 28px '+FONT;
+  _wrapText(ctx,'학(學)이 아닌 습(習). 매일 실행이 결국 이깁니다.',PAD,y,W-PAD*2,42);
+  const cY=H-220;
+  const cg=ctx.createLinearGradient(0,cY,W,cY+130);
+  cg.addColorStop(0,'#ea580c');cg.addColorStop(1,'#fbbf24');
+  ctx.fillStyle=cg;_roundRect(ctx,PAD,cY,W-PAD*2,130,20);ctx.fill();
+  ctx.fillStyle='#0b1e3f';ctx.font='900 32px '+FONT;ctx.textAlign='center';
+  ctx.fillText('📩 무료 입시 진단 신청',W/2,cY+50);
+  ctx.font='600 20px '+FONT;ctx.fillText('카카오톡 채널 / DM / 프로필 링크',W/2,cY+90);
+  ctx.fillStyle='rgba(255,255,255,.5)';ctx.font='700 16px '+FONT;ctx.fillText('S C O   L A B S',W/2,H-30);ctx.textAlign='left';
+  const link=document.createElement('a');
+  link.download='SCO_학부모카드_'+(a.date||'')+'_'+id+'.png';
+  link.href=canvas.toDataURL('image/png');
+  document.body.appendChild(link);link.click();document.body.removeChild(link);
+}
+
+function makeContent(id, type){
+  const a = ARTICLES[id]; if(!a){alert('기사 데이터 없음');return}
+  const safeTitle = (a.shortTitle||a.title||'').replace(/[\/\\:*?"<>|]/g,'').slice(0,30);
+  const base = 'SCO_'+a.date+'_'+id+'_'+safeTitle;
+  if(type==='cards'){
+    const h=genCardsHTML(id);downloadFile(base+'_카드뉴스.html',h,'text/html;charset=utf-8');openInNewTab(h);
+  } else if(type==='blog'){
+    const h=genBlogHTML(id);downloadFile(base+'_블로그.html',h,'text/html;charset=utf-8');openInNewTab(h);
+  } else if(type==='captions'){
+    downloadFile(base+'_캡션.txt',genCaptions(id),'text/plain;charset=utf-8');
+  } else if(type==='grades'){
+    const h=genGradesHTML(id);downloadFile(base+'_학년별카톡.html',h,'text/html;charset=utf-8');openInNewTab(h);
+  } else if(type==='parent'){
+    drawParentCardCanvas(id);
+    const text=genParentMessage(id);
+    navigator.clipboard.writeText(text).then(()=>alert('📲 학부모 발송 풀세트!\n✅ PNG 카드 다운로드\n✅ 텍스트 클립보드 복사\n→ 카톡 채널에 첨부+붙여넣기')).catch(()=>{});
+    downloadFile(base+'_학부모발송.txt',text,'text/plain;charset=utf-8');
+  } else if(type==='full'){
+    const c=genCardsHTML(id),b=genBlogHTML(id),g=genGradesHTML(id),t=genCaptions(id);
+    downloadFile(base+'_카드뉴스.html',c,'text/html;charset=utf-8');
+    setTimeout(()=>downloadFile(base+'_블로그.html',b,'text/html;charset=utf-8'),300);
+    setTimeout(()=>downloadFile(base+'_캡션.txt',t,'text/plain;charset=utf-8'),600);
+    setTimeout(()=>downloadFile(base+'_학년별카톡.html',g,'text/html;charset=utf-8'),900);
+    setTimeout(()=>openInNewTab(c),1200);
+    alert('🚀 풀패키지 4개 파일 다운로드 시작!');
+  }
+}
+</script></body></html>
